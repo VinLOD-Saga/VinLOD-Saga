@@ -23,7 +23,7 @@
 <property/hasBelief> a owl:ObjectProperty;
     rdfs:label "has belief" ;
     rdfs:comment "Relates a person to a conceptual object they believe in";
-    rdfs:domain crm:E21_Person ;
+    rdfs:domain crm:E1_CRM_Entity ;
     rdfs:range crm:E28_Conceptual_Object .
 
 <property/hasAdaptation> a owl:ObjectProperty;
@@ -112,7 +112,8 @@
 <character/Thorkell> a frbroo:F38; #Character
     rdfs:label "Thorkell";
     frbroo:R57 <person/Thorkell_the_Tall> ; #R57-is based on
-    rdfs:seeAlso <https://anidb.net/character/102478> .
+    rdfs:seeAlso <https://anidb.net/character/102478> ;
+    <property/hasBelief> <concept/Valhalla> .
 
 <character/organisation/Jomsvikings> a frbroo:F38; #Character
     rdfs:label "Jomsvikings";
