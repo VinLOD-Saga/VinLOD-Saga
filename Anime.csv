@@ -1,7 +1,8 @@
 Subject,Predicate,Object
-Vinland_Saga_Anime,rdf:type,vinLOD:Anime
+Vinland_Saga_Anime,rdf:type,https://w3id.org/vinLOD-saga/class/Anime
 Vinland_Saga_Anime,rdf:type,frbroo:F22
-Vinland_Saga_Anime,vinLOD:hasAnimationStudio, vinLOD:Wit_Studio
-Vinland_Saga_Anime,vinLOD:hasAnimationStudio,vinLOD:MAPPA_Studio
+Vinland_Saga_Anime,vinLOD:hasAnimationStudio,https://w3id.org/vinLOD-saga/organisation/Wit_Studio
+Vinland_Saga_Anime,vinLOD:hasAnimationStudio,https://w3id.org/vinLOD-saga/organisation/Crunchroll 
 Vinland_Saga_Anime,vinLOD:premieredInSeason,"Summer 2019"
-Vinland_Saga_Anime,vinLOD:hasOpening, Mukanjyo_Video
+Vinland_Saga_Anime,vinLOD:hasOpening,https://w3id.org/vinLOD-saga/item/Mukanjyo_Video
+Vinland_Saga_Anime,rdfs:seeAlso,https://anidb.net/anime/13945 
