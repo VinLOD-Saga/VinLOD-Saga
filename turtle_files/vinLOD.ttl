@@ -1,0 +1,298 @@
+@base <https://w3id.org/vinLOD-saga/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> . 
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+#Classes
+<class/Anime> a owl:Class;
+    rdfs:label "Anime" ;
+    rdfs:comment "The class of Anime individuals" .
+
+<class/Manga> a owl:Class;
+    rdfs:label "Manga" ;
+    rdfs:comment "The class of Manga individuals" .
+
+#ObjectProperties
+<property/hasBelief> a owl:ObjectProperty;
+    rdfs:label "has belief" ;
+    rdfs:comment "Relates a person to a conceptual object they believe in";
+    rdfs:domain crm:E21_Person ;
+    rdfs:range crm:E28_Conceptual_Object .
+
+<property/hasAdaptation> a owl:ObjectProperty;
+    rdfs:label "has adaptation" ;
+    rdfs:comment "Connects a manga to its anime adaptation" ;
+    rdfs:domain <class/Manga> ;
+    rdfs:range <class/Anime> .
+
+<property/hasOpening> a owl:ObjectProperty;
+    rdfs:label "has opening theme" ;
+    rdfs:comment "Connects an anime to its opening";
+    rdfs:domain <class/Anime> .
+
+<property/hasAnimationStudio> a owl:ObjectProperty;
+    rdfs:label "has animation studio";
+    rdfs:comment "describes the studio responsible for the animation of an anime" ;
+    rdfs:domain <class/Anime> .
+
+<property/hasMangaka> a owl:ObjectProperty;
+    rdfs:label "has mangaka";
+    rdfs:comment "describes the mangaka(author) of a manga series";
+    rdfs:domain <class/Manga> .
+
+<property/serialisedIn> a owl:ObjectProperty;
+    rdfs:label "serialised in";
+    rdfs:comment "describes the magazine a manga is serialised in";
+    rdfs:domain <class/Manga> .
+
+
+#DataProperties
+
+<property/hasDemographic> a owl:DatatypeProperty;
+    rdfs:label "has demographic";
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( <class/Anime> <class/Manga> )
+                ] ;
+    rdfs:range xsd:string .
+
+<property/hasStatus> a owl:DatatypeProperty;
+    rdfs:label "has status" ;
+    rdfs:comment "describes if an anime or manga is still ongoing or not" ;
+    rdfs:domain [ a owl:Class ;
+                  owl:unionOf ( <class/Anime> <class/Manga> )
+                ] ;
+    rdfs:range xsd:string .
+
+<property/premieredInSeason> a owl:DatatypeProperty;
+    rdfs:label "premiered in season";
+    rdfs:comment "describe the season in which an anime premiered" ;
+    rdfs:domain <class/Anime> ;
+    rdfs:range xsd:string .
+
+
+#Central work
+<work/Vinland_Saga> a frbroo:F1;
+    frbroo:R3 <item/Vinland_Anime>; #R3-is realised in
+    frbroo:R3 <item/Vinland_Manga>; #R3-is realised in
+    crm:P129_is_about <character/Leif_Erikson>;
+    crm:P129_is_about <character/Canute>;
+    crm:P129_is_about <character/Sweyn>;
+    crm:P129_is_about <character/Thorkell>;
+    crm:P129_is_about <character/organisation/Jomsvikings>;
+    crm:P67_refers_to <event/Hjorungavagr_Battle>;
+    crm:P67_refers_to <event/St_Brice_Massacre>;
+    crm:P67_refers_to <event/2nd_Viking_Invasion>;
+    crm:P67_refers_to <event/Cnut_Invasion>;
+    crm:P67_refers_to <event/Norse_Colonisation> .
+
+
+#Characters 
+<character/Leif_Erikson> a frbroo:F38; #Character
+    rdfs:label "Leif Erikson";
+    frbroo:R57 <person/Leiv_Eiriksson>; #R57-is based on
+    rdfs:seeAlso <https://anidb.net/character/103128> .
+
+<character/Canute> a frbroo:F38; #Character
+    rdfs:label "Canute";
+    frbroo:R57 <person/Cnut_the_Great> ; #R57-is based on
+    rdfs:seeAlso <https://anidb.net/character/102477> .
+
+<character/Sweyn> a frbroo:F38; #Character
+    rdfs:label "Sweyn";
+    frbroo:R57 <person/Sweyn_Forkbeard> ; #R57-is based on
+    rdfs:seeAlso <https://anidb.net/character/103121> .
+
+<character/Thorkell> a frbroo:F38; #Character
+    rdfs:label "Thorkell";
+    frbroo:R57 <person/Thorkell_the_Tall> ; #R57-is based on
+    rdfs:seeAlso <https://anidb.net/character/102478> .
+
+<character/organisation/Jomsvikings> a frbroo:F38; #Character
+    rdfs:label "Jomsvikings";
+    frbroo:R57 <group/Jomsvikings> ; #R57-is based on
+    rdfs:seeAlso <https://anidb.net/character/108009> .
+
+
+#Historical People
+<person/Leiv_Eiriksson> a crm:E21_Person;
+    rdfs:label "Leiv Eiriksson";
+    owl:sameAs <http://viaf.org/viaf/198152140015411100005>;
+    crm:P11i_participated_in <event/Norse_Colonisation>;
+    crm:P67i_is_referred_to_by <narrative/Greenland_Saga>;
+    crm:P67i_is_referred_to_by <narrative/Erik_Saga>;
+    crm:P62i_is_depicted_by <item/Eiriksson_Painting> .
+
+
+<person/Cnut_the_Great> a crm:E21_Person;
+    rdfs:label "Cnut the Great";
+    owl:sameAs <http://viaf.org/viaf/268401625>;
+    crm:P152_has_parent <person/Sweyn_Forkbeard>;
+    crm:P11i_participated_in <event/Cnut_Invasion>;
+    crm:P11i_participated_in <event/Assandun_Battle>;
+    crm:P11i_participated_in <event/Cnut_Becomes_English_King>  .
+
+<person/Sweyn_Forkbeard> a crm:E21_Person;
+    rdfs:label "Sweyn Forkbeard";
+    owl:sameAs <http://viaf.org/viaf/223321118>;
+    crm:P11i_participated_in <event/2nd_Viking_Invasion> .
+
+<person/Thorkell_the_Tall> a crm:E21_Person;
+    rdfs:label "Thorkell the Tall";
+    owl:sameAs dbr:Thorkell_the_Tall;
+    crm:P107i_is_current_or_former_member_of <group/Jomsvikings>;
+    crm:P11i_participated_in <event/Hjorungavagr_Battle>;
+    crm:P11i_participated_in <event/Assandun_Battle>;
+    crm:P67i_is_referred_to_by <narrative/Jomsvikings_Saga> .
+
+
+#Legendary Groups
+
+<group/Jomsvikings> a crm:E74_Group;
+    rdfs:label "Jomsvikings";
+    owl:sameAs wd:Q41345;
+    crm:P11i_participated_in <event/Hjorungavagr_Battle>;
+    crm:P129i_is_subject_of <narrative/Jomsvikings_Saga> .
+
+<group/Valkyries> a crm:E74_Group;
+    rdfs:label "Valkyries";
+    owl:sameAs dbr:Valkyrie;
+    crm:P67i_is_referred_to_by <narrative/Poetic_Edda>;
+    crm:P129i_is_subject_of <concept/Valhalla>;
+    crm:P129i_is_subject_of <compostion/Ride_of_Valkrie> .
+
+
+#Events
+
+<event/Hjorungavagr_Battle> a crm:E5_Event;
+    rdfs:label "Battle of Hjörungavágr";
+    owl:sameAs dbr:Battle_of_Hjörungavágr;
+    crm:P67i_is_referred_to_by <narrative/Jomsvikings_Saga>;
+    crm:P62i_is_depicted_by <item/Hailstorm_Illustration> .
+
+<event/St_Brice_Massacre> a crm:E5_Event;
+    rdfs:label "St Brice's Day Massacre";
+    crm:P17i_motivated <event/2nd_Viking_Invasion>;
+    owl:sameAs dbr:Battle_of_Hjörungavágr .
+
+<event/2nd_Viking_Invasion> a crm:E5_Event;
+    rdfs:label "2nd Viking Invasion of England";
+    owl:sameAs dbr:Viking_activity_in_the_British_Isles.
+
+<event/Cnut_Invasion> a crm:E5_Event;
+    rdfs:label "Cnut's Invasion of England";
+    crm:P9i_forms_part_of <event/2nd_Viking_Invasion> .
+
+<event/Assandun_Battle> a crm:E5_Event;
+    rdfs:label "Battle of Assandun";
+    owl:sameAs dbr:Battle_of_Assandun;
+    crm:P9i_forms_part_of <event/Cnut_Invasion>;
+    crm:P16_used_specific_object <concept/Olney_Treaty> .
+
+<event/Cnut_Becomes_English_King> a crm:E5_Event;
+    rdfs:label "Cnut becomes king of England after the death of Edmund Ironside" .
+
+<event/Norse_Colonisation> a crm:E5_Event;
+    rdfs:label "Norse Colonisation of America";
+    owl:sameAs dbr:Norse_colonization_of_North_America;
+    crm:P62i_is_depicted_by <item/Eiriksson_Painting>;
+    crm:P129i_is_subject_of <narrative/Greenland_Saga>;
+    crm:P129i_is_subject_of <narrative/Erik_Saga> .
+
+
+#Concepts
+
+<concept/Valhalla> a crm:E28_Conceptual_Object;
+    rdfs:label "Valhalla";
+    owl:sameAs dbr:Valhalla;
+    crm:P67i_is_referred_to_by <narrative/Poetic_Edda> .
+
+<concept/Olney_Treaty> a crm:E28_Conceptual_Object;
+    rdfs:label "Treaty of Olney";
+    crm:P17i_motivated <event/Cnut_Becomes_English_King> .
+
+
+#Stories 
+
+<narrative/Greenland_Saga> a frbroo:F1;
+    rdfs:label "Saga of the Greenlanders";
+    crm:P130i_features_are_also_found_on <item/Finding_of_Wineland>;
+    crm:P130i_features_are_also_found_on <item/Flatjarbok_Manuscript> .
+
+<narrative/Erik_Saga> a frbroo:F1;
+    rdfs:label "Saga of Erik the Red";
+    crm:P130i_features_are_also_found_on <item/Finding_of_Wineland>;
+    crm:P130i_features_are_also_found_on <item/Flatjarbok_Manuscript> .
+
+<narrative/Jomsvikings_Saga> a frbroo:F1;
+    rdfs:label "Saga of the Jomsvikings";
+    crm:P130i_features_are_also_found_on <item/Flatjarbok_Manuscript> .
+
+<narrative/Poetic_Edda> a frbroo:F1;
+    rdfs:label "The Poetic Edda";
+    crm:P130i_features_are_also_found_on <item/Translated_Edda> .
+
+
+#Music Entities
+
+<musicEntity/Ride_of_Valkyrie> a frbroo:F1;
+    rdfs:label "Ride of the Valkrie";
+    frbroo:R3 <item/Valkrie_Performance> ; #R3-is realised in
+    dcterms:creator <http://vocab.getty.edu/ulan/500223295> .
+
+
+<musicEntity/Mukanjyo> a schema:MusicRecording;
+    rdfs:label "Mukanjyo" ;
+    schema:byArtist <agent/Survive_Said_the_Prophet> .
+
+#Agents and organisations and publication
+
+<agent/Makoto_Yukimura> a crm:E21_Person;
+    rdfs:label "Makoto Yukimura";
+    rdfs:comment "The mangaka of the Vinland Saga manga" ;
+    rdfs:seeAlso <https://myanimelist.net/people/2034/Makoto_Yukimura> .
+
+<agent/Survive_Said_the_Prophet> a schema:MusicGroup;
+    rdfs:label "Survive Said the Prophet";
+    rdfs:comment "Japanese rock band" ;
+    rdfs:seeAlso <https://myanimelist.net/people/48121/Survive_Said_The_Prophet> .
+
+<publication/Afternoon_Magazine> a schema:Periodical;
+    rdfs:label "Afternoon Magazine" ;
+    rdfs:comment "The magazine in which the Vinland Saga manga is orginally serialised and published in" ;
+    rdfs:seeAlso <https://anidb.net/creator/31447> .
+
+<organisation/Wit_Studio> a schema:Organization;
+    rdfs:label "Studio Wit" ;
+    rdfs:comment "An Japanese animation studio" ;
+    rdfs:seeAlso <https://myanimelist.net/anime/producer/858/Wit_Studio> .
+
+<organisation/MAPPA_Studio> a schema:Organization;
+    rdfs:label "Studio MAPPA" ;
+    rdfs:comment "An Japanese animation studio" ;
+    rdfs:seeAlso <https://myanimelist.net/anime/producer/569/MAPPA> .
+
+<organisation/Crunchroll> a schema:Organization;
+    rdfs:label "Crunchyroll" ;
+    rdfs:comment "Anime licencing and production company" ;
+    rdfs:seeAlso <https://myanimelist.net/anime/producer/1468/Crunchyroll> .
+
+<museum/Norway_Museum> a schema:Museum ;
+    rdfs:label "Nasjonalmuseet - National Museum of Norway" ;
+    rdfs:comment "The National Museum of Art, Architecture and Design in Oslo, Norway";
+    geo:lat "59.91164"^^xsd:decimal ;
+    geo:long "10.72925"^^xsd:decimal ;
+    owl:sameAs <geo:59.91164,10.72925> ;
+    rdfs:seeAlso <https://www.google.com/maps/search/?api=1&query=59.91164,10.72925> .
+
+
+
+
+
+
