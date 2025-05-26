@@ -1,0 +1,103 @@
+# PART 1 
+
+# The Python library RDFLib you can:
+""" Parse RDF data from strings, files, or URIs into RDFLib.Graph() objects
+- Iterate over triples and query the data
+- Create/delete RDF data from scratch
+- Serialize data into any allowed notation and store data in files """
+# In Python, a graph is a LIST of TUPLES (S, P, O)
+import rdflib, json
+example_data= """ qualche tripla di URI, separate da un punto """
+g = rdflib.Graph()
+
+# you can parse data from a string, from a file or from URI
+g.parse(data=example_data, format='nt') # from a string of ntuples
+g.parse("a_file", fomat="ttl") # from a ttl file
+g.parse("https://example.it") # from a URI 
+# parse= creates the triples
+
+# Iterate over triples 
+for s, p, o in g.triples((None, None, None)): # None is a placeholder
+    pass 
+
+# to see a particular triple
+for s, p, o in g.triples((rdflib.URIRef("http://example.it "), None, rdflib.Literal("09-05-2001", datatype= rdflib.XSD.date))): # n.b. to specify the Literal we need the datatype 
+    pass
+# RDFLib allows you to directly import some of the most common namespaces, e.g. RDFS, RDF, XSD
+# Less common namespaces can be declared too:
+DBO= rdflib.Namespace("https://.example.it") # in quel caso datatype= rdflib.DBO.date
+
+# adding data manually: add. You must specify the 3 placeholders with their data types
+g.rdflib.add((rdflib.URIRef("http//example.it", DBO.occupation, rdflib.URIRef("http://example"))))
+# you can also use .remove() in the same way
+
+# ! The Graph() object is an in-memory graph, that is, once the code is run, the object is lost.
+# RDFLib has a method that allows you to create a file and serialize data in any allowed format.
+g.rdflib.serialize(destination="a_file.ttl", format="turtle")
+
+# PART 2 
+
+# In the last decades, cultural heritage institutions and scholars have been transforming their data into RDF to facilitate data exchange and semantic interoperability.
+# n can be performed automatically, e.g. using XSLT stylesheets to transform
+# XML to RDF/XML files, python to transform multiple formats to RDF (e.g. XML, CSV, JSON).
+# Tools and mapping languages exist for this task too (SPARQL Anything, RML, etc).
+
+""" Transforming data in other formats to RDF requires to first work out the conceptual mapping between
+original data and expected output data:
+- Selection. What gets transformed and what not
+- Normalisation. What needs data cleaning (e.g. dates)
+- Granularity. What gets transformed as-is or needs some refinement/extraction
+- Data type mapping. What becomes an entity or a literal, and which data type
+- Ontology mapping. Select classes and properties and map them to pieces of original data.
+- URI design. Mint persistent unique URIs for the entities """
+
+# XML TO RDF
+""" To transform XML-like files into RDF we can use XSLT if we plan to transform them into RDF/XML
+files. Nonetheless, using python libraries can be a convenient way to manipulate data:
+- Libraries like lxml.etree allow you to manipulate XML documents with more flexibility
+- RDFLib allows you transform your data into any serialisation you need
+Since not all XML files are the same, and the output RDF depends on the factors outlined in the
+previous slide, there is no straightway transformation template to be used. """
+
+# SLIDES FROM 19 TO 24 ARE MISSING 
+
+# JSON TO RDF 
+"""  It presents two data structures common to several programming languages:
+- Object (or dictionary)
+- Array (or list)
+
+To transform JSON !and CSV! to RDF, we can rely on:
+- standard python libraries to manipulate JSON documents
+- RDFLib to manipulate RDF data
+Like with XML data, we need to perform a preliminary analysis
+on the data to be transformed. As an example we use a JSON
+file from the Open Library describing the book V for Vendetta. """
+""" We select what fields get transformed. (also for CSV)
+We identify entities and strings (and data types:
+- Entities: A work, two people, two places, n subjects
+- Strings: description (string), title (string), date (gYear) """
+
+# ? Let’s have a look at basic functions in the json library (tutorial):
+# How to write on a JSON file
+a_dictionary= {}
+json_object = json.dumps(a_dictionary, indent=4)
+with open("sample.json", "w") as outfile:
+    outfile.write(json_object)
+# Opening JSON file
+with open('sample.json', 'r') as openfile:
+    # Reading from json file
+    json_object = json.load(openfile)
+
+""" - Download the JSON file
+- Create a python file
+- Read contents from the JSON file and transform it in a dictionary
+- Access key/value pairs of the dictionary and extract contents to be transformed to RDF
+- Add triples to a graph according to the ontology terms selected
+- Serialize the graph in json-ld file """
+
+# CSV TO RDF
+""" - Download the csv file 
+- Create a python file and read the CSV content as a dictionary (Peroni's stuff)
+- Access row contents and create URIs and triples on spot.
+- Notice not all cells have data. You must check for contents of cells before adding triples
+- Write triples in a .ttl file """
