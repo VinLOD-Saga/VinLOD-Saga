@@ -1,0 +1,11 @@
+Subject,Predicate,Object
+Cnut_Coin,rdf:type,cidoc-crm:E24_Physical_Human-Made_Thing
+Cnut_Coin,dcterms:contributor,Cnut
+Cnut_Coin,cidoc-crm:P62_depicts,Cnut
+Cnut_Coin,cco:WorkType,"Coin"
+Cnut_Coin,cco:ID,"18202952"
+Cnut_Coin,cco:MaterialAndTechnique,"Silver, 1, 11g; 19mm"
+Cnut_Coin,cco:CreationDate,"1017-1023 High Middle Ages"
+Cnut_Coin,cco:CurrentLocation,"Room 242, BM-49/35 Europe. 10-12th Cent."
+Cnut_Coin,dcterms:rightsHolder,"Berlin, Münzkabinett der Staatlichen Museen Coin Gallery Bode-Museum"
+

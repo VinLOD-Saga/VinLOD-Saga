@@ -1,0 +1,8 @@
+Subject,Predicate,Object
+Mukanjyo_Video,rdf:type,schema:VideoObject
+Mukanjyo_Video,schema:contentUrl,"https://www.youtube.com/watch?v=l5wAdQ-UkWY"
+Mukanjyo_Video,schema:productionCompany,vinLOD:Crunchyroll
+Mukanjyo_Video,schema:name,"Vinland Saga Opening1 | Mukanjyo By Survive Said The Prophet"
+Mukanjyo_Video,schema:musicBy,vinLOD:Survive_Said_the_Prophet
+Mukanjyo_Video,schema:audio,vinLOD:Mukanjyo
+Mukanjyo_Video,schema:uploadDate,"2024-07-01"

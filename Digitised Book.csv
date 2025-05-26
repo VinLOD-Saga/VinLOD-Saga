@@ -1,0 +1,7 @@
+Subject,Predicate,Object
+Finding_Of_Wineland,rdf:type,E24_Physical_Human-Made_Thing
+Finding_Of_Wineland,bf:subtitle,"The History of the Icelandic Discovery of America, Edited and Translated from the Earliest Records"
+Finding_Of_Wineland,bf:mainTitle,"The Finding of Wineland the Good"
+Finding_Of_Wineland,bf:contributionOf,Arthur Middleton Reeves
+Finding_Of_Wineland,bf:identifiedBy,https://openlibrary.org/books/OL24197049M
+Finding_Of_Wineland,bf:publicationStatement,"Henry Frowde Oxford University Press Warehouse Amen Corner, E.C., 1890"

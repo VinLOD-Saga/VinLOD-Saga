@@ -1,0 +1,7 @@
+Subject,Predicate,Object
+Hailstorm_Illustration,rdf:type,E24_Physical_Human-Made_Thing
+Hailstorm_Illustration,cco:CreatorDisplay,"Halfdan Egedius (1877-1899)"
+Hailstorm_Illustration,cco:WorkType,"Illustration"
+Hailstorm_Illustration,dcterm:source,"Heimskringla"
+Hailstorm_Illustration,schema:description,"found in BOOK: HEIMSKRINGLA by SNORRE STURLAŚON published by, J.M. STENERSEN & CO, 1899."
+Hailstorm_Illustration,cco:CreationDate,"1899"

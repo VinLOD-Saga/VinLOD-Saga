@@ -1,0 +1,11 @@
+Subject,Predicate,Object
+Eiriksson_Painting,rdf:type,E24_Physical_Human-Made_Thing
+Eiriksson_Painting,cidoc-crm:P102_has_title,"Leiv Eiriksson Discovering America"
+Eiriksson_Painting,cco:CreatorDisplay,"Christian Krohg"
+Eiriksson_Painting,cco:DescriptionSource,"The Fine Art Collection"
+Eiriksson_Painting,dcterms:rightsHolder,vinLOD:Norway_Museum
+Eiriksson_Painting,cco:ID,"NG.M.00558"
+Eiriksson_Painting,cco:measurements,"Width: 470 cm, Height: 313 cm"
+Eiriksson_Painting,cco:workType,"Painting" 
+Eiriksson_Painting,cco:MaterialAndTechnique,"Canvas"
+Eiriksson_Painting.cco:CreationDate,"1893"

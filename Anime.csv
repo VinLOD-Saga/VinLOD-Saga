@@ -1,0 +1,7 @@
+Subject,Predicate,Object
+Vinland_Saga_Anime,rdf:type,vinLOD:Anime
+Vinland_Saga_Anime,rdf:type,frbroo:F22
+Vinland_Saga_Anime,vinLOD:hasAnimationStudio, vinLOD:Wit_Studio
+Vinland_Saga_Anime,vinLOD:hasAnimationStudio,vinLOD:MAPPA_Studio
+Vinland_Saga_Anime,vinLOD:premieredInSeason,"Summer 2019"
+Vinland_Saga_Anime,vinLOD:hasOpening, Mukanjyo_Video

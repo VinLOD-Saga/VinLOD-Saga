@@ -1,0 +1,5 @@
+Subject,Predicate,Object
+Ride_of_the_Valkyrie,rdf:type,frbroo:F26_Recording
+Ride_of_the_Valkyrie,bf:identifiedBy,https://gutenberg.org/ebooks/10177
+Ride_of_the_Valkyrie,cco:creationDate,"1921"
+Ride_of_the_Valkyrie,dcterms:contributor,"American Symphony Orchestra (West Orange, N.J.)"
