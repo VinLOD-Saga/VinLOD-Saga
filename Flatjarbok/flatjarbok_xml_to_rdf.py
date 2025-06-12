@@ -88,7 +88,7 @@ def xml_to_rdf(file):
 
     if lang:
         g.add((doc_uri, language_prop, Literal(lang)))
-# there should be 13 triples 
+# there should be 10 triples 
 
     # === 4. Serializing in Turtle ===
     try:
