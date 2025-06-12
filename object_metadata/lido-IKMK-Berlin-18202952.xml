@@ -1,0 +1,535 @@
+<lido:lidoWrap xmlns:lido="http://www.lido-schema.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.lido-schema.org http://www.lido-schema.org/schema/v1.0/lido-v1.0.xsd">
+  <lido:lido>
+    <lido:lidoRecID lido:type="local">http://ld.zdb-services.de/resource/organisations/DE-MUS-814819/18202952</lido:lidoRecID>
+    <lido:descriptiveMetadata xml:lang="en">
+      <lido:objectClassificationWrap>
+        <lido:objectWorkTypeWrap>
+          <lido:objectWorkType>
+            <lido:conceptID lido:source="nomisma" lido:type="URI">http://nomisma.org/id/coin</lido:conceptID>
+            <lido:term xml:lang="en">Coin</lido:term>
+            <lido:term xml:lang="de">Münze</lido:term>
+          </lido:objectWorkType>
+        </lido:objectWorkTypeWrap>
+        <lido:classificationWrap>
+          <lido:classification>
+            <lido:conceptID lido:label="nominal" lido:source="nomisma" lido:type="URI">http://nomisma.org/id/penny_en</lido:conceptID>
+            <lido:conceptID lido:label="nominal" lido:source="ikmk" lido:type="URI">https://ikmk.smb.museum/ndp/denomination/1016</lido:conceptID>
+            <lido:term lido:label="nominal" xml:lang="de">Penny (GBP)</lido:term>
+            <lido:term lido:label="nominal" xml:lang="en">Penny (GBP)</lido:term>
+          </lido:classification>
+          <lido:classification>
+            <lido:term lido:label="division" xml:lang="de">Mittelalter</lido:term>
+            <lido:term lido:label="division" xml:lang="en">Medieval Period</lido:term>
+          </lido:classification>
+          <lido:classification>
+            <lido:term lido:label="subdivision" xml:lang="de">Hochmittelalter</lido:term>
+            <lido:term lido:label="subdivision" xml:lang="en">High Middle Ages</lido:term>
+          </lido:classification>
+        </lido:classificationWrap>
+      </lido:objectClassificationWrap>
+      <lido:objectIdentificationWrap>
+        <lido:titleWrap>
+          <lido:titleSet>
+            <lido:appellationValue xml:lang="de">England: Knut der Große</lido:appellationValue>
+          </lido:titleSet>
+        </lido:titleWrap>
+        <lido:inscriptionsWrap>
+          <lido:inscriptions lido:type="front">
+            <lido:inscriptionTranscription xml:lang="de">+ CNVT REX ANGLORV. Cnut Rex Anglorum</lido:inscriptionTranscription>
+            <lido:inscriptionDescription>
+              <lido:descriptiveNoteValue xml:lang="de">Gekröntes Brustbild Knuts nach links im Vierpaß (Quatrefoil).</lido:descriptiveNoteValue>
+            </lido:inscriptionDescription>
+          </lido:inscriptions>
+          <lido:inscriptions lido:type="back">
+            <lido:inscriptionTranscription xml:lang="de">+ PV-LFG-ET M-O LIN. Münzmeister Wulfgeat. Münzstätte Lin- = Lincoln</lido:inscriptionTranscription>
+            <lido:inscriptionDescription>
+              <lido:descriptiveNoteValue xml:lang="de">Langes Zwillingsfadenkreuz im Vierpaß.</lido:descriptiveNoteValue>
+            </lido:inscriptionDescription>
+          </lido:inscriptions>
+        </lido:inscriptionsWrap>
+        <lido:repositoryWrap>
+          <lido:repositorySet lido:type="current">
+            <lido:repositoryName>
+              <lido:legalBodyID lido:type="URI">http://ld.zdb-services.de/resource/organisations/DE-MUS-814819/18202952</lido:legalBodyID>
+              <lido:legalBodyName>
+                <lido:appellationValue>Münzkabinett, Staatliche Museen zu Berlin - Stiftung Preußischer Kulturbesitz</lido:appellationValue>
+              </lido:legalBodyName>
+              <lido:legalBodyWeblink>https://www.smb.museum/museen-und-einrichtungen/muenzkabinett/home.html</lido:legalBodyWeblink>
+            </lido:repositoryName>
+            <lido:workID lido:type="URI">https://ikmk.smb.museum/object?id=18202952</lido:workID>
+          </lido:repositorySet>
+        </lido:repositoryWrap>
+        <lido:objectDescriptionWrap>
+          <lido:objectDescriptionSet>
+            <lido:descriptiveNoteID lido:source="nomisma" lido:type="URI">http://nomisma.org/id/ruler</lido:descriptiveNoteID>
+            <lido:descriptiveNoteValue lido:label="minting_authority" lido:lang="de">Königtum (MA/NZ)</lido:descriptiveNoteValue>
+            <lido:descriptiveNoteValue lido:label="minting_authority" lido:lang="en">Kingdom (medieval/modern)</lido:descriptiveNoteValue>
+          </lido:objectDescriptionSet>
+          <lido:objectDescriptionSet lido:type="annotation">
+            <lido:descriptiveNoteValue>Sog. Typ Quatrefoil.</lido:descriptiveNoteValue>
+          </lido:objectDescriptionSet>
+          <lido:objectDescriptionSet lido:type="accession">
+            <lido:descriptiveNoteValue>1894/589</lido:descriptiveNoteValue>
+          </lido:objectDescriptionSet>
+        </lido:objectDescriptionWrap>
+        <lido:objectMeasurementsWrap>
+          <lido:objectMeasurementsSet>
+            <lido:displayObjectMeasurements>Durchmesser: 19 mm, Gewicht: 1.11 g</lido:displayObjectMeasurements>
+            <lido:objectMeasurements>
+              <lido:measurementsSet>
+                <lido:measurementType xml:lang="en">diameter</lido:measurementType>
+                <lido:measurementType xml:lang="de">Durchmesser</lido:measurementType>
+                <lido:measurementUnit>mm</lido:measurementUnit>
+                <lido:measurementValue>19</lido:measurementValue>
+              </lido:measurementsSet>
+              <lido:measurementsSet>
+                <lido:measurementType xml:lang="en">weight</lido:measurementType>
+                <lido:measurementType xml:lang="de">Gewicht</lido:measurementType>
+                <lido:measurementUnit>g</lido:measurementUnit>
+                <lido:measurementValue>1.11</lido:measurementValue>
+              </lido:measurementsSet>
+            </lido:objectMeasurements>
+          </lido:objectMeasurementsSet>
+        </lido:objectMeasurementsWrap>
+      </lido:objectIdentificationWrap>
+      <lido:eventWrap>
+        <lido:eventSet>
+          <lido:event>
+            <lido:eventType>
+              <lido:conceptID lido:type="URI">http://terminology.lido-schema.org/lido00226</lido:conceptID>
+              <lido:term xml:lang="en">Commissioning</lido:term>
+              <lido:term xml:lang="de">Auftrag</lido:term>
+            </lido:eventType>
+            <lido:eventActor>
+              <lido:displayActorInRole>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035)</lido:displayActorInRole>
+              <lido:actorInRole>
+                <lido:actor lido:type="http://terminology.lido-schema.org/actor_type/person">
+                  <lido:nameActorSet>
+                    <lido:appellationValue>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035)</lido:appellationValue>
+                  </lido:nameActorSet>
+                </lido:actor>
+                <lido:roleActor>
+                  <lido:conceptID lido:type="URI">http://d-nb.info/gnd/1051614252</lido:conceptID>
+                  <lido:conceptID lido:type="URI">http://nomisma.org/id/authority</lido:conceptID>
+                  <lido:term lido:lang="en">Authority</lido:term>
+                  <lido:term lido:lang="de">Autorität</lido:term>
+                </lido:roleActor>
+              </lido:actorInRole>
+            </lido:eventActor>
+          </lido:event>
+        </lido:eventSet>
+        <lido:eventSet>
+          <lido:event>
+            <lido:eventType>
+              <lido:conceptID lido:type="URI">http://terminology.lido-schema.org/lido00007</lido:conceptID>
+              <lido:term xml:lang="en">Production</lido:term>
+              <lido:term xml:lang="en">Herstellung</lido:term>
+            </lido:eventType>
+            <lido:eventActor>
+              <lido:displayActorInRole>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035)</lido:displayActorInRole>
+              <lido:actorInRole>
+                <lido:actor lido:type="http://terminology.lido-schema.org/actor_type/person">
+                  <lido:nameActorSet>
+                    <lido:appellationValue>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035)</lido:appellationValue>
+                  </lido:nameActorSet>
+                </lido:actor>
+                <lido:roleActor>
+                  <lido:conceptID lido:type="URI">http://vocab.getty.edu/aat/300189844</lido:conceptID>
+                  <lido:conceptID lido:type="URI">http://nomisma.org/id/portrait</lido:conceptID>
+                  <lido:term lido:lang="en">Sitter</lido:term>
+                  <lido:term lido:lang="de">Dargestellte/r</lido:term>
+                </lido:roleActor>
+              </lido:actorInRole>
+            </lido:eventActor>
+            <lido:eventActor>
+              <lido:displayActorInRole>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035)</lido:displayActorInRole>
+              <lido:actorInRole>
+                <lido:actor lido:type="http://terminology.lido-schema.org/actor_type/person">
+                  <lido:nameActorSet>
+                    <lido:appellationValue>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035)</lido:appellationValue>
+                  </lido:nameActorSet>
+                </lido:actor>
+                <lido:roleActor>
+                  <lido:conceptID lido:type="URI">http://d-nb.info/gnd/1051614252</lido:conceptID>
+                  <lido:conceptID lido:type="URI">http://nomisma.org/id/authority</lido:conceptID>
+                  <lido:term lido:lang="en">Authority</lido:term>
+                  <lido:term lido:lang="de">Autorität</lido:term>
+                </lido:roleActor>
+              </lido:actorInRole>
+            </lido:eventActor>
+            <lido:eventActor>
+              <lido:displayActorInRole>Wulfgeat</lido:displayActorInRole>
+              <lido:actorInRole>
+                <lido:actor lido:type="http://terminology.lido-schema.org/actor_type/person">
+                  <lido:nameActorSet>
+                    <lido:appellationValue>Wulfgeat</lido:appellationValue>
+                  </lido:nameActorSet>
+                </lido:actor>
+                <lido:roleActor>
+                  <lido:conceptID lido:type="URI">http://d-nb.info/gnd/4170686-9</lido:conceptID>
+                  <lido:term lido:lang="en">Mintmaster (MM Me)</lido:term>
+                  <lido:term lido:lang="de">Münzmeister (MM Ma)</lido:term>
+                </lido:roleActor>
+              </lido:actorInRole>
+            </lido:eventActor>
+            <lido:eventDate>
+              <lido:displayDate>1017-1023</lido:displayDate>
+              <lido:date>
+                <lido:earliestDate>1017</lido:earliestDate>
+                <lido:latestDate>1023</lido:latestDate>
+              </lido:date>
+            </lido:eventDate>
+            <lido:periodName>
+              <lido:conceptID lido:type="URI">http://d-nb.info/gnd/7503822-5</lido:conceptID>
+              <lido:term lido:lang="de">Hochmittelalter</lido:term>
+            </lido:periodName>
+            <lido:eventPlace lido:type="minting_place">
+              <lido:place lido:politicalEntity="country">
+                <lido:placeID lido:source="Geonames">http://www.geonames.org/2635167</lido:placeID>
+                <lido:placeID lido:source="nomisma">http://nomisma.org/id/united_kingdom</lido:placeID>
+                <lido:namePlaceSet>
+                  <lido:appellationValue lido:lang="de">Großbritannien</lido:appellationValue>
+                  <lido:appellationValue lido:lang="en">Great Britain</lido:appellationValue>
+                </lido:namePlaceSet>
+              </lido:place>
+            </lido:eventPlace>
+            <lido:eventPlace lido:type="minting_place">
+              <lido:place lido:politicalEntity="region">
+                <lido:placeID lido:source="Geonames">http://www.geonames.org/6269131</lido:placeID>
+                <lido:namePlaceSet>
+                  <lido:appellationValue lido:lang="de">England</lido:appellationValue>
+                </lido:namePlaceSet>
+              </lido:place>
+            </lido:eventPlace>
+            <lido:eventPlace lido:type="minting_place">
+              <lido:place lido:politicalEntity="minting_place">
+                <lido:placeID lido:source="Geonames">http://www.geonames.org/2644487</lido:placeID>
+                <lido:namePlaceSet>
+                  <lido:appellationValue lido:lang="de">Lincoln</lido:appellationValue>
+                </lido:namePlaceSet>
+              </lido:place>
+            </lido:eventPlace>
+            <lido:eventMaterialsTech>
+              <lido:materialsTech>
+                <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/termMaterialsTech_type/material">
+                  <lido:conceptID lido:type="URI">http://nomisma.org/id/ar</lido:conceptID>
+                  <lido:term lido:lang="en">Silver</lido:term>
+                  <lido:term lido:lang="de">Silber</lido:term>
+                </lido:termMaterialsTech>
+              </lido:materialsTech>
+            </lido:eventMaterialsTech>
+            <lido:eventMaterialsTech>
+              <lido:materialsTech>
+                <lido:termMaterialsTech lido:type="http://terminology.lido-schema.org/termMaterialsTech_type/technique">
+                  <lido:term lido:lang="en">struck</lido:term>
+                  <lido:term lido:lang="de">geprägt</lido:term>
+                </lido:termMaterialsTech>
+              </lido:materialsTech>
+            </lido:eventMaterialsTech>
+          </lido:event>
+        </lido:eventSet>
+        <lido:eventSet>
+          <lido:event>
+            <lido:eventType>
+              <lido:conceptID lido:type="URI">http://terminology.lido-schema.org/lido00002</lido:conceptID>
+              <lido:term xml:lang="en">Finding</lido:term>
+              <lido:term>Fund</lido:term>
+            </lido:eventType>
+            <lido:eventPlace lido:type="finding_place">
+              <lido:place lido:politicalEntity="country">
+                <lido:placeID lido:source="Geonames">http://www.geonames.org/798544</lido:placeID>
+                <lido:namePlaceSet>
+                  <lido:appellationValue lido:lang="de">Polen</lido:appellationValue>
+                  <lido:appellationValue lido:lang="en">Poland</lido:appellationValue>
+                </lido:namePlaceSet>
+              </lido:place>
+            </lido:eventPlace>
+            <lido:eventPlace lido:type="finding_place">
+              <lido:place lido:politicalEntity="finding_place">
+                <lido:namePlaceSet>
+                  <lido:appellationValue lido:lang="de">Mgowo</lido:appellationValue>
+                </lido:namePlaceSet>
+              </lido:place>
+            </lido:eventPlace>
+          </lido:event>
+        </lido:eventSet>
+        <lido:eventSet>
+          <lido:event>
+            <lido:eventType>
+              <lido:conceptID lido:type="URI">http://terminology.lido-schema.org/lido00001</lido:conceptID>
+              <lido:term xml:lang="en">Acquisition</lido:term>
+              <lido:term>Erwerbung</lido:term>
+            </lido:eventType>
+            <lido:eventDate>
+              <lido:displayDate>1894</lido:displayDate>
+            </lido:eventDate>
+          </lido:event>
+        </lido:eventSet>
+      </lido:eventWrap>
+      <lido:objectRelationWrap>
+        <lido:subjectWrap>
+          <lido:subjectSet>
+            <lido:displaySubject>Christliche Ikonographie</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://d-nb.info/gnd/7502667-3</lido:conceptID>
+                <lido:term>Christliche Ikonographie</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:displaySubject>Hochmittelalter, 10.-12. Jh.</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://d-nb.info/gnd/7503822-5</lido:conceptID>
+                <lido:term>Hochmittelalter, 10.-12. Jh.</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:displaySubject>Könige (MA&amp;NZ)</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://d-nb.info/gnd/4031516-2</lido:conceptID>
+                <lido:term>Könige (MA&amp;NZ)</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:displaySubject>Mittelalter</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://d-nb.info/gnd/4129108-6</lido:conceptID>
+                <lido:term>Mittelalter</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:displaySubject>Münzmeister/-beamte</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://vocab.getty.edu/aat/300205361</lido:conceptID>
+                <lido:term>Münzmeister/-beamte</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:displaySubject>Nordeuropa</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://d-nb.info/gnd/4075455-8</lido:conceptID>
+                <lido:term>Nordeuropa</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:displaySubject>Porträts</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://d-nb.info/gnd/4006627-7</lido:conceptID>
+                <lido:term>Porträts</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:displaySubject>Silber</lido:displaySubject>
+            <lido:subject>
+              <lido:subjectConcept>
+                <lido:conceptID lido:type="URI">http://d-nb.info/gnd/4133759-1</lido:conceptID>
+                <lido:term>Silber</lido:term>
+              </lido:subjectConcept>
+            </lido:subject>
+          </lido:subjectSet>
+          <lido:subjectSet>
+            <lido:subject>
+              <lido:subjectActor>
+                <lido:displayActor>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035) (Dargestellte Person)</lido:displayActor>
+                <lido:actor lido:type="personal">
+                  <lido:actorID lido:type="URI">https://d-nb.info/gnd/11856384X</lido:actorID>
+                  <lido:actorID lido:type="URI">https://en.wikipedia.org/wiki/Cnut_the_Great</lido:actorID>
+                  <lido:actorID lido:type="URI">https://viaf.org/viaf/268401625</lido:actorID>
+                  <lido:actorID lido:type="URI">https://www.britishmuseum.org/collection/term/BIOG105835</lido:actorID>
+                  <lido:actorID lido:type="URI">https://www.wikidata.org/wiki/Q134128</lido:actorID>
+                  <lido:actorID lido:type="URI">https://ikmk.smb.museum/ndp/person/476</lido:actorID>
+                  <lido:nameActorSet>
+                    <lido:appellationValue>Knut (1016-1035), König von England, seit 1019 König von Dänemark, seit 1028 König von Norwegen (um 995-12.11.1035)</lido:appellationValue>
+                  </lido:nameActorSet>
+                </lido:actor>
+              </lido:subjectActor>
+            </lido:subject>
+          </lido:subjectSet>
+        </lido:subjectWrap>
+        <lido:relatedWorksWrap>
+          <lido:relatedWorkSet>
+            <lido:relatedWork>
+              <lido:object>
+                <lido:objectNote>J. J. North, English Hammered Coinage I ³(1994) Nr. 781; B. Kluge, State Museum Berlin Coin Cabinet. Anglo-Saxon, Anglo-Norman, and Hiberno Norse Coins. Sylloge of Coins of the British Isles 36 (1987) Nr. 624 (dieses Stück); B. Kluge, Numismatik des Mittelalters (2007) Nr. 1143 (dieses Stück).</lido:objectNote>
+                <lido:objectNote lido:type="type">Literatur</lido:objectNote>
+              </lido:object>
+            </lido:relatedWork>
+            <lido:relatedWorkRelType>
+              <lido:term>Literatur zum Stück</lido:term>
+            </lido:relatedWorkRelType>
+          </lido:relatedWorkSet>
+          <lido:relatedWorkSet>
+            <lido:relatedWork>
+              <lido:object>
+                <lido:objectNote>NMA I [1143]</lido:objectNote>
+                <lido:objectNote lido:type="type">Literatur</lido:objectNote>
+              </lido:object>
+            </lido:relatedWork>
+            <lido:relatedWorkRelType>
+              <lido:term>Standardzitierwerk</lido:term>
+            </lido:relatedWorkRelType>
+          </lido:relatedWorkSet>
+        </lido:relatedWorksWrap>
+      </lido:objectRelationWrap>
+    </lido:descriptiveMetadata>
+    <lido:administrativeMetadata xml:lang="en">
+      <lido:rightsWorkWrap>
+        <lido:rightsWorkSet>
+          <lido:rightsHolder>
+            <lido:legalBodyName>
+              <lido:appellationValue>Berlin, Münzkabinett der Staatlichen Museen</lido:appellationValue>
+            </lido:legalBodyName>
+          </lido:rightsHolder>
+          <lido:rightsType>
+            <lido:conceptID lido:type="URI">https://creativecommons.org/licenses/by-sa/4.0/</lido:conceptID>
+            <lido:term>CC BY-SA 4.0</lido:term>
+          </lido:rightsType>
+        </lido:rightsWorkSet>
+      </lido:rightsWorkWrap>
+      <lido:recordWrap>
+        <lido:recordID lido:type="local">DE-MUS-814819/IKMK-18202952</lido:recordID>
+        <lido:recordType>
+          <lido:conceptID lido:type="URI">https://d-nb.info/gnd/4019715-3</lido:conceptID>
+          <lido:term xml:lang="en">item</lido:term>
+        </lido:recordType>
+        <lido:recordSource>
+          <lido:legalBodyName>
+            <lido:appellationValue>Münzkabinett, Staatliche Museen zu Berlin - Stiftung Preußischer Kulturbesitz</lido:appellationValue>
+          </lido:legalBodyName>
+          <lido:legalBodyWeblink>https://www.smb.museum/museen-und-einrichtungen/muenzkabinett/home.html</lido:legalBodyWeblink>
+        </lido:recordSource>
+        <lido:recordRights>
+          <lido:rightsType>
+            <lido:term xml:lang="de">Verwertungsrecht</lido:term>
+          </lido:rightsType>
+          <lido:rightsHolder>
+            <lido:legalBodyID lido:type="URI">http://ld.zdb-services.de/resource/organisations/DE-MUS-814819/18202952</lido:legalBodyID>
+            <lido:legalBodyName>
+              <lido:appellationValue>Münzkabinett, Staatliche Museen zu Berlin - Stiftung Preußischer Kulturbesitz</lido:appellationValue>
+            </lido:legalBodyName>
+            <lido:legalBodyWeblink>https://www.smb.museum/museen-und-einrichtungen/muenzkabinett/home.html</lido:legalBodyWeblink>
+          </lido:rightsHolder>
+        </lido:recordRights>
+        <lido:recordRights>
+          <lido:rightsType>
+            <lido:conceptID lido:type="URI">https://creativecommons.org/licenses/by-sa/4.0/</lido:conceptID>
+            <lido:term>CC BY-SA 4.0</lido:term>
+          </lido:rightsType>
+        </lido:recordRights>
+        <lido:recordInfoSet>
+          <lido:recordInfoLink>https://ikmk.smb.museum/object?id=18202952</lido:recordInfoLink>
+          <lido:recordMetadataDate lido:type="last_modified">2023-03-14T01:49:51</lido:recordMetadataDate>
+        </lido:recordInfoSet>
+      </lido:recordWrap>
+      <lido:resourceWrap>
+        <lido:resourceSet lido:sortorder="1">
+          <lido:resourceID lido:type="local">https://ikmk.smb.museum/image/18202952/vs_org.jpg</lido:resourceID>
+          <lido:resourceRepresentation lido:type="image_thumb">
+            <lido:linkResource lido:formatResource="image/jpeg">https://ikmk.smb.museum/image/18202952/vs_opt.jpg</lido:linkResource>
+          </lido:resourceRepresentation>
+          <lido:resourceRepresentation lido:type="image_preview">
+            <lido:linkResource lido:formatResource="image/jpeg">https://ikmk.smb.museum/image/18202952/vs_opt.jpg</lido:linkResource>
+          </lido:resourceRepresentation>
+          <lido:resourceRepresentation lido:type="image_master">
+            <lido:linkResource lido:formatResource="image/jpeg">https://ikmk.smb.museum/image/18202952/vs_org.jpg</lido:linkResource>
+          </lido:resourceRepresentation>
+          <lido:resourceType>
+            <lido:term xml:lang="en">digital image</lido:term>
+          </lido:resourceType>
+          <lido:resourcePerspective>
+            <lido:conceptID lido:type="URI">https://d-nb.info/gnd/7707654-0</lido:conceptID>
+            <lido:term xml:lang="en">front</lido:term>
+          </lido:resourcePerspective>
+          <lido:rightsResource>
+            <lido:rightsType>
+              <lido:term xml:lang="en">copyright</lido:term>
+            </lido:rightsType>
+            <lido:rightsHolder>
+              <lido:legalBodyName>
+                <lido:appellationValue>Lutz-Jürgen Lübke (Lübke und Wiedemann)</lido:appellationValue>
+              </lido:legalBodyName>
+            </lido:rightsHolder>
+          </lido:rightsResource>
+          <lido:rightsResource>
+            <lido:rightsType>
+              <lido:term xml:lang="en">publication right</lido:term>
+            </lido:rightsType>
+            <lido:rightsHolder>
+              <lido:legalBodyID lido:type="URI">http://ld.zdb-services.de/resource/organisations/DE-MUS-814819</lido:legalBodyID>
+              <lido:legalBodyName>
+                <lido:appellationValue>Münzkabinett, Staatliche Museen zu Berlin - Stiftung Preußischer Kulturbesitz</lido:appellationValue>
+              </lido:legalBodyName>
+              <lido:legalBodyWeblink>https://www.smb.museum/museen-und-einrichtungen/muenzkabinett/home.html</lido:legalBodyWeblink>
+            </lido:rightsHolder>
+          </lido:rightsResource>
+          <lido:rightsResource>
+            <lido:rightsType>
+              <lido:conceptID lido:type="URI">https://creativecommons.org/publicdomain/mark/1.0/</lido:conceptID>
+              <lido:term>PDM 1.0</lido:term>
+            </lido:rightsType>
+          </lido:rightsResource>
+        </lido:resourceSet>
+        <lido:resourceSet lido:sortorder="2">
+          <lido:resourceID lido:type="local">https://ikmk.smb.museum/image/18202952/rs_org.jpg</lido:resourceID>
+          <lido:resourceRepresentation lido:type="image_thumb">
+            <lido:linkResource lido:formatResource="image/jpeg">https://ikmk.smb.museum/image/18202952/rs_opt.jpg</lido:linkResource>
+          </lido:resourceRepresentation>
+          <lido:resourceRepresentation lido:type="image_preview">
+            <lido:linkResource lido:formatResource="image/jpeg">https://ikmk.smb.museum/image/18202952/rs_opt.jpg</lido:linkResource>
+          </lido:resourceRepresentation>
+          <lido:resourceRepresentation lido:type="image_master">
+            <lido:linkResource lido:formatResource="image/jpeg">https://ikmk.smb.museum/image/18202952/rs_org.jpg</lido:linkResource>
+          </lido:resourceRepresentation>
+          <lido:resourceType>
+            <lido:term xml:lang="en">digital image</lido:term>
+          </lido:resourceType>
+          <lido:resourcePerspective>
+            <lido:conceptID lido:type="URI">https://d-nb.info/gnd/4468345-5</lido:conceptID>
+            <lido:term xml:lang="en">back</lido:term>
+          </lido:resourcePerspective>
+          <lido:rightsResource>
+            <lido:rightsType>
+              <lido:term xml:lang="en">copyright</lido:term>
+            </lido:rightsType>
+            <lido:rightsHolder>
+              <lido:legalBodyName>
+                <lido:appellationValue>Lutz-Jürgen Lübke (Lübke und Wiedemann)</lido:appellationValue>
+              </lido:legalBodyName>
+            </lido:rightsHolder>
+          </lido:rightsResource>
+          <lido:rightsResource>
+            <lido:rightsType>
+              <lido:term xml:lang="en">publication right</lido:term>
+            </lido:rightsType>
+            <lido:rightsHolder>
+              <lido:legalBodyID lido:type="URI">http://ld.zdb-services.de/resource/organisations/DE-MUS-814819</lido:legalBodyID>
+              <lido:legalBodyName>
+                <lido:appellationValue>Münzkabinett, Staatliche Museen zu Berlin - Stiftung Preußischer Kulturbesitz</lido:appellationValue>
+              </lido:legalBodyName>
+              <lido:legalBodyWeblink>https://www.smb.museum/museen-und-einrichtungen/muenzkabinett/home.html</lido:legalBodyWeblink>
+            </lido:rightsHolder>
+          </lido:rightsResource>
+          <lido:rightsResource>
+            <lido:rightsType>
+              <lido:conceptID lido:type="URI">https://creativecommons.org/publicdomain/mark/1.0/</lido:conceptID>
+              <lido:term>PDM 1.0</lido:term>
+            </lido:rightsType>
+          </lido:rightsResource>
+        </lido:resourceSet>
+      </lido:resourceWrap>
+    </lido:administrativeMetadata>
+  </lido:lido>
+</lido:lidoWrap>
