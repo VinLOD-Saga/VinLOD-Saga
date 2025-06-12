@@ -1,0 +1,16 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema1: <http://schema.org/> .
+
+<https://handrit.is/manuscript/view/is/GKS02-1005/11#> a crm:E24_Physical_Human-Made_Thing ;
+    bf:language "is" ;
+    bf:originPlace "Reykjavík",
+        "Ísland" ;
+    bf:place "Handritasvið",
+        "Safn Árna Magnússonar" ;
+    dcterms:identifier "GKS 1005 fol." ;
+    dcterms:medium "Skinn" ;
+    dcterms:title "Flateyjarbók" ;
+    schema1:location "Stofnun Árna Magnússonar í íslenskum fræðum" .
+
