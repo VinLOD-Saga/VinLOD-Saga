@@ -1,0 +1,20 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://viaf.org/viaf/17598880> a crm:E21_Person ;
+    foaf:name "Reeves, Arthur Middleton," .
+
+<https://w3id.org/vinLOD-saga/item/Finding_of_Wineland> a crm:E24_Physical_Human_Made_Thing ;
+    bf:agent "1856-1891.",
+        "Reeves, Arthur Middleton," ;
+    bf:date "1890" ;
+    bf:dimensions "1 online resource (vi, 205 pages :",
+        "facs.)" ;
+    bf:electronicLocator "https://archive.org/details/findingofwinelan00reev" ;
+    bf:identifiedBy "https://openlibrary.org/books/OL24197049M" ;
+    bf:mainTitle "The finding of Wineland the Good :" ;
+    bf:place "Frowde,",
+        "London :" ;
+    bf:subtitle "the history of the Icelandic discovery of America, edited and translated from the earliest records." .
+
