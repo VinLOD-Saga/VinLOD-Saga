@@ -9,6 +9,8 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix jvmg: <http://mediagraph.link/jvmg/ont/> .
+@prefix schema: <http://schema.org/> .
 
 #Classes
 <class/Anime> a owl:Class;
@@ -52,31 +54,6 @@
     rdfs:comment "describes the magazine a manga is serialised in";
     rdfs:domain <class/Manga> .
 
-
-#DataProperties
-
-<property/hasDemographic> a owl:DatatypeProperty;
-    rdfs:label "has demographic";
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( <class/Anime> <class/Manga> )
-                ] ;
-    rdfs:range xsd:string .
-
-<property/hasStatus> a owl:DatatypeProperty;
-    rdfs:label "has status" ;
-    rdfs:comment "describes if an anime or manga is still ongoing or not" ;
-    rdfs:domain [ a owl:Class ;
-                  owl:unionOf ( <class/Anime> <class/Manga> )
-                ] ;
-    rdfs:range xsd:string .
-
-<property/premieredInSeason> a owl:DatatypeProperty;
-    rdfs:label "premiered in season";
-    rdfs:comment "describe the season in which an anime premiered" ;
-    rdfs:domain <class/Anime> ;
-    rdfs:range xsd:string .
-
-
 #Central work
 <work/Vinland_Saga> a frbroo:F1;
     frbroo:R3 <item/Vinland_Anime>; #R3-is realised in
@@ -95,27 +72,42 @@
 
 #Characters 
 <character/Leif_Erikson> a frbroo:F38; #Character
+    a jvmg:Character ;
+    jvmg:mainNameJapanese "レイフ・エリクソン" ;
+    jvmg:mainNamenTranslated "Leif Erikson" ;
     rdfs:label "Leif Erikson";
     frbroo:R57 <person/Leiv_Eiriksson>; #R57-is based on
     rdfs:seeAlso <https://anidb.net/character/103128> .
 
 <character/Canute> a frbroo:F38; #Character
+    a jvmg:Character ;
+    jvmg:mainNameJapanese "クヌート" ;
+    jvmg:mainNamenTranslated "Canute" ;
     rdfs:label "Canute";
     frbroo:R57 <person/Cnut_the_Great> ; #R57-is based on
     rdfs:seeAlso <https://anidb.net/character/102477> .
 
 <character/Sweyn> a frbroo:F38; #Character
+    a jvmg:Character ;
+    jvmg:mainNameJapanese "スヴェン王" ;
+    jvmg:mainNamenTranslated "Sweyn-ou" ;
     rdfs:label "Sweyn";
     frbroo:R57 <person/Sweyn_Forkbeard> ; #R57-is based on
     rdfs:seeAlso <https://anidb.net/character/103121> .
 
 <character/Thorkell> a frbroo:F38; #Character
+    a jvmg:Character ;
+    jvmg:mainNameJapanese "トルケル" ;
+    jvmg:mainNamenTranslated "Thorkel" ;
     rdfs:label "Thorkell";
     frbroo:R57 <person/Thorkell_the_Tall> ; #R57-is based on
     rdfs:seeAlso <https://anidb.net/character/102478> ;
     <property/hasBelief> <concept/Valhalla> .
 
 <character/organisation/Jomsvikings> a frbroo:F38; #Character
+    a jvmg:Character ;
+    jvmg:mainNameJapanese "ヨムスヴァイキング" ;
+    jvmg:mainNamenTranslated "Jomsvikings" ;
     rdfs:label "Jomsvikings";
     frbroo:R57 <group/Jomsvikings> ; #R57-is based on
     rdfs:seeAlso <https://anidb.net/character/108009> .
@@ -156,12 +148,14 @@
 #Legendary Groups
 
 <group/Jomsvikings> a crm:E74_Group;
+    schema:name "Jomsvikings" ;
     rdfs:label "Jomsvikings";
     owl:sameAs wd:Q41345;
     crm:P11i_participated_in <event/Hjorungavagr_Battle>;
     crm:P129i_is_subject_of <narrative/Jomsvikings_Saga> .
 
 <group/Valkyries> a crm:E74_Group;
+    schema:name "Valkyries" ;
     rdfs:label "Valkyries";
     owl:sameAs dbr:Valkyrie;
     crm:P67i_is_referred_to_by <narrative/Poetic_Edda>;
@@ -197,7 +191,8 @@
     crm:P16_used_specific_object <concept/Olney_Treaty> .
 
 <event/Cnut_Becomes_English_King> a crm:E5_Event;
-    rdfs:label "Cnut becomes king of England after the death of Edmund Ironside" .
+    rdfs:label "Cnut becomes king of England after the death of Edmund Ironside" ;
+    crm:P92_brought_into_existence <item/Cnut_Coin> .
 
 <event/Norse_Colonisation> a crm:E5_Event;
     rdfs:label "Norse Colonisation of America";
@@ -222,20 +217,24 @@
 #Stories 
 
 <narrative/Greenland_Saga> a frbroo:F1;
+    schema:name "Saga of the Greenlanders" ;
     rdfs:label "Saga of the Greenlanders";
     crm:P130i_features_are_also_found_on <item/Finding_of_Wineland>;
     crm:P130i_features_are_also_found_on <item/Flatjarbok_Manuscript> .
 
 <narrative/Erik_Saga> a frbroo:F1;
+    schema:name "Saga of Erik the Red" ;
     rdfs:label "Saga of Erik the Red";
     crm:P130i_features_are_also_found_on <item/Finding_of_Wineland>;
     crm:P130i_features_are_also_found_on <item/Flatjarbok_Manuscript> .
 
 <narrative/Jomsvikings_Saga> a frbroo:F1;
+    schema:name "Saga of the Jomsvikings" ;
     rdfs:label "Saga of the Jomsvikings";
     crm:P130i_features_are_also_found_on <item/Flatjarbok_Manuscript> .
 
 <narrative/Poetic_Edda> a frbroo:F1;
+    schema:name "The Poetic Edda" ;
     rdfs:label "The Poetic Edda";
     crm:P130i_features_are_also_found_on <item/Translated_Edda> .
 
@@ -243,49 +242,66 @@
 #Music Entities
 
 <musicEntity/Ride_of_Valkyrie> a frbroo:F1;
+    schema:name "Ride of the Valkyrie" ;
     rdfs:label "Ride of the Valkrie";
     frbroo:R3 <item/Valkrie_Performance> ; #R3-is realised in
     dcterms:creator <http://vocab.getty.edu/ulan/500223295> .
 
 
 <musicEntity/Mukanjyo> a schema:MusicRecording;
+    schema:name "Mukanjyo" ;
     rdfs:label "Mukanjyo" ;
     schema:byArtist <agent/Survive_Said_the_Prophet> .
 
 #Agents and organisations and publication
 
 <agent/Makoto_Yukimura> a crm:E21_Person;
+    a jvmg:Individual;
+    jvmg:preferredNameRomanji "Makoto Yukimura" ;
+    jvmg:role "Mangaka" ;
     rdfs:label "Makoto Yukimura";
     rdfs:comment "The mangaka of the Vinland Saga manga" ;
     rdfs:seeAlso <https://myanimelist.net/people/2034/Makoto_Yukimura> .
 
 <agent/Survive_Said_the_Prophet> a schema:MusicGroup;
+    schema:name "Survive Said the Prophet" ;
     rdfs:label "Survive Said the Prophet";
     rdfs:comment "Japanese rock band" ;
     rdfs:seeAlso <https://myanimelist.net/people/48121/Survive_Said_The_Prophet> .
 
 <publication/Afternoon_Magazine> a schema:Periodical;
+    a jvmg:Company ;
+    jvmg:currentName "月刊アフタヌーン" ;
+    jvmg:alternativeName "Monthly Afternoon" ;
     rdfs:label "Afternoon Magazine" ;
     rdfs:comment "The magazine in which the Vinland Saga manga is orginally serialised and published in" ;
     rdfs:seeAlso <https://anidb.net/creator/31447> .
 
 <organisation/Wit_Studio> a schema:Organization;
-    rdfs:label "Studio Wit" ;
+    a jvmg:Company ;
+    jvmg:currentName "ウィットスタジオ" ;
+    jvmg:alternativeName "Wit Studio" ;
+    rdfs:label "Wit Studio" ;
     rdfs:comment "An Japanese animation studio" ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/858/Wit_Studio> .
 
 <organisation/MAPPA_Studio> a schema:Organization;
-    rdfs:label "Studio MAPPA" ;
+    a jvmg:Company ;
+    jvmg:currentName "MAPPA" ;
+    rdfs:label "MAPPA Studio" ;
     rdfs:comment "An Japanese animation studio" ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/569/MAPPA> .
 
 <organisation/Crunchroll> a schema:Organization;
+    a jvmg:Company ;
+    jvmg:currentName "Cruncyroll" ;
     rdfs:label "Crunchyroll" ;
     rdfs:comment "Anime licencing and production company" ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/1468/Crunchyroll> .
 
 <museum/Norway_Museum> a schema:Museum ;
-    rdfs:label "Nasjonalmuseet - National Museum of Norway" ;
+    schema:name "Nasjonalmuseet" ;
+    rdfs:label "National Museum of Norway" ;
     rdfs:comment "The National Museum of Art, Architecture and Design in Oslo, Norway";
     geo:lat "59.91164"^^xsd:decimal ;
     geo:long "10.72925"^^xsd:decimal ;

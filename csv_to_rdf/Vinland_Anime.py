@@ -17,7 +17,7 @@ def resolve_prefixed_uri(prefix_uri):
     else:
         raise ValueError(f"Unknown prefix: {prefix}")
 
-anime_df = pd.read_csv("csv_files/Anime.csv")
+anime_df = pd.read_csv("csv_to_rdf/csv_files/Anime.csv")
 graph = rdf.Graph()
 
 subj = rdf.URIRef("https://w3id.org/vinLOD-saga/item/Vinland_Saga_Anime")

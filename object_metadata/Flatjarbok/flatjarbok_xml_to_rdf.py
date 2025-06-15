@@ -92,7 +92,7 @@ def xml_to_rdf(file):
 
     # === 4. Serializing in Turtle ===
     try:
-        g.serialize(destination="flatjarbok_manuscript.ttl", format="turtle")
+        g.serialize(destination="turtle_files/flatjarbok_manuscript.ttl", format="turtle")
         print("RDF graph successfully serialized to flatjarbok_manuscript.ttl")
     except Exception as e:
         print(f"Error during serialization: {e}")
@@ -105,5 +105,5 @@ def xml_to_rdf(file):
         count+=1
     print("------------------------")
 
-file = "TOMASI\XML_TEI\GKS02-1005-is.xml"
+file = "Flatjarbok/GKS02-1005-is.xml"
 xml_to_rdf(file)

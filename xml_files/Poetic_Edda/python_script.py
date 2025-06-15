@@ -4,8 +4,8 @@ from lxml import etree
 # Directory corrente (o metti il path che vuoi)
 base_dir = os.path.abspath(".")
 
-xml_file = os.path.join(base_dir, "C:\\Users\\ilari\\Desktop\\PYTHON\\TOMASI\\XML_TEI\\The_Poetic_Edda.xml")
-xslt_file = os.path.join(base_dir, "C:\\Users\\ilari\\Desktop\\PYTHON\\TOMASI\\XML_TEI\\The_Poetic_Edda.xsl")
+xml_file = os.path.join(base_dir, "xml_files/Poetic_Edda/The_Poetic_edda.xml")
+xslt_file = os.path.join(base_dir, "xml_files/Poetic_Edda/The_Poetic_edda.xsl")
 output_file = os.path.join(base_dir, "output.html")
 
 # Carica l'XML
