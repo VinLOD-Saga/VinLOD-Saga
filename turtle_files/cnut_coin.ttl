@@ -1,0 +1,23 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix nmo: <http://nomisma.org/ontology#> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/vinLOD-saga/item/Cnut_Coin> a crm:E24_Physical_Human-Made_Thing ;
+    nmo:hasAuthority <https://w3id.org/vinLOD-saga/person/Cnut_the_Great> ;
+    nmo:hasCollection <http://ld.zdb-services.de/resource/organisations/DE-MUS-814819/18202952> ;
+    nmo:hasDate "Medieval Period" ;
+    nmo:hasDenomination <http://nomisma.org/id/penny_en> ;
+    nmo:hasFindspot <http://www.geonames.org/798544> ;
+    nmo:hasManufacture "struck" ;
+    nmo:hasMaterial <http://nomisma.org/id/ar> ;
+    nmo:hasMeasurement "Medieval Period" ;
+    nmo:hasMintmark "Lincoln" ;
+    nmo:hasObjectType <http://nomisma.org/id/coin> ;
+    nmo:hasObverse "+ CNVT REX ANGLORV. Cnut Rex Anglorum" ;
+    nmo:hasPortrait <https://w3id.org/vinLOD-saga/person/Cnut_the_Great> ;
+    nmo:hasProductionDate "1017-1023" ;
+    nmo:hasReverse "+ PV-LFG-ET M-O LIN. Münzmeister Wulfgeat. Münzstätte Lin- = Lincoln" ;
+    dcterms:identifier <https://ikmk.smb.museum/object?id=18202952> ;
+    schema1:locationCreated <http://www.geonames.org/2644487> .
+
