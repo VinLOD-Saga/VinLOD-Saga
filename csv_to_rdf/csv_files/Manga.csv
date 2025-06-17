@@ -1,12 +1,19 @@
 Subject,Predicate,Object
 Vinland_Saga_Manga,rdf:type,vinLOD:Manga
 Vinland_Saga_Manga,rdf:type,frbroo:F22
+Vinland_Saga_Manga,rdf:type,jvmg:Manga
+Vinland_Saga_Manga,rdf:type,aclick:Manga
+Vinland_Saga_Manga,aclick:statusInHomeCountry,"Ongoing"
 Vinland_Saga_Manga,vinLOD:hasMangaka,vinLOD:Makoto_Yukimura
-Vinland_Saga_Manga,bf:intendedAudience,"Seinen"
 Vinland_Saga_Manga,vinLOD:serialisedIn,vinLOD:Afternoon_Magazine
-Vinland_Saga_Manga,dcterms:created,"Apr. 13, 2005"
-Vinland_Saga_Manga,schema:genre,"Historical"
-Vinland_Saga_Manga,vinLOD:hasStatus,"Ongoing"
+Vinland_Saga_Manga,jvmg:startYear,"2005"
+Vinland_Saga_Manga,jvmg:genre,"Historical"
+Vinland_Saga_Manga,aclick:category,aclick:Seinen
+Vinland_Saga_Manga,jvmg:titleOriginal,"ヴィンランド・サガ"
+Vinland_Saga_Manga,jvmg:titleTranslated,"Vinland Saga"
 Vinland_Saga_Manga,vinLOD:hasAdaptation,Vinland_Saga_Anime
+
+
+
 
 
