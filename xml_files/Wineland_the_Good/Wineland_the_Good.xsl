@@ -20,61 +20,31 @@
         </div>
         
         <!-- Main Text -->
-        <div class="container m-3 p-3" id="body">
-          <section n="1">
-            <p>Lorem ipsum dolor sit amet <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" data-target-id="3">consectetur</a> adipisicing elit. Ut asperiores voluptas repellat nostrum maxime et blanditiis doloribus sint, debitis obcaecati alias? Cumque laboriosam voluptatum corporis quis ea adipisci modi quia explicabo praesentium doloribus excepturi culpa officia aperiam soluta enim deserunt consectetur sed itaque, voluptates eos sequi commodi sapiente magni! Optio!</p>
-          </section>
-          <section n="2">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, laudantium nostrum maiores soluta suscipit exercitationem maxime odit, ex voluptates velit animi laboriosam, non optio. Ducimus iusto debitis, quod, atque tenetur quisquam facere numquam sit repellendus libero laborum corporis vel in cupiditate magnam quaerat temporibus. Explicabo rerum pariatur saepe cumque laboriosam?</p>
-          </section>
-          <section n="3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel dolores quaerat dicta sunt asperiores. Deserunt qui temporibus est numquam voluptatem omnis suscipit neque labore voluptas error culpa quibusdam, minus animi quas incidunt illum quasi excepturi possimus harum, porro, ullam deleniti hic. Aut, iure <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" data-target-id="4">aliquid</a> nobis architecto quidem ipsam voluptatum quia?</p>
-          </section>
-          <section n="4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates tenetur fugiat consequuntur dolores nulla cum dicta consectetur, in repellendus recusandae odit sapiente molestiae <a href="#" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here’s some amazing content. It’s very engaging. Right?">doloribus</a> quas, quam eos qui maiores, aliquid obcaecati? Rerum voluptas dicta delectus. Iste ad assumenda incidunt delectus quo, asperiores, quibusdam vero quos voluptas sit, odit exercitationem.</p>
-          </section>
-          <section n="5">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi odit, beatae labore repellat optio hic qui neque quidem cumque repellendus eos non nulla dolorum quam deleniti natus cupiditate. Doloribus nam ipsum magnam iure autem a dolorum exercitationem esse at modi ad, veniam vero illo dicta quos veritatis eligendi! Rem, itaque.</p>
-          </section>
-          <section n="6">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quibusdam veritatis deserunt explicabo! Molestiae explicabo modi autem, ex quisquam ducimus, temporibus ratione aliquam corporis eveniet nesciunt, quas sapiente. Magnam amet sed id neque perferendis, sunt blanditiis ullam molestias, error aut fugiat debitis, quasi nesciunt culpa quam. Dicta natus quis quasi.</p>
-          </section>
-          <section n="7">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate eveniet dignissimos adipisci, dolorem fugiat vero provident. Alias mollitia eligendi assumenda asperiores, ex sequi aspernatur architecto eos cumque eaque ipsum dolor nam, ullam, dolorum ea molestiae animi libero repellendus? Totam explicabo reprehenderit atque sit possimus nostrum veniam delectus quis quod quibusdam.</p>
-          </section>
-          <section n="8">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, dolorum perferendis iste, optio nesciunt a distinctio odio asperiores rem vel expedita, beatae enim similique? Quod, unde? Est non vero <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" data-target-id="5">magni</a> esse quo aperiam porro nihil, placeat possimus error facere aspernatur reprehenderit quae perspiciatis quasi ducimus amet rerum exercitationem! In, ad?</p>
-          </section>
-        </div>
-        
-        <!-- Off Canvas Text -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <xsl:apply-templates select="tei:text//tei:body/tei:div[@type='translation']"/>
+
+        <!-- Off Canvas Notes -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNotes" aria-labelledby="offcanvasNotesLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">End Notes</h5>
+            <h5 class="offcanvas-title mx-auto text-uppercase" id="offcanvasNotesLabel"><xsl:value-of select="tei:text//tei:back//tei:head"/></h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <section id="3" style="margin-bottom: 300px;">
-              <h6>Note 3</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum, porro iusto facilis laboriosam temporibus libero vero deleniti doloremque molestias, quia similique quod deserunt ab, aperiam consequatur reiciendis velit provident ratione amet excepturi commodi praesentium. Odit suscipit repellat fuga. Laudantium, perferendis eaque assumenda modi doloribus officia alias enim quos accusamus.</p>
-            </section>
-            <section id="4" style="margin-bottom: 300px;">
-              <h6>Note 4</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum, porro iusto facilis laboriosam temporibus libero vero deleniti doloremque molestias, quia similique quod deserunt ab, aperiam consequatur reiciendis velit provident ratione amet excepturi commodi praesentium. Odit suscipit repellat fuga. Laudantium, perferendis eaque assumenda modi doloribus officia alias enim quos accusamus.</p>
-            </section>
-            <section id="5" style="margin-bottom: 300px;">
-              <h6>Note 5</h6>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum, porro iusto facilis laboriosam temporibus libero vero deleniti doloremque molestias, quia similique quod deserunt ab, aperiam consequatur reiciendis velit provident ratione amet excepturi commodi praesentium. Odit suscipit repellat fuga. Laudantium, perferendis eaque assumenda modi doloribus officia alias enim quos accusamus.</p>
-            </section>
+            <xsl:apply-templates select="tei:text//tei:back//tei:noteGrp"/>
           </div>
         </div>
-
+        
         <!-- bootstrap script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!-- popover script -->
         <script>
-          const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-          const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+          const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+          const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl, {
+            container: 'body',
+            trigger: 'hover focus',  // or your preferred triggers
+            delay: { "show": 0, "hide": 200 } // optional delay to smooth appearance
+            });
+          });
         </script>
         <!-- Scrolling in offcanvas script -->
         <script>
@@ -82,7 +52,7 @@
           document.querySelectorAll('[data-bs-toggle="offcanvas"]').forEach(link => {
             link.addEventListener('click', function () {
               const targetId = this.getAttribute('data-target-id');
-              const offcanvas = document.getElementById('offcanvasExample');
+              const offcanvas = document.getElementById('offcanvasNotes');
               const bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(offcanvas);
           
               offcanvas.addEventListener('shown.bs.offcanvas', function handler() {
@@ -105,9 +75,126 @@
         </script>
       </body>
     </html>
-  </xsl:template>
     
+  </xsl:template>
+  <!-- Template for main text -->
+  <xsl:template match="tei:div[@type='translation']">
+    <div class="container m-3 p-3" id="body"><xsl:apply-templates/></div>
+  </xsl:template>
+  
+  <!-- Template for title -->
+  <xsl:template match="tei:head[@rend='align(center) case(allcaps)']">
+    <h4 class="text-uppercase text-center"><xsl:value-of select="."/></h4>
+  </xsl:template>
+  
+  <!-- Template for paragraph -->
+  <xsl:template match="tei:p">
+    <p><xsl:apply-templates/></p>
+  </xsl:template>
+  
+  <!-- Template for story sections -->
+  <xsl:template match="tei:seg">
+    <section><xsl:apply-templates/></section>
+  </xsl:template>
 
+  <!-- Identity template to copy text and elements by default -->
+  
+  <xsl:template match="@*|node()">
+    <!-- @*|node() - select all attributes and all child nodes of the current node  -->
+    <xsl:copy>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:copy>
+  </xsl:template>
+
+  <!-- Template for people mentioned -->
+
+  <!-- Create a key for quick person lookup by xml:id -->
+  <xsl:key name="personID" match="tei:person" use="@xml:id" />
+  <!-- Template to handle persName with ref attribute -->
+  <xsl:template match="tei:persName[@ref]">
+    <!-- seperate the # from the reference id and save it in a variable  -->
+    <xsl:variable name="persId" select="substring-after(@ref, '#')" />
+    <!-- call the key with name personID which will match a person element with the $id variable -->
+    <!-- save the found node in another variable -->
+    <xsl:variable name="person" select="key('personID', $persId)" />
+    <xsl:choose>
+      <xsl:when test="$person and $person/@sameAs">
+        <!-- Output persName text as a link to sameAs URI -->
+        <a href="{$person/@sameAs}" target="_blank">
+          <xsl:apply-templates select="node()"/>
+        </a>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- Create a popover with information about the person -->
+        <xsl:variable name="persName" select="$person/tei:persName"/>
+        <xsl:variable name="persNote" select="$person/tei:note"/>
+        <a href="#" data-bs-toggle="popover" data-bs-title="{string($persName)}" data-bs-content="{string($persNote)}"><xsl:apply-templates select="node()"/></a>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
+  <!-- Template for places mentioned -->
+
+  <!-- Create a key for quick place lookup by xml:id -->
+  <xsl:key name="placeID" match="tei:place" use="@xml:id" />
+  <xsl:template match="tei:placeName[@ref]">
+    <!-- seperate the # from the reference id and save it in a variable  -->
+    <xsl:variable name="plId" select="substring-after(@ref, '#')" />
+    <!-- call the key with name placeID which will match a place element with the $plId variable -->
+    <!-- save the found node in another variable -->
+    <xsl:variable name="place" select="key('placeID', $plId)" />
+    <xsl:choose>
+      <xsl:when test="$place/@sameAs">
+        <!-- Output placeName text as a link to sameAs URI -->
+        <a href="{ $place/@sameAs }" target="_blank">
+          <xsl:apply-templates select="node()"/>
+        </a>
+      </xsl:when>
+      <xsl:otherwise>
+        <!-- Create a popover with information about the place -->
+        <xsl:variable name="placeName" select="$place/tei:placeName"/>
+        <xsl:variable name="placeNote" select="$place/tei:note"/>
+        <a href="#" data-bs-toggle="popover" data-bs-title="{string($placeName)}" data-bs-content="{string($placeNote)}"><xsl:apply-templates select="node()"/></a>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>
+  
+  <!-- Template for footnotes -->
+  <xsl:template match="tei:note[@place='bottom']">
+    <xsl:variable name="noteText" select="normalize-space(.)"/>
+    <a href="#" data-bs-toggle="popover" data-bs-title="Note" data-bs-content="{string($noteText)}">
+      <xsl:text>*</xsl:text>
+    </a>
+  </xsl:template>
+  
+  <!-- Template for variant readings -->
+
+  <!-- Key to apparatus -->
+  <xsl:key name="appKey" match="tei:app" use="@loc" />
+  <!-- Key to witnesses -->
+  <xsl:key name="witKey" match="tei:witness" use="@xml:id" />
+  
+  <xsl:template match="tei:span[@n]">
+    <xsl:variable name="app" select="key('appKey',@n)"/>
+    <xsl:variable name="reading" select="$app/tei:rdg"/>
+    <xsl:variable name="witID" select="substring-after($reading/@wit, '#')"/>
+    <xsl:variable name="witness" select="key('witKey', $witID)"/>
+    <a href="#" data-bs-toggle="popover" data-bs-title="{string($witness)}" data-bs-content="{string($reading)}"><xsl:apply-templates select="node()" /></a>
+  </xsl:template>
+  
+  <!-- Template for endnotes (back) -->  
+  <xsl:template match="tei:note[@xml:id]">
+    <section id="{@xml:id}">
+      <h6><xsl:value-of select="@xml:id"/></h6>
+      <xsl:apply-templates select="node()" />
+    </section>
+  </xsl:template>
+  
+  <!-- Template for endnotes (main text) -->
+  <xsl:template match="tei:note[@place='end']">
+    <xsl:variable name="endnoteID" select="substring-after(@target, '#')"/>
+    <a data-bs-toggle="offcanvas" href="#offcanvasNotes" role="button" aria-controls="offcanvasNotes" data-target-id="{string($endnoteID)}"><xsl:value-of select="."/></a>
+  </xsl:template>
 </xsl:stylesheet>
   
 

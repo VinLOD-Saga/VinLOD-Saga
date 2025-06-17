@@ -111,6 +111,7 @@
                     </person>
                     <person xml:id="TH">
                         <persName>Thorhild(Thoihild)</persName>
+                        <note>The wife of Erik the Red and mother of Leif Eirikson</note>
                     </person>
                     <person xml:id="LE" sameAs="https://dbpedia.org/resource/Leif_Erikson"> 
                         <persName>Leif Eiriksson</persName>
@@ -123,9 +124,11 @@
                     </person>
                     <person xml:id="TG">
                         <persName>Thorgunna</persName>
+                        <note>The wife of Leif Eirikson</note>
                     </person>
                     <person xml:id="TB">
                         <persName>Thorbjorn</persName>
+                        <note>The father of Gudrid</note>
                     </person>
                     <person xml:id="GT" sameAs="https://dbpedia.org/resource/Gudrid_Thorbjarnard%C3%B3ttir">
                         <persName>Gudrid Thorbjarnardóttir</persName>
@@ -135,6 +138,7 @@
                     </person>
                     <person xml:id="TD">
                         <persName>Thurid</persName>
+                        <note>The lady of the Fróda farm</note>
                     </person>
                 </listPerson>
             </particDesc>
@@ -157,6 +161,7 @@
                     </place>
                     <place xml:id="EF">
                         <placeName>Ericsfirth</placeName>
+                        <note>Leif Eirikson's home in Greenland</note>
                     </place>
                     <place xml:id="SF" sameAs="https://sws.geonames.org/3413200/">
                         <placeName>Snæfellsnes</placeName>
@@ -202,7 +207,7 @@
                 <head rend="align(center) case(allcaps)">Concerning Leif the Lucky and the Introduction of Christianity into Greenland.</head>
                 <p>
                     <!-- page 35 (47/280) -->
-                    <seg xml:id="intro"><persName ref="#ER">Eric</persName> was married to a woman named <span n="1"><persName ref="#TH">Thorhild</persName></span> and had two sons; one of these was named <persName ref="#TE">Thorstein</persName>, and the other <persName ref="#LE">Leif</persName>. They were both promising men. Thorstein lived at home with his father, and there was not at that time a man in <placeName ref="#GL">Greenland</placeName> who was accounted of so great promise as he. Leif had sailed <note place="end" target="#n-32">(32)</note> to <placeName ref="#NO">Norway</placeName>, where he was at the court of King <persName ref="#OT">Olaf Tryggvason</persName>.</seg>
+                    <seg xml:id="intro"><persName ref="#ER">Eric</persName> was married to a woman named <span n="1">Thorhild</span> and had two sons; one of these was named <persName ref="#TE">Thorstein</persName>, and the other <persName ref="#LE">Leif</persName>. They were both promising men. Thorstein lived at home with his father, and there was not at that time a man in <placeName ref="#GL">Greenland</placeName> who was accounted of so great promise as he. Leif had sailed <note place="end" target="#n-32">(32)</note> to <placeName ref="#NO">Norway</placeName>, where he was at the court of King <persName ref="#OT">Olaf Tryggvason</persName>.</seg>
                     
                     <seg xml:id="thorgunna">When <persName ref="#LE">Leif</persName> sailed from <placeName ref="#GL">Greenland</placeName>, in the summer, they were driven out of their course to the <placeName ref="#HB">Hebrides</placeName>. It was late before they got fair winds thence, and they remained there far into the summer. Leif became enamoured of a certain woman, whose name was <persName ref="#TG">Thorgunna</persName>. She was a woman of fine family, and Leif observed that she <span n="2">was possessed of rare intelligence</span> <note place="end" target="#n-33">(33)</note>. When Leif was preparing for his departure Thorgunna <note place="end" target="#n-34">(34)</note> asked to be permitted to accompany him. Leif enquired <said aloud="false" who="#LE">whether she had in this the approval of her kinsmen</said>. She replied that <said aloud="false" who="#TG">she did not care for it</said>. Leif responded that <said aloud="false" who="#LE">he did not deem it the part of wisdom to abduct so high-born a woman in a strange country</said>, '<said aloud="true" who="#LE">and we so few in number</said>.' '<said aloud="true" who="#TG">It is by no means certain that thou
                     
@@ -223,43 +228,43 @@
                     
                     <seg xml:id="fall">On that morning when <persName ref="#ER">Eric</persName> set out from his home he took with him a little chest containing gold and silver; he hid this treasure, and then went his way. He had proceeded but a short distance, however, when he fell from his horse and broke his ribs and <span n="7">dislocated his shoulder</span>, <span n="8">whereat he cried 'Ai, ai!'</span> By reason of this accident <span n="9">he sent his wife word</span> that she should procure the treasure which he had concealed, for to the hiding of the treasure he attributed his misfortune <note place="end" target="#n-38">(38)</note>.</seg> 
                     
-                    <seg xml:id="failure">Thereafter they sailed cheerily out of <placeName ref="#EF">Ericsfirth</placeName> in high spirits over their plan. They were long tossed about upon the ocean, and could not lay the course they wished. They came in sight of <placeName ref="#IL">Iceland</placeName>, and likewise saw birds from the Irish coast <note n="10" place="bottom">Lit. 'had birds from Ireland;' that is, came near enough to the coast of Ireland to see land birds.</note>. Their ship was, in sooth, driven hither and thither over the sea. In the autumn they turned back, worn out by toil, and exposure to the elements, and exhausted by their labours, and arrived at Ericsfirth at the very beginning of winter.  Then said <persName ref="#ER">Eric</persName>, '<said aloud="true" who="#ER">More cheerful were <span n="11">we</span> in the summer, when we put out of the firth, but we still live<note n="12" place="bottom">Lit. 'but now we are'</note>, and it might have been much worse<note n="13" place="bottom">Lit. 'and there is still much good left;' that is, we have still much to be grateful for</note></said>.' <persName ref="#TE">Thorstein</persName> answers, '<said aloud="true" who="#ER">It will be a princely deed to endeavour to look well after the wants of all these men who are now in need, and to make provision for them during the winter.</said>' Eric answers, '<said aloud="true" who="#ER"><span n="14">It is ever true, as it is said, that "it is never clear ere the answer comes," and so it 
+                    <seg xml:id="failure">Thereafter they sailed cheerily out of <placeName ref="#EF">Ericsfirth</placeName> in high spirits over their plan. They were long tossed about upon the ocean, and could not lay the course they wished. They came in sight of <placeName ref="#IL">Iceland</placeName>, and likewise saw birds from the Irish coast <note n="10" place="bottom">Lit.'had birds from Ireland;' that is, came near enough to the coast of Ireland to see land birds.</note>. Their ship was, in sooth, driven hither and thither over the sea. In the autumn they turned back, worn out by toil, and exposure to the elements, and exhausted by their labours, and arrived at Ericsfirth at the very beginning of winter.  Then said <persName ref="#ER">Eric</persName>, '<said aloud="true" who="#ER">More cheerful were <span n="11">we</span> in the summer, when we put out of the firth, but we still live<note n="12" place="bottom">Lit. 'but now we are'</note>, and it might have been much worse<note n="13" place="bottom">Lit. 'and there is still much good left;' that is, we have still much to be grateful for</note></said>.' <persName ref="#TE">Thorstein</persName> answers, '<said aloud="true" who="#ER">It will be a princely deed to endeavour to look well after the wants of all these men who are now in need, and to make provision for them during the winter.</said>' Eric answers, '<said aloud="true" who="#ER"><span n="14">It is ever true, as it is said, that "it is never clear ere the answer comes," and so it 
                             
                     <!-- Page 38 (50/280) -->      
                     must be here. We will act now upon thy counsel in this matter</span></said>.'All of the men, who were not otherwise provided for, accompanied the father and son. They landed thereupon, and went home to Brattahlid, where they remained throughout the winter.</seg>
                 </p>
                 <listApp>
-                    <app loc="#intro 1">
+                    <app loc="1">
                         <rdg wit="#EsR">Thiodhild</rdg>
                     </app>
-                    <app loc="#thorgunna 2">
+                    <app loc="2">
                         <rdg wit="#EsR">lit. 'knew more than a little'</rdg>
                     </app>
-                    <app loc="#vinland 3">
+                    <app loc="3">
                         <rdg wit="#EsR">'as in many other ways, for he brought Christianity to the country'</rdg>
                     </app>
-                    <app loc="#vinland 4">
+                    <app loc="4">
                         <rdg wit="#EsR">hinn heppni</rdg>
                     </app>
-                    <app loc="#preparation 5">
+                    <app loc="5">
                         <rdg wit="#EsR">'From this there began to be much talk, that he should explore'</rdg>
                     </app>
-                    <app loc="#preparation 6">
+                    <app loc="6">
                         <rdg wit="#EsR">'mostly weapons and provisions'</rdg>
                     </app>
-                    <app loc="#fall 7">
+                    <app loc="7">
                         <rdg wit="#THsK">'injured his arm at the shoulder-joint'</rdg>
                     </app>
-                    <app loc="#fall 8">
-                        <rdg wit="#THsK" type="ommison"/>
+                    <app loc="8">
+                        <rdg wit="#THsK" type="ommison">Ommited</rdg>
                     </app>
-                    <app loc="#fall 9">
+                    <app loc="9">
                         <rdg wit="#THsK">lit. 'he told his wife'</rdg>
                     </app>
-                    <app loc="#failure 11">
+                    <app loc="11">
                         <rdg wit="#EsR">has 'ye' instead of 'we' throughout</rdg>
                     </app>
-                    <app loc="#failure 14">
+                    <app loc="14">
                         <rdg wit="#EsR">'Eric answers, " These words shall control here." All of those, who had not been provided for before, [obtained] accommodation with Eric and his son'</rdg>
                         <note>The passage, apparently by reason of a clerical confusion, is not clear without emendation</note>
                     </app>
