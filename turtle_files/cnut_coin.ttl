@@ -11,7 +11,7 @@
     nmo:hasFindspot <http://www.geonames.org/798544> ;
     nmo:hasManufacture "struck" ;
     nmo:hasMaterial <http://nomisma.org/id/ar> ;
-    nmo:hasMeasurement "Medieval Period" ;
+    nmo:hasMeasurement "Durchmesser: 19 mm, Gewicht: 1.11 g" ;
     nmo:hasMintmark "Lincoln" ;
     nmo:hasObjectType <http://nomisma.org/id/coin> ;
     nmo:hasObverse "+ CNVT REX ANGLORV. Cnut Rex Anglorum" ;

@@ -101,7 +101,7 @@ def xml_to_rdf(file):
     if workID:
         g.add((coin_uri, DCTERMS.identifier, URIRef(workID)))
     if measurement:
-        g.add((coin_uri, NMO.hasMeasurement, Literal(creationPeriod)))
+        g.add((coin_uri, NMO.hasMeasurement, Literal(measurement)))
 
     if creationDate:
         g.add((coin_uri, NMO.hasProductionDate, Literal(creationDate)))
