@@ -1,7 +1,0 @@
-Subject,Predicate,Object
-Flatjarbok_Manuscript,rdf:type,E24_Physical_Human-Made_Thing
-Flatjarbok_Manuscript,bf:carrier,"Manuscript"
-Flatjarbok_Manuscript,ead:unitId,"GKS 1005 fol."
-Flatjarbok_Manuscript,ead:physloc,"Handritasviđ, Safn Konuglega Bókasafnsins í Kaupmannahöfn"
-Flatjarbok_Manuscript,ead:agencyname,"The Árni Magnússon Institute for Icelandic Studies"
-Flatjarbok_Manuscript,dcterms:spatial,"Reykjavík, Iceland"
