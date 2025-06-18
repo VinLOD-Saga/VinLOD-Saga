@@ -1,7 +1,7 @@
 Subject,Predicate,Object
 Hailstorm_Illustration,rdf:type,E24_Physical_Human-Made_Thing
-Hailstorm_Illustration,cco:CreatorDisplay,https://lccn.loc.gov/n80038019
-Hailstorm_Illustration,cco:WorkType,"Illustration"
+Hailstorm_Illustration,dcterms:creator,https://lccn.loc.gov/n80038019
+Hailstorm_Illustration,dcterms:type,"http://vocab.getty.edu/page/aat/300015578"
 Hailstorm_Illustration,dcterm:source,https://lccn.loc.gov/nr97033451
 Hailstorm_Illustration,schema:description,"Found in: HEIMSKRINGLA by SNORRE STURLAŚON published by, J.M. STENERSEN & CO, 1899."
-Hailstorm_Illustration,cco:CreationDate,"1899"
+Hailstorm_Illustration,dcterms:created,"1899"
