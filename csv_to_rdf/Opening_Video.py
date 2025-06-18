@@ -19,6 +19,10 @@ def resolve_prefixed_uri(prefix_uri):
 anime_df = pd.read_csv("csv_to_rdf/csv_files/Opening_Video.csv")
 graph = rdf.Graph()
 
+# Bind all the namespaces with their prefixes
+for prefix, ns in namespace_dict.items():
+    graph.bind(prefix, ns)
+
 subj = rdf.URIRef("https://w3id.org/vinLOD-saga/musicEntity/Mukanjyo")
 for _,row in anime_df.iterrows():
     predicate = resolve_prefixed_uri(row["Predicate"])
