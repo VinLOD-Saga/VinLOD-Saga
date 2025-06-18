@@ -1,0 +1,10 @@
+@prefix schema: <https://schema.org/> .
+
+<https://w3id.org/vinLOD-saga/item/Vinland_Saga_Anime> a schema:VideoObject ;
+    schema:audio <https://w3id.org/vinLOD-saga/Mukanjyo> ;
+    schema:contentUrl <https://www.youtube.com/watch?v=l5wAdQ-UkWY> ;
+    schema:musicBy <https://w3id.org/vinLOD-saga/Survive_Said_the_Prophet> ;
+    schema:name "Vinland Saga Opening1 | Mukanjyo By Survive Said The Prophet" ;
+    schema:productionCompany <https://w3id.org/vinLOD-saga/Crunchyroll> ;
+    schema:uploadDate "2024-07-01" .
+
