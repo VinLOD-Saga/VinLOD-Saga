@@ -27,7 +27,7 @@ def xml_to_rdf(file):
 
     # Publication Data (datafield tag="260")
     pub_datafield = root.find(".//marc:datafield[@tag='260']", namespaces=marc_ns)
-    place_of_publication = get_text_or_none(pub_datafield.find("marc:subfield[@code='a']", namespaces=marc_ns)) if pub_datafield is not None else None
+    publication = get_text_or_none(pub_datafield.find("marc:subfield[@code='a']", namespaces=marc_ns)) if pub_datafield is not None else None
     publisher = get_text_or_none(pub_datafield.find("marc:subfield[@code='b']", namespaces=marc_ns)) if pub_datafield is not None else None
     pub_date = get_text_or_none(pub_datafield.find("marc:subfield[@code='c']", namespaces=marc_ns)) if pub_datafield is not None else None
 
@@ -85,7 +85,8 @@ def xml_to_rdf(file):
     g.add((doc_uri, RDF.type, E24)) # type
     g.add((author_uri, RDF.type, E21))
     g.add((author_uri, FOAF.name,Literal(name)))
-
+    g.add((doc_uri, agent, author_uri))
+    
     if name:
         g.add((doc_uri, agent, Literal(name)))
     if name_year:
@@ -94,8 +95,8 @@ def xml_to_rdf(file):
         g.add((doc_uri, main, Literal(main_title)))
     if subtitle:
         g.add((doc_uri, sub, Literal(subtitle)))
-    if place_of_publication:
-        g.add((doc_uri, place, Literal(place_of_publication)))
+    if publication:
+        g.add((doc_uri, agent, Literal(publication)))
     if publisher:
         g.add((doc_uri, place, Literal(publisher)))
     if pub_date:
@@ -111,7 +112,7 @@ def xml_to_rdf(file):
 
     # === 4. Serializing in Turtle ===
     try:
-        g.serialize(destination="turtle_files/Finding_of_Wineland.ttl", format="turtle")
+        g.serialize(destination="finding_of_Wineland.ttl", format="turtle")
         print("RDF graph successfully serialized to finding_of_Wineland.ttl")
     except Exception as e:
         print(f"Error during serialization: {e}")
@@ -124,5 +125,5 @@ def xml_to_rdf(file):
         count+=1
     print("------------------------")
 
-file = "object_metadata/Finding_of_Wineland/finding_of_wineland.xml"
+file = "TOMASI\\XML_TEI\\objects_metadata\\Finding_of_Wineland\\finding_of_Wineland.xml"
 xml_to_rdf(file)
