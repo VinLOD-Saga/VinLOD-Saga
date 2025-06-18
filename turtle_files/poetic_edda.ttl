@@ -1,0 +1,23 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+
+<https://w3id.org/vinLOD-saga/item/Poetic_Edda> a crm:E24_Physical_Human_Made_Thing ;
+    bf:agent <https://lccn.loc.gov/n88144893>,
+        "The American-Scandinavian Foundation," ;
+    bf:date "1923." ;
+    bf:dimensions "20 cm." ;
+    bf:hasPart "I. Lays of the gods.",
+        "II. Lays of the heroes." ;
+    bf:hasSeries "Scandinavian classics," ;
+    bf:identifiedBy "23016414" ;
+    bf:itemPortion "21/22" ;
+    bf:language "eng" ;
+    bf:mainTitle "The poetic Edda," ;
+    bf:material "2 v. in 1. front. (facsim.)" ;
+    bf:place "New York," ;
+    bf:subtitle "translated from the Icelandic with an introduction and notes, by Henry Adams Bellows." ;
+    bf:translationOf "ice" ;
+    bf:variantType "Edda Saemundar." ;
+    dcterms:identifier <https://lccn.loc.gov/23016414> .
+
