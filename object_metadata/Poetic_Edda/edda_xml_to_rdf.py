@@ -106,7 +106,7 @@ def xml_to_rdf(file):
     g.bind("dcterms", DCTERMS)
 
     # #Entities
-    doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Poetic_Edda")
+    doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Translated_Poetic_Edda")
     author_uri= URIRef("https://lccn.loc.gov/n88144893")
     E24 = CRM['E24_Physical_Human_Made_Thing'] 
     locURI = URIRef("https://lccn.loc.gov/23016414")

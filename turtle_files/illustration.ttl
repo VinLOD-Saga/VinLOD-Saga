@@ -1,0 +1,13 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+<https://w3id.org/vinLOD-saga/item/Hailstorm_Illustration> a crm:E24_Physical_Human-Made_Thing ;
+    dcterms:created "1899" ;
+    dcterms:creator <https://lccn.loc.gov/n80038019> ;
+    dcterms:source <https://lccn.loc.gov/nr97033451> ;
+    dcterms:type <http://vocab.getty.edu/page/aat/300015578> ;
+    rdfs:seeAlso <https://upload.wikimedia.org/wikipedia/commons/7/79/Olav_Tryggvasons_saga_-_Uvaeret_Hjoerungavaag_-_H._Egedius.jpg> ;
+    schema:description "Found in: HEIMSKRINGLA by SNORRE STURLAŚON published by, J.M. STENERSEN & CO, 1899." .
+

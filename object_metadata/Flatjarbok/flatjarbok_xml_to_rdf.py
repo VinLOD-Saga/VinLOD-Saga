@@ -55,7 +55,7 @@ def xml_to_rdf(file):
 
 
     #Entities
-    doc_uri = URIRef("https://handrit.is/manuscript/view/is/GKS02-1005/11#")
+    doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Flatjarbok_Manuscript")
     E24 = CRM['E24_Physical_Human-Made_Thing'] # Using CRM namespace for E24
 
     #Properties (using defined namespaces directly)
@@ -105,5 +105,5 @@ def xml_to_rdf(file):
         count+=1
     print("------------------------")
 
-file = "Flatjarbok/GKS02-1005-is.xml"
+file = "object_metadata/Flatjarbok/GKS02-1005-is.xml"
 xml_to_rdf(file)

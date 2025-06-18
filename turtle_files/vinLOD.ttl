@@ -236,7 +236,7 @@
 <narrative/Poetic_Edda> a frbroo:F1;
     schema:name "The Poetic Edda" ;
     rdfs:label "The Poetic Edda";
-    crm:P130i_features_are_also_found_on <item/Translated_Edda> .
+    crm:P130i_features_are_also_found_on <item/Translated_Poetic_Edda> .
 
 
 #Music Entities

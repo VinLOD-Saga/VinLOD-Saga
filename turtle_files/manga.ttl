@@ -1,0 +1,19 @@
+@prefix aclick: <http://mediagraph.link/aclick/ont/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix jvmg: <http://mediagraph.link/jvmg/ont#> .
+@prefix vinLOD: <https://w3id.org/vinLOD-saga/property/> .
+
+<https://w3id.org/vinLOD-saga/item/Vinland_Manga> a frbroo:F22,
+        aclick:Manga,
+        jvmg:Manga,
+        <https://w3id.org/vinLOD-saga/class/Manga> ;
+    aclick:category aclick:Seinen ;
+    aclick:statusInHomeCountry "Ongoing" ;
+    jvmg:genre "Historical" ;
+    jvmg:startYear "2005" ;
+    jvmg:titleOriginal "ヴィンランド・サガ" ;
+    jvmg:titleTranslated "Vinland Saga" ;
+    vinLOD:hasAdaptation <https://w3id.org/vinLOD-saga/item/Vinland_Anime> ;
+    vinLOD:hasMangaka <https://w3id.org/vinLOD-saga/agent/Makoto_Yukimura> ;
+    vinLOD:serialisedIn <https://w3id.org/vinLOD-saga/publication/Afternoon_Magazine> .
+

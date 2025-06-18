@@ -1,14 +1,14 @@
 import pandas as pd
-from rdflib.namespace import RDF, DCTERMS
+from rdflib.namespace import RDF, DCTERMS, RDFS
 import rdflib as rdf
 
 namespace_dict ={
     "rdf":RDF,
+    "rdfs":RDFS,
     "vinLOD":rdf.Namespace("https://w3id.org/vinLOD-saga/property/"),
     "schema": rdf.Namespace("https://schema.org/"),
-    "bf": rdf.Namespace("http://id.loc.gov/ontologies/bibframe/"),
     "dcterms": DCTERMS,
-    "frbroo": rdf.Namespace("http://iflastandards.info/ns/fr/frbr/frbroo/")
+    "crm":rdf.Namespace("http://www.cidoc-crm.org/cidoc-crm/")
 }
 
 def resolve_prefixed_uri(prefix_uri):
@@ -19,7 +19,7 @@ def resolve_prefixed_uri(prefix_uri):
     else:
         raise ValueError(f"Unknown prefix: {prefix}")
 
-anime_df = pd.read_csv("csv_to_rdf/csv_files/Wagner.csv")
+painting_df = pd.read_csv("csv_to_rdf/csv_files/Illustration.csv")
 graph = rdf.Graph()
 
 # Bind all the namespaces with their prefixes
@@ -27,8 +27,8 @@ for prefix, ns in namespace_dict.items():
     graph.bind(prefix, ns)
 
 
-subj = rdf.URIRef("https://w3id.org/vinLOD-saga/item/Valkrie_Performance")
-for _,row in anime_df.iterrows():
+subj = rdf.URIRef("https://w3id.org/vinLOD-saga/item/Hailstorm_Illustration")
+for _,row in painting_df.iterrows():
     predicate = resolve_prefixed_uri(row["Predicate"])
     print(predicate)
     if ":" in row["Object"] and not row["Object"].startswith("http"):
@@ -44,4 +44,4 @@ for _,row in anime_df.iterrows():
     graph.add((subj, predicate, obj))
 
 print("Graph populated")
-graph.serialize(destination="turtle_files/Wagner.ttl", format="turtle")
+graph.serialize(destination="turtle_files/illustration.ttl", format="turtle")

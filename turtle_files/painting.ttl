@@ -1,0 +1,17 @@
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+<https://w3id.org/vinLOD-saga/item/Eiriksson_Painting> a crm:E24_Physical_Human-Made_Thing,
+        schema:Painting ;
+    dcterms:created "1893" ;
+    dcterms:creator <http://vocab.getty.edu/page/ulan/500011632> ;
+    dcterms:identifier "NG.M.00558" ;
+    dcterms:medium <http://vocab.getty.edu/page/aat/300014078> ;
+    dcterms:rightsHolder <https://w3id.org/vinLOD-saga/museum/Norway_Museum> ;
+    dcterms:source "The Fine Art Collection" ;
+    crm:P102_has_title "Leiv Eiriksson Discovering America" ;
+    rdfs:seeAlso <https://www.nasjonalmuseet.no/en/collection/object/NG.M.00558> ;
+    schema:size "Width: 470 cm, Height: 313 cm" .
+

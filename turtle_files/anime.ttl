@@ -1,0 +1,19 @@
+@prefix aclick: <http://mediagraph.link/aclick/ont/> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix jvmg: <http://mediagraph.link/jvmg/ont#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vinLOD: <https://w3id.org/vinLOD-saga/property/> .
+
+<https://w3id.org/vinLOD-saga/item/Vinland_Anime> a frbroo:F22,
+        aclick:Anime,
+        jvmg:Anime,
+        <https://w3id.org/vinLOD-saga/class/Anime> ;
+    aclick:seasons "Summer 2019" ;
+    aclick:statusInHomeCountry "Finished Airing" ;
+    jvmg:titleOriginal "ヴィンランド・サガ" ;
+    jvmg:titleTranslated "Vinland Saga" ;
+    rdfs:seeAlso <https://anidb.net/anime/13945> ;
+    vinLOD:hasAnimationStudio <https://w3id.org/vinLOD-saga/organisation/MAPPA_Studio>,
+        <https://w3id.org/vinLOD-saga/organisation/Wit_Studio> ;
+    vinLOD:hasOpening <https://w3id.org/vinLOD-saga/item/VinlandS1_Opening> .
+

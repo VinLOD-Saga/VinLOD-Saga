@@ -4,7 +4,7 @@ import rdflib as rdf
 
 namespace_dict ={
     "rdf":RDF,
-    "vinLOD":rdf.Namespace("https://w3id.org/vinLOD-saga/"),
+    "vinLOD":rdf.Namespace("https://w3id.org/vinLOD-saga/property/"),
     "schema": rdf.Namespace("https://schema.org/")
 }
 
@@ -23,7 +23,7 @@ graph = rdf.Graph()
 for prefix, ns in namespace_dict.items():
     graph.bind(prefix, ns)
 
-subj = rdf.URIRef("https://w3id.org/vinLOD-saga/musicEntity/Mukanjyo")
+subj = rdf.URIRef("https://w3id.org/vinLOD-saga/item/VinlandS1_Opening")
 for _,row in anime_df.iterrows():
     predicate = resolve_prefixed_uri(row["Predicate"])
     print(predicate)

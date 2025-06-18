@@ -2,7 +2,7 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
-<https://w3id.org/vinLOD-saga/item/Poetic_Edda> a crm:E24_Physical_Human_Made_Thing ;
+<https://w3id.org/vinLOD-saga/item/Translated_Poetic_Edda> a crm:E24_Physical_Human_Made_Thing ;
     bf:agent <https://lccn.loc.gov/n88144893>,
         "The American-Scandinavian Foundation," ;
     bf:date "1923." ;
