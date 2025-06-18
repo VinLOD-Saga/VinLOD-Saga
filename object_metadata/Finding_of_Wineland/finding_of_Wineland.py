@@ -112,7 +112,7 @@ def xml_to_rdf(file):
 
     # === 4. Serializing in Turtle ===
     try:
-        g.serialize(destination="finding_of_Wineland.ttl", format="turtle")
+        g.serialize(destination="turtle_files/finding_of_Wineland.ttl", format="turtle")
         print("RDF graph successfully serialized to finding_of_Wineland.ttl")
     except Exception as e:
         print(f"Error during serialization: {e}")
@@ -125,5 +125,5 @@ def xml_to_rdf(file):
         count+=1
     print("------------------------")
 
-file = "TOMASI\\XML_TEI\\objects_metadata\\Finding_of_Wineland\\finding_of_Wineland.xml"
+file = "Finding_of_Wineland\\finding_of_Wineland.xml"
 xml_to_rdf(file)
