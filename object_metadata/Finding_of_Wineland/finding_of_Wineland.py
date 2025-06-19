@@ -17,7 +17,7 @@ def xml_to_rdf(file):
 
     root = tree.getroot()
     author_datafield = root.find(".//marc:datafield[@tag='100']", namespaces=marc_ns)
-    name = get_text_or_none(author_datafield.find("marc:subfield[@code='a']", namespaces=marc_ns)) if author_datafield is not None else None
+    # name = get_text_or_none(author_datafield.find("marc:subfield[@code='a']", namespaces=marc_ns)) if author_datafield is not None else None
     name_year = get_text_or_none(author_datafield.find("marc:subfield[@code='d']", namespaces=marc_ns)) if author_datafield is not None else None
 
     # Title (datafield tag="245")
@@ -54,13 +54,11 @@ def xml_to_rdf(file):
     vinLOD= Namespace("https://w3id.org/vinLOD-saga/")
     BF = Namespace("http://id.loc.gov/ontologies/bibframe/")
     CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/") 
-    FOAF= Namespace("http://xmlns.com/foaf/0.1/")
     VIAF = Namespace("http://viaf.org/viaf/")
 
     # Bind namespaces for cleaner output
     g.bind("bf", BF)
     g.bind("crm", CRM)
-    g.bind("foaf", FOAF)
     g.bind("vinLOD-saga",vinLOD)
     g.bind("viaf", VIAF)
 
@@ -84,11 +82,8 @@ def xml_to_rdf(file):
 
     g.add((doc_uri, RDF.type, E24)) # type
     g.add((author_uri, RDF.type, E21))
-    g.add((author_uri, FOAF.name,Literal(name)))
     g.add((doc_uri, agent, author_uri))
     
-    if name:
-        g.add((doc_uri, agent, Literal(name)))
     if name_year:
         g.add((doc_uri, agent, Literal(name_year)))
     if main_title:
