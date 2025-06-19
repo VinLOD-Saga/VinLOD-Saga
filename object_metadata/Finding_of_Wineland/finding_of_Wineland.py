@@ -16,9 +16,9 @@ def xml_to_rdf(file):
         return
 
     root = tree.getroot()
-    author_datafield = root.find(".//marc:datafield[@tag='100']", namespaces=marc_ns)
+    # author_datafield = root.find(".//marc:datafield[@tag='100']", namespaces=marc_ns)
     # name = get_text_or_none(author_datafield.find("marc:subfield[@code='a']", namespaces=marc_ns)) if author_datafield is not None else None
-    name_year = get_text_or_none(author_datafield.find("marc:subfield[@code='d']", namespaces=marc_ns)) if author_datafield is not None else None
+    # name_year = get_text_or_none(author_datafield.find("marc:subfield[@code='d']", namespaces=marc_ns)) if author_datafield is not None else None
 
     # Title (datafield tag="245")
     title_datafield = root.find(".//marc:datafield[@tag='245']", namespaces=marc_ns)
@@ -66,7 +66,6 @@ def xml_to_rdf(file):
     doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Finding_of_Wineland")
     author_uri= URIRef("http://viaf.org/viaf/17598880")
     E24 = CRM['E24_Physical_Human_Made_Thing'] 
-    E21= CRM['E21_Person']
 
     #Properties (using defined namespaces directly)
     agent= BF.agent
@@ -81,11 +80,8 @@ def xml_to_rdf(file):
     # === 3. Populating the Graph ===
 
     g.add((doc_uri, RDF.type, E24)) # type
-    g.add((author_uri, RDF.type, E21))
     g.add((doc_uri, agent, author_uri))
     
-    if name_year:
-        g.add((doc_uri, agent, Literal(name_year)))
     if main_title:
         g.add((doc_uri, main, Literal(main_title)))
     if subtitle:
