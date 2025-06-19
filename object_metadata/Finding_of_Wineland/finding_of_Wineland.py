@@ -91,9 +91,9 @@ def xml_to_rdf(file):
     if subtitle:
         g.add((doc_uri, sub, Literal(subtitle)))
     if publication:
-        g.add((doc_uri, agent, Literal(publication)))
+        g.add((doc_uri, agent, Literal(publisher)))
     if publisher:
-        g.add((doc_uri, place, Literal(publisher)))
+        g.add((doc_uri, place, Literal(publication)))
     if pub_date:
         g.add((doc_uri, date, Literal(pub_date)))
     if extent:
