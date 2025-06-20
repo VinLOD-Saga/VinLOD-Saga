@@ -1,6 +1,6 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix ns1: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix schema: <https://schema.org/> .
 
 <https://w3id.org/vinLOD-saga/item/Transcribed_Edda> a schema:DigitalDocument ;
@@ -8,13 +8,13 @@
     bf:date "July, 2025" ;
     bf:dimensions "About 80 kB" ;
     bf:editionStatement "First digital edition- June, 2025" ;
-    bf:place "Bologna" ;
+    bf:place "https://www.geonames.org/3181928" ;
     dcterms:contributor "Ilaria De Dominicis" ;
     dcterms:created "June, 2025" ;
-    dcterms:rights "CC-BY-NC Open Access. Available for academic purposes." ;
+    dcterms:rights "https://creativecommons.org/licenses/by-nc/4.0/" ;
     dcterms:title "The Grimnismol from The Poetic Edda" ;
-    ns1:P129_is_about <https://w3id.org/vinLOD-saga/concept/Valhalla>,
+    crm:P129_is_about <https://w3id.org/vinLOD-saga/concept/Valhalla>,
         <https://w3id.org/vinLOD-saga/group/Valkyries> ;
-    ns1:P130_shows_features_of <https://w3id.org/vinLOD-saga/item/Translated_Poetic_Edda> ;
+    crm:P130_shows_features_of <https://w3id.org/vinLOD-saga/item/Translated_Poetic_Edda> ;
     schema:alternativeHeadline "A Vinland Saga LOD project" .
 
