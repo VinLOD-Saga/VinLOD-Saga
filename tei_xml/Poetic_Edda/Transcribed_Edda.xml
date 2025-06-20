@@ -8,7 +8,7 @@
     <teiHeader xml:lang="en">
         <fileDesc> <!-- contains a full bibliographic description of an electronic file.-->
             <titleStmt>
-                <title type="main">The<foreign xml:lang="non">Grimnismol</foreign>from The Poetic Edda</title>
+                <title type="main">The <foreign xml:lang="non">Grimnismol </foreign>from The Poetic Edda</title>
                 <title type="sub"><hi rend="italic">A Vinland Saga LOD project</hi></title>
                 <respStmt>
                     <resp>compiled by</resp> <!-- author was too personal-->
@@ -19,8 +19,7 @@
                 </respStmt>
             </titleStmt>
             <editionStmt> 
-                <edition>First digital edition
-                    <date when= "2025-06">June, 2025</date>
+                <edition>First digital edition- <date when= "2025-06">June, 2025</date>
                 </edition>
                 <respStmt>
                     <resp>Annotated by</resp>                    
@@ -31,17 +30,16 @@
                 </respStmt>           
             </editionStmt>
             <extent>
-                <measure unit="lines" quantity="500">About 500 lines</measure>
+                <measure unit="kB" quantity="80">About 80 kB</measure>
             </extent>
             <publicationStmt> 
                 <publisher> <foreign xml:lang="la">Alma Mater Studiorum</foreign> - <foreign xml:lang="it">Università di Bologna</foreign></publisher>
                 <pubPlace>
                     <placeName key="Bologna" sameAs="https://www.geonames.org/3181928">Bologna</placeName>
-                    <date when="2025-06">June, 2025</date>               
+                    <date when="2025-06">July, 2025</date>               
                 </pubPlace>
                 <availability status="free"> 
-                    <licence target= "https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC</licence>
-                    <p>Open Access. Available for academic purposes.</p>
+                    <licence target= "https://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC </licence><p>Open Access. Available for academic purposes.</p>
                 </availability>
             </publicationStmt>
             <notesStmt> 
@@ -158,7 +156,7 @@
             </textDesc>    
             <particDesc>
                 <listPerson type="contributors"> 
-                    <person xml:id="IDD" sameAs="http://example.org/people/ilariadedominicis" source="https://github.com/theair-hub"> 
+                    <person xml:id="IDD" source="https://github.com/theair-hub"> 
                         <persName xml:lang="it">Ilaria De Dominicis</persName>
                         <occupation>student, annotator</occupation>
                     </person>
@@ -254,7 +252,7 @@
                 </listPerson>
                <listOrg>
                     <org>
-                        <orgName xml:id="VK" sameAs="https://www.wikidata.org/wiki/Q131087">Valkyries</orgName>
+                        <orgName xml:id="VK" sameAs="https://w3id.org/vinLOD-saga/group/Valkyries">Valkyries</orgName>
                         <desc source="https://en.wikipedia.org/wiki/Valkyrie">One of a host of female figures who guide souls of the dead to the god Odin's hall <placeName ref="#VH">Valhalla</placeName>.</desc>
                     </org>
                 </listOrg> 
@@ -262,7 +260,7 @@
             <settingDesc>
                 <listPlace type="imaginary">
                     <place>
-                        <placeName xml:id="VH" xml:lang="non" ref= "https://en.wikipedia.org/wiki/Valhalla">Valhall</placeName>
+                        <placeName xml:id="VH" xml:lang="non" sameAs= "https://w3id.org/vinLOD-saga/concept/Valhalla">Valhall</placeName>
                         <placeName type="epithet" xml:lang="en">Valhalla</placeName>
                     </place>
                     <place>
@@ -783,40 +781,40 @@
             <div type="notes" style="white-space:pre-wrap;"> 
                 <head>Notes</head>
                     <noteGrp target="p">
-                        <note target="p1" resp="#HAB">The texts of the two manuscripts differ in many minor details.</note>
-                        <note target="p1" resp="HAB"> <hi rend="italic"><persName ref="HT">Hrauthung</persName></hi>: this mythical king is not mentioned elsewhere.</note>
-                        <note target="p1" resp="HAB"> <hi rend="italic"><persName ref="#GR">Geirröth</persName></hi>: the manuscripts spell his name in various ways. </note>
-                        <note target="p2" resp="HAB"><persName ref="#FR">Frigg</persName>: <persName ref="#OT">Othin</persName>'s' wife. She and <persName ref="#OT">Othin</persName> nearly
+                        <note target="p1" resp="#HAB"> <ref source="#p1">p1</ref>- The texts of the two manuscripts differ in many minor details.</note>
+                        <note target="p1" resp="HAB"><ref source="#p1">p1</ref>- <hi rend="italic"><persName ref="HT">Hrauthung</persName></hi>: this mythical king is not mentioned elsewhere.</note>
+                        <note target="p1" resp="HAB"><ref source="#p1">p1</ref>- <hi rend="italic"><persName ref="#GR">Geirröth</persName></hi>: the manuscripts spell his name in various ways. </note>
+                        <note target="p2" resp="HAB"><ref source="#p2">p2</ref>- <persName ref="#FR">Frigg</persName>: <persName ref="#OT">Othin</persName>'s' wife. She and <persName ref="#OT">Othin</persName> nearly
                             always disagreed in some such way as the one outlined in this story.</note>
-                        <note target="p2" resp="HAB"><hi rend="italic">Hlithskjolf</hi> (<q rend="dq">Gate-Shelf</q>): <persName ref="#OT">Othin</persName>'s watch-tower in heaven, whence he can overlook all the nine worlds; cf. Skirnismol, introductory prose.</note>
-                        <note target="p2" resp="HAB"><hi rend="italic"><persName ref="#OT">Grimnir</persName></hi>: <q rend="dq">the Hooded One.</q></note>
+                        <note target="p2" resp="HAB"><ref source="#p2">p2</ref>-<hi rend="italic">Hlithskjolf</hi> (<q rend="dq">Gate-Shelf</q>): <persName ref="#OT">Othin</persName>'s watch-tower in heaven, whence he can overlook all the nine worlds; cf. Skirnismol, introductory prose.</note>
+                        <note target="p2" resp="HAB"><ref source="#p2">p2</ref>-<hi rend="italic"><persName ref="#OT">Grimnir</persName></hi>: <q rend="dq">the Hooded One.</q></note>
                     </noteGrp>
                     <noteGrp target="s2">
-                        <note>In the original lines 2 and 4 are both too long for the meter, and thus the true form of the stanza 
+                        <note><ref source="#s2">s2</ref>-In the original lines 2 and 4 are both too long for the meter, and thus the true form of the stanza 
                         is doubtful.</note>
-                        <note target="s2-4">For line 4 both manuscripts have <q rend="dq">the land of the Goths</q> instead of simply <q rend="dq">the 
+                        <note target="s2-4"><ref source="#s2-4">s2-4</ref>-For line 4 both manuscripts have <q rend="dq">the land of the Goths</q> instead of simply <q rend="dq">the 
                         Goths.</q> The word <q rend="dq">Goths</q> apparently was applied indiscriminately to any South-Germanic 
                         people, including the Burgundians as well as the actual Goths, and thus here has no specific 
                         application; cf. Gripisspo, 35 and note.</note>
                     </noteGrp>
-                     <note target= "s3-2">
+                     <note target= "s3-2"><ref source="#s3-2">s3-2</ref> -
                         <hi rend= "italic"><persName ref="#OT">Veratyr</persName></hi> (<q rend="dq">Lord of Men</q>): <persName ref="#OT">Othin</persName>. The <q rend="dq">gift</q> which <persName ref="#AG1">Agnar</persName> receives is <persName ref="#OT">Othin</persName>'s' mythological lore.
                      </note> 
-                     <note target="s4-3">
+                     <note target="s4-3"> <ref source="#s4-3">s4-3</ref> -
                         <hi rend= "italic">Thruthheim</hi> (<q rend="dq">the Place of Might</q>): the place where Thor, the strongest of the gods,
                         has his hall, Bilskirnir, described in stanza 24.
                      </note>
                     <noteGrp target="s5">
-                        <note target="s5-1"><hi rend= "italic">Ydalir</hi> (<q rend="dq">Yew-Dales</q>): the home of Ull, the archer among the gods, a son of Thor’s wife, Sif, by 
+                        <note target="s5-1"><ref source="#s5-1">s5-1</ref> - <hi rend= "italic">Ydalir</hi> (<q rend="dq">Yew-Dales</q>): the home of Ull, the archer among the gods, a son of Thor’s wife, Sif, by 
                         another marriage. The wood of the yew-tree was used for bows in the North just as it was long 
                         afterwards in England.  
-                        <note target="s5-3"><hi rend= "italic">Alfheim</hi>: the home of the elves. </note>
+                        <note target="s5-3"><ref source="#s5-3">s5-3</ref><hi rend= "italic">Alfheim</hi>: the home of the elves. </note>
                         <hi rend= "italic">Freyr</hi>: cf. <hi rend= "italic">Skirnismol</hi>, introductory prose 
                         and note. </note>
-                        <note target="s5-4"><hi rend= "italic">Tooth-gift</hi>: the custom of making a present to a child when it cuts its first tooth is, 
+                        <note target="s5-4"><ref source="#s5-4">s5-4</ref><hi rend= "italic">Tooth-gift</hi>: the custom of making a present to a child when it cuts its first tooth is, 
                         according to Vigfusson, still in vogue in Iceland. </note> 
                     </noteGrp>
-                    <note target="s6">
+                    <note target="s6"> <ref source="#s6">s6</ref>-
                         <hi rend="italic">Valaskjolf</hi> (<q rend="dq">the Shelf of the Slain</q>): <persName ref="#OT">Othin</persName>’s home, in which is his watch-tower, <hi rend="italic">Hlithskjolf</hi>. 
                         Gering identifies this with <placeName ref="#VH">Valhall</placeName>, and as that is mentioned in stanza 8, he believes stanza 6 to be an interpolation.
                     </note>
@@ -845,4 +843,3 @@
 </TEI>
 
 <!-- convertire caratteri in UNICODE?-->
-<!-- vuoi anche fare text analysis?-->
