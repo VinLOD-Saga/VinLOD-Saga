@@ -1,24 +1,24 @@
 import os
 from lxml import etree
 
-# Directory corrente (o metti il path che vuoi)
+# Current directory or path
 base_dir = os.path.abspath(".")
 
-xml_file = os.path.join(base_dir, "xml_files/Poetic_Edda/The_Poetic_edda.xml")
-xslt_file = os.path.join(base_dir, "xml_files/Poetic_Edda/The_Poetic_edda.xsl")
-output_file = os.path.join(base_dir, "output.html")
+xml_file = os.path.join(base_dir, "xml_files/Poetic_Edda/Transcribed_Edda.xml")
+xslt_file = os.path.join(base_dir, "xml_files/Poetic_Edda/Transcribed_Edda.xsl")
+output_file = os.path.join(base_dir, "Transcribed_Edda.html")
 
-# Carica l'XML
+# Parsing XML
 xml = etree.parse(xml_file)
 
-# Carica l'XSLT
+# Parsing XSLT
 xslt = etree.parse(xslt_file)
 transform = etree.XSLT(xslt)
 
-# Applica la trasformazione
+# Apply the transformation
 result = transform(xml)
 
-# Scrivi il risultato in HTML
+# Write in HTML
 try:
     with open(output_file, "wb") as f:
         f.write(etree.tostring(result, pretty_print=True, method="html", encoding="UTF-8"))
