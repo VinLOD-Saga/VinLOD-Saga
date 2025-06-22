@@ -18,12 +18,12 @@
                 <edition>Excerpted Digital Edition, <date when="2025-06">June, 2025</date> </edition>
                 <respStmt>
                     <resp>annotated by</resp>
-                    <persName>Regina Manyara</persName>
+                    <persName ref="#RM">Regina Manyara</persName>
                 </respStmt>
             </editionStmt>
             <extent>
-                <!-- <measure unit="MiB" quantity="100">About x megabytes</measure>
-                <measure unit="lines" quantity="">About x lines</measure> -->
+                <measure unit="kb" quantity="41">About 41KB</measure>
+                <measure unit="lines" quantity="300">About 300 lines</measure>
             </extent>
             <publicationStmt> 
                 <publisher>Alma Mater Studiorum - Università di Bologna</publisher>
@@ -91,6 +91,10 @@
                     what the professor wants with this xml file
                     the names and places i chose to annote, why and how 
                     all the specific choices i made strucuturally and semantically-->
+                    This digtal document is a part of the VinLOD Saga linked open data project for the DHDK exam of Information Science and Cultural Heritage (2024/25). For the Text Encoding and Semantic Representation part of the exam, this doucment was created to further enrich the details of the project. VinLOD Saga is inspired by and centred around the manga and anime series Vinland Saga by Makoto Yukimura, which are connect to real world Norse cultural objects. Among these are objects relating to Leif Eirkson and his discovery of "Vinland" (North America). This document acts as an extention of these objects, annotating "THe Finding of Wineland the Good", a translated critical edition of the icelandic sagas related to the discovery of Vinland. In particular, the "Concerning Leif the Lucky and the Introduction of Christianity into Greenland", within the tranlation of the Saga of Erik the Red, was chosed for its direct, although small, mention of the Vinland discovery. 
+                </p>
+                <p>
+                    Structually, the digital document uses the tei notes elements to describe the footnotes and end notes in the original text. The footnotes also include the witness names and varient readings linked to them so for this a span element was used in the main text to link to the external apparatus, in line with the location-referenced variant encoding method. The endnotes, which are described after the main text, contain further explanation of certain concepts as well as, in the case of note 34, a saga from another manuscript. This was included in this digital edition because of its reference, and detailed description to the wife of Leif Eirikson. Within the main text, seg was used to subdivide the saga translation as it is made up of several smaller acts. With this, the people and places are only marked up once per seg with references to the listPerson and ListPlace respectivel in the profileDesc. For the people and places, where uris could not be found, a note was added with a small description. 
                 </p>
             </projectDesc>
             <variantEncoding method="location-referenced" location="external"/>
@@ -98,7 +102,7 @@
         <profileDesc>
             <particDesc>
                 <listPerson type="contributor">
-                    <person xml:id="RM" sameAs="https://github.com/ValkyrieCain9">
+                    <person xml:id="RM" source="https://github.com/ValkyrieCain9">
                         <persName>Regina Manyara</persName>
                     </person>
                     <person xml:id="AMR" sameAs="https://lccn.loc.gov/n89602323">
