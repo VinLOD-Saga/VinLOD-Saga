@@ -4,9 +4,9 @@ from lxml import etree
 # Directory corrente (o metti il path che vuoi)
 base_dir = os.path.abspath(".")
 
-xml_file = os.path.join(base_dir, "xml_files/Wineland_the_Good/Wineland_the_Good.xml")
-xslt_file = os.path.join(base_dir, "xml_files/Wineland_the_Good/Wineland_the_Good.xsl")
-output_file = os.path.join(base_dir, "xml_files/Wineland_the_Good/wineland.html")
+xml_file = os.path.join(base_dir, "tei_xml/Wineland_the_Good/Wineland_the_Good.xml")
+xslt_file = os.path.join(base_dir, "tei_xml/Wineland_the_Good/Wineland_the_Good.xsl")
+output_file = os.path.join(base_dir, "tei_xml/Wineland_the_Good/wineland.html")
 
 # Carica l'XML
 xml = etree.parse(xml_file)

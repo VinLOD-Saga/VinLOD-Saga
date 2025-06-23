@@ -11,16 +11,49 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
           <title>The Finding of Wineland the Good</title>
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+        
+          <!-- Fonts -->
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+          <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&amp;family=Forum&amp;family=Metamorphous&amp;display=swap" rel="stylesheet"/>
+        
+          <!-- Main CSS File -->
+          <!-- <link href="tei_xml/Wineland_the_Good/wineland.css" rel="stylesheet"/> -->
+          <style>
+              .metamorphous-regular {
+              font-family: "Metamorphous", serif;
+              font-weight: 400;
+              font-style: normal;
+              }
+              
+              .forum-regular {
+              font-family: "Forum", serif;
+              font-weight: 400;
+              font-style: normal;
+              }
+
+              .encode-sans-light {
+              font-family: "Encode Sans", sans-serif;
+              font-optical-sizing: auto;
+              font-weight: 300;
+              font-style: normal;
+              font-variation-settings:
+              "wdth" 100;
+              }
+          </style>
+
       </head>
       <!-- Header -->
-      <body class="d-flex flex-column align-items-center">
-        <div class="container m-3 p-3" id="heading">
-          <h2>The Finding of Wineland the Good - Excerpted Digital Edition</h2>
-          <h4><xsl:value-of select="tei:text//tei:body/tei:note"/></h4>
+      <body class="d-flex flex-column align-items-center m-3 p-3">
+        <div class="container m-3 p-3 text-center" id="heading">
+          <h2 class="metamorphous-regular">The Finding of Wineland the Good - Excerpted Digital Edition</h2>
+          <p class="forum-regular"><xsl:value-of select="tei:teiHeader//tei:projectDesc/tei:p"/></p>
         </div>
         
         <!-- Main Text -->
-        <xsl:apply-templates select="tei:text//tei:body/tei:div[@type='translation']"/>
+        <div class="container">
+          <xsl:apply-templates select="tei:text//tei:body/tei:div[@type='translation']"/>
+        </div>
 
         <!-- Off Canvas Notes -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNotes" aria-labelledby="offcanvasNotesLabel">
@@ -41,8 +74,8 @@
           const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl, {
             container: 'body',
-            trigger: 'hover focus',  // or your preferred triggers
-            delay: { "show": 0, "hide": 200 } // optional delay to smooth appearance
+            trigger: 'click',  // or your preferred triggers
+            <!-- delay: { "show": 0, "hide": 200 } // optional delay to smooth appearance -->
             });
           });
         </script>
@@ -84,17 +117,17 @@
   
   <!-- Template for title -->
   <xsl:template match="tei:head[@rend='align(center) case(allcaps)']">
-    <h4 class="text-uppercase text-center"><xsl:value-of select="."/></h4>
+    <h4 class="text-uppercase text-center forum-regular"><xsl:value-of select="."/></h4>
   </xsl:template>
   
   <!-- Template for paragraph -->
   <xsl:template match="tei:p">
-    <p><xsl:apply-templates/></p>
+    <p class="forum-regular"><xsl:apply-templates/></p>
   </xsl:template>
   
   <!-- Template for story sections -->
   <xsl:template match="tei:seg">
-    <section><xsl:apply-templates/></section>
+    <section><p class="forum-regular"><xsl:apply-templates/></p></section>
   </xsl:template>
 
   <!-- Identity template to copy text and elements by default -->
@@ -128,7 +161,10 @@
         <!-- Create a popover with information about the person -->
         <xsl:variable name="persName" select="$person/tei:persName"/>
         <xsl:variable name="persNote" select="$person/tei:note"/>
-        <a href="#" data-bs-toggle="popover" data-bs-title="{string($persName)}" data-bs-content="{string($persNote)}"><xsl:apply-templates select="node()"/></a>
+        <span role="button" tabindex="0" class="popover-trigger text-primary text-decoration-underline" data-bs-toggle="popover" data-bs-title="{string($persName)}" data-bs-content="{string($persNote)}">
+          <xsl:apply-templates select="node()" />
+        </span>
+        <!-- <a href="#" data-bs-toggle="popover" data-bs-title="{string($persName)}" data-bs-content="{string($persNote)}"><xsl:apply-templates select="node()"/></a> -->
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -154,7 +190,10 @@
         <!-- Create a popover with information about the place -->
         <xsl:variable name="placeName" select="$place/tei:placeName"/>
         <xsl:variable name="placeNote" select="$place/tei:note"/>
-        <a href="#" data-bs-toggle="popover" data-bs-title="{string($placeName)}" data-bs-content="{string($placeNote)}"><xsl:apply-templates select="node()"/></a>
+        <span role="button" tabindex="0" class="popover-trigger text-primary text-decoration-underline" data-bs-toggle="popover" data-bs-title="{string($placeName)}" data-bs-content="{string($placeNote)}">
+          <xsl:apply-templates select="node()" />
+        </span>
+        <!-- <a href="#" data-bs-toggle="popover" data-bs-title="{string($placeName)}" data-bs-content="{string($placeNote)}"><xsl:apply-templates select="node()"/></a> -->
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -162,9 +201,12 @@
   <!-- Template for footnotes -->
   <xsl:template match="tei:note[@place='bottom']">
     <xsl:variable name="noteText" select="normalize-space(.)"/>
-    <a href="#" data-bs-toggle="popover" data-bs-title="Note" data-bs-content="{string($noteText)}">
+    <span role="button" tabindex="0" class="popover-trigger text-primary text-decoration-underline" data-bs-toggle="popover" data-bs-title="Note" data-bs-content="{string($noteText)}">
       <xsl:text>*</xsl:text>
-    </a>
+    </span>
+    <!-- <a href="#" data-bs-toggle="popover" data-bs-title="Note" data-bs-content="{string($noteText)}">
+      <xsl:text>*</xsl:text>
+    </a> -->
   </xsl:template>
   
   <!-- Template for variant readings -->
@@ -179,13 +221,27 @@
     <xsl:variable name="reading" select="$app/tei:rdg"/>
     <xsl:variable name="witID" select="substring-after($reading/@wit, '#')"/>
     <xsl:variable name="witness" select="key('witKey', $witID)"/>
-    <a href="#" data-bs-toggle="popover" data-bs-title="{string($witness)}" data-bs-content="{string($reading)}"><xsl:apply-templates select="node()" /></a>
+    <!-- <a href="#" data-bs-toggle="popover" data-bs-title="{string($witness)}" data-bs-content="{string($reading)}"><xsl:apply-templates select="node()" /></a> -->
+    <span role="button" tabindex="0" class="popover-trigger text-primary text-decoration-underline" data-bs-toggle="popover" data-bs-title="{string($witness)}" data-bs-content="{string($reading)}">
+      <xsl:apply-templates select="node()" />
+    </span>
+    <!-- style="color: #2C6555; cursor: pointer;" -->
   </xsl:template>
   
   <!-- Template for endnotes (back) -->  
+  <!-- <xsl:template match="tei:note[@xml:id]">
+    <section id="{@xml:id}">
+      <xsl:variable name="noteID" select="@xml:id"/>
+      <h6>"Note {string($noteID.split('-')[1])}"</h6>
+      <h6><xsl:value-of select="@xml:id"/></h6>
+      <xsl:apply-templates select="node()" />
+    </section>
+  </xsl:template> -->
   <xsl:template match="tei:note[@xml:id]">
     <section id="{@xml:id}">
-      <h6><xsl:value-of select="@xml:id"/></h6>
+      <xsl:variable name="noteID" select="@xml:id"/>
+      <xsl:variable name="noteNumber" select="substring-after($noteID, '-')"/>
+      <h6>Note <xsl:value-of select="$noteNumber"/></h6>
       <xsl:apply-templates select="node()" />
     </section>
   </xsl:template>
