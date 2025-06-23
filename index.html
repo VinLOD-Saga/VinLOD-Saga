@@ -14,9 +14,12 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&family=Forum&family=Metamorphous&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -38,6 +41,14 @@
 </head>
 
 <body class="index-page">
+
+  <!-- Video Intro Wrapper -->
+  <div id="video-intro" class="video-intro">
+    <video id="intro-video" autoplay muted>
+      <source src="assets/video/vinLOD_op.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
@@ -75,7 +86,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+      <img src="assets/img/leif_painting.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
         <h2 data-aos="fade-up" data-aos-delay="100">VinLOD Saga</h2>
@@ -610,6 +621,44 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Video Intro Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const isLargeScreen = window.innerWidth >= 1024;
+      const body = document.body;
+      const videoIntro = document.getElementById("video-intro");
+      const introVideo = document.getElementById("intro-video");
+      const hasPlayedVideo = sessionStorage.getItem("videoPlayed");
+
+      if (isLargeScreen && !hasPlayedVideo) {
+        body.classList.add("loading");
+
+        introVideo.addEventListener("ended", () => {
+          // Save flag so it won't play again this session
+          sessionStorage.setItem("videoPlayed", "true");
+          // Step 1: Fade out video overlay
+          videoIntro.classList.add("fade-out");
+
+          // Step 2: After fade-out, remove overlay and reveal content
+          setTimeout(() => {
+            videoIntro.style.display = "none";
+            body.classList.remove("loading");
+            body.classList.add("reveal");
+          }, 500); // Match CSS fade duration
+        });
+      } else {
+        // Mobile: skip video, show content immediately
+        videoIntro.innerHTML = '';
+        videoIntro.style.display = 'none';
+        body.classList.remove("loading");
+        body.classList.add("reveal");
+      }
+    });
+  </script>
+
+
+
 
 </body>
 
