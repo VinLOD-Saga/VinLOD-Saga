@@ -1,0 +1,24 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema1: <http://schema.org/> .
+
+<https://w3id.org/vinLOD-saga/item/Finding_of_Wineland_DigitalEdition> a schema1:DigitalDocument,
+        crm:E24_Physical_Human-Made_Thing ;
+    bf:agent "Alma Mater Studiorum - Università di Bologna" ;
+    bf:date "June, 2025" ;
+    bf:editionStatement "Excerpted Digital Edition, " ;
+    bf:mainTitle "Concerning Leif the Lucky from The Finding of Wineland the Good" ;
+    bf:place <https://sws.geonames.org/3181928/> ;
+    bf:responsibilityStatement "annotated by Regina Manyara" ;
+    bf:subtitle "A Vinland Saga LOD project" ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    schema1:description """
+                    This digtal document is a part of the VinLOD Saga linked open data project for the DHDK exam of Information Science and Cultural Heritage (2024/25). For the Text Encoding and Semantic Representation part of the exam, this doucment was created to further enrich the details of the project. VinLOD Saga is inspired by and centred around the manga and anime series Vinland Saga by Makoto Yukimura, which have been connected to real world Norse cultural objects. Among these, are objects relating to Leif Eirikkson and his discovery of "Vinland" (North America). This document acts as an extention of these objects, transcribing and annotating digital facsimile of "The Finding of Wineland the Good", a translated critical edition, by Arthur Middleton Reeves, of the Icelandic sagas related to the discovery of Vinland. In particular, the section "Concerning Leif the Lucky and the Introduction of Christianity into Greenland", within the tranlation of the "Saga of Erik the Red", was chosen for its direct, although small, mention of the Vinland discovery. 
+                """ ;
+    crm:P129_is_about <https://dbpedia.org/resource/Erik_the_Red>,
+        <https://w3id.org/vinLOD-saga/event/Norse_Exploration>,
+        <https://w3id.org/vinLOD-saga/person/Leiv_Eiriksson>,
+        <https://w3id.org/vinLOD-saga/place/Vinland> ;
+    crm:P130_shows_features_of <https://w3id.org/vinLOD-saga/item/Finding_of_Wineland> .
+

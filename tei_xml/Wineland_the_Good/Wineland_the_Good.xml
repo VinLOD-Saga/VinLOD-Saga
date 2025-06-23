@@ -83,21 +83,34 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
+            <variantEncoding method="location-referenced" location="external"/>
             <projectDesc>
                 <p>
-                    <!-- describe in detail 
-                    the purpose of the project overall and also specifically with this xml file 
-                    and how it connects to our vinlod graph 
-                    what the professor wants with this xml file
-                    the names and places i chose to annote, why and how 
-                    all the specific choices i made strucuturally and semantically-->
-                    This digtal document is a part of the VinLOD Saga linked open data project for the DHDK exam of Information Science and Cultural Heritage (2024/25). For the Text Encoding and Semantic Representation part of the exam, this doucment was created to further enrich the details of the project. VinLOD Saga is inspired by and centred around the manga and anime series Vinland Saga by Makoto Yukimura, which are connect to real world Norse cultural objects. Among these are objects relating to Leif Eirkson and his discovery of "Vinland" (North America). This document acts as an extention of these objects, annotating "THe Finding of Wineland the Good", a translated critical edition of the icelandic sagas related to the discovery of Vinland. In particular, the "Concerning Leif the Lucky and the Introduction of Christianity into Greenland", within the tranlation of the Saga of Erik the Red, was chosed for its direct, although small, mention of the Vinland discovery. 
-                </p>
-                <p>
-                    Structually, the digital document uses the tei notes elements to describe the footnotes and end notes in the original text. The footnotes also include the witness names and varient readings linked to them so for this a span element was used in the main text to link to the external apparatus, in line with the location-referenced variant encoding method. The endnotes, which are described after the main text, contain further explanation of certain concepts as well as, in the case of note 34, a saga from another manuscript. This was included in this digital edition because of its reference, and detailed description to the wife of Leif Eirikson. Within the main text, seg was used to subdivide the saga translation as it is made up of several smaller acts. With this, the people and places are only marked up once per seg with references to the listPerson and ListPlace respectivel in the profileDesc. For the people and places, where uris could not be found, a note was added with a small description. 
+                    This digtal document is a part of the VinLOD Saga linked open data project for the DHDK exam of Information Science and Cultural Heritage (2024/25). For the Text Encoding and Semantic Representation part of the exam, this doucment was created to further enrich the details of the project. VinLOD Saga is inspired by and centred around the manga and anime series Vinland Saga by Makoto Yukimura, which have been connected to real world Norse cultural objects. Among these, are objects relating to Leif Eirikkson and his discovery of "Vinland" (North America). This document acts as an extention of these objects, transcribing and annotating digital facsimile of "The Finding of Wineland the Good", a translated critical edition, by Arthur Middleton Reeves, of the Icelandic sagas related to the discovery of Vinland. In particular, the section "Concerning Leif the Lucky and the Introduction of Christianity into Greenland", within the tranlation of the "Saga of Erik the Red", was chosen for its direct, although small, mention of the Vinland discovery. 
                 </p>
             </projectDesc>
-            <variantEncoding method="location-referenced" location="external"/>
+            <editorialDecl>
+                <correction status="low" method="silent">
+                    <p>Errors in transcription controlled by using the VSCode extension <q>Code Spell Checker</q>. Errors which were present in the original text were left as is.</p>
+                </correction>
+                <interpretation>
+                    <p>Within the main text transcription, the <gi>seg</gi> element was used to further subdivide the smaller narratives within the main section of the saga.</p>
+                    <p>Every person and place mentioned in the text has been marked once per small narrative segment. For people and places with no authoritive URI, a note has been added to their entry in <gi>listPerson</gi> and <gi>listPlace</gi>, respectively.</p>
+                    <p>Dates are marked with the ISO 8601 date format, when possible.</p>
+                </interpretation>
+                <normalization> 
+                    <p>All words and letters are transcribed verbatim from the original, with no normalization applied, since the text was previously normalized by the author from Old Norse to Modern English (in archaic style).</p>
+                </normalization>
+                <normalization method="silent">
+                    <p>Spacing between words has been regularized to one space.</p>
+                </normalization>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained from the original text. For direct speech the element <gi>said</gi> with <att>aloud</att> set to true, was used inside the quotation marks. For indirect speech the same element was used with the <att>aloud</att> set to false.</p>
+                </quotation>
+                <segmentation>
+                    <p>The text has been structured into three main sections. The <gi>front</gi>, which includes the Preface from the original text. The <gi>body</gi>, which includes the main text of the file, taken from a section of Chapter II. - The Saga of Erik the Red. This section has been further subdivided with <gi>seg</gi> marking the smaller acts within the main saga. The <gi>back</gi>, which includes all the endnotes related to the text present in the <gi>body</gi> section.</p>
+                </segmentation>
+            </editorialDecl>
         </encodingDesc>
         <profileDesc>
             <particDesc>
@@ -148,6 +161,9 @@
             </particDesc>
             <settingDesc>
                 <listPlace>
+                    <place xml:id="VL" sameAs="https://w3id.org/vinLOD-saga/place/Vinland">
+                        <placeName>Vinland</placeName>
+                    </place>
                     <place xml:id="GL" sameAs="https://sws.geonames.org/3425505/">
                         <placeName>Greenland</placeName>
                     </place>
@@ -220,7 +236,7 @@
                     
                     <seg xml:id="tryggvason"><persName ref="#LE">Leif</persName> and his companions sailed away from the <placeName ref="#HB">Hebrides</placeName>, and arrived in <placeName ref="#NO">Norway</placeName> in the autumn. Leif went to the court of King <persName ref="#OT">Olaf Tryggvason</persName>. He was well received by the king, who felt that he could see that Leif was a man of great accomplishments. Upon one occasion the king came to speech with Leif, and asks him, '<said aloud="true" who="#OT">Is it thy purpose to sail to <placeName ref="#GL">Greenland</placeName> in the summer</said>?' '<said aloud="true" who="#LE">It is my purpose</said>,' said Leif, '<said aloud="true" who="#LE">if it be your will</said>.' '<said aloud="true" who="#OT">I believe it will be well</said>,' answers the king, '<said aloud="true" who="#OT">and thither thou shalt go upon my errand, to proclaim Christianity there</said>.' Leif replied that <said aloud="false" who="#LE">the king should decide, but gave it as his belief that it would be difficult to carry this mission to a successful issue in Greenland</said>. The king replied that <said aloud="false" who="#LE">he knew of no man who would be better fitted for this undertaking</said>, '<said aloud="true" who="#OT">and in thy hands the cause will surely prosper</said>.' '<said aloud="true" who="#LE">This can only be</said>,' said Leif, '<said aloud="true" who="#LE">if I enjoy the grace of your protection</said>.'</seg>
                     
-                    <seg xml:id="vinland"><persName ref="#LE">Leif</persName> put to sea when his ship was ready for the voyage. For a long time he was tossed about upon the ocean, and came upon lands of which he had previously had no knowledge. There were self-sown wheat fields and vines growing there. There were also those trees there which are called 'mausur' <note place="end" target="#n-36">(36)</note>, and of all these they took specimens. Some of the timbers were so large that they were used in building. Leif found men upon a wreck, and took them home with him, and procured quarters for them all during the winter. In this wise he showed his nobleness and goodness, <span n="3">since he introduced Christianity into the country, and saved the men from the wreck</span>; and he was called <span n="4">Leif the Lucky</span> - ever after.</seg> 
+                    <seg xml:id="vinland"><persName ref="#LE">Leif</persName> put to sea when his ship was ready for the voyage. For a long time he was tossed about upon the ocean, and came upon <placeName ref="#VL">lands</placeName> of which he had previously had no knowledge. There were self-sown wheat fields and vines growing there. There were also those trees there which are called 'mausur' <note place="end" target="#n-36">(36)</note>, and of all these they took specimens. Some of the timbers were so large that they were used in building. Leif found men upon a wreck, and took them home with him, and procured quarters for them all during the winter. In this wise he showed his nobleness and goodness, <span n="3">since he introduced Christianity into the country, and saved the men from the wreck</span>; and he was called <span n="4">Leif the Lucky</span> - ever after.</seg> 
                     
                     <seg xml:id="christianity"><persName ref="#LE">Leif</persName> landed in <placeName ref="#EF">Ericsfirth</placeName>, and then went home to <placeName ref="#BT">Brattahlid</placeName>; he was well received by every one. He soon proclaimed Christianity throughout the land, and the Catholic faith, and announced King <persName ref="#OT">Olaf Tryggvason</persName>'s messages to the people, telling them how much excellence and how great glory accompanied this faith. <persName ref="#ER">Eric</persName> was slow in
                     
@@ -228,7 +244,7 @@
                     forming the determination to forsake his old belief, but <persName ref="#TH">Thiodhild</persName> <note place="end" target="#n-37">(37)</note> embraced the faith promptly, and caused a church to be built at some distance from the house. This building was called Thiodhild's Church, and there she and those persons who had accepted Christianity, and they were many, were wont to offer their prayers. Thiodhild would not have intercourse with Eric after that she had received the faith, whereat he was sorely vexed.</seg>
                 </p>
                 <p>
-                    <seg xml:id="preparation"><span n="5">At this time there began to be much talk about a voyage of exploration</span> to that country which <persName ref="#LE">Leif</persName> had discovered. The leader of this expedition was <persName ref="#TE">Thorstein Ericsson</persName>, who was a good man and an intelligent, and blessed with many friends. <persName ref="#ER">Eric</persName> was likewise invited to join them, for the men believed that his luck and foresight would be of great furtherance. He was slow in deciding, but did not say nay, when his friends besought him to go. They thereupon equipped that ship in which <persName ref="#TB">Thorbiorn</persName> had come out, and twenty men were selected for the expedition. They took little cargo with them, <span n="6">nought else save their weapons and provisions</span>.</seg> 
+                    <seg xml:id="preparation"><span n="5">At this time there began to be much talk about a voyage of exploration</span> to that <placeName ref="#VL">country</placeName> which <persName ref="#LE">Leif</persName> had discovered. The leader of this expedition was <persName ref="#TE">Thorstein Ericsson</persName>, who was a good man and an intelligent, and blessed with many friends. <persName ref="#ER">Eric</persName> was likewise invited to join them, for the men believed that his luck and foresight would be of great furtherance. He was slow in deciding, but did not say nay, when his friends besought him to go. They thereupon equipped that ship in which <persName ref="#TB">Thorbiorn</persName> had come out, and twenty men were selected for the expedition. They took little cargo with them, <span n="6">nought else save their weapons and provisions</span>.</seg> 
                     
                     <seg xml:id="fall">On that morning when <persName ref="#ER">Eric</persName> set out from his home he took with him a little chest containing gold and silver; he hid this treasure, and then went his way. He had proceeded but a short distance, however, when he fell from his horse and broke his ribs and <span n="7">dislocated his shoulder</span>, <span n="8">whereat he cried 'Ai, ai!'</span> By reason of this accident <span n="9">he sent his wife word</span> that she should procure the treasure which he had concealed, for to the hiding of the treasure he attributed his misfortune <note place="end" target="#n-38">(38)</note>.</seg> 
                     
@@ -237,6 +253,8 @@
                     <!-- Page 38 (50/280) -->      
                     must be here. We will act now upon thy counsel in this matter</span></said>.'All of the men, who were not otherwise provided for, accompanied the father and son. They landed thereupon, and went home to Brattahlid, where they remained throughout the winter.</seg>
                 </p>
+            </div>
+            <div>
                 <listApp>
                     <app loc="1">
                         <rdg wit="#EsR">Thiodhild</rdg>

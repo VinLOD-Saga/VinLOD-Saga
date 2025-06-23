@@ -20,28 +20,34 @@ def xml_to_rdf(file):
     # sourceDesc/msDesc/msIdentifier root
     #fileDesc/titleStmt
     titleStmt = root.find(".//tei:fileDesc/tei:titleStmt", namespaces=tei_ns)
-    title = get_text_or_none(titleStmt.find("tei:title[@type='main']", namespaces=tei_ns))
-    subtitle = get_text_or_none(titleStmt.find("tei:title[@type='main']", namespaces=tei_ns))
-    annotator = get_text_or_none(titleStmt.find("tei:respStmt/tei:persName", namespaces=tei_ns))
+    title = get_text_or_none(titleStmt.find("tei:title[@type='main']", namespaces=tei_ns)) #bf:mainTitle
+    subtitle = get_text_or_none(titleStmt.find("tei:title[@type='sub']", namespaces=tei_ns)) #bf:subtitle
 
     #fileDesc/editionStmt
     editionStmt = root.find(".//tei:editionStmt", namespaces=tei_ns)
-    edition = get_text_or_none(editionStmt.find("tei:edition", namespaces=tei_ns))
-    date = get_text_or_none(editionStmt.find("tei:edition/tei:date", namespaces=tei_ns))
+    edition = get_text_or_none(editionStmt.find("tei:edition", namespaces=tei_ns)) #bf:editionStatement
+    date = get_text_or_none(editionStmt.find("tei:edition/tei:date", namespaces=tei_ns)) #bf:date
+    resp = get_text_or_none(editionStmt.find("tei:respStmt/tei:resp", namespaces=tei_ns)) #bf:responsibilityStatement
+    annotator = get_text_or_none(editionStmt.find("tei:respStmt/tei:persName", namespaces=tei_ns)) #bf:responsibilityStatement
 
     #fileDesc/extent
-    extent = get_text_or_none(editionStmt.find("tei:fileDesc/tei:extent/tei:measure[@unit='kb']", namespaces=tei_ns))
+    extent = get_text_or_none(editionStmt.find("tei:fileDesc/tei:extent/tei:measure[@unit='kb']", namespaces=tei_ns)) #bf:dimensions
 
     #fileDesc/publicationStmt
-    publicationStmt = root.find(".//tei:fileDesc/publicationStmt", namespaces=tei_ns)
-    publisher = get_text_or_none(publicationStmt.find("tei:publisher", namespaces=tei_ns))
-    pubPlace = (publicationStmt.find("tei:pubPlace/placeName", namespaces=tei_ns)).get('sameAs')
-    licenceURI = (publicationStmt.find("tei:availability/tei:licence", namespaces=tei_ns)).get('target')
-    licenceName = get_text_or_none(publicationStmt.find("tei:availability/tei:licence", namespaces=tei_ns))
-    licenceComment = get_text_or_none(publicationStmt.find("tei:availability/tei:p", namespaces=tei_ns))
+    publicationStmt = root.find(".//tei:fileDesc/tei:publicationStmt", namespaces=tei_ns)
+    publisher = get_text_or_none(publicationStmt.find("tei:publisher", namespaces=tei_ns)) #bf:agent
+    pubPlace = (publicationStmt.find("tei:pubPlace/tei:placeName", namespaces=tei_ns)).get('sameAs') #bf:place
+    licenceURI = (publicationStmt.find("tei:availability/tei:licence", namespaces=tei_ns)).get('target') #dcterms:license
+    licenceName = get_text_or_none(publicationStmt.find("tei:availability/tei:licence", namespaces=tei_ns)) #dcterms:license
+    licenceComment = get_text_or_none(publicationStmt.find("tei:availability/tei:p", namespaces=tei_ns)) #dcterms:license
 
     #projectDesc
-    projectDesc = get_text_or_none(root.find(".//tei:projectDesc/tei:p", namespaces=tei_ns))
+    projectDesc = get_text_or_none(root.find(".//tei:projectDesc/tei:p", namespaces=tei_ns)) #schema:description
+
+    #relevant people and places
+    profileDesc = root.find(".//tei:profileDesc", namespaces=tei_ns)
+    erik = (profileDesc.find(".//tei:person[@xml:id='ER']", namespaces=tei_ns)).get('sameAs')
+    vinland = (profileDesc.find(".//tei:place[@xml:id='VL']", namespaces=tei_ns)).get('sameAs')
 
     # === 2. Building RDF and URIs ===
     g = Graph()
@@ -50,54 +56,68 @@ def xml_to_rdf(file):
     SCHEMA = Namespace("http://schema.org/") # Using schema.org for 'location'
     BF = Namespace("http://id.loc.gov/ontologies/bibframe/")
     CRM = Namespace("http://www.cidoc-crm.org/cidoc-crm/") # CIDOC CRM namespace
+    vinLOD= Namespace("https://w3id.org/vinLOD-saga/") #
 
     # Bind namespaces for cleaner output
     g.bind("dcterms", DCTERMS)
     g.bind("bf", BF)
     g.bind("schema", SCHEMA)
     g.bind("crm", CRM)
+    g.bind("vinLOD", vinLOD)
 
 
     #Entities
-    doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Flatjarbok_Manuscript")
+    doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Finding_of_Wineland_DigitalEdition")
     E24 = CRM['E24_Physical_Human-Made_Thing'] # Using CRM namespace for E24
+    digital_doc= SCHEMA.DigitalDocument
+    wineland_original = URIRef("https://w3id.org/vinLOD-saga/item/Finding_of_Wineland")
+    leif = URIRef("https://w3id.org/vinLOD-saga/person/Leiv_Eiriksson")
+    norse_exploration = URIRef("https://w3id.org/vinLOD-saga/event/Norse_Exploration")
 
-    #Properties (using defined namespaces directly)
-    originPlace = BF.originPlace
-    place = BF.place
-    language_prop = BF.language # Renamed to avoid conflict with 'lang' variable
-    location = SCHEMA.location # Using schema.org for location
 
     # === 3. Populating the Graph ===
-
     g.add((doc_uri, RDF.type, E24)) # type
+    g.add((doc_uri, RDF.type, digital_doc))
+    g.add((doc_uri, CRM.P130_shows_features_of, wineland_original))
+    g.add((doc_uri, CRM.P129_is_about, leif))
+    g.add((doc_uri, CRM.P129_is_about, norse_exploration))
 
-    if msname:
-        g.add((doc_uri, DCTERMS.title, Literal(msname)))
-    if support:
-        g.add((doc_uri, DCTERMS.medium, Literal(support)))
-    if idno:
-        g.add((doc_uri, DCTERMS.identifier, Literal(idno)))
+    if title:
+        g.add((doc_uri, BF.mainTitle, Literal(title)))
+    if subtitle:
+        g.add((doc_uri, BF.subtitle, Literal(subtitle)))
 
-    if country:
-        g.add((doc_uri, originPlace, Literal(country)))
-    if settlement:
-        g.add((doc_uri, originPlace, Literal(settlement)))
-    if institution:
-        g.add((doc_uri, location, Literal(institution)))
-    if repository:
-        g.add((doc_uri, place, Literal(repository)))
-    if collection:
-        g.add((doc_uri, place, Literal(collection)))
+    if edition:
+        g.add((doc_uri, BF.editionStatement, Literal(edition)))
+    if date:
+        g.add((doc_uri, BF.date, Literal(date)))
+    if resp and annotator:
+        g.add((doc_uri, BF.responsibilityStatement, Literal(f'{resp} {annotator}')))
 
-    if lang:
-        g.add((doc_uri, language_prop, Literal(lang)))
+    if extent:
+        g.add((doc_uri, BF.dimensions, Literal(extent)))
+
+    if publisher:
+        g.add((doc_uri, BF.agent, Literal(publisher)))
+    if pubPlace:
+        g.add((doc_uri, BF.place, URIRef(pubPlace)))
+    if licenceURI:
+        g.add((doc_uri, DCTERMS.license, URIRef(licenceURI)))
+
+    if projectDesc:
+        g.add((doc_uri, SCHEMA.description, Literal(projectDesc)))
+
+    if erik:
+        g.add((doc_uri, CRM.P129_is_about, URIRef(erik)))
+    if vinland:
+        g.add((doc_uri, CRM.P129_is_about, URIRef(vinland)))
+
 # there should be 10 triples 
 
     # === 4. Serializing in Turtle ===
     try:
-        g.serialize(destination="turtle_files/flatjarbok_manuscript.ttl", format="turtle")
-        print("RDF graph successfully serialized to flatjarbok_manuscript.ttl")
+        g.serialize(destination="turtle_files/wineland_digitalEdition.ttl", format="turtle")
+        print("RDF graph successfully serialized to wineland_digitalEdition.ttl")
     except Exception as e:
         print(f"Error during serialization: {e}")
 
@@ -109,5 +129,5 @@ def xml_to_rdf(file):
         count+=1
     print("------------------------")
 
-file = "object_metadata/Flatjarbok/GKS02-1005-is.xml"
+file = "tei_xml/Wineland_the_Good/Wineland_the_Good.xml"
 xml_to_rdf(file)
