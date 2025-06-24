@@ -46,9 +46,9 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #102c3d; /* Background color for the entire website, including individual sections */
+  --background-color: #1b3342; /* Background color for the entire website, including individual sections */
   --default-color: #EFF3F0; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #45907B; /* Color for headings, subheadings and title throughout the website */
+  --heading-color: #549180; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #500E0E; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #4A6668; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #E7E6E0; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
@@ -58,9 +58,9 @@
 :root {
   --nav-color: #EFF3F0;  /* The default color of the main navmenu links */
   --nav-hover-color: #500E0E; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #102C3D; /* Used as the background color for mobile navigation menu */
+  --nav-mobile-background-color: #4A6668; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #4A6668; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-color: #EFF3F0; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #500E0E; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -150,7 +150,127 @@ body.reveal #hero .container {
   }
 }
 
+/*--------------------------------------------------------------
+# Card Styles
+--------------------------------------------------------------*/
+.card {
+  background-color: var(--surface-color);
+}
 
+.card-img-fixed {
+  height: 500px;        /* Adjust this height as needed */
+  object-fit: contain;    /* Ensures the image covers the area without distortion */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .btn {
+  margin-top: auto;         /* Pushes button to bottom */
+  align-self: center;       /* Centers horizontally */
+  margin-bottom: 15px;
+  background-color: var(--accent-color);
+}
+
+.card-title {
+  text-align: center;
+  color: var(--default-color);
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+}
+
+.card-body h6 {
+  text-align: center;
+  color: var(--accent-color);
+  font-family: var(--default-font);
+  text-transform: capitalize;
+  font-size: 20px;
+}
+
+.card-text {
+  font-family: var(--default-font);
+  color: var(--default-color);
+}
+
+/*--------------------------------------------------------------
+# Modal Styles
+--------------------------------------------------------------*/
+
+.modal-content {
+  background-color: var(--surface-color);
+}
+
+.modal-title {
+  text-align: center;
+  color: var(--default-color);
+  font-family: var(--heading-font);
+  text-transform: uppercase;
+}
+
+/* .modal-backdrop {
+  z-index: 1040; 
+}
+.modal {
+  z-index: 1050; 
+}
+
+.modal.show {
+  pointer-events: auto;
+}
+
+body.modal-open {
+  overflow: hidden; 
+} */
+
+/* ✅ Force correct modal backdrop behavior */
+/* .modal-backdrop.show {
+  opacity: 0.5 !important;         
+  background-color: #000 !important;
+  z-index: 1050 !important;        
+  pointer-events: auto !important;
+} */
+
+/* .modal-open {
+  overflow: hidden !important;
+  padding-right: 0 !important;
+} */
+
+/* ✅ Ensure the modal itself is always visible when active */
+/* .modal.show {
+  display: block !important;
+  z-index: 1055 !important;       
+} */
+
+/*--------------------------------------------------------------
+# Section Seperators
+--------------------------------------------------------------*/
+
+.separatorOne {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/vinland_sea1.png") fixed center center;
+  background-size: cover;
+  padding: 200px 0;
+  min-height: 300px;
+}
+
+.separatorTwo {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/vinland_sea1.png") fixed center center;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.separatorThree {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/vinland_sea1.png") fixed center center;
+  background-size: cover;
+  padding: 200px 0;
+}
+
+.separatorFour {
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/vinland_sea1.png") fixed center center;
+  background-size: cover;
+  padding: 200px 0;
+}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -159,6 +279,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  font-size: 16px;
 }
 
 a {
@@ -945,7 +1066,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 30px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -962,26 +1083,28 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
-  padding-bottom: 60px;
+  padding-bottom: 10px;
+  margin-top: 20px;
   position: relative;
+  padding-left: 0;
 }
 
 .section-title h2 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
   margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
   position: relative;
 }
 
 .section-title h2::after {
   content: "";
   width: 120px;
-  height: 1px;
+  height: 2.5px;
   display: inline-block;
   background: var(--accent-color);
   margin: 4px 10px;
@@ -990,10 +1113,10 @@ section,
 .section-title p {
   color: var(--heading-color);
   margin: 0;
-  font-size: 36px;
+  font-size: 30px;
   font-weight: 800;
-  text-transform: uppercase;
-  font-family: var(--heading-font);
+  text-transform: capitalize;
+  font-family: var(--default-font);
 }
 
 @media (max-width: 768px) {

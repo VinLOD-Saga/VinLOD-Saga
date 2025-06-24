@@ -45,7 +45,7 @@
   <!-- Video Intro Wrapper -->
   <div id="video-intro" class="video-intro">
     <video id="intro-video" autoplay muted>
-      <source src="assets/video/vinLOD_op.mp4" type="video/mp4">
+      <source src="assets/audiovideo/vinLOD_op.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -103,12 +103,12 @@
     <!-- About Section -->
     <section id="about" class="about section">
 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About the Project</h2>
-        <p>Introduction<br></p>
-      </div>
+      <div class="container" id="intro">
 
-      <div class="container">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About the Project</h2>
+          <p>Introduction<br></p>
+        </div>
 
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -128,146 +128,183 @@
 
       </div>
 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>About the Project</h2>
-        <p>The Objects<br></p>
-      </div>
-      <div class="container">
+      <div class="container" id="objects">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About the Project</h2>
+          <p>The Objects<br></p>
+        </div>
         <p> 
           The first objective of this project was to select <b>ten varied items</b> linked to our idea. The team began by considering elements that could weave a cohesive narrative throughout <b>Queen Cleopatra's figure</b>. These selections were made with careful consideration of their relevance and diversity, particularly in relation to their connections with other individuals, places, time periods, and concepts.<br>
           Every entry below comprises a <b>brief description</b>, <b>essential metadata</b>, and a <b>reference link</b> to learn more about the items.
         </p>
 
-        <div class="row row-cols-1 row-cols-md-3">
+        <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+          <!-- anime -->
           <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/tragedy.png" class="card-img-top" alt="Antony and Cleopatra, text">
+            <div class="card h-100" id="anime">
+              <img src="assets/img/vinland_anime.jpg" class="card-img-top" alt="Vinland Saga Anime">
               <div class="card-body">
-                <h5 class="card-title">"Shakspeare's Tragedy of Antony and Cleopatra"</h5>
-                <h6>PRINTED EDITION</h6>
+                <h5 class="card-title">Vinland Saga Anime</h5>
+                <h6>Bibliographic Record</h6>
                 <p class="card-text">
-                  The printed edition of <b>Shakespeare's play</b> <i>Antony and Cleopatra</i> edited by <b>John Dryden</b> and published in <b>London</b> by <b>Barker</b> in <b>1813</b>. It delves into the tumultuous romance between Roman general <b>Mark Antony</b> and Egyptian queen <b>Cleopatra</b>. Dryden's edition contains revisions and alterations aimed at modernizing the original text, aligning it with the moral and literary standards of his milieu.
-                
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi obcaecati natus provident perferendis nisi nam voluptatum! Nulla veritatis consequatur excepturi fugiat facilis at necessitatibus quam ex consequuntur laudantium! Pariatur autem sequi officiis totam quidem, odio enim quas minima ipsa esse eius eligendi nobis impedit mollitia, deleniti modi dolore facere.
                 </p>
-                <a href="https://www.digitale-sammlungen.de/en/view/bsb10749937?page=,1" class="btn btn-dark" role="button" target="_blank">See more</a>
+                <a href="https://anidb.net/anime/13945" class="btn btn-dark" role="button" target="_blank">See more</a>
               </div>
             </div>
           </div>
+          
+          <!-- manga -->
           <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/coin.jpg" class="card-img-top" alt="Coin  with the effigy of Cleopatra and Mark Antony">
+            <div class="card h-100" id="manga">
+              <img src="assets/img/vinland_manga.jpg" class="card-img-top" alt="Vinland Saga Manga">
               <div class="card-body">
-                <h5 class="card-title">Ancient coin</h5>
-                <h6>COIN</h6>
+                <h5 class="card-title">Vinland Saga Manga</h5>
+                <h6>Bibliographic Record</h6>
                 <p class="card-text">
-                  A <b>Tetradrachm</b> (four drachma) coin with the face of Cleopatra depicted on the recto and the face of Mark Anthony on the verso. Minted in the alliance between the two leaders was an advertisement of their powerful partnership.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde, architecto voluptatum, sunt reiciendis magnam, recusandae nihil et omnis voluptate repellendus delectus rerum asperiores quae ea vero. Ipsum voluptas tempora saepe incidunt, corporis dolorum. Modi, consequuntur corrupti sunt nobis soluta voluptas cupiditate, dolorum qui cum veritatis explicabo totam architecto? Cumque!
                 </p>
-                <a href="https://www.artic.edu/artworks/194522/tetradrachm-coin-portraying-queen-cleopatra-vii" class="btn btn-dark" role="button" target="_blank">See more</a>
+                <a href="https://myanimelist.net/manga/642/Vinland_Saga" class="btn btn-dark" role="button" target="_blank">See more</a>
               </div>
             </div>
           </div>
+
+          <!-- coin -->
           <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/statue.jpeg" class="card-img-top" alt="Statue of a Ptolemaic Queen">
+            <div class="card h-100" id="coin">
+              <img src="assets/img/cnutthegreat_coin.jpg" class="card-img-top" alt="Coin of Cnut the Great">
               <div class="card-body">
-                <h5 class="card-title">"Statue representing a Ptolemaic Queen"</h5>
-                <h6>STATUE</h6>
+                <h5 class="card-title">Coin of Cnut the Great</h5>
+                <h6>Coin</h6>
                 <p class="card-text">
-                  Probably a representation of Cleopatra VII, this statue of a <b>Ptolemaic Queen</b> holding a cornucopia has characteristics that indicates that it is from the <b>I<sup>st</sup> century BC</b>. The details of the hair style are the main suggestion of a representation of Cleopatra. 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quam quos, officiis beatae consequatur in modi minima quidem quae repellendus nemo ut, commodi dolorum ex dolorem ipsa saepe nesciunt illo? Saepe velit quis cum odio incidunt deleniti dolores culpa, unde aspernatur illo necessitatibus expedita veritatis accusantium aperiam, sit dolor natus!
                 </p>
-                <a href="https://www.metmuseum.org/art/collection/search/547702" class="btn btn-dark" role="button" target="_blank">See more</a>
+                <a href="https://ikmk.smb.museum/object?lang=en&id=18202952" class="btn btn-dark" role="button" target="_blank">See more</a>
               </div>
             </div>
           </div>
+
+          <!-- manuscript -->
           <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/song.png" class="card-img-top" alt="Samira Efendi in the song videoclip">
+            <div class="card h-100" id="manuscript">
+              <img src="assets/img/GKS_1005_fol.,_0056v_-_117.jpg" class="card-img-top" alt="Page from Flatjarbok">
               <div class="card-body">
-                <h5 class="card-title">"Cleopatra", song by Efendi</h5>
-                <h6>SONG</h6>
-                <p class="card-text">The song was recorded by the Azerbaijani singer <b>Samira Efendi</b> in <b>2020</b>. 
-                  In an interview aired upon the release of the song, the singer said: <i><q>It's a song that aims to inspire people to be who they are and to be proud of themselves, just like Cleopatra was. She was a queen who experienced love, pain, and betrayal, but she rose for herself and is now remembered as an icon of strength and femininity.</i></q></p>
-                <a href="https://musicbrainz.org/recording/3e7292fa-704e-445e-b93d-fc790a4d5f08 " class="btn btn-dark" role="button" target="_blank">See more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/bracelet.png" class="card-img-top" alt="Gold bracelet in the form of a serpent">
-              <div class="card-body">
-                <h5 class="card-title">Gold bracelet in the form of a serpent</h5>
-                <h6>ARCHEOLOGICAL ARTIFACT</h6>
-                <p class="card-text">An ancient bracelet found in <b>Egypt</b> and dated <b>I<sup>st</sup> Century BC</b>. It shows the characteristic style of the Ptolemaic jewelry. The artifact's material, <b>gold</b>, reflects the wealth and craftsmanship of the period. Gold was highly prized in Ancient Egypt and was often used in jewelry for its durability and symbolic significance. The presence of the snake motif on the bracelet suggests that it may have been worn for its protective or symbolic significance, perhaps by someone of high status or importance within Ptolemaic Egyptian society.</p>
-                <a href="https://www.britishmuseum.org/collection/object/G_1917-0601-2780?_gl=1%2a1neucsp%2a_up%2aMQ..%2a_ga%2aMTQzNjMyNDY5Mi4xNzExMDQyMzg3%2a_ga_JHR77E3EZ1%2aMTcxMTA0MjM4Ni4xLjAuMTcxMTA0MjM4Ni4wLjAuMA..%2a_ga_08TLB9R8X1%2aMTcxMTA0MjM4Ni4xLjAuMTcxMTA0MjM4Ni4wLjAuMA" class="btn btn-dark" role="button" target="_blank">See more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/game.jpg" class="card-img-top" alt="Caesar & Cleopatra board game">
-              <div class="card-body">
-                <h5 class="card-title">"Caesar and Cleopatra"</h5>
-                <h6>BOARD GAME</h6>
-                <p class="card-text">The card game <b>"Caesar and Cleopatra"</b> is set in Antiquity and focuses on the power struggles between <b>Julius Caesar</b> and <b>Cleopatra</b>. The game offers an engaging experience in the intrigue and politics of <b>Ancient Egypt</b> and <b>Rome</b>.</p>
-                <a href="https://boardgamegeek.com/boardgame/132/caesar-and-cleopatra" class="btn btn-dark" role="button" target="_blank">See more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/ballet.jpg" class="card-img-top" alt="Cleopatra Ballet">
-              <div class="card-body">
-                <h5 class="card-title">"Cleopatra" Ballet</h5>
-                <h6>DANCE PERFORMANCE</h6>
-                <p class="card-text">The <b>Northern Ballet</b> presents the ballet <b>"Cleopatra"</b> which provides a vibrant and engaging representation of the life of the Egyptian Queen <b>Cleopatra VII</b> through dance, capturing her romantic relationships, along with her political intrigues and power struggles.</p>
-                <a href="https://northernballet.com/cleopatra " class="btn btn-dark" role="button" target="_blank">See more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/paint.jpg" class="card-img-top" alt="The Meeting of Antony and Cleopatra painting">
-              <div class="card-body">
-                <h5 class="card-title">"The Meeting of Antony<br>and Cleopatra"</h5>
-                <h6>ARTWORK</h6>
+                <h5 class="card-title">Flateyjarbók</h5>
+                <h6>Manuscript Codex Digital Facsmile</h6>
                 <p class="card-text">
-                  An <b>oil sketch</b> created by the Italian painter <b>Giovanni Battista Tiepolo</b> in <b>1745-47</b>, depicting the meeting of <b>Mark Antony</b> and <b>Cleopatra VII</b>, a significant historical event that occurred during the late 1<sup>st</sup> century BC. Cleopatra VII, the last active ruler of the Ptolemaic Kingdom of Egypt, and Mark Antony, one of the most prominent Roman generals and politicians of his time, formed a powerful alliance that had profound implications for the Mediterranean world.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quae voluptates, corrupti est necessitatibus repellat dolorum illo modi ex, soluta, non eius? Quam excepturi porro assumenda aliquid in fugiat commodi asperiores neque necessitatibus, hic quos illo quo, dicta labore reiciendis ipsum et cum? A maxime nihil, officiis quas mollitia consequuntur.
                 </p>
-                <a href="https://www.metmuseum.org/art/collection/search/438129" class="btn btn-dark" role="button" target="_blank">See more</a>
+                <a href="https://handrit.is/manuscript/view/is/GKS02-1005/11#page/3v/mode/2up" class="btn btn-dark" role="button" target="_blank">See more</a>
               </div>
             </div>
           </div>
+
+          <!-- wineland -->
           <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/movie.jpg" class="card-img-top" alt="Cleopatra 1963 movie poster">
+            <div class="card h-100" id="wineland">
+              <img src="assets/img/findingofwinelan00reev_0007.jpg" class="card-img-top" alt="First page from The Finding of Wineland the Good">
               <div class="card-body">
-                <h5 class="card-title">"Cleopatra", 1963 movie by Joseph L. Mankiewicz</h5>
-                <h6>MOVIE</h6>
-                <p class="card-text">The <b>1963</b> film <b>"Cleopatra"</b>, directed by <b>Joseph L. Mankiewicz</b>, tells the story of the Egyptian queen <b>Cleopatra VII</b>, depicting her relationships with <b>Julius Caesar</b> and <b>Mark Antony</b>. "Cleopatra" has become a classic colossal film and remains an iconic portrayal of Cleopatra's story.</p>
-                <a href="https://www.imdb.com/title/tt0056937/?ref_=fn_rvi_tt_t_2 
-                " class="btn btn-dark" role="button" target="_blank">See more</a>
-              </div>
-            </div>
-          </div>
-          <div class="col mb-4">
-            <div class="card h-100">
-              <img src="assets/img/imgitems/papyrus.png" class="card-img-top" alt="Royal Decree of Cleopatra VII">
-              <div class="card-body">
-                <h5 class="card-title">Royal Decree signed by Cleopatra VII</h5>
-                <h6>MANUSCRIPT</h6>
+                <h5 class="card-title">The Finding of Wineland the Good</h5>
+                <h6>Translated Edition Digital Facsmile</h6>
                 <p class="card-text">
-                  This papyrus is the only existing document carrying a sample of <b>Cleopatra’s handwriting</b>. Her signature on this ordinary decree also testifies to the ties that influential Romans had with her government during the alliance with Mark Antony. 
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero nam itaque quis aperiam illo impedit quod enim voluptas iure atque id laborum molestias accusamus tempora praesentium ad facere at facilis omnis eius, ducimus repudiandae sapiente? Adipisci, corporis sunt labore itaque dolore eos aspernatur ipsa aliquam ratione eum sapiente eaque.
                 </p>
-                <a href="https://berlpap.smb.museum/05150/?lang=en" class="btn btn-dark" role="button" target="_blank">See more</a>
+                <a href="https://archive.org/details/findingofwinelan00reev/page/n5/mode/2up" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- painting -->
+          <div class="col mb-4">
+            <div class="card h-100" id="painting">
+              <img src="assets/img/leif_painting.jpg" class="card-img-top" alt="Leif Erikson Discovering America">
+              <div class="card-body">
+                <h5 class="card-title">Leiv Eiriksson discovering America</h5>
+                <h6>Painting</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis voluptatibus exercitationem alias illum tenetur aliquam est aut, fugit sit suscipit fuga officiis provident praesentium error necessitatibus natus totam nesciunt iste consequuntur dolorem voluptate culpa atque hic? Ipsum veritatis labore ex odio sed eius ea quis corrupti. Beatae, mollitia reprehenderit?
+                </p>
+                <a href="https://www.nasjonalmuseet.no/en/collection/object/NG.M.00558" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- opera -->
+          <div class="col mb-4">
+            <div class="card h-100" id="opera">
+              <img src="assets/img/ride_of_valkyrie.jpg" class="card-img-top" alt="Ride of the Valkyrie score opening page">
+              <div class="card-body">
+                <h5 class="card-title">Ride of the Valkyrie</h5>
+                <h6>Performance Recording</h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ut inventore repellat et veniam earum, veritatis laboriosam optio, doloribus nostrum quia, voluptate eius ipsa ad officiis! Recusandae debitis laboriosam reiciendis doloribus placeat provident inventore rerum enim, eligendi eius atque deserunt veritatis eaque omnis perferendis corrupti incidunt consequatur blanditiis facere officiis.
+                </p>
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#audioModal">See more</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- illustration -->
+          <div class="col mb-4">
+            <div class="card h-100" id="illustration">
+              <img src="assets/img/Olav_Tryggvasons_saga_-_Uvaeret_Hjoerungavaag_-_H._Egedius.jpg" class="card-img-top" alt="Illustration of the battle of Hjoerungavaag">
+              <div class="card-body">
+                <h5 class="card-title">The hailstorm during the Battle of Hjǫrungavágr</h5>
+                <h6>Illustration</h6>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate similique assumenda eum odio aut porro, obcaecati temporibus libero voluptates commodi qui fugiat veniam sequi culpa iste eligendi sapiente reprehenderit! Deleniti reiciendis quos voluptas officiis a? Rerum sint beatae quis exercitationem at, nobis sunt necessitatibus consequuntur error numquam atque ut magni.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Battle_of_Hj%C3%B6rungav%C3%A1gr#/media/File:Olav_Tryggvasons_saga_-_Uvaeret_Hjoerungavaag_-_H._Egedius.jpg" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- edda -->
+          <div class="col mb-4">
+            <div class="card h-100" id="edda">
+              <img src="assets/img/poetic_edda_cover.jpg" class="card-img-top" alt="Poetic Edda cover">
+              <div class="card-body">
+                <h5 class="card-title">The Poetic Edda</h5>
+                <h6>Translated Edition</h6>
+                <p class="card-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, repellat fuga voluptatem laboriosam molestiae ad facere incidunt maiores officiis repudiandae ab saepe quo id libero perspiciatis voluptas ut nobis quisquam fugiat! Delectus blanditiis, beatae est illum ad voluptas. Praesentium, aliquam. Sequi, quod ex. Cumque assumenda eos, eius maiores suscipit quaerat.
+                </p>
+                <a href="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- video -->
+          <div class="col mb-4">
+            <div class="card h-100" id="videoCard">
+              <img src="assets/img/vinland_op.jpg" class="card-img-top" alt="Vinland Saga OP1">
+              <div class="card-body">
+                <h5 class="card-title">Vinland Saga Opening 1</h5>
+                <h6>Video</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, maiores error aliquam similique, nam nesciunt mollitia distinctio beatae inventore natus consequatur sit. Similique officiis reprehenderit hic a corporis tempora magnam eos maxime! Illo minima explicabo, illum placeat fugit pariatur, accusantium voluptatem eius consectetur ab totam labore quisquam consequuntur quo voluptatum.
+                </p>
+                <!-- <a href="https://www.youtube.com/watch?v=l5wAdQ-UkWY" class="btn btn-dark" role="button" target="_blank">See more</a> -->
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#videoModal">See more</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
+      
     <!-- /About Section -->
-
+<!-- 
     <br/>
-    <hr/> 
+    <hr/>  -->
+     <!-- Background effect SEPARATOR -->
+    <section id="separatorOne" class="separatorOne">
+      <div class="container aos-init aos-animate" data-aos="zoom-in">
+
+      </div>
+    </section>
+    <!-- End Separator -->
+
     <!-- Metadata Analysis -->
     <section id="analysis" class="services section">
 
@@ -603,6 +640,39 @@
 
   </footer>
 
+<!-- Modal -->
+  <div class="modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="videoModalLabel">Vinland Saga Opening 1</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/l5wAdQ-UkWY?si=QytxA-xHKqYIpIGs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="audioModal" tabindex="-1" aria-labelledby="audioModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="audioModalLabel">Ride of the Valkyrie</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <figure>
+            <audio controls src="assets/audiovideo/rideofthevalkyrie.mp3"></audio>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
@@ -618,7 +688,8 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
+  
+  
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
