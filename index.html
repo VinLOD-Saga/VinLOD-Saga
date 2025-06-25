@@ -139,6 +139,21 @@
         </p>
 
         <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+          <!-- manga -->
+          <div class="col mb-4">
+            <div class="card h-100" id="manga">
+              <img src="assets/img/vinland_manga.jpg" class="card-img-top" alt="Vinland Saga Manga">
+              <div class="card-body">
+                <h5 class="card-title">Vinland Saga Manga</h5>
+                <h6>Bibliographic Record</h6>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde, architecto voluptatum, sunt reiciendis magnam, recusandae nihil et omnis voluptate repellendus delectus rerum asperiores quae ea vero. Ipsum voluptas tempora saepe incidunt, corporis dolorum. Modi, consequuntur corrupti sunt nobis soluta voluptas cupiditate, dolorum qui cum veritatis explicabo totam architecto? Cumque!
+                </p>
+                <a href="https://myanimelist.net/manga/642/Vinland_Saga" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+          
           <!-- anime -->
           <div class="col mb-4">
             <div class="card h-100" id="anime">
@@ -154,21 +169,6 @@
             </div>
           </div>
           
-          <!-- manga -->
-          <div class="col mb-4">
-            <div class="card h-100" id="manga">
-              <img src="assets/img/vinland_manga.jpg" class="card-img-top" alt="Vinland Saga Manga">
-              <div class="card-body">
-                <h5 class="card-title">Vinland Saga Manga</h5>
-                <h6>Bibliographic Record</h6>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde, architecto voluptatum, sunt reiciendis magnam, recusandae nihil et omnis voluptate repellendus delectus rerum asperiores quae ea vero. Ipsum voluptas tempora saepe incidunt, corporis dolorum. Modi, consequuntur corrupti sunt nobis soluta voluptas cupiditate, dolorum qui cum veritatis explicabo totam architecto? Cumque!
-                </p>
-                <a href="https://myanimelist.net/manga/642/Vinland_Saga" class="btn btn-dark" role="button" target="_blank">See more</a>
-              </div>
-            </div>
-          </div>
-
           <!-- coin -->
           <div class="col mb-4">
             <div class="card h-100" id="coin">
@@ -235,7 +235,7 @@
               <img src="assets/img/ride_of_valkyrie.jpg" class="card-img-top" alt="Ride of the Valkyrie score opening page">
               <div class="card-body">
                 <h5 class="card-title">Ride of the Valkyrie</h5>
-                <h6>Performance Recording</h6>
+                <h6>Orchestral Performance - Recording</h6>
                 <p class="card-text">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis ut inventore repellat et veniam earum, veritatis laboriosam optio, doloribus nostrum quia, voluptate eius ipsa ad officiis! Recusandae debitis laboriosam reiciendis doloribus placeat provident inventore rerum enim, eligendi eius atque deserunt veritatis eaque omnis perferendis corrupti incidunt consequatur blanditiis facere officiis.
                 </p>
@@ -298,117 +298,121 @@
     <br/>
     <hr/>  -->
      <!-- Background effect SEPARATOR -->
-    <section id="separatorOne" class="separatorOne">
-      <div class="container aos-init aos-animate" data-aos="zoom-in">
-
-      </div>
-    </section>
+    <section id="separatorOne" class="separatorOne"></section>
     <!-- End Separator -->
 
     <!-- Metadata Analysis -->
     <section id="analysis" class="services section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Metadata Analysis</h2>
-        <p>Object Metadata standards<br></p>
-      </div>
-      <!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container" id="objectTable" data-aos="fade-up" data-aos-delay="100">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Metadata Analysis</h2>
+          <p>Object Metadata standards<br></p>
+        </div>
+        
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore autem animi quidem amet voluptatum perferendis delectus nesciunt molestiae voluptatem tempora. Laboriosam, et perspiciatis reprehenderit dolorem quaerat quo id magnam doloribus, laudantium accusantium fugit voluptas amet! Optio, provident sunt consequuntur error enim eius fugit quae, cum tenetur eaque quibusdam cupiditate. Sint?</p>
 
         <table class="table table-striped table-responsive">
-
           <thead>
             <tr>
-              <th style="color: #BBB;">#</th>
-              <th>Item Name</th>
-              <th>Object Type</th>
-              <th>Provider</th>
-              <th>Metadata Standard</th>
+              <th scope="col">#</th>
+              <th scope="col">Object Name</th>
+              <th scope="col">Object Type</th>
+              <th scope="col">Provider</th>
+              <th scope="col">Provided Metadata</th>
+              <th scope="col">Converted Metadata</th>
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="table-group-divider">
             <tr>
-              <td style="color: #BBB;">01</td>
-              <td>Shakespeare's Tragedy of Antony and Cleopatra</td>
-              <td>Printed Edition</td>
-              <td>Munich Digitization Center,<br>Bavarian State Library (BSB)</td>
-              <td>*MARC21</td>
+              <td>01</td>
+              <td>Vinland Saga Manga</td>
+              <td>Manga Record</td>
+              <td>MyAnimeList</td>
+              <td>/</td>
+              <td>JVMG/ACLICK</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">02</td>
-              <td>Coin with the effigy of Cleopatra</td>
+              <td>02</td>
+              <td>Vinland Saga Anime</td>
+              <td>Anime Record</td>
+              <td>aniDB</td>
+              <td>/</td>
+              <td>JVMG/ACLICK</td>
+            </tr>
+
+            <tr>
+              <td>03</td>
+              <td>Coin of Cnut the Great</td>
               <td>Coin</td>
-              <td>Art Institute of Chicago</td>
-              <td>*CIDOC-CRM</td>
+              <td>Münzkabinett Berlin</td>
+              <td>NMO/LIDO-XML</td>
+              <td>NMO/DCTERMS</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">03</td>
-              <td>Statue of a Ptolemaic Queen</td>
-              <td>Artwork</td>
-              <td>Metropolitan Museum of Art</td>
-              <td><a style="color: #17bdbd;">CIDOC-CRM</a></td>
+              <td>04</td>
+              <td>Flateyjarbók</td>
+              <td>Manuscript Codex - Digital Facsmile</td>
+              <td>The Árni Magnússon Institute for Icelandic Studies - handrit.is</td>
+              <td>TEI/XML</td>
+              <td>BIBFRAME/DCTERMS</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">04</td>
-              <td>Cleopatra</td>
-              <td>Audio Track</td>
-              <td>MusicBrainz</td>
-              <td>*XML/MMD</td>
+              <td>05</td>
+              <td>The Finding of Wineland the Good</td>
+              <td>Translated Edition - Digital Facsmile</td>
+              <td>Internet Archive</td>
+              <td>MARCXML</td>
+              <td>BIBFRAME</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">05</td>
-              <td>Bracelet</td>
-              <td>Archeological Artifact</td>
-              <td>The British Museum</td>
-              <td>*CIDOC-CRM</td>
+              <td>06</td>
+              <td>Leiv Eiriksson discovering America</td>
+              <td>Painting</td>
+              <td>National Museum of Norway</td>
+              <td>/</td>
+              <td>SCHEMA/DCTREMS</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">06</td>
-              <td>Cesare and Cleopatra</td>
-              <td>Board Game</td>
-              <td>OPAC SBN</td>
-              <td>*MARC21</td>
+              <td>07</td>
+              <td>Ride of the Valkyrie</td>
+              <td>Orchestral Performance - Recording</td>
+              <td>gutenberg.org</td>
+              <td>/</td>
+              <td>BIBFRAME/DCTERMS</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">07</td>
-              <td>Cleopatra Ballet</td>
-              <td>Dance performance</td>
-              <td>Northern Ballet's</td>
-              <td><a style="color: #17bdbd;">Schema.org</a></td>
+              <td>08</td>
+              <td>The hailstorm during the Battle of Hjǫrungavágr</td>
+              <td>Illustration</td>
+              <td>Wikimedia</td>
+              <td>/</td>
+              <td>SCHEMA/DCTREMS</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">08</td>
-              <td>The Meeting of Antony and Cleopatra</td>
-              <td>Artwork</td>
-              <td>Metropolitan Museum of Art</td>
-              <td>*CIDOC-CRM</td>
+              <td>09</td>
+              <td>The Poetic Edda</td>
+              <td>Translated Edition - Digital Text</td>
+              <td>gutenberg.org</td>
+              <td>MARCXML</td>
+              <td>BIBFRAME</td>
             </tr>
 
             <tr>
-              <td style="color: #BBB;">09</td>
-              <td>Cleopatra</td>
-              <td>Movie</td>
-              <td>IMDb</td>
-              <td><a style="color: #17bdbd;">Schema.org</a></td>
-            </tr>
-
-            <tr>
-              <td style="color: #BBB;">10</td>
-              <td>Royal Decree</td>
-              <td>Manuscript</td>
-              <td>Egyptian Museum of Berlin</td>
-              <td><a style="color: #17bdbd;">DC Terms</a></td>
+              <td>10</td>
+              <td>Vinland Saga Opening 1</td>
+              <td>Video</td>
+              <td>Youtube - Crunchroll</td>
+              <td>/</td>
+              <td>SCHEMA</td>
             </tr>
 
           </tbody>
@@ -416,36 +420,63 @@
         </table>
       </div>
 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Metadata Standard Description</h2>
-        <p>MARCXML and BIBFRAME<br></p>
+      <div class="container" id="metadateDesc" data-aos="fade-up" data-aos-delay="100">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Metadata Standard Description</h2>
+          <p>MARCXML and BIBFRAME<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
+        <div class="container section-title">
+          <p>NMO<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
+        <div class="container section-title">
+          <p>TEI/XML<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
+        <div class="container section-title">
+          <p>SCHEMA<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
+        <div class="container section-title">
+          <p>JVMG<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
+        <div class="container section-title">
+          <p>ACLICK<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
+        <div class="container section-title">
+          <p>LIDO<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
+        <div class="container section-title">
+          <p>DCTERMS<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
       </div>
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?</p>
-      </div>
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Metadata Standard Description</h2>
-        <p>CIDOC-CRM<br></p>
-      </div>
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?</p>
-      </div>
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Metadata Standard Description</h2>
-        <p>LIDO<br></p>
-      </div>
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?</p>
-      </div>
-
-
     </section>
     <!-- /Metadata Analysis -->
-
-    <br/>
-    <hr/> 
+     
+    <!-- Background effect SEPARATOR -->
+    <section id="separatorOne" class="separatorOne"></section>
+    <!-- End Separator -->
 
     <!-- Metadata Representation -->
     <section id="representation" class="features section">

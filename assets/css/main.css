@@ -172,6 +172,8 @@ body.reveal #hero .container {
   align-self: center;       /* Centers horizontally */
   margin-bottom: 15px;
   background-color: var(--accent-color);
+  font-family: var(--nav-font);
+  font-size: 12px;
 }
 
 .card-title {
@@ -248,28 +250,34 @@ body.modal-open {
 --------------------------------------------------------------*/
 
 .separatorOne {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/vinland_sea1.png") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/vinland_sea1.png") fixed center center;
   background-size: cover;
   padding: 200px 0;
   min-height: 300px;
 }
 
-.separatorTwo {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/vinland_sea1.png") fixed center center;
-  background-size: cover;
-  padding: 200px 0;
+/*--------------------------------------------------------------
+# Table Styles
+--------------------------------------------------------------*/
+.table.table-striped {
+  /* --bs-table-color: #8AAAAC; */
+  /* --bs-table-bg:var(--background-color); */
+  --bs-table-bg: var(--contrast-color);
+  /* --bs-table-accent-bg:transparent; */
+
+  /* --bs-table-striped-color:var(--bs-table-color);
+  --bs-table-striped-bg-factor:.05;
+  --bs-table-striped-bg:rgba(var(--bs-table-color), var(--bs-table-striped-bg-factor)); */
 }
 
-.separatorThree {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/vinland_sea1.png") fixed center center;
-  background-size: cover;
-  padding: 200px 0;
+.table-group-divider {
+  border-top-color: var(--accent-color) ;
+  border-top-width: 5px;
+
 }
 
-.separatorFour {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/vinland_sea1.png") fixed center center;
-  background-size: cover;
-  padding: 200px 0;
+.table.table-striped table {
+  margin-bottom: 100px;
 }
 
 /*--------------------------------------------------------------
