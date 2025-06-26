@@ -62,13 +62,31 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#analysis">Metadata Analysis</a></li>
-          <li><a href="#representation">Metadata Representation</a></li>
-          <li class="dropdown"><a href="#"><span>Digital Texts</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#about"><span>About</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Poetic Edda</a></li>
-              <li><a href="#">The finding of Wineland</a></li>
+              <li><a href="#intro">Introduction</a></li>
+              <li><a href="#objects">The Objects</a></li>
+              <li><a href="#characters">The Characters</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#analysis"><span>Metadata Analysis</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#objectTable">Object Metadata</a></li>
+              <li><a href="#metadateDesc">Metadata Standard Descriptions</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#representation"><span>Metadata Representation</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#textEncoding">Encoded Texts</a></li>
+              <li><a href="#theoretical">Theoretical Map</a></li>
+              <li><a href="#conceptual">Conceptual Map</a></li>
+              <li><a href="#rdf">RDF Visualisation</a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>Digital Texts</span><i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="tei_xml/Poetic_Edda/Transcribed_Edda.html" target="_blank">Poetic Edda</a></li>
+              <li><a href="tei_xml/Wineland_the_Good/wineland.html" target="_blank">The Finding of Wineland</a></li>
             </ul>
           </li>
           <li><a href="#team">Team</a></li>
@@ -100,7 +118,7 @@
     </section>
     <!-- /Hero Section -->
 
-    <!-- About Section -->
+    <!-- ======= About Section ====== -->
     <section id="about" class="about section">
 
       <div class="container" id="intro">
@@ -291,17 +309,118 @@
           </div>
         </div>
       </div>
-    </section>
-      
+
+      <div class="container" id="characters">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>About the Project</h2>
+          <p>The Characters<br></p>
+        </div>
+        <p> 
+          The first objective of this project was to select <b>ten varied items</b> linked to our idea. The team began by considering elements that could weave a cohesive narrative throughout <b>Queen Cleopatra's figure</b>. These selections were made with careful consideration of their relevance and diversity, particularly in relation to their connections with other individuals, places, time periods, and concepts.<br>
+          Every entry below comprises a <b>brief description</b>, <b>essential metadata</b>, and a <b>reference link</b> to learn more about the items.
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 justify-content-center">
+          <!-- canute -->
+          <div class="col mb-4">
+            <div class="card h-100" id="canute">
+              <img src="assets/img/vinland_canute.jpg" class="card-img-top" alt="Vinland Saga Canute">
+              <div class="card-body">
+                <h5 class="card-title">Canute</h5>
+                <!-- <h6>Bibliographic Record</h6> -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad unde, architecto voluptatum, sunt reiciendis magnam, recusandae nihil et omnis voluptate repellendus delectus rerum asperiores quae ea vero. Ipsum voluptas tempora saepe incidunt, corporis dolorum. Modi, consequuntur corrupti sunt nobis soluta voluptas cupiditate, dolorum qui cum veritatis explicabo totam architecto? Cumque!
+                </p>
+                <a href="" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- sweyn -->
+          <div class="col mb-4">
+            <div class="card h-100" id="sweyn">
+              <img src="assets/img/vinland_sweyn.jpg" class="card-img-top" alt="Vinland Saga Sweyn">
+              <div class="card-body">
+                <h5 class="card-title">Sweyn Forkbeard</h5>
+                <!-- <h6>Bibliographic Record</h6> -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quasi obcaecati natus provident perferendis nisi nam voluptatum! Nulla veritatis consequatur excepturi fugiat facilis at necessitatibus quam ex consequuntur laudantium! Pariatur autem sequi officiis totam quidem, odio enim quas minima ipsa esse eius eligendi nobis impedit mollitia, deleniti modi dolore facere.
+                </p>
+                <a href="" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- leif -->
+          <div class="col mb-4">
+            <div class="card h-100" id="leif">
+              <img src="assets/img/vinland_leif.jpg" class="card-img-top" alt="Vinland Saga Leif Erikson">
+              <div class="card-body">
+                <h5 class="card-title">Leif Erikson</h5>
+                <!-- <h6>Coin</h6> -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quam quos, officiis beatae consequatur in modi minima quidem quae repellendus nemo ut, commodi dolorum ex dolorem ipsa saepe nesciunt illo? Saepe velit quis cum odio incidunt deleniti dolores culpa, unde aspernatur illo necessitatibus expedita veritatis accusantium aperiam, sit dolor natus!
+                </p>
+                <a href="" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- thorkell -->
+          <div class="col mb-4">
+            <div class="card h-100" id="thorkell">
+              <img src="assets/img/vinland_thorkell.jpg" class="card-img-top" alt="Vinland Saga Thorkell">
+              <div class="card-body">
+                <h5 class="card-title">Thorkell</h5>
+                <!-- <h6>Manuscript Codex Digital Facsmile</h6> -->
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quae voluptates, corrupti est necessitatibus repellat dolorum illo modi ex, soluta, non eius? Quam excepturi porro assumenda aliquid in fugiat commodi asperiores neque necessitatibus, hic quos illo quo, dicta labore reiciendis ipsum et cum? A maxime nihil, officiis quas mollitia consequuntur.
+                </p>
+                <a href="" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Jomsvikings -->
+          <div class="col mb-4">
+            <div class="card h-100" id="jomsvikings">
+              <img src="assets/img/vinland_jomsvikings.jpg" class="card-img-top" alt="Vinland Saga Jomsvikings">
+              <div class="card-body">
+                <h5 class="card-title">The Jomsvikings</h5>
+                <!-- <h6>Translated Edition Digital Facsmile</h6> -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus libero nam itaque quis aperiam illo impedit quod enim voluptas iure atque id laborum molestias accusamus tempora praesentium ad facere at facilis omnis eius, ducimus repudiandae sapiente? Adipisci, corporis sunt labore itaque dolore eos aspernatur ipsa aliquam ratione eum sapiente eaque.
+                </p>
+                <a href="" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Valkyries -->
+          <div class="col mb-4">
+            <div class="card h-100" id="valkyrie">
+              <img src="assets/img/vinland_valkyrie.jpg" class="card-img-top" alt="Vinland Saga Valkyrie">
+              <div class="card-body">
+                <h5 class="card-title">The Valkyries</h5>
+                <!-- <h6>Painting</h6> -->
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt omnis voluptatibus exercitationem alias illum tenetur aliquam est aut, fugit sit suscipit fuga officiis provident praesentium error necessitatibus natus totam nesciunt iste consequuntur dolorem voluptate culpa atque hic? Ipsum veritatis labore ex odio sed eius ea quis corrupti. Beatae, mollitia reprehenderit?
+                </p>
+                <a href="" class="btn btn-dark" role="button" target="_blank">See more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
     <!-- /About Section -->
-<!-- 
-    <br/>
-    <hr/>  -->
-     <!-- Background effect SEPARATOR -->
+
+     <!-- === Background effect SEPARATOR === -->
     <section id="separatorOne" class="separatorOne"></section>
     <!-- End Separator -->
 
-    <!-- Metadata Analysis -->
+    
+    <!-- ====== Metadata Analysis ======== -->
     <section id="analysis" class="services section">
 
       <div class="container" id="objectTable" data-aos="fade-up" data-aos-delay="100">
@@ -423,13 +542,13 @@
       <div class="container" id="metadateDesc" data-aos="fade-up" data-aos-delay="100">
         <div class="container section-title" data-aos="fade-up">
           <h2>Metadata Standard Description</h2>
-          <p>MARCXML and BIBFRAME<br></p>
+          <p>JVMG and ACLICK<br></p>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
         </p>
         <div class="container section-title">
-          <p>NMO<br></p>
+          <p>LIDO and NMO<br></p>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
@@ -441,25 +560,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
         </p>
         <div class="container section-title">
-          <p>SCHEMA<br></p>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
-        </p>
-        <div class="container section-title">
-          <p>JVMG<br></p>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
-        </p>
-        <div class="container section-title">
-          <p>ACLICK<br></p>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
-        </p>
-        <div class="container section-title">
-          <p>LIDO<br></p>
+          <p>MARCXML and BIBFRAME<br></p>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
@@ -470,127 +571,126 @@
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
         </p>
+        <div class="container section-title">
+          <p>SCHEMA<br></p>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?
+        </p>
       </div>
     </section>
     <!-- /Metadata Analysis -->
      
-    <!-- Background effect SEPARATOR -->
+    <!-- === Background effect SEPARATOR === -->
     <section id="separatorOne" class="separatorOne"></section>
     <!-- End Separator -->
 
-    <!-- Metadata Representation -->
+    
+    <!-- ====== Metadata Representation ======== -->
     <section id="representation" class="features section">
-
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Metadata Representation</h2>
-        <p>TEI/XML<br></p>
-      </div>
-      <div class="container">
+      <!-- Text Encoding -->
+      <div class="container" id="textEncoding" data-aos="fade-up" data-aos-delay="100">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Metadata Representation</h2>
+          <p>Encoded Texts<br></p>
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti consequuntur vero, sint ipsa perspiciatis laboriosam quia, voluptas pariatur provident totam animi quam blanditiis voluptatem saepe cum assumenda earum eum excepturi repellendus ipsam. Ratione ea temporibus explicabo blanditiis quod aliquam ullam ut consequuntur earum! Incidunt perferendis impedit optio. Nemo, quibusdam?</p>
       </div>
 
-    <!-- Theoretical Map Section-->
-      <section id="conceptualMap" class="conceptualMap">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Metadata Representation</h2>
-            <p>Theoretical Map</p>
-          </div>
-            <p>
-            Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
-            </p>
-            <figure>
-              <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
-              <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
-            </figure>
+      <!-- Theoretical Map Section-->
+      <div class="container" id="theoretical" data-aos="fade-up" data-aos-delay="100">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Metadata Representation</h2>
+          <p>Theoretical Map<br></p>
         </div>
-      </section>
+          <p>
+            Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
+          </p>
+          <figure>
+            <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
+            <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
+          </figure>
+      </div>
+
       <!-- End Theoretical Map -->
 
       <!-- Conceptual Map Section-->
-      <section id="conceptualMap" class="conceptualMap">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Metadata Representation</h2>
-            <p>Conceptual Map</p>
-          </div>
-            <p>
-            Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
-            </p>
-            <figure>
-              <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
-              <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
-            </figure>
+      <div class="container" id="conceptual" data-aos="fade-up" data-aos-delay="100">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Metadata Representation</h2>
+          <p>Conceptual Map<br></p>
         </div>
-      </section>
+        <p>
+          Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
+        </p>
+        <figure>
+          <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
+          <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
+        </figure>
+      </div>
+
       <!-- End Conceptual Map -->
 
       <!-- RDF Section-->
-      <section id="conceptualMap" class="conceptualMap">
-        <div class="container" data-aos="fade-up">
-          <div class="section-title">
-            <h2>Metadata Representation</h2>
-            <p>RDF Representation</p>
-          </div>
-            <p>
-            Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
-            </p>
-            <figure>
-              <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
-              <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
-            </figure>
+      <div class="container" id="rdf" data-aos="fade-up" data-aos-delay="100">
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Metadata Representation</h2>
+          <p>RDF Visualisation<br></p>
         </div>
-      </section>
-      <!-- End RDF -->
+        <p>
+          Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
+        </p>
+        <figure>
+          <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
+          <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
+        </figure>
+      </div>
+    </section>
+    <!-- /Metadata Representation -->
 
-    </section><!-- /Features Section -->
+    <!-- === Background effect SEPARATOR === -->
+    <section id="separatorOne" class="separatorOne"></section>
+    <!-- End Separator -->
 
-
-
-    <!-- Team Section -->
-    <section id="team" class="team section light-background">
+    
+    <!-- ======== Team Section ======== -->
+    <section id="team" class="team section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>CHECK OUR TEAM</p>
+        <h2>The Team</h2>
+        <!-- <p>CHECK OUR TEAM</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-5">
+        <div class="row gy-5 d-flex justify-content-center">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+              <div class="member-info text-center">
                 <h4>Ilaria De Dominicis</h4>
-                <span>Product Manager</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/theair-hub" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
+          <!-- End Team Member -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
+              <div class="member-info text-center">
                 <h4>Regina Manyara</h4>
-                <span>CTO</span>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/ValkyrieCain9" target="_blank"><i class="bi bi-github"></i></a>
                 </div>
               </div>
             </div>
-          </div><!-- End Team Member -->
+          </div>
+          <!-- End Team Member -->
 
         </div>
 
@@ -601,62 +701,6 @@
   </main>
 
   <footer id="footer" class="footer dark-background">
-
-    <!-- <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Dewi</span>
-          </a>
-          <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
-          </div>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-12 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-          </form>
-        </div>
-
-      </div>
-    </div> -->
 
     <div class="container copyright text-center mt-4">
       <p>© <span>Copyright</span> <strong class="px-1 sitename">VinLOD</strong> <span>All Rights Reserved</span></p>
@@ -671,7 +715,7 @@
 
   </footer>
 
-<!-- Modal -->
+  <!-- Modal -->
   <div class="modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">

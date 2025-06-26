@@ -60,7 +60,7 @@
   --nav-hover-color: #500E0E; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #4A6668; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #EFF3F0; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-color: #1b3342; /* Used for navigation links of the dropdown items in the navigation menu. */
   --nav-dropdown-hover-color: #500E0E; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -72,7 +72,7 @@
 }
 
 .dark-background {
-  --background-color: #000910;
+  --background-color: #162A33;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #28323a;
@@ -246,7 +246,7 @@ body.modal-open {
 } */
 
 /*--------------------------------------------------------------
-# Section Seperators
+# Section Seperators and navigation
 --------------------------------------------------------------*/
 
 .separatorOne {
@@ -256,18 +256,32 @@ body.modal-open {
   min-height: 300px;
 }
 
+#hero,
+#about,
+#intro,
+#objects,
+#characters,
+#analysis,
+#objectTable,
+#metadateDesc,
+#representation,
+#textEncoding,
+#theoretical,
+#conceptual,
+#rdf,
+#team {
+  scroll-margin-top: 110px; /* Match this to your header's height */
+}
+
 /*--------------------------------------------------------------
 # Table Styles
 --------------------------------------------------------------*/
 .table.table-striped {
-  /* --bs-table-color: #8AAAAC; */
-  /* --bs-table-bg:var(--background-color); */
   --bs-table-bg: var(--contrast-color);
-  /* --bs-table-accent-bg:transparent; */
-
-  /* --bs-table-striped-color:var(--bs-table-color);
-  --bs-table-striped-bg-factor:.05;
-  --bs-table-striped-bg:rgba(var(--bs-table-color), var(--bs-table-striped-bg-factor)); */
+  --bs-table-border-factor: .2;
+  --bs-table-border-width: 5px;
+  --bs-table-border-color: var(--accent-color);
+  margin-bottom: 50px; 
 }
 
 .table-group-divider {
@@ -276,9 +290,6 @@ body.modal-open {
 
 }
 
-.table.table-striped table {
-  margin-bottom: 100px;
-}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -789,6 +800,10 @@ h6 {
   position: relative;
 }
 
+.footer a {
+  color: var(--contrast-color)
+}
+
 .footer .footer-top {
   padding-top: 50px;
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
@@ -1125,6 +1140,10 @@ section,
   font-weight: 800;
   text-transform: capitalize;
   font-family: var(--default-font);
+}
+
+#metadateDesc p {
+  text-transform: none;
 }
 
 @media (max-width: 768px) {
@@ -1781,6 +1800,15 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+.team.section {
+  background-color: var(--surface-color);
+}
+
+.team h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
 .team .member {
   position: relative;
 }
@@ -1791,7 +1819,7 @@ section,
 }
 
 .team .member .member-info {
-  background-color: var(--surface-color);
+  background-color: #2C6555;
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   position: absolute;
@@ -1809,6 +1837,7 @@ section,
   font-size: 16px;
   position: relative;
   padding-bottom: 10px;
+  color: var(--default-color);
 }
 
 .team .member h4::after {
@@ -1816,8 +1845,9 @@ section,
   position: absolute;
   display: block;
   width: 50px;
-  height: 1px;
-  background: color-mix(in srgb, var(--default-color), transparent 60%);
+  height: 1.5px;
+  /* background: color-mix(in srgb, var(--default-color), transparent 60%); */
+  background-color: var(--accent-color);
   bottom: 0;
   left: 0;
 }
@@ -1836,7 +1866,7 @@ section,
 
 .team .member .social a {
   transition: color 0.3s;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
 }
 
 .team .member .social a:hover {
@@ -1844,7 +1874,7 @@ section,
 }
 
 .team .member .social i {
-  font-size: 16px;
+  font-size: 20px;
   margin: 0 2px;
 }
 
