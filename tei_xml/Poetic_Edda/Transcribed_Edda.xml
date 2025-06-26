@@ -11,7 +11,7 @@
                 <title type="main">The <foreign xml:lang="non">Grimnismol </foreign>from The Poetic Edda</title>
                 <title type="sub"><hi rend="italic">A Vinland Saga LOD project</hi></title>
                 <respStmt>
-                    <resp>compiled by</resp> <!-- author was too personal-->
+                    <resp>compiled by</resp> 
                     <persName ref ="#IDD"> 
                         <forename>Ilaria</forename>
                         <surname>De Dominicis</surname>
@@ -58,7 +58,7 @@
                             <date when="2004-05-04">May 4, 2004</date> 
                         </imprint>
                     </monogr>
-                    <note>Digitalised version of The Poetic Edda, 1923</note>
+                    <note>Digitalized version of The Poetic Edda, 1923</note>
                 <relatedItem type="original">
                     <biblStruct xml:lang="en" type="print"> <!-- the print version-->
                         <monogr>
@@ -67,7 +67,7 @@
                                     <forename type="first">Henry</forename>
                                     <forename type="middle">Adams</forename>
                                     <surname>Bellows</surname>
-                                </persName>                           
+                                </persName> 
                             </author>
                             <title type="main">The Poetic Edda</title>
                             <title type="sub">Translated from the Icelandic with an introduction and notes</title>
@@ -252,7 +252,7 @@
                 </listPerson>
                <listOrg>
                     <org>
-                        <orgName xml:id="VK" sameAs="https://w3id.org/vinLOD-saga/group/Valkyries">Valkyries</orgName>
+                        <orgName xml:id="VK"  source="https://en.wikipedia.org/wiki/Valkyrie" sameAs="https://w3id.org/vinLOD-saga/group/Valkyries">Valkyries</orgName>
                         <desc source="https://en.wikipedia.org/wiki/Valkyrie">One of a host of female figures who guide souls of the dead to the god Odin's hall <placeName ref="#VH">Valhalla</placeName>.</desc>
                     </org>
                 </listOrg> 
@@ -260,11 +260,11 @@
             <settingDesc>
                 <listPlace type="imaginary">
                     <place>
-                        <placeName xml:id="VH" xml:lang="non" sameAs= "https://w3id.org/vinLOD-saga/concept/Valhalla">Valhall</placeName>
-                        <placeName type="epithet" xml:lang="en">Valhalla</placeName>
+                        <placeName xml:id="VH" xml:lang="non" source="https://en.wikipedia.org/wiki/Valhalla" sameAs= "https://w3id.org/vinLOD-saga/concept/Valhalla">Valhall</placeName>
+                        <placeName type="epithet" xml:lang="en" source="https://en.wikipedia.org/wiki/Valhalla">Valhalla</placeName>
                     </place>
                     <place>
-                        <placeName xml:id="VA">Valgrind</placeName>
+                        <placeName xml:id="VA" source="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4">Valgrind</placeName>
                         <desc source="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4">The sacred gate leading into Valhalla, Odin’s hall of the slain. 
                             Mentioned in Grímnismál <ref source="#s22">(stanza 22)</ref>, it is described as a threshold that opens only for those fated to die in battle.</desc> 
                     </place>
@@ -277,8 +277,9 @@
             <div type= "title"> 
                 <head type= "main" xml:lang="non">Grimnismol</head>
                 <head type="sub" xml:lang="en"><hi rend= "italic">The Ballad of <persName ref="#OT">Grimnir</persName></hi></head>
+                <head type="credits" xml:lang="en">from <persName ref="#HAB">Henry Adam Bellows</persName>'<hi rend="italic"> Poetic Edda</hi></head>
             </div>
-            <div type="commentary" xml:lang="en" style="white-space:pre-wrap;"> 
+            <div type="commentary" xml:lang="en"> 
                 <head>Introductory note</head>
                 <div type="text"> 
                     <div type="paragraph" n="1"> 
@@ -344,12 +345,12 @@
             <div type= "main-text"  xml:lang="en"> <!-- language is modern, the style is archaic-->
                 <div type= "intro" xml:id="p"> 
                         <div type= "paragraph" n="1" xml:id="p1"> 
-                            <p><persName ref="HT">Hrauthung</persName> had two sons: one was called <persName ref="#AG1">Agnar</persName>, and the other <persName ref="#GR">Geirröth</persName>. 
-                                <persName ref="#AG1">Agnar</persName> was ten winters old, and <persName ref="#GR">Geirröth</persName> eight. Once they both rowed in a boat 
+                            <p><persName ref="#HT">Hrauthung</persName> had two sons: one was called Agnar, and the other <persName ref="#GR">Geirröth</persName>. 
+                                Agnar was ten winters old, and <persName ref="#GR">Geirröth</persName> eight. Once they both rowed in a boat 
                                 with their fishing-gear to catch little fish; and the wind drove them out into the 
                                 sea. In the darkness of the night they were wrecked on the shore; and going up, 
                                 they found a poor peasant, with whom they stayed through the winter. The 
-                                housewife took care of <persName ref="#AG1">Agnar</persName>, and the peasant cared for <persName ref="#GR">Geirröth</persName>, and taught 
+                                housewife took care of Agnar, and the peasant cared for <persName ref="#GR">Geirröth</persName>, and taught 
                                 him wisdom. In the spring the peasant gave him a boat; and when the couple 
                                 led them to the shore, the peasant spoke secretly with <persName ref="#GR">Geirröth</persName>. They had a fair 
                                 wind, and came to their father’s landing-place. <persName ref="#GR">Geirröth</persName> was forward in the 
@@ -361,7 +362,7 @@
                         </div>
                         <div type="paragraph" n="2" xml:id="p2"> 
                             <p><persName ref="#OT">Othin</persName> and <persName ref="#FR">Frigg</persName> sat in Hlithskjolf and looked over all the worlds. <persName ref="#OT">Othin</persName> said: 
-                                <said aloud="true"> <q rend="dq"> Seest thou <persName ref="#AG1">Agnar</persName>, thy fosterling, how he begets children with a giantess in the 
+                                <said aloud="true"> <q rend="dq"> Seest thou Agnar, thy fosterling, how he begets children with a giantess in the 
                                 cave? But <persName ref="#GR">Geirröth</persName>, my fosterling, is a king, and now rules over his land.</q></said> 
                                 <persName ref="#FR">Frigg</persName> said: <said aloud="true"><q rend="dq"> He is so miserly that he tortures his guests if he thinks that too 
                                 many of them come to him.</q></said> <persName ref="#OT">Othin</persName> replied that <said aloud="false">this was the greatest of lies</said>; and
@@ -389,167 +390,172 @@
                             <l xml:id="s1-4">And the fire scorches the fur.</l>
                         </lg> 
                         <lg type="stanza" xml:id="s2">
-                            <l xml:id="s2-1">2. ’Twixt the fires now | eight nights have I sat,</l>
+                            <l xml:id="s2-1"><ref target="#note-s2">2.</ref>  ’Twixt the fires now | eight nights have I sat,</l>
                             <l xml:id="s2-2">And no man brought meat to me,</l>
                             <l xml:id="s2-3"><emph>Save <persName ref="#AG2">Agnar</persName> alone, | and alone shall rule</emph></l>
                             <l xml:id="s2-4"><persName ref="#GR">Geirröth</persName>’s son o’er the Goths.</l>
                         </lg>
                         <lg type="stanza" xml:id="s3">
-                            <l xml:id="s3-1">3. <emph>Hail to thee, <persName ref="#AG2">Agnar</persName>!</emph> | for hailed thou art</l>
+                            <l xml:id="s3-1"><ref target="#note-s3">3.</ref> <emph>Hail to thee, <persName ref="#AG2">Agnar</persName>!</emph> | for hailed thou art</l>
                             <l xml:id="s3-2">By the voice of <persName ref="#OT">Veratyr</persName>;</l>
                             <l xml:id="s3-3">For a single drink | shalt thou never receive</l>
                             <l xml:id="s3-4">A greater gift as reward.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s4">
-                            <l xml:id="s4-1">4. The land is holy | that lies hard by</l>
+                            <l xml:id="s4-1"><ref target="#note-s4">4.</ref> The land is holy | that lies hard by</l>
                             <l xml:id="s4-2">The gods and the elves together;</l>
                             <l xml:id="s4-3">And Thor shall ever | in Thruthheim dwell,</l>
                             <l xml:id="s4-4">Till the gods to destruction go.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s5">
-                            <l xml:id="s5-1">5. Ydalir call they | the place where Ull</l>
+                            <l xml:id="s5-1"><ref target="#note-s5">5.</ref> Ydalir call they | the place where Ull</l>
                             <l xml:id="s5-2">A hall for himself hath set;</l>
                             <l xml:id="s5-3">And Alfheim the gods | to Freyr once gave</l>
                             <l xml:id="s5-4">As a tooth-gift in ancient times.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s6">
-                            <l xml:id="s6-1">6. A third home is there, | with silver thatched</l>
+                            <l xml:id="s6-1"><ref target="#note-s6">6.</ref> A third home is there, | with silver thatched</l>
                             <l xml:id="s6-2">By the hands of the gracious gods:</l>
                             <l xml:id="s6-3">Valaskjolf is it, | in days of old</l>
                             <l xml:id="s6-4">Set by a god for himself.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s7">
-                            <l xml:id="s7-1">7. Sökkvabekk is the fourth, | where cool waves flow,</l>
+                            <l xml:id="s7-1"><ref target="#s7">7.</ref> Sökkvabekk is the fourth, | where cool waves flow,</l>
                             <l xml:id="s7-2">And amid their murmur it stands;</l>
                             <l xml:id="s7-3">There daily do <persName ref="#OT">Othin</persName> | and Saga drink</l>
                             <l xml:id="s7-4">In gladness from cups of gold.</l>
                         </lg>
-                        <lg type="stanza" xml:id="s8"> 
-                            <l xml:id="s8-1">8. The fifth is Glathsheim, | and gold-bright there</l>
+                        
+                        <lg type="stanza" xml:id="s8">
+                            <l xml:id="s8-1"><ref target="#note-s8">8.</ref> The fifth is Glathsheim, | and gold-bright there</l>
                             <l xml:id="s8-2"><placeName ref="#VH">Valhall</placeName> stretching wide;</l>
                             <l xml:id="s8-3"><emph>And there does <persName ref="#OT">Othin</persName> | each day choose</emph></l>
                             <l xml:id="s8-4"><emph>The men who have fallen in fight.</emph></l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s9">
-                            <l xml:id="s9-1">Easy is it to know | for him who to <persName ref="#OT">Othin</persName></l>
+                            <l xml:id="s9-1">9.Easy is it to know | for him who to <persName ref="#OT">Othin</persName></l>
                             <l xml:id="s9-2">Comes and beholds the hall;</l>
-                            <l xml:id="s9-3"><placeName ref="#VH">Its</placeName>rafters are spears, | with shields is it roofed,</l>
+                            <l xml:id="s9-3"><placeName ref="#VH">Its</placeName> rafters are spears, | with shields is it roofed,</l>
                             <l xml:id="s9-4">On <placeName ref="#VH">its</placeName> benches are breastplates strewn.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s10">
-                            <l xml:id="s10-1">Easy is it to know | for him who to <persName ref="#OT">Othin</persName></l>
+                            <l xml:id="s10-1">10.Easy is it to know | for him who to <persName ref="#OT">Othin</persName></l>
                             <l xml:id="s10-2">Comes and beholds the hall;</l>
                             <l xml:id="s10-3">There hangs a wolf | by the western door,</l>
                             <l xml:id="s10-4">And o’er it an eagle hovers.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s11">
-                            <l xml:id="s11-1">The sixth is Thrymheim, | where Thjazi dwelt,</l>
+                            <l xml:id="s11-1">11.The sixth is Thrymheim, | where Thjazi dwelt,</l>
                             <l xml:id="s11-2">The giant of marvelous might;</l>
                             <l xml:id="s11-3">Now Skathi abides, | the god’s fair bride,</l>
                             <l xml:id="s11-4">In the home that her father had.</l>
                         </lg>
                         <lg type="stanza" xml:id="s12">
-                            <l xml:id="s12-1">The seventh is Breithablik; | Baldr has there</l>
+                            <l xml:id="s12-1">12. The seventh is Breithablik; | Baldr has there</l>
                             <l xml:id="s12-2">For himself a dwelling set,</l>
                             <l xml:id="s12-3">In the land I know | that lies so fair,</l>
                             <l xml:id="s12-4">And from evil fate is free.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s13">
-                            <l xml:id="s13-1">Himinbjorg is the eighth, | and Heimdall there</l>
+                            <l xml:id="s13-1">13. Himinbjorg is the eighth, | and Heimdall there</l>
                             <l xml:id="s13-2">O’er men holds sway, it is said;</l>
                             <l xml:id="s13-3">In his well-built house | does the warder of heaven</l>
                             <l xml:id="s13-4">The good mead gladly drink.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s14">
-                            <l xml:id="s14-1">The ninth is Folkvang, | where Freyja decrees</l>
+                            <l xml:id="s14-1">14. The ninth is Folkvang, | where Freyja decrees</l>
                             <l xml:id="s14-2">Who shall have seats in the hall;</l>
                             <l xml:id="s14-3">The half of the dead | each day does she choose,</l>
                             <l xml:id="s14-4">And half does <persName ref="#OT">Othin</persName> have.</l>
                         </lg>
-                        <lg type="stanza" xml:id="s15">
-                            <l xml:id="s15-1">The tenth is Glitnir; | its pillars are gold,</l>
-                            <l xml:id="s15-2">And its roof with silver is set;</l>
-                            <l xml:id="s15-3">There most of his days | does Forseti dwell,</l>
-                            <l xml:id="s15-4">And sets all strife at end.</l>
-                        </lg>
+                        
                         <lg type="stanza" xml:id="s16">
-                            <l xml:id="s16-1">The eleventh is Noatun; | there has Njorth</l>
+                            <l xml:id="s16-1">16. The eleventh is Noatun; | there has Njorth</l>
                             <l xml:id="s16-2">For himself a dwelling set;</l>
                             <l xml:id="s16-3">The sinless ruler | of men there sits</l>
                             <l xml:id="s16-4">In his temple timbered high.</l>
                         </lg>
+                        
                         <lg type="stanza" xml:id="s17">
-                            <l xml:id="s17-1">Filled with growing trees | and high-standing grass</l>
+                            <l xml:id="s17-1">17. Filled with growing trees | and high-standing grass</l>
                             <l xml:id="s17-2">Is Vithi, Vithar’s land;</l>
                             <l xml:id="s17-3">But there did the son | from his steed leap down,</l>
                             <l xml:id="s17-4">When his father he fain would avenge.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s18">
-                            <l xml:id="s18-1">In Eldhrimnir | Andhrimnir cooks</l>
+                            <l xml:id="s18-1">18. In Eldhrimnir | Andhrimnir cooks</l>
                             <l xml:id="s18-2">Sæhrimnir’s seething flesh,—</l>
                             <l xml:id="s18-3">The best of food, | but few men know</l>
                             <l xml:id="s18-4">On what fare the warriors feast.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s19">
-                            <l xml:id="s19-1">Freki and Geri | does <persName ref="#OT">Heerfather</persName> feed,</l>
+                            <l xml:id="s19-1">19. Freki and Geri | does <persName ref="#OT">Heerfather</persName> feed,</l>
                             <l xml:id="s19-2">The far-famed fighter of old:</l>
                             <l xml:id="s19-3">But on wine alone | does the weapon-decked god,</l>
                             <l xml:id="s19-4"><persName ref="#OT">Othin</persName>, forever live.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s20">
-                            <l xml:id="s20-1">O’er Mithgarth Hugin | and Munin both</l>
+                            <l xml:id="s20-1">20. O’er Mithgarth Hugin | and Munin both</l>
                             <l xml:id="s20-2">Each day set forth to fly;</l>
                             <l xml:id="s20-3"><emph>Hugin I fear | lest he not home,</emph></l>
                             <l xml:id="s20-4"><emph>But for Munin my care is more.</emph></l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s21">
-                            <l xml:id="s21-1">Loud roars <persName ref="#OT">Thund</persName>, | and Thjothvitnir’s fish</l>
+                            <l xml:id="s21-1"><ref target="#note-s21">21.</ref> Loud roars <persName ref="#OT">Thund</persName>, | and Thjothvitnir’s fish</l>
                             <l xml:id="s21-2">Joyously fares in the flood;</l>
                             <l xml:id="s21-3">Hard does it seem | to the host of the slain</l>
                             <l xml:id="s21-4">To wade the torrent wild.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s22">
-                            <l xml:id="s22-1"><emph>There <placeName ref="#VA">Valgrind</placeName> stands, | the sacred gate,</emph></l>
+                            <l xml:id="s22-1"><ref target="#note-s22">22.</ref> <emph>There <placeName ref="#VA">Valgrind</placeName> stands, | the sacred gate,</emph></l>
                             <l xml:id="s22-2">And behind are the holy doors;</l>
                             <l xml:id="s22-3">Old is the gate, | but few there are</l>
                             <l xml:id="s22-4">Who can tell how it tightly is locked.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s23">
-                            <l xml:id="s23-1">Five hundred doors | and forty there are,</l>
+                            <l xml:id="s23-1"><ref target="#note-s23">23.</ref> Five hundred doors | and forty there are,</l>
                             <l xml:id="s23-2"><emph>I ween, in <placeName ref="#VL">Valhall</placeName>’s walls;</emph></l>
                             <l xml:id="s23-3"><emph>Eight hundred fighters | through one door fare</emph></l>
                             <l xml:id="s23-4"><emph>When to war with the wolf they go.</emph></l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s24">
-                            <l xml:id="s24-1">Five hundred rooms | and forty there are</l>
+                            <l xml:id="s24-1"><ref target="#note-s24">24.</ref> Five hundred rooms | and forty there are</l>
                             <l xml:id="s24-2">I ween, in Bilskirnir built;</l>
                             <l xml:id="s24-3">Of all the homes | whose roofs I beheld,</l>
                             <l xml:id="s24-4">My son’s the greatest meseemed.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s25">
-                            <l xml:id="s25-1">Heithrun is the goat | who stands by <persName ref="#OT">Heerfather</persName>’s hall,</l>
+                            <l xml:id="s25-1"><ref target="#note-s25">25.</ref> Heithrun is the goat | who stands by <persName ref="#OT">Heerfather</persName>’s hall,</l>
                             <l xml:id="s25-2">And the branches of Lærath she bites;</l>
                             <l xml:id="s25-3">The pitcher she fills | with the fair, clear mead,</l>
                             <l xml:id="s25-4">Ne’er fails the foaming drink.</l>
-                        </lg>
-
+                        </lg>                                                  
+                        
                         <lg type="stanza" xml:id="s26">
-                            <l xml:id="s26-1">Eikthyrnir is the hart | who stands by <persName ref="#OT">Heerfather</persName>’s hall</l>
+                            <l xml:id="s26-1">26. Eikthyrnir is the hart | who stands by <persName ref="#OT">Heerfather</persName>’s hall</l>
                             <l xml:id="s26-2">And the branches of Lærath he bites;</l>
                             <l xml:id="s26-3">From his horns a stream | into Hvergelmir drops,</l>
                             <l xml:id="s26-4">Thence all the rivers run.</l>
                         </lg>
-
                         <lg type="stanza" xml:id="s27">
-                            <l xml:id="s27-1">Sith and Vith, | Sækin and Ækin,</l>
+                            <l xml:id="s27-1">27. Sith and Vith, | Sækin and Ækin,</l>
                             <l xml:id="s27-2">Svol and Fimbulthul, | Gunnthro and Fjorm,</l>
                             <l xml:id="s27-3">Rin and Rinnandi,</l>
                             <l xml:id="s27-4">Gipul and Gopul, | Gomul and Geirvimul,</l>
@@ -557,9 +563,8 @@
                             <l xml:id="s27-6">Thyn and Vin, | Thol and Hol,</l>
                             <l xml:id="s27-7">Groth and Gunnthorin.</l>
                         </lg>
-
                         <lg type="stanza" xml:id="s28">
-                            <l xml:id="s28-1">Vino is one, | Vegsvin another,</l>
+                            <l xml:id="s28-1">28. Vino is one, | Vegsvin another,</l>
                             <l xml:id="s28-2">And Thjothnuma a third;</l>
                             <l xml:id="s28-3">Nyt and Not, | Non and Hron,</l>
                             <l xml:id="s28-4">Slith and Hrith, | Sylg and Ylg,</l>
@@ -567,205 +572,187 @@
                             <l xml:id="s28-6">Gjol and Leipt, | that go among men,</l>
                             <l xml:id="s28-7">And hence they fall to Hel.</l>
                         </lg>
-
                         <lg type="stanza" xml:id="s29">
-                            <l xml:id="s29-1">Kormt and Ormt | and the Kerlaugs twain</l>
+                            <l xml:id="s29-1">29. Kormt and Ormt | and the Kerlaugs twain</l>
                             <l xml:id="s29-2">Shall Thor each day wade through,</l>
                             <l xml:id="s29-3">(When dooms to give | he forth shall go</l>
                             <l xml:id="s29-4">To the ash-tree Yggdrasil;)</l>
                             <l xml:id="s29-5">For heaven’s bridge | burns all in flame,</l>
                             <l xml:id="s29-6">And the sacred waters seethe.</l>
                         </lg>
-
-                        <lg type="stanza" xml:id="s30">
-                            <l xml:id="s30-1">Glath and Gyllir, | Gler and Skeithbrimir,</l>
-                            <l xml:id="s30-2">Silfrintopp and Sinir,</l>
-                            <l xml:id="s30-3">Gisl and Falhofnir, | Golltopp and Lettfeti,</l>
-                            <l xml:id="s30-4">On these steeds the gods shall go</l>
-                            <l xml:id="s30-5">When dooms to give | each day they ride</l>
-                            <l xml:id="s30-6">To the ash-tree Yggdrasil.</l>
-                        </lg>
-
                         <lg type="stanza" xml:id="s31">
-                            <l xml:id="s31-1">Three roots there are | that three ways run</l>
+                            <l xml:id="s31-1">31. Three roots there are | that three ways run</l>
                             <l xml:id="s31-2">’Neath the ash-tree Yggdrasil;</l>
                             <l xml:id="s31-3">’Neath the first lives Hel, | ’neath the second the frost-giants,</l>
                             <l xml:id="s31-4">’Neath the last are the lands of men.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s32">
-                            <l xml:id="s32-1">Ratatosk is the squirrel | who there shall run</l>
+                            <l xml:id="s32-1">32. Ratatosk is the squirrel | who there shall run</l>
                             <l xml:id="s32-2">On the ash-tree Yggdrasil;</l>
                             <l xml:id="s32-3">From above the words | of the eagle he bears,</l>
                             <l xml:id="s32-4">And tells them to Nithhogg beneath.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s33">
-                            <l xml:id="s33-1">Four harts there are, | that the highest twigs</l>
+                            <l xml:id="s33-1">33. Four harts there are, | that the highest twigs</l>
                             <l xml:id="s33-2">Nibble with necks bent back;</l>
                             <l xml:id="s33-3">Dain and Dvalin, | <gap reason="lost" quantity="0.5" unit="line"/></l>
                             <l xml:id="s33-4">Duneyr and Dyrathror.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s34">
-                            <l xml:id="s34-1">More serpents there are | beneath the ash</l>
+                            <l xml:id="s34-1">34. More serpents there are | beneath the ash</l>
                             <l xml:id="s34-2">Than an unwise ape would think;</l>
                             <l xml:id="s34-3">Goin and Moin, | Grafvitnir’s sons,</l>
                             <l xml:id="s34-4">Grabak and Grafvolluth,</l>
                             <l xml:id="s34-5"><persName ref="#OT">Ofnir</persName> and <persName ref="#OT">Svafnir</persName>| shall ever, methinks,</l>
                             <l xml:id="s34-6">Gnaw at the twigs of the tree.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s35">
-                            <l xml:id="s35-1">Yggdrasil’s ash | great evil suffers,</l>
+                            <l xml:id="s35-1">35. Yggdrasil’s ash | great evil suffers,</l>
                             <l xml:id="s35-2"><emph>Far more than men do know;</emph></l>
                             <l xml:id="s35-3">The hart bites its top, | its trunk is rotting,</l>
                             <l xml:id="s35-4">And Nithhogg gnaws beneath.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s36">
-                            <l xml:id="s36-1"><persName ref="#VK">Hrist</persName> and <persName ref="#VK">Mist</persName> | bring the horn at my will,</l>
+                            <l xml:id="s36-1"><ref target="#note-s36">36.</ref> <persName ref="#VK">Hrist</persName> and <persName ref="#VK">Mist</persName> | bring the horn at my will,</l>
                             <l xml:id="s36-2"><persName ref="#VK">Skeggjold</persName> and <persName ref="#VK">Skogul</persName>;</l>
                             <l xml:id="s36-3"><persName ref="#VK">Hild</persName> and <persName ref="#VK">Thruth</persName>, | Hlokk and Herfjotur,</l>
                             <l xml:id="s36-4"><persName ref="#VK">Gol</persName> and <persName ref="#VK">Geironul</persName>,</l>
                             <l xml:id="s36-5"><persName ref="#VK">Randgrith</persName> and <persName ref="#VK">Ranthrith</persName> | and <persName ref="#VK">Reginleif</persName></l>
                             <l xml:id="s36-6">Beer to the warriors bring.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s37">
-                            <l xml:id="s37-1">Arvak and Alsvith | up shall drag</l>
+                            <l xml:id="s37-1">37. Arvak and Alsvith | up shall drag</l>
                             <l xml:id="s37-2">Weary the weight of the sun;</l>
                             <l xml:id="s37-3">But an iron cool | have the kindly gods</l>
                             <l xml:id="s37-4">Of yore set under their yokes.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s38">
-                            <l xml:id="s38-1"><emph>In front of the sun | does Svalin stand,</emph></l>
+                            <l xml:id="s38-1">38. <emph>In front of the sun | does Svalin stand,</emph></l>
                             <l xml:id="s38-2"><emph>The shield for the shining god;</emph></l>
                             <l xml:id="s38-3"><emph>Mountains and sea | would be set in flames</emph></l>
                             <l xml:id="s38-4"><emph>If it fell from before the sun.</emph></l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s39">
-                            <l xml:id="s39-1">Skoll is the wolf | that to Ironwood</l>
+                            <l xml:id="s39-1">39. Skoll is the wolf | that to Ironwood</l>
                             <l xml:id="s39-2">Follows the glittering god,</l>
                             <l xml:id="s39-3">And the son of Hrothvitnir, | Hati, awaits</l>
                             <l xml:id="s39-4"><emph>The burning bride of heaven.</emph></l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s40">
-                            <l xml:id="s40-1"><emph>Out of Ymir’s flesh | was fashioned the earth,</emph></l>
+                            <l xml:id="s40-1">40. <emph>Out of Ymir’s flesh | was fashioned the earth,</emph></l>
                             <l xml:id="s40-2"><emph>And the ocean out of his blood;</emph></l>
                             <l xml:id="s40-3"><emph>Of his bones the hills, | of his hair the trees,</emph></l>
                             <l xml:id="s40-4"><emph>Of his skull the heavens high.</emph></l>
-                        </lg>
-
+                        </lg>                        
+                        
                         <lg type="stanza" xml:id="s41">
-                            <l xml:id="s41-1">Mithgarth the gods | from his eyebrows made,</l>
+                            <l xml:id="s41-1">41. Mithgarth the gods | from his eyebrows made,</l>
                             <l xml:id="s41-2">And set for the sons of men;</l>
                             <l xml:id="s41-3">And out of his brain | the baleful clouds</l>
                             <l xml:id="s41-4">They made to move on high.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s42">
-                            <l xml:id="s42-1">His the favor of Ull | and of all the gods</l>
+                            <l xml:id="s42-1">42. His the favor of Ull | and of all the gods</l>
                             <l xml:id="s42-2">Who first in the flames will reach;</l>
                             <l xml:id="s42-3">For the house can be seen | by the sons of the gods</l>
                             <l xml:id="s42-4">If the kettle aside were cast.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s43">
-                            <l xml:id="s43-1">In days of old | did Ivaldi’s sons</l>
+                            <l xml:id="s43-1">43. In days of old | did Ivaldi’s sons</l>
                             <l xml:id="s43-2">Skithblathnir fashion fair,</l>
                             <l xml:id="s43-3">The best of ships | for the bright god Freyr,</l>
                             <l xml:id="s43-4">The noble son of Njorth.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s44">
-                            <l xml:id="s44-1">The best of trees | must Yggdrasil be,</l>
+                            <l xml:id="s44-1">44. The best of trees | must Yggdrasil be,</l>
                             <l xml:id="s44-2">Skithblathnir best of boats;</l>
                             <l xml:id="s44-3">Of all the gods | is <persName ref="#OT">Othin</persName> the greatest,</l>
                             <l xml:id="s44-4">And Sleipnir the best of steeds;</l>
                             <l xml:id="s44-5">Bilrost of bridges, | Bragi of skalds,</l>
                             <l xml:id="s44-6">Hobrok of hawks, | and Garm of hounds.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s45">
-                            <l xml:id="s45-1"><emph>To the race of the gods | my face have I raised,</emph></l>
-                            <l xml:id="s45-2"><emph>And the wished-for aid have I waked;</emph></l>
-                            <l xml:id="s45-3"><emph>For to all the gods | has the message gone</emph></l>
-                            <l xml:id="s45-4"><emph>That sit in Ægir’s seats,</emph></l>
-                            <l xml:id="s45-5"><emph>That drink within Ægir’s doors.</emph></l>
+                            <l xml:id="s45-1">45. The gods I counted | all to me,</l>
+                            <l xml:id="s45-2">And men, and all the mighty powers,</l>
+                            <l xml:id="s45-3">To the best of the worlds, | the wide tree’s root,</l>
+                            <l xml:id="s45-4">That spreads up above the sky.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s46">
-                            <l xml:id="s46-1"><emph><persName ref="#OT">Grim</persName> is my name, | <persName ref="#OT">Gangleri</persName> am I,</emph></l>
-                            <l xml:id="s46-2"><persName ref="#OT">Herjan</persName> and <persName ref="#OT">Hjalmberi</persName>,</l>
-                            <l xml:id="s46-3"><persName ref="#OT">Thekk</persName> and <persName ref="#OT">Thrithi</persName>, | <persName ref="#OT">Thuth</persName> and <persName ref="#OT">Uth</persName>,</l>
-                            <l xml:id="s46-4"><persName ref="#OT">Helblindi</persName> and <persName ref="#OT">Hor</persName>;</l>
+                            <l xml:id="s46-1">46. The deities’ judgement | and doom is law</l>
+                            <l xml:id="s46-2">For every creature on earth;</l>
+                            <l xml:id="s46-3">In the halls of the gods | is the rule of law,</l>
+                            <l xml:id="s46-4">And the word of the gods is truth.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s47">
-                            <l xml:id="s47-1"><persName ref="#OT">Sath</persName> and <persName ref="#OT">Svipal</persName> | and <persName ref="#OT">Sanngetal</persName>,</l>
-                            <l xml:id="s47-2"><persName ref="#OT">Herteit</persName> and <persName ref="#OT">Hnikar</persName>,</l>
-                            <l xml:id="s47-3"><persName ref="#OT">Bileyg</persName>,<persName ref="#OT">Baleyg</persName>, | <persName ref="#OT">Bolverk</persName>, <persName ref="#OT">Fjolnir</persName>,</l>
-                            <l xml:id="s47-4"><persName ref="#OT">Grim</persName> and <persName ref="#OT">Grimnir</persName>, | <persName ref="#OT">Glapsvith</persName>, <persName ref="#OT">Fjolsvith</persName>.</l>
+                            <l xml:id="s47-1">47. But Othin himself | alone shall know</l>
+                            <l xml:id="s47-2">The end of the earth and the sky;</l>
+                            <l xml:id="s47-3">He knows where the world | shall be swept away</l>
+                            <l xml:id="s47-4">In fire in the end of days.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s48">
-                            <l xml:id="s48-1"><persName ref="#OT">Sithhott</persName>, <persName ref="#OT">Sithskegg</persName>, | <persName ref="#OT">Sigfather</persName>, <persName ref="#OT">Hnikuth</persName>,</l>
-                            <l xml:id="s48-2"><persName ref="#OT">Allfather</persName>, <persName ref="#OT">Valfather</persName>, | <persName ref="#OT">Atrith</persName>, <persName ref="#OT">Farmatyr</persName>:</l>
-                            <l xml:id="s48-3"><emph>A single name | have I never had</emph></l>
-                            <l xml:id="s48-4"><emph>Since first among men I fared.</emph></l>
+                            <l xml:id="s48-1">48. The mighty god | with spear in hand</l>
+                            <l xml:id="s48-2">Shall slay the serpent with his spear;</l>
+                            <l xml:id="s48-3">But in turn himself | shall fall with the beast,</l>
+                            <l xml:id="s48-4">And the earth shall tremble sore.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s49">
-                            <l xml:id="s49-1"><emph><persName ref="#OT">Grimnir</persName> they call me</emph> | in <persName ref="#GR">Geirröth</persName>’s hall,</l>
-                            <l xml:id="s49-2">With <persName ref="#OT">Asmund Jalk</persName> am I;</l>
-                            <l xml:id="s49-3"><persName ref="#OT">Kjalar</persName> I was | when I went in a sledge,</l>
-                            <l xml:id="s49-4">At the council <persName ref="#OT">Thror</persName> am I called,</l>
-                            <l xml:id="s49-5">As <persName ref="#OT">Vithur</persName> I fare to the fight;</l>
-                            <l xml:id="s49-6"><persName ref="#OT">Oski</persName>, <persName ref="#OT">Biflindi</persName>, | <persName ref="#OT">Jafnhor</persName> and <persName ref="#OT">Omi</persName>,</l>
-                            <l xml:id="s49-7"><persName ref="#OT">Gondlir</persName> and <persName ref="#OT">Harbarth</persName> midst gods.</l>
+                            <l xml:id="s49-1">49. The sun shall darken | and the stars shall fall,</l>
+                            <l xml:id="s49-2">And the earth sink into the sea;</l>
+                            <l xml:id="s49-3">The heavens shall quake | and all things perish,</l>
+                            <l xml:id="s49-4">And the world shall end in fire.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s50">
-                            <l xml:id="s50-1">I deceived the giant | Sokkmimir old</l>
-                            <l xml:id="s50-2">As <persName ref="#OT">Svithur</persName> and <persName ref="#OT">Svithrir</persName> of yore;</l>
-                            <l xml:id="s50-3">Of <persName ref="#OT">Mithvitnir’s son</persName> | the slayer I was</l>
-                            <l xml:id="s50-4"><emph>When the famed one found his doom.</emph></l>
+                            <l xml:id="s50-1">50. But after the fire | shall the earth rise again,</l>
+                            <l xml:id="s50-2">Green and fair shall it be;</l>
+                            <l xml:id="s50-3">And the sons of the gods | shall dwell therein,</l>
+                            <l xml:id="s50-4">And all good things shall live.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s51">
-                            <l xml:id="s51-1">Drunk art thou, <persName ref="#GR">Geirröth</persName>, | too much didst thou drink,</l>
-                            <l xml:id="s51-2"><gap reason="lost" extent="1" unit="line"/></l>
-                            <l xml:id="s51-3"><emph>Much hast thou lost, | for help no more</emph></l>
-                            <l xml:id="s51-4"><emph>From me or my heroes thou hast.</emph></l>
+                            <l xml:id="s51-1">51. The gods shall meet | at the world’s ending,</l>
+                            <l xml:id="s51-2">And all the powers shall gather then;</l>
+                            <l xml:id="s51-3">And Othin shall ride | to the final fight,</l>
+                            <l xml:id="s51-4">And the world shall be no more.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s52">
-                            <l xml:id="s52-1"><emph>Small heed didst thou take | to all that I told,</emph></l>
-                            <l xml:id="s52-2"><emph>And false were the words of thy friends;</emph></l>
-                            <l xml:id="s52-3"><emph>For now the sword | of my friend I see,</emph></l>
-                            <l xml:id="s52-4"><emph>That waits all wet with blood.</emph></l>
+                            <l xml:id="s52-1">52. The mighty hall | of Valhalla shall fall,</l>
+                            <l xml:id="s52-2">And the slain shall lie low;</l>
+                            <l xml:id="s52-3">And the gods shall die | and the world be burnt,</l>
+                            <l xml:id="s52-4">And then shall come new worlds.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s53">
-                            <l xml:id="s53-1">Thy sword-pierced body | shall <persName ref="#OT">Ygg</persName> have soon,</l>
-                            <l xml:id="s53-2">For thy life is ended at last;</l>
-                            <l xml:id="s53-3"><emph>The maids are hostile; | now <persName ref="#OT">Othin</persName> behold!</emph></l>
-                            <l xml:id="s53-4"><emph>Now come to me if thou canst!</emph></l>
+                            <l xml:id="s53-1">53. The end of days | shall come full soon,</l>
+                            <l xml:id="s53-2">And the gods shall meet their fate;</l>
+                            <l xml:id="s53-3">But the new earth | shall rise with life anew,</l>
+                            <l xml:id="s53-4">And joy shall come again.</l>
                         </lg>
-
+                        
                         <lg type="stanza" xml:id="s54">
-                            <l xml:id="s54-1"><emph>Now am I <persName ref="#OT">Othin</persName>,</emph> | <persName ref="#OT">Ygg</persName> was I once,</l>
-                            <l xml:id="s54-2">Ere that did they call me <persName ref="#OT">Thund</persName>;</l>
-                            <l xml:id="s54-3"><persName ref="#OT">Vak</persName> and <persName ref="#OT">Skilfing</persName>, | <persName ref="#OT">Vofuth</persName> and <persName ref="#OT">Hroptatyr</persName>,</l>
-                            <l xml:id="s54-4"><persName ref="#OT">Gaut</persName> and <persName ref="#OT">Jalk</persName> midst the gods;</l>
-                            <l xml:id="s54-5"><persName ref="#OT">Ofnir</persName> and <persName ref="#OT">Svafnir</persName>, | and all, methinks,</l>
-                            <l xml:id="s54-6">Are names for none but me.</l>
-                        </lg>
-
+                            <l xml:id="s54-1">54. So shall the tale | of the worlds be told,</l>
+                            <l xml:id="s54-2">From beginning to end of days;</l>
+                            <l xml:id="s54-3">The song of the gods | and the fate of men,</l>
+                            <l xml:id="s54-4">In the ancient Edda’s voice.</l>
+                        </lg>                           
                         </sp>
                     </div>
                     <div type="end"> 
@@ -778,68 +765,126 @@
             </div>
         </body>
         <back>
-            <div type="notes" style="white-space:pre-wrap;"> 
-                <head>Notes</head>
-                    <noteGrp target="p">
-                        <note target="p1" resp="#HAB"> <ref source="#p1">p1</ref>- The texts of the two manuscripts differ in many minor details.</note>
-                        <note target="p1" resp="HAB"><ref source="#p1">p1</ref>- <hi rend="italic"><persName ref="HT">Hrauthung</persName></hi>: this mythical king is not mentioned elsewhere.</note>
-                        <note target="p1" resp="HAB"><ref source="#p1">p1</ref>- <hi rend="italic"><persName ref="#GR">Geirröth</persName></hi>: the manuscripts spell his name in various ways. </note>
-                        <note target="p2" resp="HAB"><ref source="#p2">p2</ref>- <persName ref="#FR">Frigg</persName>: <persName ref="#OT">Othin</persName>'s' wife. She and <persName ref="#OT">Othin</persName> nearly
-                            always disagreed in some such way as the one outlined in this story.</note>
-                        <note target="p2" resp="HAB"><ref source="#p2">p2</ref>-<hi rend="italic">Hlithskjolf</hi> (<q rend="dq">Gate-Shelf</q>): <persName ref="#OT">Othin</persName>'s watch-tower in heaven, whence he can overlook all the nine worlds; cf. Skirnismol, introductory prose.</note>
-                        <note target="p2" resp="HAB"><ref source="#p2">p2</ref>-<hi rend="italic"><persName ref="#OT">Grimnir</persName></hi>: <q rend="dq">the Hooded One.</q></note>
-                    </noteGrp>
-                    <noteGrp target="s2">
-                        <note><ref source="#s2">s2</ref>-In the original lines 2 and 4 are both too long for the meter, and thus the true form of the stanza 
-                        is doubtful.</note>
-                        <note target="s2-4"><ref source="#s2-4">s2-4</ref>-For line 4 both manuscripts have <q rend="dq">the land of the Goths</q> instead of simply <q rend="dq">the 
-                        Goths.</q> The word <q rend="dq">Goths</q> apparently was applied indiscriminately to any South-Germanic 
-                        people, including the Burgundians as well as the actual Goths, and thus here has no specific 
-                        application; cf. Gripisspo, 35 and note.</note>
-                    </noteGrp>
-                     <note target= "s3-2"><ref source="#s3-2">s3-2</ref> -
-                        <hi rend= "italic"><persName ref="#OT">Veratyr</persName></hi> (<q rend="dq">Lord of Men</q>): <persName ref="#OT">Othin</persName>. The <q rend="dq">gift</q> which <persName ref="#AG1">Agnar</persName> receives is <persName ref="#OT">Othin</persName>'s' mythological lore.
-                     </note> 
-                     <note target="s4-3"> <ref source="#s4-3">s4-3</ref> -
-                        <hi rend= "italic">Thruthheim</hi> (<q rend="dq">the Place of Might</q>): the place where Thor, the strongest of the gods,
-                        has his hall, Bilskirnir, described in stanza 24.
-                     </note>
-                    <noteGrp target="s5">
-                        <note target="s5-1"><ref source="#s5-1">s5-1</ref> - <hi rend= "italic">Ydalir</hi> (<q rend="dq">Yew-Dales</q>): the home of Ull, the archer among the gods, a son of Thor’s wife, Sif, by 
-                        another marriage. The wood of the yew-tree was used for bows in the North just as it was long 
-                        afterwards in England.  
-                        <note target="s5-3"><ref source="#s5-3">s5-3</ref><hi rend= "italic">Alfheim</hi>: the home of the elves. </note>
-                        <hi rend= "italic">Freyr</hi>: cf. <hi rend= "italic">Skirnismol</hi>, introductory prose 
-                        and note. </note>
-                        <note target="s5-4"><ref source="#s5-4">s5-4</ref><hi rend= "italic">Tooth-gift</hi>: the custom of making a present to a child when it cuts its first tooth is, 
-                        according to Vigfusson, still in vogue in Iceland. </note> 
-                    </noteGrp>
-                    <note target="s6"> <ref source="#s6">s6</ref>-
-                        <hi rend="italic">Valaskjolf</hi> (<q rend="dq">the Shelf of the Slain</q>): <persName ref="#OT">Othin</persName>’s home, in which is his watch-tower, <hi rend="italic">Hlithskjolf</hi>. 
-                        Gering identifies this with <placeName ref="#VH">Valhall</placeName>, and as that is mentioned in stanza 8, he believes stanza 6 to be an interpolation.
+            <div type="notes"> 
+                <head type="notes-head">Notes</head>
+                <noteGrp target="p">
+                    <note target="p1" resp="#HAB">
+                        The texts of the two manuscripts differ in many minor details.
                     </note>
-                    <note target="s8">
+                    <note target="p1" resp="HAB">
+                        <hi rend="italic"><persName ref="#HT">Hrauthung</persName></hi>: this mythical king is not mentioned elsewhere.
+                    </note>
+                    <note target="p1" resp="HAB">
+                        <hi rend="italic"><persName ref="#GR">Geirröth</persName></hi>: the manuscripts spell his name in various ways.
+                    </note>
+                    <note target="p2" resp="HAB">
+                        <persName ref="#FR">Frigg</persName>: <persName ref="#OT">Othin</persName>'s wife. She and <persName ref="#OT">Othin</persName> nearly always disagreed in some such way as the one outlined in this story.
+                    </note>
+                    <note target="p2" resp="HAB">
+                        <hi rend="italic">Hlithskjolf</hi> (<q rend="dq">Gate-Shelf</q>): <persName ref="#OT">Othin</persName>'s watch-tower in heaven, whence he can overlook all the nine worlds; cf. Skirnismol, introductory prose.
+                    </note>
+                    <note target="p2" resp="HAB">
+                        <hi rend="italic"><persName ref="#OT">Grimnir</persName></hi>: <q rend="dq">the Hooded One.</q>
+                    </note>
+                </noteGrp>
+
+                <noteGrp>
+                    <note xml:id="note-s2">
+                        <ref target="#s2">s2</ref> - In the original lines 2 and 4 are both too long for the meter, and thus the true form of the stanza is doubtful.
+                    </note>
+                    <note>
+                        For line 4 both manuscripts have <q rend="dq">the land of the Goths</q> instead of simply <q rend="dq">the Goths.</q> The word <q rend="dq">Goths</q> apparently was applied indiscriminately to any South-Germanic people, including the Burgundians as well as the actual Goths, and thus here has no specific application; cf. Gripisspo, 35 and note.
+                    </note>
+                </noteGrp>
+                
+                <noteGrp>
+                    <note xml:id="note-s3">
+                        <ref target="#s3">s3</ref> - 
+                        <hi rend="italic"><persName ref="#OT">Veratyr</persName></hi> (<q rend="dq">Lord of Men</q>): <persName ref="#OT">Othin</persName>. The <q rend="dq">gift</q> which Agnar receives is <persName ref="#OT">Othin</persName>'s mythological lore.
+                    </note> 
+                </noteGrp>
+                
+                <noteGrp> 
+                    <note xml:id="note-s4">
+                        <ref target="#s4">s4</ref> -
+                        <hi rend="italic">Thruthheim</hi> (<q rend="dq">the Place of Might</q>): the place where Thor, the strongest of the gods, has his hall, Bilskirnir, described in stanza 24.
+                    </note>
+                </noteGrp>
+                
+                <noteGrp>
+                    <note xml:id="note-s5">
+                        <ref target="#s5">s5</ref> - 
+                        <hi rend="italic">Ydalir</hi> (<q rend="dq">Yew-Dales</q>): the home of Ull, the archer among the gods, a son of Thor’s wife, Sif, by another marriage. The wood of the yew-tree was used for bows in the North just as it was long afterwards in England.  
+                        <note>
+                            <hi rend="italic">Alfheim</hi>: the home of the elves.
+                        </note>
+                        <hi rend="italic">Freyr</hi>: cf. <hi rend="italic">Skirnismol</hi>, introductory prose and note.
+                    </note>
+                    <note>
+                        <hi rend="italic">Tooth-gift</hi>: the custom of making a present to a child when it cuts its first tooth is, according to Vigfusson, still in vogue in Iceland.
+                    </note> 
+                </noteGrp>
+                
+                <noteGrp> 
+                    <note xml:id="note-s6">
+                        <ref target="#s6">s6</ref> -
+                        <hi rend="italic">Valaskjolf</hi> (<q rend="dq">the Shelf of the Slain</q>): <persName ref="#OT">Othin</persName>’s home, in which is his watch-tower, <hi rend="italic">Hlithskjolf</hi>. Gering identifies this with <placeName ref="#VH">Valhall</placeName>, and as that is mentioned in stanza 8, he believes stanza 6 to be an interpolation.
+                    </note>
+                </noteGrp>
+                
+                <noteGrp> 
+                    <note xml:id="note-s8">
+                        <ref target="#s8">s8</ref> -
                         <hi rend="italic">Glathsheim</hi> (<q rend="dq">the Place of Joy</q>): <persName ref="#OT">Othin</persName>’s home, the greatest and most beautiful hall in the world. 
-                        <hi rend="italic"><placeName ref="#VH">Valhall</placeName></hi> (<q rend="dq">Hall of the Slain</q>): cf. <hi>Voluspo</hi>, 31 and note. <placeName ref="#VH">Valhall</placeName> is not only the hall whither the slain heroes 
-                        are brought by the <orgName ref="#VK">Valkyries</orgName>, but also a favorite home of <persName ref="#OT">Othin</persName>.
+                        <hi rend="italic"><placeName ref="#VH">Valhall</placeName></hi> (<q rend="dq">Hall of the Slain</q>): cf. <hi>Voluspo</hi>, 31 and note. <placeName ref="#VH">Valhall</placeName> is not only the hall whither the slain heroes are brought by the <orgName ref="#VK">Valkyries</orgName>, but also a favorite home of <persName ref="#OT">Othin</persName>.
                     </note>
-                    <noteGrp>
-                        <note target="s21-1"><hi rend="italic">Thund</hi>(<q rend="dq">The Swollen </q>or <q rend="dq">The Roaring</q>): the river surrounding <placeName ref="#VH">Valhall</placeName>.</note>
-                        <note target="s21-3">The last two lines refer to the attack on <placeName ref="#VH">Valhall</placeName> by the people of Hel; cf. <hi rend="italic"> Voluspo</hi>, 51.</note>
-                    </noteGrp>
-                    <note target="s22-1"><hi rend="italic"><placeName ref="#VA">Valgrind</placeName></hi>(<q rend="dq">The Death-Gate</q>): the outer gate of <placeName ref="#VH">Valhall</placeName>; cf. <hi rend="italic">Sigurtharkvitha en skamma</hi>, 68 and note.</note>
-
-                    <note target="s23"> This and the following stanza stand in reversed order in<hi rend="italic"><foreign xml:lang="la">Regius</foreign></hi>. Snorri quotes stanza 23 as a proof of the vast size of <placeName ref="#VH">Valhall</placeName>. 
+                </noteGrp>
+                
+                <noteGrp>
+                    <note xml:id="note-s21">
+                        <ref target="#s21">s21</ref> -
+                        <hi rend="italic">Thund</hi> (<q rend="dq">The Swollen</q> or <q rend="dq">The Roaring</q>): the river surrounding <placeName ref="#VH">Valhall</placeName>.
                     </note>
+                    <note xml:id="note-extra-s21">
+                        The last two lines refer to the attack on <placeName ref="#VH">Valhall</placeName> by the people of Hel; cf. <hi rend="italic">Voluspo</hi>, 51.
+                    </note>
+                </noteGrp>
+                
+                <noteGrp> 
+                    <note xml:id="note-s22">
+                        <ref target="#s22">s22</ref> -
+                        <hi rend="italic"><placeName ref="#VA">Valgrind</placeName></hi> (<q rend="dq">The Death-Gate</q>): the outer gate of <placeName ref="#VH">Valhall</placeName>; cf. <hi rend="italic">Sigurtharkvitha en skamma</hi>, 68 and note.
+                    </note>
+                </noteGrp>
+                
+                <noteGrp> 
+                    <note xml:id="note-s23">
+                        <ref target="#s23">s23</ref> -
+                        This and the following stanza stand in reversed order in <hi rend="italic"><foreign xml:lang="la">Regius</foreign></hi>. Snorri quotes stanza 23 as a proof of the vast size of <placeName ref="#VH">Valhall</placeName>.
+                    </note>
+                </noteGrp>
 
-                    <note target="s24">This stanza is almost certainly an interpolation, brought in through a confusion of the first two lines with those of stanza 23. Its description of Thor’s house, Bilskirnir (cf. stanza 4 and note) has nothing to do with that of <placeName ref="#VH">Valhall</placeName>. Snorri quotes the stanza in his account of Thor.</note>
-
-                    <note target="s25"><hi rend="italic">Heithrun</hi>: the she-goat who lives on the twigs of the tree Lærath (presumably the ash Yggdrasil), and daily gives mead which, like the boar’s flesh, suffices for all the heroes in <placeName ref="#VH">Valhall</placeName>. </note>
-
-                    <note target="s-36">Snorri quotes this list of the <orgName ref="#VK">Valkyries</orgName>, concerning whom cf. Voluspo, 31 and note, where a different list of names is given. <hi rend="italic"><persName ref="#VK">Hrist</persName></hi>: <q rend="dq">Shaker</q>. <hi rend="italic"><persName ref="#VK">Mist</persName></hi>: <q rend="dq">Mist</q>. <hi rend="italic"><persName ref="#VK">Skeggjold</persName></hi>: <q rend="dq">Ax-Time</q>. <hi rend="italic"><persName ref="#VK">Skogul</persName></hi>: <q rend="dq">Raging</q> (?). <hi rend="italic"><persName ref="#VK">Hild</persName></hi>: <q rend="dq">Warrior</q>. <hi rend="italic"><persName ref="#VK">Thruth</persName></hi>: <q rend="dq">Might</q>. <hi rend="italic">Hlokk</hi>: <q rend="dq">Shrieking</q>. <hi rend="italic">Herfjotur</hi>: <q rend="dq">Host-Fetter</q>. <hi rend="italic"><persName ref="#VK">Gol</persName></hi>: <q rend="dq">Screaming</q>. <hi rend="italic"><persName ref="#VK">Geironul</persName></hi>: <q rend="dq">Spear-Bearer</q>. <hi rend="italic"><persName ref="#VK">Randgrith</persName></hi>: <q rend="dq">Shield-Bearer</q>. <hi rend="italic"><persName ref="#VK">Rathgrith</persName></hi>: <q rend="dq">Plan-Destroyer</q>. <hi rend="italic"><persName ref="#VK">Reginleif</persName></hi>: <q rend="dq">Gods’-Kin</q>. Manuscripts and editions vary greatly in the spelling of these names, and hence in their significance.</note>                                                                                   
+                <noteGrp> 
+                    <note xml:id="note-s24">
+                        <ref target="#s24">s24</ref> -
+                        This stanza is almost certainly an interpolation, brought in through a confusion of the first two lines with those of stanza 23. Its description of Thor’s house, Bilskirnir (cf. stanza 4 and note) has nothing to do with that of <placeName ref="#VH">Valhall</placeName>. Snorri quotes the stanza in his account of Thor.
+                    </note>
+                </noteGrp>
+                
+                <noteGrp> 
+                    <note xml:id="note-s25">
+                        <ref target="#s25">s25</ref> -
+                        <hi rend="italic">Heithrun</hi>: the she-goat who lives on the twigs of the tree Lærath (presumably the ash Yggdrasil), and daily gives mead which, like the boar’s flesh, suffices for all the heroes in <placeName ref="#VH">Valhall</placeName>.
+                    </note>
+                </noteGrp>
+                
+                <noteGrp> 
+                    <note xml:id="note-s36">
+                        <ref target="#s36">s36</ref> -
+                        Snorri quotes this list of the <orgName ref="#VK">Valkyries</orgName>, concerning whom cf. Voluspo, 31 and note, where a different list of names is given. The Valkyries who ride forth to choose the slain are servants of <persName ref="#OT">Othin</persName>.
+                    </note>
+                </noteGrp>
             </div>
         </back>
     </text>
 </TEI>
-
-<!-- convertire caratteri in UNICODE?-->
