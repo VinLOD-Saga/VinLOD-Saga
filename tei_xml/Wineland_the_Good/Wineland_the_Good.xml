@@ -77,7 +77,7 @@
                     </monogr>
                 </biblStruct>
                 <listWit>
-                    <witness xml:id="EsR" source="https://handrit.is/manuscript/view/is/AM04-0557/0#mode/2up">AM. 557, 4to (Sögubók)- Saga of Erik the Red</witness>
+                    <witness xml:id="EsR" source="https://handrit.is/manuscript/view/is/AM04-0557/0#mode/2up">AM. 557, 4to (Sögubók) - Saga of Erik the Red</witness>
                     <witness xml:id="THsK" source="https://handrit.is/manuscript/view/en/AM04-0544/0#mode/2up">AM. 544, 4to (Hauksbók) - Saga of Thorfinn Karlsefni</witness>
                 </listWit>
             </sourceDesc>
@@ -118,25 +118,25 @@
                     <person xml:id="RM" source="https://github.com/ValkyrieCain9">
                         <persName>Regina Manyara</persName>
                     </person>
-                    <person xml:id="AMR" sameAs="https://lccn.loc.gov/n89602323">
+                    <person xml:id="AMR" source="https://lccn.loc.gov/n89602323">
                         <persName>Arthur Middleton Reeves</persName>
                     </person>
                 </listPerson>    
                 <listPerson type="character">
-                    <person xml:id="ER" sameAs="https://dbpedia.org/resource/Erik_the_Red">
+                    <person xml:id="ER" source="https://dbpedia.org/resource/Erik_the_Red">
                         <persName>Erik the Red</persName>
                     </person>
                     <person xml:id="TH">
                         <persName>Thorhild(Thoihild)</persName>
                         <note>The wife of Erik the Red and mother of Leif Eirikson</note>
                     </person>
-                    <person xml:id="LE" sameAs="https://dbpedia.org/resource/Leif_Erikson"> 
+                    <person xml:id="LE" source="https://dbpedia.org/resource/Leif_Erikson" sameAs="https://w3id.org/vinLOD-saga/person/Leiv_Eiriksson"> 
                         <persName>Leif Eiriksson</persName>
                     </person>
-                    <person xml:id="TE" sameAs="https://dbpedia.org/resource/Thorstein_Eiriksson">
+                    <person xml:id="TE" source="https://dbpedia.org/resource/Thorstein_Eiriksson">
                         <persName>Thorstein Eiriksson</persName>
                     </person>
-                    <person xml:id="OT" sameAs="https://dbpedia.org/resource/Olaf_Tryggvason">
+                    <person xml:id="OT" source="https://dbpedia.org/resource/Olaf_Tryggvason">
                         <persName>Olaf Tryggvason</persName>
                     </person>
                     <person xml:id="TG">
@@ -147,10 +147,10 @@
                         <persName>Thorbjorn</persName>
                         <note>The father of Gudrid</note>
                     </person>
-                    <person xml:id="GT" sameAs="https://dbpedia.org/resource/Gudrid_Thorbjarnard%C3%B3ttir">
+                    <person xml:id="GT" source="https://dbpedia.org/resource/Gudrid_Thorbjarnard%C3%B3ttir">
                         <persName>Gudrid Thorbjarnardóttir</persName>
                     </person>
-                    <person xml:id="TK" sameAs="https://dbpedia.org/resource/Thorfinn_Karlsefni">
+                    <person xml:id="TK" source="https://dbpedia.org/resource/Thorfinn_Karlsefni">
                         <persName>Thorfinn Karlsefni</persName>
                     </person>
                     <person xml:id="TD">
@@ -164,32 +164,32 @@
                     <place xml:id="VL" sameAs="https://w3id.org/vinLOD-saga/place/Vinland">
                         <placeName>Vinland</placeName>
                     </place>
-                    <place xml:id="GL" sameAs="https://sws.geonames.org/3425505/">
+                    <place xml:id="GL" source="https://sws.geonames.org/3425505/">
                         <placeName>Greenland</placeName>
                     </place>
-                    <place xml:id="NO" sameAs="https://sws.geonames.org/3144096/">
+                    <place xml:id="NO" source="https://sws.geonames.org/3144096/">
                         <placeName>Norway</placeName>
                     </place>
-                    <place xml:id="HB" sameAs="https://sws.geonames.org/2647204/">
+                    <place xml:id="HB" source="https://sws.geonames.org/2647204/">
                         <placeName>Hebrides</placeName>
                     </place>
-                    <place xml:id="IL" sameAs="https://sws.geonames.org/2629691/">
+                    <place xml:id="IL" source="https://sws.geonames.org/2629691/">
                         <placeName>Iceland</placeName>
                     </place>
-                    <place xml:id="BT" sameAs="https://sws.geonames.org/3420741/">
+                    <place xml:id="BT" source="https://sws.geonames.org/3420741/">
                         <placeName>Brattahlid</placeName>
                     </place>
                     <place xml:id="EF">
                         <placeName>Ericsfirth</placeName>
                         <note>Leif Eirikson's home in Greenland</note>
                     </place>
-                    <place xml:id="SF" sameAs="https://sws.geonames.org/3413200/">
+                    <place xml:id="SF" source="https://sws.geonames.org/3413200/">
                         <placeName>Snæfellsnes</placeName>
                     </place>
-                    <place xml:id="SH" sameAs="https://sws.geonames.org/3413453/">
+                    <place xml:id="SH" source="https://sws.geonames.org/3413453/">
                         <placeName>Skálholt</placeName>
                     </place>
-                    <place xml:id="FR" sameAs="https://nat.is/froda/">
+                    <place xml:id="FR" source="https://nat.is/froda/">
                         <placeName>Fródá</placeName>
                     </place>
                 </listPlace>
@@ -251,7 +251,7 @@
                     <seg xml:id="failure">Thereafter they sailed cheerily out of <placeName ref="#EF">Ericsfirth</placeName> in high spirits over their plan. They were long tossed about upon the ocean, and could not lay the course they wished. They came in sight of <placeName ref="#IL">Iceland</placeName>, and likewise saw birds from the Irish coast<note n="10" place="bottom">Lit.'had birds from Ireland;' that is, came near enough to the coast of Ireland to see land birds.</note>. Their ship was, in sooth, driven hither and thither over the sea. In the autumn they turned back, worn out by toil, and exposure to the elements, and exhausted by their labours, and arrived at Ericsfirth at the very beginning of winter.  Then said <persName ref="#ER">Eric</persName>, '<said aloud="true" who="#ER">More cheerful were <span n="11">we</span> in the summer, when we put out of the firth, but we still live<note n="12" place="bottom">Lit. 'but now we are'</note>, and it might have been much worse<note n="13" place="bottom">Lit. 'and there is still much good left;' that is, we have still much to be grateful for</note></said>.' <persName ref="#TE">Thorstein</persName> answers, '<said aloud="true" who="#ER">It will be a princely deed to endeavour to look well after the wants of all these men who are now in need, and to make provision for them during the winter.</said>' Eric answers, '<said aloud="true" who="#ER">It is ever true, as it is said, that "it is never clear ere the answer comes," and so it 
                             
                     <!-- Page 38 (50/280) -->      
-                    must be here. We will act now upon thy counsel in this <span n="14">matter</span></said>.'All of the men, who were not otherwise provided for, accompanied the father and son. They landed thereupon, and went home to Brattahlid, where they remained throughout the winter.</seg>
+                    must be here. We will act now upon thy counsel in this <span n="14">matter</span></said>. 'All of the men, who were not otherwise provided for, accompanied the father and son. They landed thereupon, and went home to Brattahlid, where they remained throughout the winter.</seg>
                 </p>
             </div>
             <div>
@@ -316,7 +316,7 @@
                             was a large woman, tall, and very stout; with dark brown eyes set close together, and thick brown hair; she was for the most part pleasant in her bearing, attended church every morning before she went to her work, but was not, as a rule, easy of approach nor inclined to be talkative. It was the common opinion that Thorgunna must be in the sixties.' [Eyrbyggja Saga, ed. Vigfusson, pp. 92-3.] In the autumn after her arrival Thorgunna died, and the strange events accompanying her last illness, are recorded in the chapter following that above quoted. As she approached her end, she called the master of the house to her, and said: '"<said aloud="true" who="#TG">It is my last wish, if I die from this illness, that my body be conveyed to <placeName ref="#SH">Skálholt</placeName>, for I foresee that it is destined to be one of the most famous spots in this land, and I know that there must be priests there now to chant my funeral service. I would, therefore, request thee to have my body conveyed thither, for which thou shalt have suitable compensation from my possessions; while of my undivided property Thurid shall receive the scarlet cloak, and I thus direct, that she may be content, if I make such disposition of my other property as I see fit; moreover, I would have thee requite thyself for such expense as thou hast incurred in my behalf, with such articles as thou wishest, or she may choose, of that which I so appoint. I have a gold ring, which is to go with my body to the church, but my bed and hangings I wish to have burned, for these will not be of profit to any one; and this I say, not because I would deprive any one of the use of these things, if I believed that they would be useful; but I dwell so particularly upon this," says she, "because I should regret, that so great affliction should be visited upon any one, as I know must be, if my wishes should not be fulfilled</said>."' [Eyrbyggja Saga, 1. c. pp. 95-6.]</seg>
                         </p>
                         <p>
-                            The age here assigned to <persName ref="#TG">Thorgunna</persName> hardly agrees with the probable age of the Hebridean Thorgunna of Leif's acquaintance. Indeed the description of this remarkable woman, as given in 'Eyrbyggja,' would seem to indicate that there may have been an error in the age there assigned her, possibly a clerical error; if this is not the fact, it is pretty clear, that the Hebridean Thorgunna of <persName ref="#LE">Leif</persName>'s acquaintance and the Thorgunna of 'Eyrbyggja' cannot be the same person. We are given to understand in the Saga of Eric the Red, that the woman of Leif's intrigue was a woman out of the ordinary rank; we are also told, that Leif gave her many precious bits of finery, among the rest a gold ring, and a mantle of wadmal. The Thorgunna of 'Eyrbyggja' was certainly an extraordinary woman, and was distinguished also for the apparel and ornaments which she possessed. The parallelism is sufficiently striking to point to the possibility, that the Thorgunna of 'Eyrbyggja' was the Thorgunna of Eric's Saga, who had, perhaps, come to <placeName ref="#IL">Iceland</placeName> to seek a passage to <placeName ref="#GL">Greenland</placeName>, in pursuance of her intention as announced to Leif at their parting. It is stated in Eric's Saga to have been rumoured, that Thorgunna's son came to Iceland in the summer before the <placeName ref="#FR">Fródá</placeName>-wonder. The Thorgunna of the Eyrbyggja Saga arrived in Iceland the summer before this 'wonder,' which indeed, owed its origin to her coming, but there is no mention in this saga of her having had a son, a singular omission, truly, if it be an omission, in so minute a description as the saga has preserved of this remarkable woman. Finally, it is evident, if Leif's voyage to<placeName ref="#NO">Norway</placeName> was made in <date when="0999">999</date>, and the Thorgunna of Leif's intrigue and she of 'Eyrbyggja' are the same, that Thorgunna's son must have been of a very tender age at the time of his mother's arrival in Iceland. In view of these, as well as certain chronological difficulties, which this narrative presents, it seems not improbable that the whole account of 
+                            The age here assigned to <persName ref="#TG">Thorgunna</persName> hardly agrees with the probable age of the Hebridean Thorgunna of Leif's acquaintance. Indeed the description of this remarkable woman, as given in 'Eyrbyggja,' would seem to indicate that there may have been an error in the age there assigned her, possibly a clerical error; if this is not the fact, it is pretty clear, that the Hebridean Thorgunna of <persName ref="#LE">Leif</persName>'s acquaintance and the Thorgunna of 'Eyrbyggja' cannot be the same person. We are given to understand in the Saga of Eric the Red, that the woman of Leif's intrigue was a woman out of the ordinary rank; we are also told, that Leif gave her many precious bits of finery, among the rest a gold ring, and a mantle of wadmal. The Thorgunna of 'Eyrbyggja' was certainly an extraordinary woman, and was distinguished also for the apparel and ornaments which she possessed. The parallelism is sufficiently striking to point to the possibility, that the Thorgunna of 'Eyrbyggja' was the Thorgunna of Eric's Saga, who had, perhaps, come to <placeName ref="#IL">Iceland</placeName> to seek a passage to <placeName ref="#GL">Greenland</placeName>, in pursuance of her intention as announced to Leif at their parting. It is stated in Eric's Saga to have been rumoured, that Thorgunna's son came to Iceland in the summer before the <placeName ref="#FR">Fródá</placeName>-wonder. The Thorgunna of the Eyrbyggja Saga arrived in Iceland the summer before this 'wonder,' which indeed, owed its origin to her coming, but there is no mention in this saga of her having had a son, a singular omission, truly, if it be an omission, in so minute a description as the saga has preserved of this remarkable woman. Finally, it is evident, if Leif's voyage to <placeName ref="#NO">Norway</placeName> was made in <date when="0999">999</date>, and the Thorgunna of Leif's intrigue and she of 'Eyrbyggja' are the same, that Thorgunna's son must have been of a very tender age at the time of his mother's arrival in Iceland. In view of these, as well as certain chronological difficulties, which this narrative presents, it seems not improbable that the whole account of 
                             
                             <!-- Page 170 (238/280) -->
                             Thorgunna and the Fródá-wonder, as contained in 'Eyrbyggja,' was a popular tale interjected in the saga for a reason not now apparent. This tale may well have been builded upon a historical foundation, but the remains of this foundation are not sufficiently well-preserved to enable us to separate accurately the sound from the unsound material<note place="bottom">Cf. Vigfusson, Eyrbyggja Saga, Vorrede, p. xvii.</note>.
