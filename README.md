@@ -1,8 +1,6 @@
-<p align="center">
-  <img src="assets/img/Vinlod_logo_full.png" alt="VinLOD-Saga Logo" width="200"/>
+<p align="left">
+  <img src="assets/img/Vinlod_logo_full.png" alt="VinLOD-Saga Logo" width="200"/> # 🛡️ VinLOD-Saga
 </p>
-
-# 🛡️ VinLOD-Saga
 **A linked open data project about the anime and manga _Vinland Saga_.**
 
 ---
