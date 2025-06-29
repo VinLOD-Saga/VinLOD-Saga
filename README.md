@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Vinlod_logo_full.png" alt="VinLOD-Saga Logo" width="200"/>
+  <img src="assets/img/Vinlod_logo_full.png" alt="VinLOD-Saga Logo" width="200"/>
 </p>
 
 # 🛡️ VinLOD-Saga
