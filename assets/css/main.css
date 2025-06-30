@@ -49,10 +49,12 @@
   --background-color: #1b3342; /* Background color for the entire website, including individual sections */
   --default-color: #EFF3F0; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #549180; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #500E0E; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #500E0E;
+  --accent-color2: #AA0000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #4A6668; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #E7E6E0; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
+/* #500E0E */ 
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
