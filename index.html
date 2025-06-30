@@ -612,10 +612,18 @@
           <p>
             Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
           </p>
-          <figure>
-            <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
-            <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
-          </figure>
+          <div class="clients-slider swiper-container">
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+              <div class="col-lg-12 col-md-12 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <figure>
+                    <a role="button" href="assets/img/Vinlod_theoretical.drawio.png" class="link-preview portfolio-lightbox figure-btn p-2 px-3" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bi bi-arrows-angle-expand"></i></a>
+                    <img src="assets/img/Vinlod_theoretical.drawio.png" class="img-fluid" alt="">
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
 
       <!-- End Theoretical Map -->
@@ -629,10 +637,18 @@
         <p>
           Once the items were selected, it was paramount to immediately understand what and how many <b>relationships</b> existed between them. The resulting complex network of entities has then been outlined through a <b>Conceptual Map</b>. Although only a preliminary sketch, the map provides a clear overview and general grasp of the scenario studied in this project.
         </p>
-        <figure>
-          <a href="assets/img/theoretical.jpg" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" title="Theoretical Model"><i class="bx bx-expand" style="font-size:xx-large;"></i></a>
-          <img src="assets/img/theoretical.jpg" class="img-fluid" alt="">
-        </figure>
+        <div class="clients-slider swiper-container">
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+            <div class="col-lg-12 col-md-12 portfolio-item filter-web">
+              <div class="portfolio-wrap">
+                <figure>
+                  <a role="button" href="assets/img/Vinlod_conceptual.drawio.png" class="link-preview portfolio-lightbox figure-btn p-2 px-3" data-gallery="portfolioGallery" title="Conceptual Model"><i class="bi bi-arrows-angle-expand"></i></a>
+                  <img src="assets/img/Vinlod_conceptual.drawio.png" class="img-fluid" alt="">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- End Conceptual Map -->
@@ -661,20 +677,18 @@
     
     <!-- ======== Team Section ======== -->
     <section id="team" class="team section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>The Team</h2>
-        <!-- <p>CHECK OUR TEAM</p> -->
-      </div><!-- End Section Title -->
-
-      <div class="container">
+      <div class="container" id="textEncoding" data-aos="fade-up" data-aos-delay="100">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>The Team</h2>
+          <!-- <p>CHECK OUR TEAM</p> -->
+        </div><!-- End Section Title -->
 
         <div class="row gy-5 d-flex justify-content-center">
-
+          <!-- Ilaria de Dominicis -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt="Ilaria De Dominicis"></div>
+              <div class="pic"><img src="assets/img/ilaria_profile.jpg" class="img-fluid" alt="Ilaria De Dominicis"></div>
               <div class="member-info text-center">
                 <h4>Ilaria De Dominicis</h4>
                 <div class="social">
@@ -683,8 +697,8 @@
               </div>
             </div>
           </div>
-          <!-- End Team Member -->
 
+          <!-- Regina Manyara -->
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
               <div class="pic"><img src="assets/img/regina_profile.jpg" class="img-fluid" alt="Regina Manyara"></div>
@@ -696,12 +710,8 @@
               </div>
             </div>
           </div>
-          <!-- End Team Member -->
-
         </div>
-
       </div>
-
     </section><!-- /Team Section -->
 
   </main>
@@ -773,6 +783,12 @@
   
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const portfolioLightbox = GLightbox({
+      selector: '.portfolio-lightbox'
+    });
+  </script>
 
   <!-- Video Intro Script -->
   <script>

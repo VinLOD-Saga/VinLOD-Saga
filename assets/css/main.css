@@ -211,40 +211,6 @@ body.reveal #hero .container {
   text-transform: uppercase;
 }
 
-/* .modal-backdrop {
-  z-index: 1040; 
-}
-.modal {
-  z-index: 1050; 
-}
-
-.modal.show {
-  pointer-events: auto;
-}
-
-body.modal-open {
-  overflow: hidden; 
-} */
-
-/* ✅ Force correct modal backdrop behavior */
-/* .modal-backdrop.show {
-  opacity: 0.5 !important;         
-  background-color: #000 !important;
-  z-index: 1050 !important;        
-  pointer-events: auto !important;
-} */
-
-/* .modal-open {
-  overflow: hidden !important;
-  padding-right: 0 !important;
-} */
-
-/* ✅ Ensure the modal itself is always visible when active */
-/* .modal.show {
-  display: block !important;
-  z-index: 1055 !important;       
-} */
-
 /*--------------------------------------------------------------
 # Section Seperators and navigation
 --------------------------------------------------------------*/
@@ -253,7 +219,7 @@ body.modal-open {
   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/vinland_sea1.png") fixed center center;
   background-size: cover;
   padding: 200px 0;
-  min-height: 300px;
+  min-height: 200px;
 }
 
 #hero,
@@ -290,6 +256,28 @@ body.modal-open {
 
 }
 
+/*--------------------------------------------------------------
+# Image Map Figures
+--------------------------------------------------------------*/
+.figure-btn{
+  font-size:large; 
+  background-color: var(--accent-color);
+  padding: 5px;
+  border-radius: 25% 10%;
+  line-height: 2;
+  color: var(--default-color)
+}
+
+figure {
+  position: relative;
+}
+
+.link-preview {
+  position: absolute;
+  top: 10px; /* adjust as needed */
+  right: 10px; /* adjust as needed */
+  z-index: 2;  /* optional, ensures it's above the image */
+}
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
@@ -1116,12 +1104,15 @@ section,
   font-size: 18px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
+  /* line-height: 1px; */
   margin: 0;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
   position: relative;
+  line-height: 1.4; /* ✅ Natural wrapping */
+  display: inline;  /* ✅ inline so ::after stays in flow */
+  white-space: normal; /* ✅ allow wrapping */
 }
 
 .section-title h2::after {
@@ -1146,9 +1137,12 @@ section,
   text-transform: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 375px) {
   .section-title p {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .section-title h2::after {
+    width: 70px;
   }
 }
 
