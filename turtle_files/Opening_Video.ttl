@@ -5,6 +5,6 @@
     schema:contentUrl <https://www.youtube.com/watch?v=l5wAdQ-UkWY> ;
     schema:musicBy <https://w3id.org/vinLOD-saga/agent/Survive_Said_the_Prophet> ;
     schema:name "Vinland Saga Opening1 | Mukanjyo By Survive Said The Prophet" ;
-    schema:productionCompany <https://w3id.org/vinLOD-saga/organisation/Crunchroll> ;
+    schema:productionCompany <https://w3id.org/vinLOD-saga/organisation/Crunchyroll> ;
     schema:uploadDate "2024-07-01" .
 

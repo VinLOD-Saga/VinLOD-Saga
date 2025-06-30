@@ -2,7 +2,7 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 
-<https://w3id.org/vinLOD-saga/item/Valkrie_Performance> a frbroo:F26_Recording ;
+<https://w3id.org/vinLOD-saga/item/Valkyrie_Performance> a frbroo:F26_Recording ;
     bf:identifiedBy <https://gutenberg.org/ebooks/10177> ;
     dcterms:contributor "American Symphony Orchestra (West Orange, N.J.)" ;
     dcterms:created "1921" .

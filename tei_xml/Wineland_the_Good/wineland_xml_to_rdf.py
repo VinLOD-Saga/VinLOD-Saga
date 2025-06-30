@@ -1,5 +1,5 @@
 from lxml import etree
-from rdflib import Graph, Literal, Namespace, URIRef, RDF
+from rdflib import Graph, Literal, Namespace, URIRef, RDF, OWL
 from rdflib.namespace import DCTERMS, RDFS # Added RDFS for potential future use or better schema definition
 
 def get_text_or_none(element):
@@ -31,7 +31,7 @@ def xml_to_rdf(file):
     annotator = get_text_or_none(editionStmt.find("tei:respStmt/tei:persName", namespaces=tei_ns)) #bf:responsibilityStatement
 
     #fileDesc/extent
-    extent = get_text_or_none(editionStmt.find("tei:fileDesc/tei:extent/tei:measure[@unit='kb']", namespaces=tei_ns)) #bf:dimensions
+    extent = get_text_or_none(root.find(".//tei:fileDesc/tei:extent/tei:measure[@unit='kb']", namespaces=tei_ns)) #bf:dimensions
 
     #fileDesc/publicationStmt
     publicationStmt = root.find(".//tei:fileDesc/tei:publicationStmt", namespaces=tei_ns)
@@ -46,8 +46,9 @@ def xml_to_rdf(file):
 
     #relevant people and places
     profileDesc = root.find(".//tei:profileDesc", namespaces=tei_ns)
-    erik = (profileDesc.find(".//tei:person[@xml:id='ER']", namespaces=tei_ns)).get('sameAs')
-    vinland = (profileDesc.find(".//tei:place[@xml:id='VL']", namespaces=tei_ns)).get('sameAs')
+    leifURI = (profileDesc.find(".//tei:person[@xml:id='LE']", namespaces=tei_ns)).get('sameAs')
+    erikDBpedia = (profileDesc.find(".//tei:person[@xml:id='ER']", namespaces=tei_ns)).get('source')
+    vinlandURI = (profileDesc.find(".//tei:place[@xml:id='VL']", namespaces=tei_ns)).get('sameAs')
 
     # === 2. Building RDF and URIs ===
     g = Graph()
@@ -64,23 +65,29 @@ def xml_to_rdf(file):
     g.bind("schema", SCHEMA)
     g.bind("crm", CRM)
     g.bind("vinLOD", vinLOD)
+    g.bind("owl", OWL)
 
 
     #Entities
-    doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Finding_of_Wineland_DigitalEdition")
+    doc_uri = URIRef("https://w3id.org/vinLOD-saga/item/Transcribed_Wineland")
     E24 = CRM['E24_Physical_Human-Made_Thing'] # Using CRM namespace for E24
     digital_doc= SCHEMA.DigitalDocument
     wineland_original = URIRef("https://w3id.org/vinLOD-saga/item/Finding_of_Wineland")
-    leif = URIRef("https://w3id.org/vinLOD-saga/person/Leiv_Eiriksson")
     norse_exploration = URIRef("https://w3id.org/vinLOD-saga/event/Norse_Exploration")
+    erik = URIRef("https://w3id.org/vinLOD-saga/person/Erik_the_Red")
+    erikSaga = URIRef("https://w3id.org/vinLOD-saga/narrative/Erik_Saga")
 
 
     # === 3. Populating the Graph ===
     g.add((doc_uri, RDF.type, E24)) # type
     g.add((doc_uri, RDF.type, digital_doc))
     g.add((doc_uri, CRM.P130_shows_features_of, wineland_original))
-    g.add((doc_uri, CRM.P129_is_about, leif))
+    g.add((doc_uri, CRM.P129_is_about, URIRef(leifURI)))
     g.add((doc_uri, CRM.P129_is_about, norse_exploration))
+    g.add((erik, OWL.sameAs, URIRef(erikDBpedia)))
+    g.add((URIRef(leifURI), CRM.P152_has_parent, erik))
+    g.add((doc_uri, CRM.P130_shows_features_of, erikSaga))
+    g.add((erikSaga, CRM.P129_is_about, erik))
 
     if title:
         g.add((doc_uri, BF.mainTitle, Literal(title)))
@@ -109,15 +116,15 @@ def xml_to_rdf(file):
 
     if erik:
         g.add((doc_uri, CRM.P129_is_about, URIRef(erik)))
-    if vinland:
-        g.add((doc_uri, CRM.P129_is_about, URIRef(vinland)))
+    if vinlandURI:
+        g.add((doc_uri, CRM.P129_is_about, URIRef(vinlandURI)))
 
 # there should be 10 triples 
 
     # === 4. Serializing in Turtle ===
     try:
-        g.serialize(destination="turtle_files/wineland_digitalEdition.ttl", format="turtle")
-        print("RDF graph successfully serialized to wineland_digitalEdition.ttl")
+        g.serialize(destination="turtle_files/Transcribed_Wineland.ttl", format="turtle")
+        print("RDF graph successfully serialized to Transcribed_Wineland.ttl")
     except Exception as e:
         print(f"Error during serialization: {e}")
 

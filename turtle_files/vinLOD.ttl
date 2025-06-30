@@ -11,6 +11,16 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix jvmg: <http://mediagraph.link/jvmg/ont/> .
 @prefix schema: <http://schema.org/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+<https://w3id.org/vinLOD-saga/> a owl:Ontology ;
+    dc:creator "Regina Manyara and Ilaria de Dominicis"@en ;
+    dc:description "A linked open data project connecting the anime and manga series Vinland Saga with real world Norse cultural objects"@en ;
+    dc:title "VinLOD Saga"@en ;
+    vann:preferredNamespacePrefix "vinLOD"@en ;
+    vann:preferredNamespaceUri "https://w3id.org/vinLOD-saga/"@en ;
+    rdfs:label "VinLOD Saga"@en .
 
 #Classes
 <class/Anime> a owl:Class;
@@ -42,17 +52,20 @@
 <property/hasAnimationStudio> a owl:ObjectProperty;
     rdfs:label "has animation studio";
     rdfs:comment "describes the studio responsible for the animation of an anime" ;
-    rdfs:domain <class/Anime> .
+    rdfs:domain <class/Anime> ;
+    rdfs:range schema:Organization .
 
 <property/hasMangaka> a owl:ObjectProperty;
     rdfs:label "has mangaka";
     rdfs:comment "describes the mangaka(author) of a manga series";
-    rdfs:domain <class/Manga> .
+    rdfs:domain <class/Manga> ;
+    rdfs:range crm:E21_Person .
 
 <property/serialisedIn> a owl:ObjectProperty;
     rdfs:label "serialised in";
     rdfs:comment "describes the magazine a manga is serialised in";
-    rdfs:domain <class/Manga> .
+    rdfs:domain <class/Manga> ;
+    rdfs:range schema:Organization .
 
 #Central work
 <work/Vinland_Saga> a frbroo:F1;
@@ -153,7 +166,6 @@
 
 
 #Legendary Groups
-
 <group/Jomsvikings> a crm:E74_Group;
     schema:name "Jomsvikings" ;
     rdfs:label "Jomsvikings";
@@ -171,45 +183,44 @@
 
 
 #Events
-
 <event/Hjorungavagr_Battle> a crm:E5_Event;
     rdfs:label "Battle of Hjörungavágr";
-    scema:name "Battle of Hjörungavágr"; 
+    schema:name "Battle of Hjörungavágr"; 
     owl:sameAs dbr:Battle_of_Hjörungavágr;
     crm:P67i_is_referred_to_by <narrative/Jomsvikings_Saga>;
     crm:P62i_is_depicted_by <item/Hailstorm_Illustration> .
 
 <event/St_Brice_Massacre> a crm:E5_Event;
     rdfs:label "St Brice's Day Massacre";
-    scema:name "St Brice's Day Massacre"; 
+    schema:name "St Brice's Day Massacre"; 
     crm:P17i_motivated <event/2nd_Viking_Invasion>;
     owl:sameAs dbr:Battle_of_Hjörungavágr .
 
 <event/2nd_Viking_Invasion> a crm:E5_Event;
     rdfs:label "2nd Viking Invasion of England";
-    scema:name "2nd Viking Invasion of England"; 
+    schema:name "2nd Viking Invasion of England"; 
     owl:sameAs dbr:Viking_activity_in_the_British_Isles.
 
 <event/Cnut_Invasion> a crm:E5_Event;
     rdfs:label "Cnut's Invasion of England";
-    scema:name "Cnut's Invasion of England"; 
+    schema:name "Cnut's Invasion of England"; 
     crm:P9i_forms_part_of <event/2nd_Viking_Invasion> .
 
 <event/Assandun_Battle> a crm:E5_Event;
     rdfs:label "Battle of Assandun";
-    scema:name "Battle of Assandun"; 
+    schema:name "Battle of Assandun"; 
     owl:sameAs dbr:Battle_of_Assandun;
     crm:P9i_forms_part_of <event/Cnut_Invasion>;
     crm:P16_used_specific_object <concept/Olney_Treaty> .
 
 <event/Cnut_Becomes_English_King> a crm:E5_Event;
     rdfs:label "Cnut becomes king of England after the death of Edmund Ironside" ;
-    scema:name "The Crowning of Cnut"; 
+    schema:name "The Crowning of Cnut"; 
     crm:P92_brought_into_existence <item/Cnut_Coin> .
 
 <event/Norse_Exploration> a crm:E5_Event;
     rdfs:label "Norse Exploration of America";
-    scema:name "Norse Exploration of America"; 
+    schema:name "Norse Exploration of America"; 
     owl:sameAs dbr:Norse_colonization_of_North_America;
     crm:P62i_is_depicted_by <item/Eiriksson_Painting>;
     crm:P129i_is_subject_of <narrative/Greenland_Saga>;
@@ -218,21 +229,19 @@
 
 
 #Concepts
-
 <concept/Valhalla> a crm:E28_Conceptual_Object;
     rdfs:label "Valhalla";
-    scema:name "Valhalla"; 
+    schema:name "Valhalla"; 
     owl:sameAs dbr:Valhalla;
     crm:P67i_is_referred_to_by <narrative/Poetic_Edda> .
 
 <concept/Olney_Treaty> a crm:E28_Conceptual_Object;
-    scema:name "Treaty of Olney"; 
+    schema:name "Treaty of Olney"; 
     rdfs:label "Treaty of Olney";
     crm:P17i_motivated <event/Cnut_Becomes_English_King> .
 
 
 #Stories 
-
 <narrative/Greenland_Saga> a frbroo:F1;
     schema:name "Saga of the Greenlanders" ;
     rdfs:label "Saga of the Greenlanders";
@@ -257,11 +266,11 @@
 
 
 #Music Entities
-
 <musicEntity/Ride_of_Valkyrie> a frbroo:F1;
+    owl:sameAs <https://d-nb.info/gnd/300170548> ;
     schema:name "Ride of the Valkyrie" ;
-    rdfs:label "Ride of the Valkrie";
-    frbroo:R3 <item/Valkrie_Performance> ; #R3-is realised in
+    rdfs:label "Ride of the Valkyrie";
+    frbroo:R3 <item/Valkyrie_Performance> ; #R3-is realised in
     dcterms:creator <http://vocab.getty.edu/ulan/500223295> .
 
 
@@ -271,7 +280,6 @@
     schema:byArtist <agent/Survive_Said_the_Prophet> .
 
 #Agents and organisations and publication
-
 <agent/Makoto_Yukimura> a crm:E21_Person;
     a jvmg:Individual;
     jvmg:preferredNameRomanji "Makoto Yukimura" ;
@@ -299,19 +307,19 @@
     jvmg:currentName "ウィットスタジオ" ;
     jvmg:alternativeName "Wit Studio" ;
     rdfs:label "Wit Studio" ;
-    rdfs:comment "An Japanese animation studio" ;
+    rdfs:comment "A Japanese animation studio" ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/858/Wit_Studio> .
 
 <organisation/MAPPA_Studio> a schema:Organization;
     a jvmg:Company ;
     jvmg:currentName "MAPPA" ;
     rdfs:label "MAPPA Studio" ;
-    rdfs:comment "An Japanese animation studio" ;
+    rdfs:comment "A Japanese animation studio" ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/569/MAPPA> .
 
-<organisation/Crunchroll> a schema:Organization;
+<organisation/Crunchyroll> a schema:Organization;
     a jvmg:Company ;
-    jvmg:currentName "Cruncyroll" ;
+    jvmg:currentName "Crunchyroll" ;
     rdfs:label "Crunchyroll" ;
     rdfs:comment "Anime licencing and production company" ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/1468/Crunchyroll> .
@@ -322,11 +330,5 @@
     rdfs:comment "The National Museum of Art, Architecture and Design in Oslo, Norway";
     geo:lat "59.91164"^^xsd:decimal ;
     geo:long "10.72925"^^xsd:decimal ;
-    owl:sameAs <geo:59.91164,10.72925> ;
     rdfs:seeAlso <https://www.google.com/maps/search/?api=1&query=59.91164,10.72925> .
-
-
-
-
-
 

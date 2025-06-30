@@ -1,0 +1,517 @@
+@prefix aclick: <http://mediagraph.link/aclick/ont/> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dbr: <http://dbpedia.org/resource/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcatde: <http://dcat-ap.de/def/dcatde/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dnbt: <https://d-nb.info/standards/elementset/dnb#> .
+@prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
+@prefix geo1: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gndo: <https://d-nb.info/standards/elementset/gnd#> .
+@prefix jvmg: <http://mediagraph.link/jvmg/ont/> .
+@prefix jvmg1: <http://mediagraph.link/jvmg/ont#> .
+@prefix nmo: <http://nomisma.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix viaf: <http://viaf.org/viaf/> .
+@prefix vinLOD: <https://w3id.org/vinLOD-saga/property/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/vinLOD-saga/> a owl:Ontology ;
+    rdfs:label "VinLOD Saga"@en ;
+    dc:creator "Regina Manyara and Ilaria de Dominicis"@en ;
+    dc:description "A linked open data project connecting the anime and manga series Vinland Saga with real world Norse cultural objects"@en ;
+    dc:title "VinLOD Saga"@en ;
+    vann:preferredNamespacePrefix "vinLOD"@en ;
+    vann:preferredNamespaceUri "https://w3id.org/vinLOD-saga/"@en .
+
+<https://w3id.org/vinLOD-saga/item/Transcribed_Edda> a schema:DigitalDocument ;
+    bf:agent "Alma Mater Studiorum - Università di Bologna" ;
+    bf:date "July, 2025" ;
+    bf:dimensions "About 80 kB" ;
+    bf:editionStatement "First digital edition- June, 2025" ;
+    bf:place "https://www.geonames.org/3181928" ;
+    dcterms:contributor "Ilaria De Dominicis" ;
+    dcterms:created "June, 2025" ;
+    dcterms:rights "https://creativecommons.org/licenses/by-nc/4.0/" ;
+    dcterms:title "The Grimnismol from The Poetic Edda" ;
+    crm:P129_is_about <https://w3id.org/vinLOD-saga/concept/Valhalla>,
+        <https://w3id.org/vinLOD-saga/group/Valkyries> ;
+    crm:P130_shows_features_of <https://w3id.org/vinLOD-saga/item/Translated_Poetic_Edda> ;
+    schema:alternativeHeadline "A Vinland Saga LOD project" .
+
+<https://w3id.org/vinLOD-saga/item/Transcribed_Wineland> a schema1:DigitalDocument,
+        crm:E24_Physical_Human-Made_Thing ;
+    bf:agent "Alma Mater Studiorum - Università di Bologna" ;
+    bf:date "June, 2025" ;
+    bf:dimensions "About 41KB" ;
+    bf:editionStatement "Excerpted Digital Edition, " ;
+    bf:mainTitle "Concerning Leif the Lucky from The Finding of Wineland the Good" ;
+    bf:place <https://sws.geonames.org/3181928/> ;
+    bf:responsibilityStatement "annotated by Regina Manyara" ;
+    bf:subtitle "A Vinland Saga LOD project" ;
+    dcterms:license <https://creativecommons.org/licenses/by-nc/4.0/> ;
+    schema1:description """
+                    This digtal document is a part of the VinLOD Saga linked open data project for the DHDK exam of Information Science and Cultural Heritage (2024/25). For the Text Encoding and Semantic Representation part of the exam, this doucment was created to further enrich the details of the project. VinLOD Saga is inspired by and centred around the manga and anime series Vinland Saga by Makoto Yukimura, which have been connected to real world Norse cultural objects. Among these, are objects relating to Leif Eirikkson and his discovery of "Vinland" (North America). This document acts as an extention of these objects, transcribing and annotating the digital facsimile of "The Finding of Wineland the Good", a translated critical edition, by Arthur Middleton Reeves, of the Icelandic sagas related to the discovery of Vinland. In particular, the section "Concerning Leif the Lucky and the Introduction of Christianity into Greenland", within the tranlation of the "Saga of Erik the Red", was chosen for its direct, although small, mention of the Vinland discovery. 
+                """ ;
+    crm:P129_is_about <https://w3id.org/vinLOD-saga/event/Norse_Exploration>,
+        <https://w3id.org/vinLOD-saga/person/Erik_the_Red>,
+        <https://w3id.org/vinLOD-saga/person/Leiv_Eiriksson>,
+        <https://w3id.org/vinLOD-saga/place/Vinland> ;
+    crm:P130_shows_features_of <https://w3id.org/vinLOD-saga/item/Finding_of_Wineland>,
+        <https://w3id.org/vinLOD-saga/narrative/Erik_Saga> .
+
+<https://w3id.org/vinLOD-saga/musicEntity/Ride_of_Valkyrie> a frbroo:F1 ;
+    rdfs:label "Ride of the Valkyrie" ;
+    frbroo:R3 <https://w3id.org/vinLOD-saga/item/Valkyrie_Performance> ;
+    dcterms:creator <http://vocab.getty.edu/ulan/500223295> ;
+    schema1:name "Ride of the Valkyrie" ;
+    owl:sameAs <https://d-nb.info/gnd/300170548> .
+
+vinLOD:hasAdaptation a owl:ObjectProperty ;
+    rdfs:label "has adaptation" ;
+    rdfs:comment "Connects a manga to its anime adaptation" ;
+    rdfs:domain <https://w3id.org/vinLOD-saga/class/Manga> ;
+    rdfs:range <https://w3id.org/vinLOD-saga/class/Anime> .
+
+vinLOD:hasAnimationStudio a owl:ObjectProperty ;
+    rdfs:label "has animation studio" ;
+    rdfs:comment "describes the studio responsible for the animation of an anime" ;
+    rdfs:domain <https://w3id.org/vinLOD-saga/class/Anime> ;
+    rdfs:range schema1:Organization .
+
+vinLOD:hasBelief a owl:ObjectProperty ;
+    rdfs:label "has belief" ;
+    rdfs:comment "Relates a person to a conceptual object they believe in" ;
+    rdfs:domain crm:E1_CRM_Entity ;
+    rdfs:range crm:E28_Conceptual_Object .
+
+vinLOD:hasMangaka a owl:ObjectProperty ;
+    rdfs:label "has mangaka" ;
+    rdfs:comment "describes the mangaka(author) of a manga series" ;
+    rdfs:domain <https://w3id.org/vinLOD-saga/class/Manga> ;
+    rdfs:range crm:E21_Person .
+
+vinLOD:hasOpening a owl:ObjectProperty ;
+    rdfs:label "has opening theme" ;
+    rdfs:comment "Connects an anime to its opening" ;
+    rdfs:domain <https://w3id.org/vinLOD-saga/class/Anime> .
+
+vinLOD:serialisedIn a owl:ObjectProperty ;
+    rdfs:label "serialised in" ;
+    rdfs:comment "describes the magazine a manga is serialised in" ;
+    rdfs:domain <https://w3id.org/vinLOD-saga/class/Manga> ;
+    rdfs:range schema1:Organization .
+
+<https://w3id.org/vinLOD-saga/work/Vinland_Saga> a frbroo:F1 ;
+    frbroo:R3 <https://w3id.org/vinLOD-saga/item/Vinland_Anime>,
+        <https://w3id.org/vinLOD-saga/item/Vinland_Manga> ;
+    crm:P129_is_about <https://w3id.org/vinLOD-saga/character/Canute>,
+        <https://w3id.org/vinLOD-saga/character/Leif_Erikson>,
+        <https://w3id.org/vinLOD-saga/character/Sweyn>,
+        <https://w3id.org/vinLOD-saga/character/Thorkell>,
+        <https://w3id.org/vinLOD-saga/character/organisation/Jomsvikings>,
+        <https://w3id.org/vinLOD-saga/place/Vinland> ;
+    crm:P67_refers_to <https://w3id.org/vinLOD-saga/event/2nd_Viking_Invasion>,
+        <https://w3id.org/vinLOD-saga/event/Cnut_Invasion>,
+        <https://w3id.org/vinLOD-saga/event/Hjorungavagr_Battle>,
+        <https://w3id.org/vinLOD-saga/event/Norse_Colonisation>,
+        <https://w3id.org/vinLOD-saga/event/St_Brice_Massacre> .
+
+<https://d-nb.info/gnd/300170548> a gndo:MusicalWork ;
+    owl:sameAs <http://id.loc.gov/rwo/agents/n81070861>,
+        viaf:316757488,
+        wd:Q324319,
+        <https://d-nb.info/gnd/4127144-0> ;
+    wdrs:describedby <https://d-nb.info/gnd/300170548/about> ;
+    dnbt:deprecatedUri "https://d-nb.info/gnd/4127144-0" ;
+    gndo:biographicalOrHistoricalInformation "Erster Tag des Bühnenfestspiels \"Der Ring des Nibelungen\". 1856 vollendet, 1870 uraufgeführt."@de ;
+    gndo:broaderTermPartitive <https://d-nb.info/gnd/300170319> ;
+    gndo:dateOfProduction "1854-1856" ;
+    gndo:firstComposer <https://d-nb.info/gnd/118594117> ;
+    gndo:formOfWorkAndExpression <https://d-nb.info/gnd/4043582-9> ;
+    gndo:geographicAreaCode <https://d-nb.info/standards/vocab/gnd/geographic-area-code#XA-DE> ;
+    gndo:gndIdentifier "300170548" ;
+    gndo:gndSubjectCategory <https://d-nb.info/standards/vocab/gnd/gnd-sc#14.4p> ;
+    gndo:hasRelation [ gndo:firstComposer <https://d-nb.info/gnd/118594117> ],
+        [ gndo:librettist <https://d-nb.info/gnd/118594117> ] ;
+    gndo:librettist <https://d-nb.info/gnd/118594117> ;
+    gndo:oldAuthorityNumber "(DE-101c)300170548",
+        "(DE-588)4127144-0",
+        "(DE-588c)4127144-0" ;
+    gndo:preferredNameForTheWork "Der Ring des Nibelungen. Erster Tag: Die Walküre" ;
+    gndo:relatedWork <https://d-nb.info/gnd/1145178049> ;
+    gndo:thematicIndexNumericDesignationOfMusicalWork "WWV 86 B" ;
+    gndo:variantNameForTheWork "Die Walküre",
+        "Erster Tag: Die Walküre",
+        "The Valkyrie" .
+
+<https://d-nb.info/gnd/300170548/about> dcatde:maintainer <https://ld.zdb-services.de/resource/organisations/DE-101c> ;
+    dcterms:creator <https://ld.zdb-services.de/resource/organisations/DE-101c> ;
+    dcterms:license <http://creativecommons.org/publicdomain/zero/1.0/> ;
+    dcterms:modified "2020-12-14T08:28:53"^^xsd:dateTime ;
+    gndo:descriptionLevel <https://d-nb.info/standards/vocab/gnd/description-level#1> .
+
+<https://w3id.org/vinLOD-saga/agent/Makoto_Yukimura> a jvmg:Individual,
+        crm:E21_Person ;
+    rdfs:label "Makoto Yukimura" ;
+    jvmg:preferredNameRomanji "Makoto Yukimura" ;
+    jvmg:role "Mangaka" ;
+    rdfs:comment "The mangaka of the Vinland Saga manga" ;
+    rdfs:seeAlso <https://myanimelist.net/people/2034/Makoto_Yukimura> .
+
+<https://w3id.org/vinLOD-saga/character/Canute> a frbroo:F38,
+        jvmg:Character ;
+    rdfs:label "Canute" ;
+    frbroo:R57 <https://w3id.org/vinLOD-saga/person/Cnut_the_Great> ;
+    jvmg:mainNameJapanese "クヌート" ;
+    jvmg:mainNamenTranslated "Canute" ;
+    rdfs:seeAlso <https://anidb.net/character/102477> .
+
+<https://w3id.org/vinLOD-saga/character/Leif_Erikson> a frbroo:F38,
+        jvmg:Character ;
+    rdfs:label "Leif Erikson" ;
+    frbroo:R57 <https://w3id.org/vinLOD-saga/person/Leiv_Eiriksson> ;
+    jvmg:mainNameJapanese "レイフ・エリクソン" ;
+    jvmg:mainNamenTranslated "Leif Erikson" ;
+    rdfs:seeAlso <https://anidb.net/character/103128> .
+
+<https://w3id.org/vinLOD-saga/character/Sweyn> a frbroo:F38,
+        jvmg:Character ;
+    rdfs:label "Sweyn" ;
+    frbroo:R57 <https://w3id.org/vinLOD-saga/person/Sweyn_Forkbeard> ;
+    jvmg:mainNameJapanese "スヴェン王" ;
+    jvmg:mainNamenTranslated "Sweyn-ou" ;
+    rdfs:seeAlso <https://anidb.net/character/103121> .
+
+<https://w3id.org/vinLOD-saga/character/Thorkell> a frbroo:F38,
+        jvmg:Character ;
+    rdfs:label "Thorkell" ;
+    frbroo:R57 <https://w3id.org/vinLOD-saga/person/Thorkell_the_Tall> ;
+    jvmg:mainNameJapanese "トルケル" ;
+    jvmg:mainNamenTranslated "Thorkel" ;
+    rdfs:seeAlso <https://anidb.net/character/102478> ;
+    vinLOD:hasBelief <https://w3id.org/vinLOD-saga/concept/Valhalla> .
+
+<https://w3id.org/vinLOD-saga/character/organisation/Jomsvikings> a frbroo:F38,
+        jvmg:Character ;
+    rdfs:label "Jomsvikings" ;
+    frbroo:R57 <https://w3id.org/vinLOD-saga/group/Jomsvikings> ;
+    jvmg:mainNameJapanese "ヨムスヴァイキング" ;
+    jvmg:mainNamenTranslated "Jomsvikings" ;
+    rdfs:seeAlso <https://anidb.net/character/108009> .
+
+<https://w3id.org/vinLOD-saga/concept/Olney_Treaty> a crm:E28_Conceptual_Object ;
+    rdfs:label "Treaty of Olney" ;
+    schema1:name "Treaty of Olney" ;
+    crm:P17i_motivated <https://w3id.org/vinLOD-saga/event/Cnut_Becomes_English_King> .
+
+<https://w3id.org/vinLOD-saga/event/Norse_Exploration> a crm:E5_Event ;
+    rdfs:label "Norse Exploration of America" ;
+    schema1:name "Norse Exploration of America" ;
+    crm:P129i_is_subject_of <https://w3id.org/vinLOD-saga/narrative/Erik_Saga>,
+        <https://w3id.org/vinLOD-saga/narrative/Greenland_Saga> ;
+    crm:P161_has_spatial_projection <https://w3id.org/vinLOD-saga/place/Vinland> ;
+    crm:P62i_is_depicted_by <https://w3id.org/vinLOD-saga/item/Eiriksson_Painting> ;
+    owl:sameAs dbr:Norse_colonization_of_North_America .
+
+<https://w3id.org/vinLOD-saga/event/St_Brice_Massacre> a crm:E5_Event ;
+    rdfs:label "St Brice's Day Massacre" ;
+    schema1:name "St Brice's Day Massacre" ;
+    crm:P17i_motivated <https://w3id.org/vinLOD-saga/event/2nd_Viking_Invasion> ;
+    owl:sameAs dbr:Battle_of_Hjörungavágr .
+
+<https://w3id.org/vinLOD-saga/group/Valkyries> a crm:E74_Group ;
+    rdfs:label "Valkyries" ;
+    schema1:name "Valkyries" ;
+    crm:P129i_is_subject_of <https://w3id.org/vinLOD-saga/compostion/Ride_of_Valkrie>,
+        <https://w3id.org/vinLOD-saga/concept/Valhalla> ;
+    crm:P67i_is_referred_to_by <https://w3id.org/vinLOD-saga/narrative/Poetic_Edda> ;
+    owl:sameAs dbr:Valkyrie .
+
+<https://w3id.org/vinLOD-saga/item/Cnut_Coin> a crm:E24_Physical_Human-Made_Thing ;
+    nmo:hasAuthority <https://w3id.org/vinLOD-saga/person/Cnut_the_Great> ;
+    nmo:hasCollection <http://ld.zdb-services.de/resource/organisations/DE-MUS-814819/18202952> ;
+    nmo:hasDate "Medieval Period" ;
+    nmo:hasDenomination <http://nomisma.org/id/penny_en> ;
+    nmo:hasFindspot <http://www.geonames.org/798544> ;
+    nmo:hasManufacture "struck" ;
+    nmo:hasMaterial <http://nomisma.org/id/ar> ;
+    nmo:hasMeasurement "Durchmesser: 19 mm, Gewicht: 1.11 g" ;
+    nmo:hasMintmark "Lincoln" ;
+    nmo:hasObjectType <http://nomisma.org/id/coin> ;
+    nmo:hasObverse "+ CNVT REX ANGLORV. Cnut Rex Anglorum" ;
+    nmo:hasPortrait <https://w3id.org/vinLOD-saga/person/Cnut_the_Great> ;
+    nmo:hasProductionDate "1017-1023" ;
+    nmo:hasReverse "+ PV-LFG-ET M-O LIN. Münzmeister Wulfgeat. Münzstätte Lin- = Lincoln" ;
+    dcterms:identifier <https://ikmk.smb.museum/object?id=18202952> ;
+    schema1:locationCreated <http://www.geonames.org/2644487> .
+
+<https://w3id.org/vinLOD-saga/item/Hailstorm_Illustration> a crm:E24_Physical_Human-Made_Thing ;
+    dcterms:created "1899" ;
+    dcterms:creator <https://lccn.loc.gov/n80038019> ;
+    dcterms:source <https://lccn.loc.gov/nr97033451> ;
+    dcterms:type <http://vocab.getty.edu/page/aat/300015578> ;
+    rdfs:seeAlso <https://upload.wikimedia.org/wikipedia/commons/7/79/Olav_Tryggvasons_saga_-_Uvaeret_Hjoerungavaag_-_H._Egedius.jpg> ;
+    schema:description "Found in: HEIMSKRINGLA by SNORRE STURLAŚON published by, J.M. STENERSEN & CO, 1899." .
+
+<https://w3id.org/vinLOD-saga/item/Valkyrie_Performance> a frbroo:F26_Recording ;
+    bf:identifiedBy <https://gutenberg.org/ebooks/10177> ;
+    dcterms:contributor "American Symphony Orchestra (West Orange, N.J.)" ;
+    dcterms:created "1921" .
+
+<https://w3id.org/vinLOD-saga/item/VinlandS1_Opening> a schema:VideoObject ;
+    schema:audio <https://w3id.org/vinLOD-saga/musicEntity/Mukanjyo> ;
+    schema:contentUrl <https://www.youtube.com/watch?v=l5wAdQ-UkWY> ;
+    schema:musicBy <https://w3id.org/vinLOD-saga/agent/Survive_Said_the_Prophet> ;
+    schema:name "Vinland Saga Opening1 | Mukanjyo By Survive Said The Prophet" ;
+    schema:productionCompany <https://w3id.org/vinLOD-saga/organisation/Crunchyroll> ;
+    schema:uploadDate "2024-07-01" .
+
+<https://w3id.org/vinLOD-saga/item/Vinland_Manga> a frbroo:F22,
+        aclick:Manga,
+        jvmg1:Manga,
+        <https://w3id.org/vinLOD-saga/class/Manga> ;
+    aclick:category aclick:Seinen ;
+    aclick:statusInHomeCountry "Ongoing" ;
+    jvmg1:genre "Historical" ;
+    jvmg1:startYear "2005" ;
+    jvmg1:titleOriginal "ヴィンランド・サガ" ;
+    jvmg1:titleTranslated "Vinland Saga" ;
+    vinLOD:hasAdaptation <https://w3id.org/vinLOD-saga/item/Vinland_Anime> ;
+    vinLOD:hasMangaka <https://w3id.org/vinLOD-saga/agent/Makoto_Yukimura> ;
+    vinLOD:serialisedIn <https://w3id.org/vinLOD-saga/publication/Afternoon_Magazine> .
+
+<https://w3id.org/vinLOD-saga/museum/Norway_Museum> a schema1:Museum ;
+    rdfs:label "National Museum of Norway" ;
+    schema1:name "Nasjonalmuseet" ;
+    rdfs:comment "The National Museum of Art, Architecture and Design in Oslo, Norway" ;
+    rdfs:seeAlso <https://www.google.com/maps/search/?api=1&query=59.91164,10.72925> ;
+    geo1:lat 59.91164 ;
+    geo1:long 10.72925 .
+
+<https://w3id.org/vinLOD-saga/musicEntity/Mukanjyo> a schema1:MusicRecording ;
+    rdfs:label "Mukanjyo" ;
+    schema1:byArtist <https://w3id.org/vinLOD-saga/agent/Survive_Said_the_Prophet> ;
+    schema1:name "Mukanjyo" .
+
+<https://w3id.org/vinLOD-saga/organisation/Crunchyroll> a jvmg:Company,
+        schema1:Organization ;
+    rdfs:label "Crunchyroll" ;
+    jvmg:currentName "Crunchyroll" ;
+    rdfs:comment "Anime licencing and production company" ;
+    rdfs:seeAlso <https://myanimelist.net/anime/producer/1468/Crunchyroll> .
+
+<https://w3id.org/vinLOD-saga/organisation/MAPPA_Studio> a jvmg:Company,
+        schema1:Organization ;
+    rdfs:label "MAPPA Studio" ;
+    jvmg:currentName "MAPPA" ;
+    rdfs:comment "A Japanese animation studio" ;
+    rdfs:seeAlso <https://myanimelist.net/anime/producer/569/MAPPA> .
+
+<https://w3id.org/vinLOD-saga/organisation/Wit_Studio> a jvmg:Company,
+        schema1:Organization ;
+    rdfs:label "Wit Studio" ;
+    jvmg:alternativeName "Wit Studio" ;
+    jvmg:currentName "ウィットスタジオ" ;
+    rdfs:comment "A Japanese animation studio" ;
+    rdfs:seeAlso <https://myanimelist.net/anime/producer/858/Wit_Studio> .
+
+<https://w3id.org/vinLOD-saga/person/Thorkell_the_Tall> a crm:E21_Person ;
+    rdfs:label "Thorkell the Tall" ;
+    crm:P107i_is_current_or_former_member_of <https://w3id.org/vinLOD-saga/group/Jomsvikings> ;
+    crm:P11i_participated_in <https://w3id.org/vinLOD-saga/event/Assandun_Battle>,
+        <https://w3id.org/vinLOD-saga/event/Hjorungavagr_Battle> ;
+    crm:P67i_is_referred_to_by <https://w3id.org/vinLOD-saga/narrative/Jomsvikings_Saga> ;
+    owl:sameAs dbr:Thorkell_the_Tall .
+
+<https://w3id.org/vinLOD-saga/publication/Afternoon_Magazine> a jvmg:Company,
+        schema1:Periodical ;
+    rdfs:label "Afternoon Magazine" ;
+    jvmg:alternativeName "Monthly Afternoon" ;
+    jvmg:currentName "月刊アフタヌーン" ;
+    rdfs:comment "The magazine in which the Vinland Saga manga is orginally serialised and published in" ;
+    rdfs:seeAlso <https://anidb.net/creator/31447> .
+
+<https://w3id.org/vinLOD-saga/agent/Survive_Said_the_Prophet> a schema1:MusicGroup ;
+    rdfs:label "Survive Said the Prophet" ;
+    schema1:name "Survive Said the Prophet" ;
+    rdfs:comment "Japanese rock band" ;
+    rdfs:seeAlso <https://myanimelist.net/people/48121/Survive_Said_The_Prophet> .
+
+<https://w3id.org/vinLOD-saga/event/Assandun_Battle> a crm:E5_Event ;
+    rdfs:label "Battle of Assandun" ;
+    schema1:name "Battle of Assandun" ;
+    crm:P16_used_specific_object <https://w3id.org/vinLOD-saga/concept/Olney_Treaty> ;
+    crm:P9i_forms_part_of <https://w3id.org/vinLOD-saga/event/Cnut_Invasion> ;
+    owl:sameAs dbr:Battle_of_Assandun .
+
+<https://w3id.org/vinLOD-saga/event/Cnut_Becomes_English_King> a crm:E5_Event ;
+    rdfs:label "Cnut becomes king of England after the death of Edmund Ironside" ;
+    schema1:name "The Crowning of Cnut" ;
+    crm:P92_brought_into_existence <https://w3id.org/vinLOD-saga/item/Cnut_Coin> .
+
+<https://w3id.org/vinLOD-saga/group/Jomsvikings> a crm:E74_Group ;
+    rdfs:label "Jomsvikings" ;
+    schema1:name "Jomsvikings" ;
+    crm:P11i_participated_in <https://w3id.org/vinLOD-saga/event/Hjorungavagr_Battle> ;
+    crm:P129i_is_subject_of <https://w3id.org/vinLOD-saga/narrative/Jomsvikings_Saga> ;
+    owl:sameAs wd:Q41345 .
+
+<https://w3id.org/vinLOD-saga/item/Eiriksson_Painting> a crm:E24_Physical_Human-Made_Thing,
+        schema:Painting ;
+    dcterms:created "1893" ;
+    dcterms:creator <http://vocab.getty.edu/page/ulan/500011632> ;
+    dcterms:identifier "NG.M.00558" ;
+    dcterms:medium <http://vocab.getty.edu/page/aat/300014078> ;
+    dcterms:rightsHolder <https://w3id.org/vinLOD-saga/museum/Norway_Museum> ;
+    dcterms:source "The Fine Art Collection" ;
+    crm:P102_has_title "Leiv Eiriksson Discovering America" ;
+    rdfs:seeAlso <https://www.nasjonalmuseet.no/en/collection/object/NG.M.00558> ;
+    schema:size "Width: 470 cm, Height: 313 cm" .
+
+<https://w3id.org/vinLOD-saga/item/Translated_Poetic_Edda> a crm:E24_Physical_Human_Made_Thing ;
+    bf:agent <https://lccn.loc.gov/n88144893>,
+        "The American-Scandinavian Foundation," ;
+    bf:date "1923." ;
+    bf:dimensions "20 cm." ;
+    bf:hasPart "I. Lays of the gods.",
+        "II. Lays of the heroes." ;
+    bf:hasSeries "Scandinavian classics," ;
+    bf:identifiedBy "23016414" ;
+    bf:itemPortion "21/22" ;
+    bf:language "eng" ;
+    bf:mainTitle "The poetic Edda," ;
+    bf:material "2 v. in 1. front. (facsim.)" ;
+    bf:place "New York," ;
+    bf:subtitle "translated from the Icelandic with an introduction and notes, by Henry Adams Bellows." ;
+    bf:translationOf "ice" ;
+    bf:variantType "Edda Saemundar." ;
+    dcterms:identifier <https://lccn.loc.gov/23016414> .
+
+<https://w3id.org/vinLOD-saga/item/Vinland_Anime> a frbroo:F22,
+        aclick:Anime,
+        jvmg1:Anime,
+        <https://w3id.org/vinLOD-saga/class/Anime> ;
+    aclick:seasons "Summer 2019" ;
+    aclick:statusInHomeCountry "Finished Airing" ;
+    jvmg1:titleOriginal "ヴィンランド・サガ" ;
+    jvmg1:titleTranslated "Vinland Saga" ;
+    rdfs:seeAlso <https://anidb.net/anime/13945> ;
+    vinLOD:hasAnimationStudio <https://w3id.org/vinLOD-saga/organisation/MAPPA_Studio>,
+        <https://w3id.org/vinLOD-saga/organisation/Wit_Studio> ;
+    vinLOD:hasOpening <https://w3id.org/vinLOD-saga/item/VinlandS1_Opening> .
+
+<https://w3id.org/vinLOD-saga/narrative/Greenland_Saga> a frbroo:F1 ;
+    rdfs:label "Saga of the Greenlanders" ;
+    schema1:name "Saga of the Greenlanders" ;
+    crm:P130i_features_are_also_found_on <https://w3id.org/vinLOD-saga/item/Finding_of_Wineland>,
+        <https://w3id.org/vinLOD-saga/item/Flatjarbok_Manuscript> .
+
+<https://w3id.org/vinLOD-saga/narrative/Poetic_Edda> a frbroo:F1 ;
+    rdfs:label "The Poetic Edda" ;
+    schema1:name "The Poetic Edda" ;
+    crm:P130i_features_are_also_found_on <https://w3id.org/vinLOD-saga/item/Translated_Poetic_Edda> .
+
+<https://w3id.org/vinLOD-saga/person/Leiv_Eiriksson> a crm:E21_Person ;
+    rdfs:label "Leiv Eiriksson" ;
+    crm:P11i_participated_in <https://w3id.org/vinLOD-saga/event/Norse_Colonisation> ;
+    crm:P152_has_parent <https://w3id.org/vinLOD-saga/person/Erik_the_Red> ;
+    crm:P62i_is_depicted_by <https://w3id.org/vinLOD-saga/item/Eiriksson_Painting> ;
+    crm:P67i_is_referred_to_by <https://w3id.org/vinLOD-saga/narrative/Erik_Saga>,
+        <https://w3id.org/vinLOD-saga/narrative/Greenland_Saga> ;
+    owl:sameAs viaf:198152140015411100005 .
+
+<https://w3id.org/vinLOD-saga/person/Sweyn_Forkbeard> a crm:E21_Person ;
+    rdfs:label "Sweyn Forkbeard" ;
+    crm:P11i_participated_in <https://w3id.org/vinLOD-saga/event/2nd_Viking_Invasion> ;
+    owl:sameAs viaf:223321118 .
+
+<https://w3id.org/vinLOD-saga/concept/Valhalla> a crm:E28_Conceptual_Object ;
+    rdfs:label "Valhalla" ;
+    schema1:name "Valhalla" ;
+    crm:P67i_is_referred_to_by <https://w3id.org/vinLOD-saga/narrative/Poetic_Edda> ;
+    owl:sameAs dbr:Valhalla .
+
+<https://w3id.org/vinLOD-saga/event/Cnut_Invasion> a crm:E5_Event ;
+    rdfs:label "Cnut's Invasion of England" ;
+    schema1:name "Cnut's Invasion of England" ;
+    crm:P9i_forms_part_of <https://w3id.org/vinLOD-saga/event/2nd_Viking_Invasion> .
+
+<https://w3id.org/vinLOD-saga/event/Hjorungavagr_Battle> a crm:E5_Event ;
+    rdfs:label "Battle of Hjörungavágr" ;
+    schema1:name "Battle of Hjörungavágr" ;
+    crm:P62i_is_depicted_by <https://w3id.org/vinLOD-saga/item/Hailstorm_Illustration> ;
+    crm:P67i_is_referred_to_by <https://w3id.org/vinLOD-saga/narrative/Jomsvikings_Saga> ;
+    owl:sameAs dbr:Battle_of_Hjörungavágr .
+
+<https://w3id.org/vinLOD-saga/item/Finding_of_Wineland> a crm:E24_Physical_Human_Made_Thing ;
+    bf:agent viaf:17598880,
+        "Frowde," ;
+    bf:date "1890" ;
+    bf:dimensions "1 online resource (vi, 205 pages :",
+        "facs.)" ;
+    bf:electronicLocator "https://archive.org/details/findingofwinelan00reev" ;
+    bf:identifiedBy "https://openlibrary.org/books/OL24197049M" ;
+    bf:mainTitle "The finding of Wineland the Good :" ;
+    bf:place "London :" ;
+    bf:subtitle "the history of the Icelandic discovery of America, edited and translated from the earliest records." .
+
+<https://w3id.org/vinLOD-saga/item/Flatjarbok_Manuscript> a crm:E24_Physical_Human-Made_Thing ;
+    bf:language "is" ;
+    bf:originPlace "Reykjavík",
+        "Ísland" ;
+    bf:place "Handritasvið",
+        "Safn Árna Magnússonar" ;
+    dcterms:identifier "GKS 1005 fol." ;
+    dcterms:medium "Skinn" ;
+    dcterms:title "Flateyjarbók" ;
+    schema1:location "Stofnun Árna Magnússonar í íslenskum fræðum" .
+
+<https://w3id.org/vinLOD-saga/narrative/Erik_Saga> a frbroo:F1 ;
+    rdfs:label "Saga of Erik the Red" ;
+    schema1:name "Saga of Erik the Red" ;
+    crm:P129_is_about <https://w3id.org/vinLOD-saga/person/Erik_the_Red> ;
+    crm:P130i_features_are_also_found_on <https://w3id.org/vinLOD-saga/item/Finding_of_Wineland>,
+        <https://w3id.org/vinLOD-saga/item/Flatjarbok_Manuscript> .
+
+<https://w3id.org/vinLOD-saga/narrative/Jomsvikings_Saga> a frbroo:F1 ;
+    rdfs:label "Saga of the Jomsvikings" ;
+    schema1:name "Saga of the Jomsvikings" ;
+    crm:P130i_features_are_also_found_on <https://w3id.org/vinLOD-saga/item/Flatjarbok_Manuscript> .
+
+<https://w3id.org/vinLOD-saga/person/Cnut_the_Great> a crm:E21_Person ;
+    rdfs:label "Cnut the Great" ;
+    crm:P11i_participated_in <https://w3id.org/vinLOD-saga/event/Assandun_Battle>,
+        <https://w3id.org/vinLOD-saga/event/Cnut_Becomes_English_King>,
+        <https://w3id.org/vinLOD-saga/event/Cnut_Invasion> ;
+    crm:P152_has_parent <https://w3id.org/vinLOD-saga/person/Sweyn_Forkbeard> ;
+    owl:sameAs viaf:268401625 .
+
+<https://w3id.org/vinLOD-saga/person/Erik_the_Red> owl:sameAs <https://dbpedia.org/resource/Erik_the_Red> .
+
+<https://w3id.org/vinLOD-saga/place/Vinland> a schema1:Place,
+        crm:E53_Place ;
+    rdfs:label "Vinland" ;
+    schema1:name "Vinland" ;
+    rdfs:comment "Translating roughly to 'vine land' this was the name given the part of north america discovered by the norse explorers" .
+
+<https://w3id.org/vinLOD-saga/class/Anime> a owl:Class ;
+    rdfs:label "Anime" ;
+    rdfs:comment "The class of Anime individuals" .
+
+<https://w3id.org/vinLOD-saga/class/Manga> a owl:Class ;
+    rdfs:label "Manga" ;
+    rdfs:comment "The class of Manga individuals" .
+
+<https://w3id.org/vinLOD-saga/event/2nd_Viking_Invasion> a crm:E5_Event ;
+    rdfs:label "2nd Viking Invasion of England" ;
+    schema1:name "2nd Viking Invasion of England" ;
+    owl:sameAs dbr:Viking_activity_in_the_British_Isles .
+

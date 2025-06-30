@@ -27,7 +27,7 @@ for prefix, ns in namespace_dict.items():
     graph.bind(prefix, ns)
 
 
-subj = rdf.URIRef("https://w3id.org/vinLOD-saga/item/Valkrie_Performance")
+subj = rdf.URIRef("https://w3id.org/vinLOD-saga/item/Valkyrie_Performance")
 for _,row in anime_df.iterrows():
     predicate = resolve_prefixed_uri(row["Predicate"])
     print(predicate)
