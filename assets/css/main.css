@@ -46,12 +46,12 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #1b3342; /* Background color for the entire website, including individual sections */
+  --background-color: #0C222F; /* Background color for the entire website, including individual sections */
   --default-color: #EFF3F0; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #549180; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #C2090A;
   --accent-color2: #AA0000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #4A6668; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --surface-color: #4B666E; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #E7E6E0; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 /* #500E0E */ 
@@ -173,7 +173,8 @@ body.reveal #hero .container {
   margin-top: auto;         /* Pushes button to bottom */
   align-self: center;       /* Centers horizontally */
   margin-bottom: 15px;
-  background-color: var(--accent-color);
+  /* background-color: var(--accent-color); */
+  background-color: color-mix(in srgb, var(--accent-color), transparent 25%);
   font-family: var(--nav-font);
   font-size: 12px;
 }
@@ -187,7 +188,8 @@ body.reveal #hero .container {
 
 .card-body h6 {
   text-align: center;
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: color-mix(in srgb, var(--accent-color), transparent 45%);
   font-family: var(--default-font);
   text-transform: capitalize;
   font-size: 20px;
@@ -292,7 +294,8 @@ body {
 }
 
 a {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
+  color: color-mix(in srgb, var(--accent-color), transparent 10%);
   text-decoration: none;
   transition: 0.3s;
 }
@@ -1815,7 +1818,7 @@ section,
 }
 
 .team .member .member-info {
-  background-color: #2C6555;
+  background-color: var(--background-color);
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   position: absolute;
