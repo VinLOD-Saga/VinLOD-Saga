@@ -72,7 +72,7 @@
                 --background-color: rgba(0, 0, 0, 0);
                 --default-color: #ffffff;
                 --heading-color: #ffffff;
-                color: #1b3342;
+                color: #0C222F;
                 background-color: #E7E6E0;
                 <!-- padding: 20px 0; -->
                 transition: all 0.5s;
@@ -93,7 +93,7 @@
                 font-size: 20px;
                 margin: 0;
                 font-weight: 700;
-                color: #1b3342;
+                color: #0C222F;
               }
               
               .header .cta-btn,
@@ -121,8 +121,8 @@
           
               hr {
                 height: 4px !important;            
-                background-color: #1b3342; 
-                color: #1b3342;
+                background-color:#0C222F;
+                color: #0C222F;
                 border: none; 
                 opacity: 0.80;
               }
@@ -141,12 +141,22 @@
               }
           
               .offcanvas-header {
-                background-color : #1b3342; 
+                background-color : #0C222F;
                 color: #EFF3F0 ;
               }
           
               .btn-close {
                 filter: brightness(0) saturate(100%) invert(93%) sepia(3%) saturate(285%) hue-rotate(75deg) brightness(106%) contrast(96%);
+              }
+          
+              .custom-popover {
+                --bs-popover-max-width: 200px;
+                --bs-popover-border-color: #0C222F;
+                --bs-popover-header-bg: #0C222F;
+                --bs-popover-header-color: #EFF3F0;
+                --bs-popover-body-padding-x: 1rem;
+                --bs-popover-body-padding-y: .5rem;
+                --bs-popover-body-color: #E7E6E0;
               }
           </style>
 
@@ -205,18 +215,18 @@
         <!-- bootstrap script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         <!-- popover script -->
-        <script>
+        <!-- <script>
           const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
           const popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
             return new bootstrap.Popover(popoverTriggerEl, {
             container: 'body',
-            trigger: 'click',  // or your preferred triggers
+            trigger: 'click',  // or your preferred triggers -->
             <!-- delay: { "show": 0, "hide": 200 } // optional delay to smooth appearance -->
-            });
+            <!-- });
           });
-        </script>
+        </script> -->
         <!-- Scrolling in offcanvas script -->
-        <script>
+        <!-- <script>
           // Attach listener to all offcanvas trigger links
           document.querySelectorAll('[data-bs-toggle="offcanvas"]').forEach(link => {
             link.addEventListener('click', function () {
@@ -241,7 +251,46 @@
               });
             });
           });
+        </script> -->
+        <script>
+          // ADDED: Central popover initializer
+          function initializePopovers(root = document) {
+          const popoverTriggerList = [].slice.call(root.querySelectorAll('[data-bs-toggle="popover"]'));
+          popoverTriggerList.forEach(function (popoverTriggerEl) {
+          const content = popoverTriggerEl.getAttribute('data-bs-content');
+          if (content !== null &amp;&amp; content.trim() !== "") {
+          new bootstrap.Popover(popoverTriggerEl, {
+          container: popoverTriggerEl.closest('.offcanvas') || 'body',  // ADDED: choose correct container
+          trigger: 'click'
+          });
+          } else {
+          // ADDED: Dev-friendly console warning
+          console.warn("Popover skipped: empty or null content for element:", popoverTriggerEl);
+          }
+          });
+          }
+          
+          // ADDED: Initialize popovers on page load
+          initializePopovers();
+          
+          // ADDED: Re-initialize popovers in offcanvas when it's shown
+          const offcanvas = document.getElementById('offcanvasNotes');
+          if (offcanvas) {
+          offcanvas.addEventListener('shown.bs.offcanvas', function handler() {
+          initializePopovers(offcanvas); // Re-init popovers inside offcanvas
+          
+          // Optional: scroll to target inside offcanvas
+          const targetId = document.querySelector('[data-bs-toggle="offcanvas"][aria-expanded="true"]')?.getAttribute('data-target-id');
+          if (targetId) {
+          const targetEl = document.getElementById(targetId);
+          if (targetEl) {
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+          }
+          }
+          });
+          }
         </script>
+
       </body>
     </html>
     
@@ -292,20 +341,34 @@
     <!-- save the found node in another variable -->
     <xsl:variable name="person" select="key('personID', $persId)" />
     <xsl:choose>
+      
+      <!-- person has an external URI -->
       <xsl:when test="$person and $person/@source">
         <!-- Output persName text as a link to sameAs URI -->
         <a href="{$person/@source}" target="_blank">
           <xsl:apply-templates select="node()"/>
         </a>
       </xsl:when>
-      <xsl:otherwise>
+      
+      <!-- has a note description (if no URI) -->
+      <xsl:when test="$person/tei:note">
         <!-- Create a popover with information about the person -->
         <xsl:variable name="persName" select="$person/tei:persName"/>
         <xsl:variable name="persNote" select="$person/tei:note"/>
-        <span role="button" tabindex="0" class="popover-trigger text-decoration-underline" data-bs-toggle="popover" data-bs-title="{string($persName)}" data-bs-content="{string($persNote)}">
+        <span role="button" tabindex="0" class="popover-trigger text-decoration-underline" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-title="{string($persName)}" data-bs-content="{string($persNote)}">
           <xsl:apply-templates select="node()" />
         </span>
         <!-- <a href="#" data-bs-toggle="popover" data-bs-title="{string($persName)}" data-bs-content="{string($persNote)}"><xsl:apply-templates select="node()"/></a> -->
+      </xsl:when>
+      
+      <!-- If no content has been loaded, log the line to check later -->
+      <xsl:otherwise>
+        <!-- ADDED: Graceful fallback -->
+        <xsl:apply-templates select="node()" />
+        <!-- ADDED: Debugging output to JS console -->
+        <script>
+          console.warn("Missing popover content for person: '<xsl:value-of select="."/>'. No @source or &lt;note&gt; found for ID '#<xsl:value-of select="substring-after(@ref, '#')"/>'");
+        </script>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -321,20 +384,34 @@
     <!-- save the found node in another variable -->
     <xsl:variable name="place" select="key('placeID', $plId)" />
     <xsl:choose>
-      <xsl:when test="$place/@source">
+      
+      <!-- Place has external URI -->
+      <xsl:when test="$place and $place/@source">
         <!-- Output placeName text as a link to sameAs URI -->
         <a href="{$place/@source}" target="_blank">
           <xsl:apply-templates select="node()"/>
         </a>
       </xsl:when>
-      <xsl:otherwise>
+      
+      <!-- has a note description (if no URI) -->
+      <xsl:when test="$place/tei:note">
         <!-- Create a popover with information about the place -->
         <xsl:variable name="placeName" select="$place/tei:placeName"/>
         <xsl:variable name="placeNote" select="$place/tei:note"/>
-        <span role="button" tabindex="0" class="popover-trigger text-decoration-underline" data-bs-toggle="popover" data-bs-title="{string($placeName)}" data-bs-content="{string($placeNote)}">
+        <span role="button" tabindex="0" class="popover-trigger text-decoration-underline" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-title="{string($placeName)}" data-bs-content="{string($placeNote)}">
           <xsl:apply-templates select="node()" />
         </span>
         <!-- <a href="#" data-bs-toggle="popover" data-bs-title="{string($placeName)}" data-bs-content="{string($placeNote)}"><xsl:apply-templates select="node()"/></a> -->
+      </xsl:when>
+      
+      <!-- If no content has been loaded, log the line to check later -->
+      <xsl:otherwise>
+        <!-- ADDED: Graceful fallback -->
+        <xsl:apply-templates select="node()" />
+        <!-- ADDED: Debugging output to JS console -->
+        <script>
+          console.warn("Missing popover content for place: '<xsl:value-of select="."/>'. No @source or &lt;note&gt; found for ID '#<xsl:value-of select="substring-after(@ref, '#')"/>'");
+        </script>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
@@ -342,9 +419,23 @@
   <!-- Template for footnotes -->
   <xsl:template match="tei:note[@place='bottom']">
     <xsl:variable name="noteText" select="normalize-space(.)"/>
-    <span role="button" tabindex="0" class="popover-trigger" data-bs-toggle="popover" data-bs-title="Note" data-bs-content="{string($noteText)}" style="font-size: 25px; font-weight: bold;">
-      <xsl:text>*</xsl:text>
-    </span>
+    <xsl:choose>
+      <xsl:when test="string-length($noteText) &gt; 0">
+        <span role="button" tabindex="0" class="popover-trigger" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-title="Note" data-bs-content="{string($noteText)}" style="font-size: 25px; font-weight: bold;">
+          <xsl:text>*</xsl:text>
+        </span>
+      </xsl:when>
+
+      <xsl:otherwise>
+        <!-- Empty content fallback with debugging console message -->
+        <span role="button" tabindex="0" class="popover-trigger" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-title="Note" data-bs-content="null" style="font-size: 25px; font-weight: bold;">
+          <xsl:text>*</xsl:text>
+        </span>
+        <script>
+          console.warn("Empty or null footnote content: '<xsl:value-of select="." />'");
+        </script>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
   
   <!-- Template for variant readings -->
@@ -359,10 +450,18 @@
     <xsl:variable name="reading" select="$app/tei:rdg"/>
     <xsl:variable name="witID" select="substring-after($reading/@wit, '#')"/>
     <xsl:variable name="witness" select="key('witKey', $witID)"/>
-    <!-- <a href="#" data-bs-toggle="popover" data-bs-title="{string($witness)}" data-bs-content="{string($reading)}"><xsl:apply-templates select="node()" /></a> -->
-    <span role="button" tabindex="0" class="popover-trigger text-decoration-underline" data-bs-toggle="popover" data-bs-title="{string($witness)}" data-bs-content="{string($reading)}">
-      <xsl:apply-templates select="node()" />
-    </span>
+    <xsl:choose>
+      <xsl:when test="string-length($witness) &gt; 0 and string-length($reading) &gt; 0 ">
+        <span role="button" tabindex="0" class="popover-trigger text-decoration-underline" data-bs-custom-class="custom-popover" data-bs-toggle="popover" data-bs-title="{string($witness)}" data-bs-content="{string($reading)}">
+          <xsl:apply-templates select="node()" />
+        </span>
+      </xsl:when>
+      <xsl:otherwise>
+        <script>
+          console.warn("Empty or null reading: '<xsl:value-of select="." />'");
+        </script>
+      </xsl:otherwise>
+    </xsl:choose>
     <!-- style="color: #2C6555; cursor: pointer;" -->
   </xsl:template>
   
@@ -394,8 +493,3 @@
     <a href="{$contributorURI}" target="_blank"><xsl:value-of select="tei:person/tei:persName"/></a>
   </xsl:template>
 </xsl:stylesheet>
-
-  
-
-
-                
