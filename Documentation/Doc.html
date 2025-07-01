@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&amp;family=Forum&amp;family=Metamorphous&amp;display=swap"
+        rel="stylesheet" />
+
+    <title>Documentation- VinLOD</title>
+    <style>
+        body {
+            background-color: #0C222F;
+            color: #0e2d40;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 4em;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Metamorphous", serif;
+        }
+
+        h2 {
+            color: #ffffff;
+            ;
+            text-align: center;
+            font-family: "Metamorphous", serif;
+        }
+
+        h3 {
+            color: #0e2d40;
+            font-family: "Metamorphous", serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            line-height: 0.6em;
+        }
+
+        .index {
+            position: absolute;
+            top: 253px;
+            bottom: 231px;
+            left: 5%;
+            background-color: rgba(255, 255, 255, 0.65);
+            padding: 1.5em 2em;
+            border: 5px solid #641818;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            box-sizing: border-box;
+            width: 90%;
+        }
+
+        p,
+        .index,
+        ul {
+            font-family: "Forum", serif;
+            font-size: 1.3em;
+            line-height: 1.6;
+        }
+
+        .top-image {
+            display: block;
+            width: 100%;
+            /* occuperà tutta la larghezza del contenitore */
+            max-height: 500px;
+            /* limita l'altezza per farla più "orizzontale" */
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15em;
+            /* spazio sotto all'immagine */
+            margin-top: 4em;
+        }
+
+        a {
+            color: #5e0c0c;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        a:visited {
+            color: #460467;
+        }
+
+        .main-text {
+            max-width: 1750px;
+            width: 90%;
+            margin: 4em auto 2em auto;
+            padding: 1.5em 2em;
+            text-align: justify;
+            background-color: #f9f9f9;
+            border: 5px solid #641818;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: 'Georgia', serif;
+            font-size: 1.1em;
+            line-height: 1.6;
+            box-sizing: border-box;
+            /* aggiunto */
+            overflow-wrap: break-word;
+            /* evita overflow per parole lunghe */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1>DOCUMENTATION</h1>
+        <h2>of <i>VinLOD Saga</i></h2>
+    </div>
+    <div>
+        <img src="vinland-saga.jpg" alt="Vinland Saga" class="top-image" />
+    </div>
+    <div class="index">
+        <h3>Table of Contents</h3>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#mapping">Mapping the Items</a></li>
+            <li><a href="#metadata">Metadata standards</a></li>
+            <li><a href="#xmltei">XML/TEI and HTML documents</a></li>
+            <li><a href="#textanalysis">Text Analysis</a></li>
+            <li><a href="#fromtordf">From * to RDF</a></li>
+            <li><a href="#conclusions">Conclusions</a></li>
+            <li><a href="#references">References and Resources</a></li>
+        </ul>
+    </div>
+    <div class="main-text"> <!-- h3: titoli dei paragrafi -->
+        <h3 id="introduction">Introduction</h3>
+        <p> This project was developed for the <i>Information Science and Cultural Heritage</i> exam within the
+            University of Bologna's Master's degree program in <i>Digital Humanities and Digital Knowledge</i>. Its core
+            purpose is to <b>semantically link 10 cultural heritage objects on the web using RDF</b>, with the
+            overarching goal of <b>contributing to the preservation and enhanced accessibility of cultural heritage</b>.
+        </p>
+        <p> Our workflow began with the <b>selection of objects inspired by the anime and manga Vinland Saga</b>. Each
+            chosen item was then organized and interlinked within a <b>conceptual map</b> in order to visually highlight
+            the <b>entity relationships</b> between the selected items.</p>
+        <p> Subsequently, all associated information (including <b>textual transcriptions in XML/TEI</b>) was captured
+            using <b>appropriate standard metadata</b> and converted into <b>RDF (<i>Resource Description
+                    Framework</i>)</b>, a machine-readable and interoperable format.</p>
+        <p> The entire process allowed us to <b>establish robust semantic connections</b> between the objects, their
+            descriptions and their contexts, thereby enriching the <b>digital landscape of cultural heritage</b>, with
+            the scope of <b>ensuring its longevity and discoverability</b> for future students and users.</p>
+        <h3 id="mapping">Mapping the Items</h3>
+        <p>The items were selected through different forms of linkage:</p>
+        <p>
+        <ul>
+            <li><b>narrative connections</b>, established through historical figures, objects and events depicted in the
+                storyline of the anime and the manga items;</li>
+            <li><b>item-level relationships</b>, involving objects directly related to the primary item, such as the
+                anime’s opening video, considered as a component or derivative of the main work;</li>
+            <li><b>indirect associations</b>, where objects were linked to related entities rather than to the primary
+                item itself — for instance, Wagner’s Ride of the Valkyries was connected through <i>The Poetic Edda</i>,
+                a textual source relevant to the narrative universe of the anime.</li>
+        </ul>
+        <p>
+        <p>To reflect the variety inherent in cultural heritage, the selected objects included different types (or
+            <b>Classes</b>) — such as a painting, a coin, a book, an audio recording, and a video — sourced from
+            libraries, archives, museums (<b>LAMs</b>) and digital repositories. Each object was described using
+            <b>metadata standards</b> suited to its format and institutional context [See here: <a
+                href="#metadata"><i>Metadata standards</i></a>].
+        </p>
+        <p>This approach enabled the integration of heterogeneous resources into a <b>coherent conceptual framework</b>,
+            illustrating how multiple forms of relationship — narrative, structural, and thematic — can support the
+            creation of a <b>unified dataset</b> across diverse domains.</p>
+        <p>Our workflow began with two <b>concept maps</b> built from the work (in <b>FRBR</b> terms) <i>Vinland
+                Saga</i>. Rather than linking this work directly to the items, we introduced <b>intermediate
+                entities</b> — such as events, concepts, characters, and related works — to create a richer,
+            multi-layered network. These entities are visually differentiated, as it can be seen in the legend:</p>
+        <ul>
+            <li>events appear as grey rectangles</li>
+            <li>concepts as cyan clouds</li>
+            <li>characters as stylized figures</li>
+            <li>related works as cyan circles</li>
+        </ul>
+        <p>The predicates in this early stage mainly come from <b>CIDOC-CRM</b> (events) and <b>FRBROO</b> (people).
+            When no suitable standard predicate was available, we defined new ones within our <b>VinLOD namespace</b> to
+            maintain semantic consistency.</p>
+        <p>To reflect different levels of abstraction from the <b>manifestation</b> to the <b>item</b>, we followed the
+            <b>FRBR model</b>. For books and music — forms of art that can exist in multiple manifestations — we used an
+            <b>idea-to-manifestation approach</b>: first connecting through the conceptual entity, then linking to the
+            tangible, material object.
+        </p>
+        <p>The concept maps were created step by step: starting from an initial draft in natural language
+            (<b>Theoretical Map</b>), then refined through research on each object and by studying how institutions had
+            catalogued and described them through appropriate <b>metadata standards</b>. At this stage, we ensured
+            compatibility and enriched the map (<b>Conceptual Map</b>) with additions and modifications, respecting the
+            <b>domain and range requirements</b> of each predicate.
+        </p>
+
+        <h3 id="metadata">Metadata standards</h3>
+        <p>The selection of <b>metadata standards</b> began by reviewing the websites hosting the objects we intended to
+            include in our project. Wherever possible, we chose to implement the same standards adopted by the hosting
+            institutions, while always considering the need for conversion into <b>RDF</b> and ensuring compatibility
+            with the final data model.</p>
+        <p>In cases where it was not possible to obtain metadata directly from institutional sources, or the standard
+            was not suitable in a <b>LOD</b> perspective, we carried out additional research to determine the most
+            appropriate standards for each specific type of item on our own.</p>
+        <p>For the metadata retrieved from institutions, we downloaded and converted their files (all of them were
+            <b>XML</b>) into RDF using Python, selectively extracting only the elements that aligned with our initial
+            vision of the map and supplementing them when necessary.
+        </p>
+        <p>Where objects did not have metadata available for download, we manually created <b>CSV</b> files, which were
+            then converted into RDF <b>[See here: <a href="#fromtordf"><i>From * to RDF</i></a>]</b>.</p>
+        <p>Below is a detailed list of all the <b>metadata standards</b> adopted, their purpose, references to official
+            documentation, and the specific objects to which they were applied, together with the rationale behind each
+            choice.</p>
+
+        <h3 id="xmltei">XML/TEI and HTML documents</h3>
+        <p>The <b>TEI (Text Encoding Initiative)</b> is a widely used <b>XML-based standard</b> developed to represent
+            texts in digital form, particularly within the humanities. Its goal is to make textual resources not only
+            digitally preservable but also richly describable and interoperable, so that they can be shared and studied
+            across different platforms and research projects.</p>
+        <p><b>XML (Extensible Markup Language)</b> is a flexible markup language designed to structure, store, and
+            transport data. Unlike HTML, which focuses on presentation, XML focuses on the logical structure and meaning
+            of the content, making it especially suitable for scholarly work that requires clear definitions of elements
+            such as titles, names, places, and editorial interventions.</p>
+        <p>For this project, we created two <b>XML/TEI files</b>, each dedicated to a different textual object:</p>
+        <ul>
+            <li>A ballad taken from the Poetic Edda, translated by Henry Adams Bellows</li>
+            <li>An excerpt from the manuscript Finding of Wineland</li>
+        </ul>
+        <p>Each file includes a <b>teiHeader</b>, which holds the metadata describing the text. Beyond the mandatory
+            parts — namely the <b>&lt;fileDesc&gt;</b> element (containing title, publication statement, and source
+            description) — we also added an <b>&lt;encodingDesc&gt;</b> section. Inside it, we included:</p>
+        <ul>
+            <li>A concise <b>&lt;projectDesc&gt;</b> outlining the purpose and scope of our work</li>
+            <li>An <b>&lt;editorialDecl&gt;</b> detailing our editorial choices, including how we handled corrections,
+                normalizations, hyphenation, and other interventions necessary to make the text clearer without losing
+                fidelity to the source</li>
+        </ul>
+        <p>After encoding the texts in XML, we transformed them into <b>HTML</b> using <b>XSLT (Extensible Stylesheet
+                Language Transformations)</b>. XSLT is a powerful language specifically created to process XML documents
+            and convert them into other formats — most commonly HTML — which can then be displayed in a web browser.
+            This transformation step is crucial because, while XML structures and preserves data, it isn’t meant to be
+            read directly by end users. HTML, on the other hand, is designed for presentation: it structures text,
+            links, images, and interactive elements so that the content can be easily navigated and read online.</p>
+        <p>Special attention was given to entities we identified as central in our conceptual graph — people, places,
+            and events. Whenever these appeared in the text, we marked them so they would become clickable. This
+            approach supports interoperability, as these links can potentially connect to other datasets or resources,
+            and it offers readers the possibility to explore related information if they wish.</p>
+        <p>We also included notes, which are displayed interactively: by clicking on highlighted text, the user can see
+            footnotes at the bottom of the page or open contextual notes in a side panel. This choice enriches the
+            reading experience, balancing the scholarly depth of critical apparatus with usability and modern web
+            standards.</p>
+        <p>The transformation from XML to HTML was carried out in Python using the <b>lxml</b> library, which provides
+            robust tools for parsing XML and applying XSLT stylesheets.</p>
+        <p>In the script, the XML file and the XSLT stylesheet are first parsed; then, the transformation is performed
+            by creating an <b>XSLT object</b> and applying it to the XML document. Finally, the result is serialized and
+            written to an HTML file.</p>
+        <p>Overall, by combining the descriptive power of XML and TEI with the flexibility of XSLT and the web-native
+            format of HTML, our project aims to create digital editions that are both faithful to the original texts and
+            engaging for contemporary readers.</p>
+
+        <h3 id="textanalysis">Text Analysis</h3>
+        <p>For the two texts, we first prepared a Python script to extract the text from the HTML files and save it into
+            plain text <b>.txt files</b>, using the <b>etree library</b> for parsing and navigating the HTML structure.
+            Once we had the plain text, we developed the main Python script for text analysis.</p>
+        <p>This script defines a class called <b>TextAnalyzer</b>, designed to help explore and analyze text files
+            through various natural language processing techniques. It uses popular libraries such as <b>NLTK</b> for
+            basic text processing, <b>spaCy</b> for named entity recognition, <b>scikit-learn</b> for computing TF-IDF
+            scores, and <b>VADER</b> for sentiment analysis.</p>
+        <p>With this tool, you can load and clean your text by tokenizing it and removing common English stopwords and
+            punctuation. You can then analyze word frequencies, extract frequent n-grams (such as bigrams), and detect
+            meaningful collocations—pairs of words that appear together more often than by chance.</p>
+        <p>Additionally, the class allows you to inspect how specific words are used in context via concordance views,
+            identify key terms with TF-IDF weighting, recognize named entities like people or places, and perform
+            sentiment analysis to gauge the overall emotional tone of the text.</p>
+        <p>Using the <b>TextAnalyzer</b> is simple: after initializing it with the path to your text file, you call the
+            <b>load_and_tokenize()</b> method to prepare the data. Then you can run any of the analysis methods as
+            needed.
+        </p>
+        <p>This makes <b>TextAnalyzer</b> a flexible and effective tool for text mining, ideal for small to medium-sized
+            corpora and for conducting exploratory textual analysis.</p>
+        <p>Here is an example with the <b>Poetic Edda</b> text:</p>
+
+        <h3 id="fromtordf">From * to RDF</h3>
+        <p>As previously said, the main objective and final step of the project was the transformation of heterogeneous
+            data sources into <b>RDF format</b>. In the end, every object we worked on—whether stored in <b>CSV</b> or
+            <b>XML</b>—was converted to RDF. This transformation was not just a technical requirement, but a way to
+            semantically enrich and interconnect resources within a coherent <b>Linked Open Data framework</b>.
+        </p>
+        <p>In order to do so, we developed different <b>Python scripts</b> tailored to the specific format and structure
+            of each input file.</p>
+        <p>The transformation process always involved:</p>
+        <ul>
+            <li>Identifying a suitable <b>subject URI</b> for the resource.</li>
+            <li>Mapping <b>predicates</b> according to established ontologies.</li>
+            <li>Differentiating between <b>literals</b> and <b>resources</b>, with careful attention to domain and range
+                compatibility.</li>
+            <li>Enriching the graph with contextual information wherever available, including relationships with people,
+                places, institutions, or time periods.</li>
+        </ul>
+        <p>For the objects without downloadable metadata available—such as the anime opening video, the Wagner
+            recording, the illustration, the painting, the manga, and the anime—we worked with metadata stored in <b>CSV
+                format</b>. These files included rows predicates and objects to be associated with a given subject URI.
+        </p>
+        <p>The logic behind the transformation was modular: for each row, the script parsed the predicate (resolving it
+            to a full URI through a prefix mapping) and determined whether the object should be treated as a <b>URI</b>
+            or a <b>literal</b>. We also took care to bind all relevant namespaces to the RDF graph for readability and
+            standardization.</p>
+        <p>Other objects came with <b>XML metadata</b>, in various schemas—mainly <b>LIDO</b>, <b>MARC</b> and
+            <b>TEI</b>. For these, we wrote scripts that navigated and parsed the XML structure, extracted relevant
+            information, and mapped it to RDF triples.
+        </p>
+        <p>In the case of the two texts encoded in XML/TEI, we treated the TEI file itself as another manifestation of
+            the work and extracted metadata primarily from the <b>TeiHeader</b>, emphasizing bibliographic and
+            descriptive information about the digital edition and its context.</p>
+        <p>All RDF graphs were serialized in <b>Turtle format</b>. This choice supported better readability and easier
+            version control. The serialized files are structured to reflect the <b>subject–predicate–object</b> pattern
+            clearly and allow further integration or querying via SPARQL endpoints.</p>
+        <p>The main libraries and tools used included:</p>
+        <ul>
+            <li><b>RDFlib</b> for building and serializing RDF graphs.</li>
+            <li><b>pandas</b> for reading and manipulating CSV files.</li>
+            <li><b>lxml</b> for parsing XML files.</li>
+        </ul>
+        <p>Each script was customized for the input format and the type of object being described, but we maintained a
+            shared structure and approach to ensure overall coherence.</p>
+        <p>This data transformation phase played a crucial role in the project, not only enabling interoperability but
+            also supporting a deeper reflection on metadata quality, structure, and meaning.</p>
+        <p>The only Turtle file not generated through Python scripts was <b>VinLOD.ttl</b>.</p>
+        <p>This file was written manually for its very specific purpose within the dataset: it acts as a bridge
+            connecting the work—in this case, <b>Vinland Saga</b>—to the actual objects described in our RDF collection.
+        </p>
+        <p>In VinLOD.ttl, we defined:</p>
+        <ul>
+            <li><b>Classes</b> (e.g., Person, Event, Place) that represent core concepts of the narrative and historical
+                universe.</li>
+            <li><b>Properties</b> describing relationships between these entities (such as genealogical links,
+                participation in historical events, or connections between narrative characters and real historical
+                figures).</li>
+            <li><b>Alignments and semantic mappings</b> to existing ontologies and vocabularies (e.g., CIDOC CRM,
+                FRBRoo, schema.org, Wikidata, DBpedia) using <b>rdfs:subClassOf</b> or <b>owl:sameAs</b>. This alignment
+                ensures that our dataset remains interoperable and understandable within the wider Linked Open Data
+                ecosystem.</li>
+            <li><b>Annotations and multilingual labels</b> to clarify meaning and enhance accessibility.</li>
+        </ul>
+        <p>Its aim was not simply to describe individual objects, but rather to establish a <b>semantic network</b> that
+            connects the narrative world to historically documented people, places, events and, finally, their items.
+        </p>
+
+        <h3 id="conclusions">Conclusions</h3>
+        <p>This project demonstrates how transforming heterogeneous cultural heritage data into <b>RDF</b> is more than
+            a purely technical exercise: it is a process of knowledge construction. By explicitly modelling
+            relationships, contexts, and multiple layers of meaning, we shift from isolated descriptions to a rich
+            semantic network that supports discovery, reuse, and long-term preservation.</p>
+        <p>In recent years, the web itself has evolved in this direction. From a primarily document-centric system, it
+            has become an ever-expanding constellation of interconnected data—what we call the <b>Semantic Web</b>.
+            Graph structures now lie at the heart of this transformation: they are the underlying models that allow
+            machines to interpret and connect disparate information, turning raw data into a navigable, contextualized
+            body of knowledge.</p>
+        <p>Major platforms and search engines—Google, Microsoft, and many others—have embraced this paradigm, building
+            and querying vast knowledge graphs to enhance search, recommendation, and content understanding. The same
+            logic applies to cultural heritage: by structuring data as linked graphs, we make objects and narratives not
+            only visible but also meaningfully discoverable, both by people and by algorithms in the <b>LAM
+                environment</b>.</p>
+        <p>Through <b>VinLOD</b>, we aimed to show how a small, curated dataset—even one inspired by popular culture
+            like <b>Vinland Saga</b>—can become part of this larger, interoperable web of knowledge. Our conceptual
+            maps, metadata choices, and manual alignments to existing ontologies illustrate that cultural heritage is
+            not just a collection of objects: it is a dynamic network of meanings, contexts, and interpretations that
+            can keep evolving and connecting across time, space, and disciplines.</p>
+        <p>In the end, the act of modelling and linking data is itself an act of storytelling: one that preserves the
+            past, enriches the present, and opens new paths for future research, creativity, and shared understanding.
+        </p>
+        <h3 id="references">References and Resources</h3>
+        <p>The official W3C RDF page: <a href="https://www.w3.org/RDF/" target="_blank"
+                rel="noopener noreferrer">https://www.w3.org/RDF/</a></p>
+    </div>
+</body>
+
+</html>
