@@ -9,39 +9,67 @@
     <xsl:template match="tei:TEI">
         <html>
             <head>
-                <title>VinLOD Saga's Poetic Edda</title>
-                <style> <!-- a little bit of CSS for presentation and link clicking -->
+                <!-- Fonts -->
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
+                <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&amp;family=Forum&amp;family=Metamorphous&amp;display=swap" rel="stylesheet"/>
+                <link rel="icon" href="assets/img/Vinlod_logo_small.png" type="image/png"/>
+                <title>Grimnismol- The Poetic Edda</title>
+                <style>
+                    .back-to-top {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    padding: 0.6em 1em;
+                    font-size: 1.5em;
+                    background-color: #641818;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    opacity: 0.7;
+                    transition: opacity 0.3s;
+                    font-size: 2em;
+                    }
+                    
+                    .back-to-top:hover {
+                    opacity: 1;
+                    }
                     body {
-                    font-family: "Times New Roman", serif;
-                    font-size: 1.2em;
-                    line-height: 1.6; 
+                    font-family: "Forum", serif;
+                    font-size: 1.3em;
+                    line-height: 1.6;
                     margin: 1em 5em 5em 5em;
                     padding: 0.5em 1em;
-                    background-color: rgba(232, 232, 232, 0.78); 
+                    background-color: #0C222F;
+                    color: #E7E6E0;
                     }
-                    h1 {
+                    body h1 {
                     font-size: 3em;
                     text-align: center;
                     font-weight: bold;
+                    margin: 0.1em 0 0.2em 0;
+                    font-family: "Metamorphous", serif;
+                    color: #E7E6E0;
                     }
-                    h2 {
+                    body h2 {
                     text-align: center;
                     font-style: italic;
+                    margin: 0.1em 0 0.2em 0;
+                    color: #E7E6E0;
                     }
                     h4 {
                     text-align: center;
                     font-size: 0.7em;
+                    margin: 0.1em 0 0.2em 0;
                     }
                     .head {
                     text-align: center;
                     font-style: italic;
-                    }  
-                    h1, h2, h4, .head {
-                    margin-top: 0.1em;
-                    margin-bottom: 0.2em;
+                    margin: 0.1em 0 0.2em 0;
+                    color: #0C222F;
                     }
                     .stanza {
-                    display: block;
                     text-align: center;
                     margin: 1em auto;
                     }
@@ -49,35 +77,63 @@
                     display: block;
                     }
                     .noteGrp {
-                    background-color: rgb(254, 255, 255);
                     margin: 1em;
-                    padding: 1em 1em;
-                    border-right: 4px solid #ccc;
-                    font-size: 0.7em; 
+                    padding: 1em;
+                    border: 4px solid #5e0c0c;
+                    }
+                    .note, .commentary {
+                    font-family: "Encode Sans", sans-serif;
+                    font-size: 1em; 
                     }
                     a {
-                    color: #1a0dab;
+                    color: color-mix(in srgb,rgb(218, 15, 15), transparent 5%);
                     text-decoration: underline;
                     cursor: pointer;
                     }
                     a:visited {
-                    color: #660099; /* color after the click */
+                    color:color-mix(in srgb,rgb(183, 130, 195), transparent 20%);
                     }
-                    .commentary {
-                    background-color: rgb(254, 255, 255);
-                    margin: 1em;
-                    padding: 1em;
-                    font-size: 0.7em; 
+                    a:hover, span:hover {
+                    color: color-mix(in srgb,rgb(148, 23, 23), transparent 20%);
+                    }
+                    h1, h2 {
+                    color: #0C222F;
+                    }
+                    .commentary, .personal {
+                    margin: 1.5em auto;
+                    font-size: 0.85em;
+                    padding: 1.2em 1.5em;
+                    line-height: 1.6;
+                    max-width: 170ch;
+                    border: 4px solid #5e0c0c
+                    }
+                    .commentary, .personal, .noteGrp{
+                    background-color:rgba(231, 230, 224);
+                    color:  #0C222F;
+                    }
+                    .personal {
+                    max-height: 100px; 
+                    overflow-y: auto;
                     border-left: 4px solid #ccc;
-                    }
-
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);                    }
                 </style>
+                <script>
+                    function scrollToTop() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                </script>
             </head>
-            <body> <!-- Obtaining the main text -->
+            <body> <!-- Obtaining the main text. Everything is being handled by the templates.-->
                 <xsl:apply-templates select="tei:text//tei:front"/>
                 <xsl:apply-templates select="tei:text//tei:body"/>
                 <xsl:apply-templates select="tei:text//tei:back"/>
+                <button onclick="scrollToTop()" class="back-to-top">↟</button>
             </body>
+            <footer style="background-color: rgba(191, 202, 202, 0.3); color: black; text-align: center; padding: 15px 150px;">
+                <p>Project completed for the course Digital Humanities and Digital Knowledge, University of Bologna, 2025.</p>
+                <p>Author: Ilaria De Dominicis</p>
+                <p>© 2025 All rights reserved.</p>
+            </footer>
         </html>
     </xsl:template>
     
@@ -110,22 +166,23 @@
         </div>
     </xsl:template>
     
-    <!-- Template for 'intro' in the body -->
+    <!-- Template for text's 'intro' in the body -->
     <xsl:template match="tei:div[@type='intro']">
         <div class="intro">
             <xsl:apply-templates/>
         </div>
     </xsl:template>
     
+    <!-- Template for my intro in the body -->
+    <xsl:template match="tei:div[@type='personal']">
+        <div class="personal"><xsl:apply-templates/></div>
+    </xsl:template>
+
     <!-- Template for the paragraphs to have a proper layout -->
     <xsl:template match="tei:p">
         <p><xsl:apply-templates/></p>
     </xsl:template>
     
-    <!-- Template for the ballad div -->
-    <xsl:template match="tei:div[@type='ballad']">
-        <xsl:apply-templates/>
-    </xsl:template>
     
     <!-- Template for stanza (lg elements) with id -->
     <xsl:template match="tei:lg">
@@ -153,6 +210,13 @@
         </i>
     </xsl:template>
     
+    <!-- Template for the quotes -->
+    <xsl:template match="tei:q">
+        <xsl:text>"</xsl:text>
+        <xsl:apply-templates/>
+        <xsl:text>"</xsl:text>
+    </xsl:template>
+    
     <!-- Template for ref with target (in testo) linking to note -->
     <xsl:template match="tei:ref[@target]">
         <a href="{concat('#', substring-after(@target, '#'))}">
@@ -161,7 +225,7 @@
     </xsl:template>
     
     <!-- Template for ref with source (in note) linking back to stanza -->
-    <xsl:template match="tei:ref[@source]">
+    <xsl:template match="tei:ref[@source] | tei:title[@source]">
         <a href="{concat('#', substring-after(@source, '#'))}">
             <xsl:apply-templates/>
         </a>
@@ -224,7 +288,7 @@
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:variable>
-        <a href="{$targetUrl}" target="_blank">
+        <a href="{$targetUrl}">
             <xsl:apply-templates/>
         </a>
     </xsl:template>
