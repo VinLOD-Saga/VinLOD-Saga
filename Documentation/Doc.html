@@ -11,12 +11,33 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&amp;family=Forum&amp;family=Metamorphous&amp;display=swap"
         rel="stylesheet" />
-
     <title>Documentation- VinLOD</title>
+    <link rel="icon" href="assets/img/Vinlod_logo_small.png" type="image/png" />
     <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 0.6em 1em;
+            font-size: 2em;
+            background-color: #641818;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+            font-size: 2em;
+        }
+
+        .back-to-top:hover {
+            opacity: 1;
+        }
+
         body {
             background-color: #0C222F;
             color: #0e2d40;
+            font-size: 1.2em;
         }
 
         h1 {
@@ -44,24 +65,23 @@
 
         .index {
             position: absolute;
-            top: 253px;
-            bottom: 231px;
+            top: 310px;
+            bottom: 180px;
             left: 5%;
             background-color: rgba(255, 255, 255, 0.65);
             padding: 1.5em 2em;
             border: 5px solid #641818;
-            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             box-sizing: border-box;
             width: 90%;
+            font-size: 1.2em;
         }
 
         p,
         .index,
         ul {
             font-family: "Forum", serif;
-            font-size: 1.3em;
             line-height: 1.6;
         }
 
@@ -76,16 +96,22 @@
             margin-bottom: 15em;
             /* spazio sotto all'immagine */
             margin-top: 4em;
+            opacity: 0.3;
         }
 
         a {
             color: #5e0c0c;
             text-decoration: underline;
             cursor: pointer;
+            opacity: 0.8;
         }
 
         a:visited {
             color: #460467;
+        }
+
+        a:hover {
+            opacity: 10;
         }
 
         .main-text {
@@ -106,7 +132,24 @@
             overflow-wrap: break-word;
             /* evita overflow per parole lunghe */
         }
+
+        .tfidf-table,
+        .tfidf-table th,
+        .tfidf-table td,
+        .common-words,
+        .common-words th,
+        .common-words td {
+            border: 1px solid #5e0c0c;
+            border-collapse: collapse;
+            padding: 5px 10px;
+        }
     </style>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </head>
 
 <body>
@@ -163,7 +206,7 @@
             <b>Classes</b>) — such as a painting, a coin, a book, an audio recording, and a video — sourced from
             libraries, archives, museums (<b>LAMs</b>) and digital repositories. Each object was described using
             <b>metadata standards</b> suited to its format and institutional context [See here: <a
-                href="#metadata"><i>Metadata standards</i></a>].
+                href="#metadata">Metadata standards</a>].
         </p>
         <p>This approach enabled the integration of heterogeneous resources into a <b>coherent conceptual framework</b>,
             illustrating how multiple forms of relationship — narrative, structural, and thematic — can support the
@@ -206,11 +249,144 @@
             vision of the map and supplementing them when necessary.
         </p>
         <p>Where objects did not have metadata available for download, we manually created <b>CSV</b> files, which were
-            then converted into RDF <b>[See here: <a href="#fromtordf"><i>From * to RDF</i></a>]</b>.</p>
+            then converted into RDF [See here: <a href="#fromtordf">From * to RDF</a>].</p>
         <p>Below is a detailed list of all the <b>metadata standards</b> adopted, their purpose, references to official
             documentation, and the specific objects to which they were applied, together with the rationale behind each
             choice.</p>
+        <ul>
+            <li>
+                <p><b>LIDO/ NMO:</b> For the <i>coin</i> object, we chose to adopt the same metadata standard already
+                    used by
+                    the host institution, namely the <i>Münzkabinett</i> of Berlin. LIDO is an XML schema specifically
+                    designed
+                    for
+                    describing cultural heritage objects and their metadata in a structured and hierarchical way. Its
+                    primary
+                    strength lies in defining which elements and sub-elements can be used and how they should be
+                    ordered,
+                    enabling rich, multilingual descriptions suitable for a wide range of cultural, artistic,
+                    technological, and
+                    natural science objects.</p>
 
+                <p>The LIDO schema emerged from a substantial redesign of CDWA Lite and museumdat, incorporating
+                    feedback from
+                    the community and further analysis aligned with the CIDOC CRM model. It primarily builds on CDWA
+                    while
+                    adding concepts to meet SPECTRUM requirements. </p>
+                <p>In practical terms, LIDO is particularly useful for
+                    organizing the internal structure of metadata: it facilitates a nested, hierarchical classification
+                    that
+                    proceeds from more general categories to increasingly specific details. However, since it is an XML
+                    schema,
+                    it does not provide a semantic layer: it does not define the meaning of data in a
+                    machine-interpretable way
+                    as an ontology would, nor does it support RDF natively. XML-based schemas like LIDO, TEI, or METS
+                    are
+                    excellent for representing data with a coherent and
+                    deeply
+                    nested structure, using the tree model of XML. By contrast, RDF (Resource Description Framework)
+                    expresses
+                    data as a graph of triples (subject–predicate–object), which enables explicit semantic relationships
+                    and
+                    greater interoperability.</p>
+
+                <p>For this reason, we complemented LIDO with the <b>Numismatic Ontology (NMO)</b>, which provides the
+                    semantic
+                    layer needed to describe the coin in RDF. Through NMO, we were able to add precise semantic
+                    properties
+                    regarding physical description, chronological attribution, provenance, and collection details, each
+                    linked
+                    to persistent identifiers. This combination allowed us to retain the structural richness of LIDO
+                    while
+                    enriching it with the semantic expressiveness and interoperability of RDF provided by NMO.</p>
+            </li>
+            <li>
+                <p> <b>MARC21</b> is a widely adopted metadata standard designed to store and exchange bibliographic
+                    data about a broad range of materials: books, manuscripts, maps, music, digital resources, and more.
+                    A MARC record consists of three main elements: the record structure (based on international
+                    standards like ISO 2709), the <b>content designators</b> (tags, indicators, and subfield codes), and
+                    the actual data content, which is typically defined by cataloging rules or controlled vocabularies
+                    such as ISBD and LCSH. </p>
+                <p> Although it has been fundamental for libraries for decades, <b>MARC21</b> has limitations when it
+                    comes to the modern web. It relies on a <b>hierarchical, sequential XML model</b> that structures
+                    data well but lacks explicit semantic meaning. Since it was not designed to work natively
+                    with <b>RDF</b>, instead of describing our resources directly with MARC21 properties, it was
+                    necessary the
+                    use of <b>BIBFRAME</b>. <b>BIBFRAME (Bibliographic Framework)</b> was created <b>specifically by the
+                        Library of Congress (LOC)</b> to replace MARC21 and transition bibliographic metadata into the
+                    paradigm of <b>Linked Open Data (LOD)</b>.</p>
+                <p> <b>BIBFRAME</b> provides an RDF vocabulary made up of <b>classes and properties</b> that describe
+                    resources
+                    and express their connections. For example, it can express that one Work is a “translation of”
+                    another Work, or that an Instance is a particular realization of a Work. This semantic richness
+                    allows us to model bibliographic and cultural heritage data in a way that is interoperable and
+                    compatible with other datasets on the web.
+                </p>
+                <p> We also partially used BIBFRAME to describe the <i>Ride of the Valkyries</i>, since
+                    MARC21—and therefore BIBFRAME—is designed to handle not only bibliographic records but also sound
+                    recordings. </p>
+            </li>
+            <li>
+                <p> <b>Dublin Core</b> (named after the city of Dublin, Ohio) is a widely used metadata standard built
+                    around a basic set of elements designed to describe virtually any type of digital content—such as
+                    videos, images, and web pages—as well as physical resources like books, CDs, and even artworks
+                    shared over computer networks. </p>
+                <p>The full name of the initiative is the <b>Dublin Core Metadata Initiative
+                        (DCMI)</b>, which emerged within the context of the <b>OCLC (Online Computer Library
+                        Center)</b>, a major U.S.-based cooperative for library services. In March 1995, a conference
+                    was held in Dublin, Ohio, bringing together a diverse group of librarians, archivists, publishers,
+                    software developers, and representatives from working groups of the <b>Internet Engineering Task
+                        Force (IETF)</b>. They shared a common goal: to define a standardized way to enhance discovery
+                    and access to digital information. </p>
+                <p> The idea was to establish a core set of descriptive elements that could be supplied directly by
+                    content creators or publishers, embedded within digital objects themselves or linked externally.
+                    This collective effort led to the design of a metadata architecture suited to the needs of content
+                    producers, vendors, and users alike. </p>
+                <p> Originally introduced in December 1996, the core set included fifteen
+                    fundamental elements, which later evolved to support additional refinements and qualifiers while
+                    retaining its straightforward structure. For Italian users, the official translation of version 1.1
+                    of the “Dublin Core Metadata Element Set” has been overseen by the <b>ICCU (Central Institute for
+                        the Union Catalogue of Italian Libraries and for Bibliographic Information)</b>. </p>
+                <p>For this reason, we applied Dublin Core across multiple object types—such as manuscripts, audio
+                    files, and paintings—because its metadata elements are quite broad and flexible, particularly when
+                    describing the roles of creators as well as temporal and spatial properties. </p>
+            <li>
+                <p>Similarly, this is the case for <b>Schema.org</b>, a collaborative initiative launched in 2011 by
+                    major search engines—Google, Bing, Yahoo!, and Yandex—to create a unified vocabulary for structured
+                    data on the web. Its primary goal is to standardize how information about various types of content
+                    is marked up in HTML, improving search engines’ ability to understand and present rich results.
+                    Schema.org covers a broad range of categories, including creative works, events, organizations, and
+                    more, making it highly adaptable for different domains.
+
+                    Because of its wide adoption and flexibility, Schema.org is especially useful for describing
+                    multimedia resources such as videos, images, paintings, and illustrations. It supports rich semantic
+                    annotations that help connect content across the web, facilitating better discoverability and
+                    interoperability. This versatility made it a natural choice for our project to describe diverse
+                    object types consistently. We mostly used Schema for the objects that did not have the metadata
+                    standard clearly specified or were taken from wikidata.</p>
+            </li>
+            <li><b>CIDOC Conceptual Reference Model</b> (CIDOC-CRM) is a comprehensive ontology developed to facilitate
+                the integration, mediation, and interchange of heterogeneous cultural heritage information. Originating
+                from the International Council of Museums (ICOM), CIDOC-CRM provides a formal structure to represent
+                cultural artifacts, their provenance, and the events surrounding their lifecycle, enabling museums,
+                archives, and libraries to share data semantically and consistently. Its strength lies in modeling
+                complex relationships between objects, actors, places, and times in a way that preserves the context and
+                meaning of cultural heritage information. On the other hand, <b>FRBRoo</b> (Functional Requirements for
+                Bibliographic Records – object oriented) is an ontology that merges the concepts of the FRBR model,
+                widely used in bibliographic and library science, with CIDOC-CRM’s rich semantic framework. Developed
+                collaboratively by the CIDOC CRM Special Interest Group and the library community, FRBRoo extends
+                CIDOC-CRM by specifically addressing bibliographic records, linking intellectual works, their
+                expressions, manifestations, and items within the broader cultural heritage context. This integration
+                allows for a unified, interoperable data model that supports detailed semantic descriptions of both
+                tangible and intangible cultural heritage and bibliographic resources. The relationship between
+                CIDOC-CRM and FRBRoo thus bridges museum documentation and library cataloging, fostering cross-domain
+                data exchange and enhancing the discoverability and reuse of cultural and bibliographic information on
+                the semantic web. <p>As previously mentioned, we utilized these standards to link entities to objects
+                    and to define the classes of the objects themselves. All objects have a corresponding CIDOC-CRM
+                    class assigned through rdf:type.</p>
+            </li>
+
+        </ul>
         <h3 id="xmltei">XML/TEI and HTML documents</h3>
         <p>The <b>TEI (Text Encoding Initiative)</b> is a widely used <b>XML-based standard</b> developed to represent
             texts in digital form, particularly within the humanities. Its goal is to make textual resources not only
@@ -277,8 +453,119 @@
         </p>
         <p>This makes <b>TextAnalyzer</b> a flexible and effective tool for text mining, ideal for small to medium-sized
             corpora and for conducting exploratory textual analysis.</p>
-        <p>Here is an example with the <b>Poetic Edda</b> text:</p>
-
+        <p>Here is an example with the top 10 most common words in the <b>Poetic Edda</b>:</p>
+        <table class="common-words">
+            <thead>
+                <tr>
+                    <th>Term</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>’</td>
+                    <td>31</td>
+                </tr>
+                <tr>
+                    <td>geirröth</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>othin</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>gods</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>thou</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <td>set</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>shall</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>agnar</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>king</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>men</td>
+                    <td>9</td>
+                </tr>
+                </tr>
+            </tbody>
+        </table>
+        <p>Although the corpus is relatively small (just over 1100 tokens), conducting a textual analysis proves
+            invaluable for understanding the nature of the text. Notably, the most frequent token is the Saxon genitive
+            apostrophe, which is naturally included among the terms due to its semantic significance—while all other
+            punctuation marks have been filtered out as stopwords. This finding aligns well with the epic character of
+            the work, where numerous names appear, typically presented within familial formulas such as ‘father of’ or
+            ‘son of,’ a common feature in mythological narrative traditions.</p>
+        <p>Let us now consider another example using the TF-IDF method:</p>
+        <table class="tfidf-table">
+            <thead>
+                <tr>
+                    <th>Term</th>
+                    <th>TF-IDF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>’</td>
+                    <td>0.1343</td>
+                </tr>
+                <tr>
+                    <td>othin</td>
+                    <td>0.1123</td>
+                </tr>
+                <tr>
+                    <td>geirröth</td>
+                    <td>0.1123</td>
+                </tr>
+                <tr>
+                    <td>gods</td>
+                    <td>0.1123</td>
+                </tr>
+                <tr>
+                    <td>thou</td>
+                    <td>0.1029</td>
+                </tr>
+                <tr>
+                    <td>shall</td>
+                    <td>0.1001</td>
+                </tr>
+                <tr>
+                    <td>set</td>
+                    <td>0.1001</td>
+                </tr>
+                <tr>
+                    <td>men</td>
+                    <td>0.0969</td>
+                </tr>
+                <tr>
+                    <td>agnar</td>
+                    <td>0.0969</td>
+                </tr>
+                <tr>
+                    <td>king</td>
+                    <td>0.0969</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>According to the TF-IDF analysis, it is understandable that <i>othin</i> ranks second: as noted in the
+            introduction to the transcription of the <i>Poetic Edda</i> on our website, his name holds a central place
+            in the narrative because, as he himself states, the text is dense with his epithets which
+            have been fully annotated in the <i>particDesc</i> due to their significance to the story.</p>
         <h3 id="fromtordf">From * to RDF</h3>
         <p>As previously said, the main objective and final step of the project was the transformation of heterogeneous
             data sources into <b>RDF format</b>. In the end, every object we worked on—whether stored in <b>CSV</b> or
@@ -369,9 +656,70 @@
             past, enriches the present, and opens new paths for future research, creativity, and shared understanding.
         </p>
         <h3 id="references">References and Resources</h3>
-        <p>The official W3C RDF page: <a href="https://www.w3.org/RDF/" target="_blank"
+        <p>BIBFRAME (Bibliographic Framework): <a href="https://www.loc.gov/bibframe/" target="_blank"
+                rel="noopener noreferrer">https://www.loc.gov/bibframe/</a></p>
+        <p>CIDOC Conceptual Reference Model (CIDOC-CRM): <a href="https://cidoc-crm.org/" target="_blank"
+                rel="noopener noreferrer">https://cidoc-crm.org/</a></p>
+        <p>DBpedia: <a href="https://www.dbpedia.org/" target="_blank"
+                rel="noopener noreferrer">https://www.dbpedia.org/</a></p>
+        <p>Dublin Core Metadata Initiative (DCMI): <a
+                href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank"
+                rel="noopener noreferrer">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></p>
+        <p>FRBR (Functional Requirements for Bibliographic Records): <a
+                href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.loc.gov/catdir/cpso/frbreng.pdf"
+                target="_blank" rel="noopener noreferrer">https://www.loc.gov/catdir/cpso/frbreng.pdf</a></p>
+        <p>FRBRoo (Functional Requirements for Bibliographic Records - object oriented): <a
+                href="https://cidoc-crm.org/frbroo" target="_blank"
+                rel="noopener noreferrer">https://cidoc-crm.org/frbroo/a></p>
+        <p>HTML (HyperText Markup Language): <a href="https://html.spec.whatwg.org/multipage/" target="_blank"
+                rel="noopener noreferrer">https://html.spec.whatwg.org/multipage/</a>
+        </p>
+        <p>ISO 2709: <a href="https://www.iso.org/standard/41319.html" target="_blank"
+                rel="noopener noreferrer">https://www.iso.org/standard/41319.html</a></p>
+        <p>ISBD (International Standard Bibliographic Description): <a
+                href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ifla.org/wp-content/uploads/2019/05/assets/hq/publications/series/44-it.pdf"
+                target="_blank"
+                rel="noopener noreferrer">https://www.ifla.org/wp-content/uploads/2019/05/assets/hq/publications/series/44-it.pdf</a>
+        </p>
+        <p>LOC (Library of Congress): <a href="https://www.loc.gov/" target="_blank"
+                rel="noopener noreferrer">https://www.loc.gov/</a></p>
+        <p>LIDO: <a href="https://cidoc.mini.icom.museum/working-groups/lido/lido-overview/lido-schema/" target="_blank"
+                rel="noopener noreferrer">https://cidoc.mini.icom.museum/working-groups/lido/lido-overview/lido-schema/</a>
+        </p>
+        <p>lxml: <a href="https://lxml.de/" target="_blank" rel="noopener noreferrer">https://lxml.de/</a></p>
+        <p>MARC21: <a href="https://www.loc.gov/marc/bibliographic/" target="_blank"
+                rel="noopener noreferrer">https://www.loc.gov/marc/bibliographic/</a></p>
+        <p>NLTK (Natural Language Toolkit): <a href="https://www.nltk.org/" target="_blank"
+                rel="noopener noreferrer">https://www.nltk.org/</a>
+        </p>
+        <p>NMO (Nomisma): <a href="https://nomisma.org/ontology" target="_blank"
+                rel="noopener noreferrer">https://nomisma.org/ontology</a>
+        <p>pandas: <a href="https://pandas.pydata.org/" target="_blank"
+                rel="noopener noreferrer">https://pandas.pydata.org/</a></p>
+        <p>RDFlib: <a href="https://rdflib.readthedocs.io/en/stable/" target="_blank"
+                rel="noopener noreferrer">https://rdflib.readthedocs.io/en/stable/LINK_LXML</a></p>
+        <p>Schema.org: <a href="https://schema.org/" target="_blank" rel="noopener noreferrer">https://schema.org/</a>
+        </p>
+        <p>spaCy: <a href="https://spacy.io/" target="_blank" rel="noopener noreferrer">https://spacy.io/</a></p>
+        <p>Text Encoding Initiative (https://tei-c.org/): <a href="LINK_TEI" target="_blank"
+                rel="noopener noreferrer">https://tei-c.org/</a>
+        </p>
+        <p>VADER (Valence Aware Dictionary and sEntiment Reasoner): <a
+                href="https://vadersentiment.readthedocs.io/en/latest/" target="_blank"
+                rel="noopener noreferrer">https://vadersentiment.readthedocs.io/en/latest/</a></p>
+        <p>W3C RDF: <a href="https://www.w3.org/RDF/" target="_blank"
                 rel="noopener noreferrer">https://www.w3.org/RDF/</a></p>
+        <p>Wikidata: <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page" target="_blank"
+                rel="noopener noreferrer">https://www.wikidata.org/wiki/Wikidata:Main_Page</a></p>
+        <p>XSLT (Extensible Stylesheet Language Transformations): <a href="https://www.w3.org/TR/xslt20/"
+                target="_blank" rel="noopener noreferrer">https://www.w3.org/TR/xslt20/</a></p>
+        <button onclick="scrollToTop()" class="back-to-top">↟</button>
     </div>
 </body>
+<footer style="background-color: rgba(191, 202, 202, 0.3); color: black; text-align: center; padding: 15px 150px;">
+    <p><i>Digital Humanities and Digital Knowledge</i>, University of Bologna, 2025.</p>
+    <p>Author: Ilaria De Dominicis</p>
+    <p>© 2025 All rights reserved.</p>
+</footer>
 
 </html>
