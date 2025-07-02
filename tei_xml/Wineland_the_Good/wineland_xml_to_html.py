@@ -6,7 +6,7 @@ base_dir = os.path.abspath(".")
 
 xml_file = os.path.join(base_dir, "tei_xml/Wineland_the_Good/Wineland_the_Good.xml")
 xslt_file = os.path.join(base_dir, "tei_xml/Wineland_the_Good/Wineland_the_Good.xsl")
-output_file = os.path.join(base_dir, "tei_xml/Wineland_the_Good/wineland.html")
+output_file = os.path.join(base_dir, "wineland.html")
 
 # Carica l'XML
 xml = etree.parse(xml_file)

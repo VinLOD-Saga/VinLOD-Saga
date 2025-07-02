@@ -12,7 +12,7 @@
         href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&amp;family=Forum&amp;family=Metamorphous&amp;display=swap"
         rel="stylesheet" />
     <title>Documentation- VinLOD</title>
-    <link rel="icon" href="Vinlod_logo_small.png" type="image/png" />
+    <link rel="icon" href="assets/img/Vinlod_logo_small.png" type="image/png" />
     <style>
         .back-to-top {
             position: fixed;
@@ -63,10 +63,15 @@
             line-height: 0.6em;
         }
 
+        .image-wrapper {
+            position: relative;
+            display: inline-block;
+        }
+
         .index {
             position: absolute;
-            top: 310px;
-            bottom: 180px;
+            top: 150px;
+            bottom: 100px;
             left: 5%;
             background-color: rgba(255, 255, 255, 0.65);
             padding: 1.5em 2em;
@@ -89,11 +94,11 @@
             display: block;
             width: 100%;
             /* occuperà tutta la larghezza del contenitore */
-            max-height: 500px;
+            /* max-height: 500px; */
             /* limita l'altezza per farla più "orizzontale" */
             object-fit: cover;
             border-radius: 8px;
-            margin-bottom: 15em;
+            /* margin-bottom: 15em; */
             /* spazio sotto all'immagine */
             margin-top: 4em;
             opacity: 0.3;
@@ -120,7 +125,7 @@
             margin: 4em auto 2em auto;
             padding: 1.5em 2em;
             text-align: justify;
-            background-color: #f9f9f9;
+            background-color: #E7E6E0;
             border: 5px solid #641818;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -157,22 +162,43 @@
         <h1>DOCUMENTATION</h1>
         <h2>of <i>VinLOD Saga</i></h2>
     </div>
-    <div>
-        <img src="vinland-saga.jpg" alt="Vinland Saga" class="top-image" />
+    <!-- <div class="container">
+        <div>
+            <img src="assets/img/vinland-saga.jpg" alt="Vinland Saga" class="top-image" />
+        </div>
+        <div class="index">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#mapping">Mapping the Items</a></li>
+                <li><a href="#metadata">Metadata standards</a></li>
+                <li><a href="#xmltei">XML/TEI and HTML documents</a></li>
+                <li><a href="#textanalysis">Text Analysis</a></li>
+                <li><a href="#fromtordf">From * to RDF</a></li>
+                <li><a href="#conclusions">Conclusions</a></li>
+                <li><a href="#references">References and Resources</a></li>
+            </ul>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="image-wrapper">
+            <img src="assets/img/vinland-saga.jpg" alt="Vinland Saga" class="top-image" />
+            <div class="index">
+                <h3>Table of Contents</h3>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#mapping">Mapping the Items</a></li>
+                    <li><a href="#metadata">Metadata standards</a></li>
+                    <li><a href="#xmltei">XML/TEI and HTML documents</a></li>
+                    <li><a href="#textanalysis">Text Analysis</a></li>
+                    <li><a href="#fromtordf">From * to RDF</a></li>
+                    <li><a href="#conclusions">Conclusions</a></li>
+                    <li><a href="#references">References and Resources</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="index">
-        <h3>Table of Contents</h3>
-        <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#mapping">Mapping the Items</a></li>
-            <li><a href="#metadata">Metadata standards</a></li>
-            <li><a href="#xmltei">XML/TEI and HTML documents</a></li>
-            <li><a href="#textanalysis">Text Analysis</a></li>
-            <li><a href="#fromtordf">From * to RDF</a></li>
-            <li><a href="#conclusions">Conclusions</a></li>
-            <li><a href="#references">References and Resources</a></li>
-        </ul>
-    </div>
+
     <div class="main-text"> <!-- h3: titoli dei paragrafi -->
         <h3 id="introduction">Introduction</h3>
         <p> This project was developed for the <i>Information Science and Cultural Heritage</i> exam within the
