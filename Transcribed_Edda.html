@@ -1,38 +1,65 @@
 <html xmlns:tei="http://www.tei-c.org/ns/1.0">
 <head>
-<title>VinLOD Saga's Poetic Edda</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&amp;family=Forum&amp;family=Metamorphous&amp;display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/Vinlod_logo_small.png" type="image/png">
+<title>Grimnismol- The Poetic Edda</title>
 <style>
+                    .back-to-top {
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    padding: 0.6em 1em;
+                    font-size: 1.5em;
+                    background-color: #641818;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    opacity: 0.7;
+                    transition: opacity 0.3s;
+                    font-size: 2em;
+                    }
+                    
+                    .back-to-top:hover {
+                    opacity: 1;
+                    }
                     body {
-                    font-family: "Times New Roman", serif;
-                    font-size: 1.2em;
-                    line-height: 1.6; 
+                    font-family: "Forum", serif;
+                    font-size: 1.3em;
+                    line-height: 1.6;
                     margin: 1em 5em 5em 5em;
                     padding: 0.5em 1em;
-                    background-color: rgba(232, 232, 232, 0.78); 
+                    background-color: #0C222F;
+                    color: #E7E6E0;
                     }
-                    h1 {
+                    body h1 {
                     font-size: 3em;
                     text-align: center;
                     font-weight: bold;
+                    margin: 0.1em 0 0.2em 0;
+                    font-family: "Metamorphous", serif;
+                    color: #E7E6E0;
                     }
-                    h2 {
+                    body h2 {
                     text-align: center;
                     font-style: italic;
+                    margin: 0.1em 0 0.2em 0;
+                    color: #E7E6E0;
                     }
                     h4 {
                     text-align: center;
                     font-size: 0.7em;
+                    margin: 0.1em 0 0.2em 0;
                     }
                     .head {
                     text-align: center;
                     font-style: italic;
-                    }  
-                    h1, h2, h4, .head {
-                    margin-top: 0.1em;
-                    margin-bottom: 0.2em;
+                    margin: 0.1em 0 0.2em 0;
+                    color: #0C222F;
                     }
                     .stanza {
-                    display: block;
                     text-align: center;
                     margin: 1em auto;
                     }
@@ -40,37 +67,86 @@
                     display: block;
                     }
                     .noteGrp {
-                    background-color: rgb(254, 255, 255);
                     margin: 1em;
-                    padding: 1em 1em;
-                    border-right: 4px solid #ccc;
-                    font-size: 0.7em; 
+                    padding: 1em;
+                    border: 4px solid #5e0c0c;
+                    }
+                    .note, .commentary {
+                    font-family: "Encode Sans", sans-serif;
+                    font-size: 1em; 
                     }
                     a {
-                    color: #1a0dab;
+                    color: color-mix(in srgb,rgb(218, 15, 15), transparent 5%);
                     text-decoration: underline;
                     cursor: pointer;
                     }
                     a:visited {
-                    color: #660099; /* color after the click */
+                    color:color-mix(in srgb,rgb(183, 130, 195), transparent 20%);
                     }
-                    .commentary {
-                    background-color: rgb(254, 255, 255);
-                    margin: 1em;
-                    padding: 1em;
-                    font-size: 0.7em; 
+                    a:hover, span:hover {
+                    color: color-mix(in srgb,rgb(148, 23, 23), transparent 20%);
+                    }
+                    h1, h2 {
+                    color: #0C222F;
+                    }
+                    .commentary, .personal {
+                    margin: 1.5em auto;
+                    font-size: 0.85em;
+                    padding: 1.2em 1.5em;
+                    line-height: 1.6;
+                    max-width: 170ch;
+                    border: 4px solid #5e0c0c
+                    }
+                    .commentary, .personal, .noteGrp{
+                    background-color:rgba(231, 230, 224);
+                    color:  #0C222F;
+                    }
+                    .personal {
+                    max-height: 100px; 
+                    overflow-y: auto;
                     border-left: 4px solid #ccc;
-                    }
-
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);                    }
                 </style>
+<script>
+                    function scrollToTop() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    }
+                </script>
 </head>
 <body> 
              
                 <h1>Grimnismol</h1>
                 <h2><i>The Ballad of Grimnir</i></h2>
-                <div><h4>from <a href="https://en.wikipedia.org/wiki/Henry_Adams_Bellows_(businessman)" target="_blank">Henry Adam Bellows</a>'<i> Poetic Edda</i>
+                <div><h4>from <a href="https://en.wikipedia.org/wiki/Henry_Adams_Bellows_(businessman)">Henry Adam Bellows</a>'<i> Poetic Edda</i>
 </h4></div>
             
+            <div class="personal">
+                <p>
+                    This document was produced as part of the <a href="#">Text Encoding and Semantic Representation</a> examination, which required creating an XML/TEI-encoded version of a chosen text. To conceptually link ten selected items—more specifically a recording of Wagner’s <i>Ride of the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a></i>—a literary reference to <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> was deliberately sought. The Poetic Edda was identified as the ideal source, being the most significant collection of mythological and heroic poetry in Old Norse tradition.
+                </p>
+                <p>
+                    The Poetic Edda is the modern designation for a collection of anonymous Old Norse narrative poems written in alliterative verse. Separate from the related Prose Edda, it remains a cornerstone for the study of Old Norse literature. Among its various versions, the most significant is the medieval Icelandic manuscript known as the Codex Regius, which preserves 31 poems. These poems mainly adopt the fornyrðislag (“old story metre”), alongside the málaháttr (“speech form”), with about a quarter composed in ljóðaháttr (“song form”). Their language tends to be direct and unembellished, making use of kennings that are generally simpler and less intricate than those in skaldic poetry. Originally transmitted orally by poets and minstrels across generations, the poems lack named authors, though many reveal distinct stylistic traits that hint at individual creative voices. Despite scholarly efforts to identify possible authors, no definitive attribution has ever been established — leaving the Poetic Edda as a powerful testament to the shared and anonymous artistry of medieval Nordic tradition.
+                </p>
+                <p> The chosen text specifically focuses on Grímnismál (“The Sayings of <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a>”), a poem remarkable for its dense catalogue of names—of deities, beings, and places, both real and mythical—and its explicit references to <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> Preserved in the Codex Regius and the fragmentary AM 748 I 4to manuscript, it is spoken in the voice of Grímnir, one of <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>’s many guises—a name itself meaning “hooded” or “masked.” The narrative recounts how King Geirröth, by mistake, tortured <a href="https://en.wikipedia.org/wiki/Odin">Odin</a> in this disguise, ultimately bringing about his own death. Composed mostly in ljóðaháttr, Grímnismál is characteristic of wisdom poetry. 
+                </p>
+                <p>
+                    The text presented here is an excerpt from the English translation by <a href="https://en.wikipedia.org/wiki/Henry_Adams_Bellows_(businessman)">Henry Adam Bellows</a>—a newspaper editor and early commissioner of the U.S. Federal Communications Commission—published as part of the “Scandinavian Classics” series for the American-Scandinavian Foundation, an institution dedicated to cultural exchange between the United States and Northern Europe. This translation was later transcribed and released as an eBook by Project Gutenberg, which served as the primary source for this work.
+                </p>
+                <p>
+                    The XML transcription aimed to be as faithful as possible, retaining special characters, text structure, page layout, and the original use of italics. All words and letters were transcribed verbatim without normalization, since the text had already been modernized from Old Norse to an archaizing form of English by the translator. Spacing was standardized to single spaces. Entities physically present in the narrative were annotated, while others merely mentioned were generally excluded—except for references essential to the project’s RDF graph construction, specifically <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a>.
+                </p>
+                <p>
+                    Within the poem, orthographic segmentation was applied, marking individual lines and stanzas, each sequentially numbered. All punctuation from the source text has been preserved. Hyphenation at line breaks was not altered.
+                    Only annotations directly relevant to <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> were included, as they aligned with the conceptual aims of the project. Additional editorial notes, largely redundant, were omitted. The translator provided little commentary on manuscript variation; consequently, no witness list was included, as there were no significant variants to document. 
+                </p>
+                <p>
+                    Names and epithets of the characters on stage (except where they referred to the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a>) — especially those connected to <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>, who alone is attributed with around fifty epithets, many of which appear in stanza 48 — were encoded through dedicated attributes. As the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> are mentioned but never directly appear in the narrative, they were encoded collectively to highlight their symbolic role rather than as individual figures. Proper names were retained in HTML to remain clickable and linkable to dedicated pages, while the layout was generated with XSL and the XML-to-HTML transformation carried out in Python.
+                </p>
+                <p>
+                    What is especially compelling about <a href="https://en.wikipedia.org/wiki/Henry_Adams_Bellows_(businessman)">Bellows</a>’ translation is his deliberate choice of archaic English: an attempt to echo the cadence and distant resonance of Old Norse, reviving its solemnity for modern readers. Through careful encoding and thoughtful interpretation, this edition seeks to preserve not only the text itself, but the spirit that still breathes through its ancient lines.
+                </p>
+                <p><i><a href="https://github.com/theair-hub">Ilaria De Dominicis</a></i></p>
+            </div>
             <div class="commentary"> 
                 <div style="font-weight: bold;">Introductory note</div>
                  
@@ -84,17 +160,17 @@
                         <p>Like the preceding poem, the <i>Grimnismol</i> is largely encyclopædic in nature, and consists chiefly
                             of proper names, the last forty-seven stanzas containing no less than two hundred and twenty-five 
                             of these. It is not, however, in dialogue form. As Müllenhoff pointed out, there is underneath the 
-                            catalogue of mythological names a consecutive and thoroughly dramatic story. <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>, concealed 
-                            under the name of <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Grimnir</a>, is through an error tortured by <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">King Geirröth</a>. Bound between two 
+                            catalogue of mythological names a consecutive and thoroughly dramatic story. <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>, concealed 
+                            under the name of <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a>, is through an error tortured by <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">King Geirröth</a>. Bound between two 
                             blazing fires, he begins to display his wisdom for the benefit of the king’s little son, Agnar, who 
                             has been kind to him. Gradually he works up to the great final moment, when he declares his true 
-                            name, or rather names, to the terrified <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>, and the latter falls on his sword and is killed. 
+                            name, or rather names, to the terrified <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>, and the latter falls on his sword and is killed. 
                         </p>
                         
                      
                         <p>For much of this story we do not have to depend on guesswork, for in both manuscripts the poem 
                             itself is preceded by a prose narrative of considerable length, and concluded by a brief prose 
-                            statement of the manner of <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>’s death. These prose notes, of which there are many in the 
+                            statement of the manner of <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>’s death. These prose notes, of which there are many in the 
                             Eddic manuscripts, are of considerable interest to the student of early literary forms. Presumably 
                             they were written by the compiler to whom we owe the Eddic collection, who felt that the poems needed 
                             such annotation in order to be clear. Linguistic evidence shows that they were written in 
@@ -110,12 +186,12 @@
                             tradition, just as in the case of the sagas; and the prose notes of the manuscripts, in so far as they 
                             contain material not simply drawn from the poems themselves, are relics of this tradition. The 
                             early Norse poets rarely conceived verse as a suitable means for direct story-telling, and in some 
-                            of the poems even the simplest action is told in prose links between dialogue stanzas.
+                            of the poems even the simplest action is told in prose "links" between dialogue stanzas.
                         </p>
                     
                      
                         <p>The applications of this fact, which has been too often overlooked, are almost limitless, for it 
-                            suggests a still unwritten chapter in the history of ballad poetry and the so-called popular epic. 
+                            suggests a still unwritten chapter in the history of ballad poetry and the so-called "popular" epic. 
                             It implies that narrative among early peoples may frequently have had a period of prose existence 
                             before it was made into verse, and thus puts, for example, a long series of transitional stages 
                             before such a poem as the <i>Iliad</i>. In any case, the prose notes accompanying the Eddic poems 
@@ -136,39 +212,39 @@
              
                 <div class="intro"> 
                          
-                            <p><a href="https://en.wikipedia.org/wiki/Hraudung" target="_blank">Hrauthung</a> had two sons: one was called Agnar, and the other <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>. 
-                                Agnar was ten winters old, and <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a> eight. Once they both rowed in a boat 
+                            <p><a href="https://en.wikipedia.org/wiki/Hraudung">Hrauthung</a> had two sons: one was called Agnar, and the other <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>. 
+                                Agnar was ten winters old, and <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a> eight. Once they both rowed in a boat 
                                 with their fishing-gear to catch little fish; and the wind drove them out into the 
                                 sea. In the darkness of the night they were wrecked on the shore; and going up, 
                                 they found a poor peasant, with whom they stayed through the winter. The 
-                                housewife took care of Agnar, and the peasant cared for <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>, and taught 
+                                housewife took care of Agnar, and the peasant cared for <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>, and taught 
                                 him wisdom. In the spring the peasant gave him a boat; and when the couple 
-                                led them to the shore, the peasant spoke secretly with <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>. They had a fair 
-                                wind, and came to their father’s landing-place. <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a> was forward in the 
-                                boat; he leaped up on land, but pushed out the boat and said,  Go thou now 
-                                where evil may have thee! The boat drifted out to sea. <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>, however, 
+                                led them to the shore, the peasant spoke secretly with <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>. They had a fair 
+                                wind, and came to their father’s landing-place. <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a> was forward in the 
+                                boat; he leaped up on land, but pushed out the boat and said,  "Go thou now 
+                                where evil may have thee!" The boat drifted out to sea. <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>, however, 
                                 went up to the house, and was well received, but his father was dead. Then 
-                                <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a> was made king, and became a renowned man.
+                                <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a> was made king, and became a renowned man.
                             </p>
                         
                          
-                            <p><a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> and <a href="https://en.wikipedia.org/wiki/Frigg" target="_blank">Frigg</a> sat in Hlithskjolf and looked over all the worlds. <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> said: 
-                                  Seest thou Agnar, thy fosterling, how he begets children with a giantess in the 
-                                cave? But <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>, my fosterling, is a king, and now rules over his land. 
-                                <a href="https://en.wikipedia.org/wiki/Frigg" target="_blank">Frigg</a> said:  He is so miserly that he tortures his guests if he thinks that too 
-                                many of them come to him. <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> replied that this was the greatest of lies; and
-                                they made a wager about this matter. <a href="https://en.wikipedia.org/wiki/Frigg" target="_blank">Frigg</a> sent her maid-servant, <a href="https://en.wikipedia.org/wiki/Fulla" target="_blank">Fulla</a>, to 
-                                <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>. She bade the king beware lest a magician who was come thither to his
+                            <p><a href="https://en.wikipedia.org/wiki/Odin">Othin</a> and <a href="https://en.wikipedia.org/wiki/Frigg">Frigg</a> sat in Hlithskjolf and looked over all the worlds. <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> said: 
+                                 " Seest thou Agnar, thy fosterling, how he begets children with a giantess in the 
+                                cave? But <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>, my fosterling, is a king, and now rules over his land." 
+                                <a href="https://en.wikipedia.org/wiki/Frigg">Frigg</a> said: " He is so miserly that he tortures his guests if he thinks that too 
+                                many of them come to him." <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> replied that this was the greatest of lies; and
+                                they made a wager about this matter. <a href="https://en.wikipedia.org/wiki/Frigg">Frigg</a> sent her maid-servant, <a href="https://en.wikipedia.org/wiki/Fulla">Fulla</a>, to 
+                                <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>. She bade the king beware lest a magician who was come thither to his
                                 land should bewitch him, and told this sign concerning him, that no dog was so 
-                                fierce as to leap at him. Now it was a very great slander that <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">King Geirröth</a> was 
+                                fierce as to leap at him. Now it was a very great slander that <a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">King Geirröth</a> was 
                                 not hospitable; but nevertheless he had them take the man whom the dogs would not attack. He wore a dark-blue mantle and called himself 
-                                <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Grimnir</a>, but said no more about himself, though he was questioned. The king had him 
+                                <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a>, but said no more about himself, though he was questioned. The king had him 
                                 tortured to make him speak, and set him between two fires, and he sat there 
-                                eight nights.<a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">King Geirröth</a> had a son ten winters old, and called <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson" target="_blank">Agnar</a> after his 
-                                father’s brother. <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson" target="_blank">Agnar</a> went to <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Grimnir</a>, and gave him a full horn to drink from, 
-                                and said that the king did ill in letting him be tormented without cause. <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Grimnir</a> 
+                                eight nights.<a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">King Geirröth</a> had a son ten winters old, and called <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson">Agnar</a> after his 
+                                father’s brother. <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson">Agnar</a> went to <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a>, and gave him a full horn to drink from, 
+                                and said that the king did ill in letting him be tormented without cause. <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a> 
                                 drank from the horn; the fire had come so near that the mantle burned on 
-                                <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Grimnir</a>’s back. He spake:
+                                <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a>’s back. He spake:
                             </p>
                                                            
                 </div>
@@ -184,14 +260,14 @@
                             <div class="line">
 <a href="#note-s2">2.</a>  ’Twixt the fires now | eight nights have I sat,</div>
                             <div class="line">And no man brought meat to me,</div>
-                            <div class="line">Save <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson" target="_blank">Agnar</a> alone, | and alone shall rule</div>
+                            <div class="line">Save <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson">Agnar</a> alone, | and alone shall rule</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a>’s son o’er the Goths.</div>
+<a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a>’s son o’er the Goths.</div>
                         </div>
                         <div class="stanza" id="s3">
                             <div class="line">
-<a href="#note-s3">3.</a> Hail to thee, <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson" target="_blank">Agnar</a>! | for hailed thou art</div>
-                            <div class="line">By the voice of <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Veratyr</a>;</div>
+<a href="#note-s3">3.</a> Hail to thee, <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson">Agnar</a>! | for hailed thou art</div>
+                            <div class="line">By the voice of <a href="https://en.wikipedia.org/wiki/Odin">Veratyr</a>;</div>
                             <div class="line">For a single drink | shalt thou never receive</div>
                             <div class="line">A greater gift as reward.</div>
                         </div>
@@ -224,7 +300,7 @@
                             <div class="line">
 <a href="#s7">7.</a> Sökkvabekk is the fourth, | where cool waves flow,</div>
                             <div class="line">And amid their murmur it stands;</div>
-                            <div class="line">There daily do <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> | and Saga drink</div>
+                            <div class="line">There daily do <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> | and Saga drink</div>
                             <div class="line">In gladness from cups of gold.</div>
                         </div>
                         
@@ -232,22 +308,22 @@
                             <div class="line">
 <a href="#note-s8">8.</a> The fifth is Glathsheim, | and gold-bright there</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a> stretching wide;</div>
-                            <div class="line">And there does <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> | each day choose</div>
+<a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a> stretching wide;</div>
+                            <div class="line">And there does <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> | each day choose</div>
                             <div class="line">The men who have fallen in fight.</div>
                         </div>
                         
                         <div class="stanza" id="s9">
-                            <div class="line">9.Easy is it to know | for him who to <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>
+                            <div class="line">9.Easy is it to know | for him who to <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>
 </div>
                             <div class="line">Comes and beholds the hall;</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Its</a> rafters are spears, | with shields is it roofed,</div>
-                            <div class="line">On <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">its</a> benches are breastplates strewn.</div>
+<a href="https://en.wikipedia.org/wiki/Valhalla">Its</a> rafters are spears, | with shields is it roofed,</div>
+                            <div class="line">On <a href="https://en.wikipedia.org/wiki/Valhalla">its</a> benches are breastplates strewn.</div>
                         </div>
                         
                         <div class="stanza" id="s10">
-                            <div class="line">10.Easy is it to know | for him who to <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>
+                            <div class="line">10.Easy is it to know | for him who to <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>
 </div>
                             <div class="line">Comes and beholds the hall;</div>
                             <div class="line">There hangs a wolf | by the western door,</div>
@@ -278,7 +354,7 @@
                             <div class="line">14. The ninth is Folkvang, | where Freyja decrees</div>
                             <div class="line">Who shall have seats in the hall;</div>
                             <div class="line">The half of the dead | each day does she choose,</div>
-                            <div class="line">And half does <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> have.</div>
+                            <div class="line">And half does <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> have.</div>
                         </div>
                         
                         <div class="stanza" id="s16">
@@ -303,11 +379,11 @@
                         </div>
                         
                         <div class="stanza" id="s19">
-                            <div class="line">19. Freki and Geri | does <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Heerfather</a> feed,</div>
+                            <div class="line">19. Freki and Geri | does <a href="https://en.wikipedia.org/wiki/Odin">Heerfather</a> feed,</div>
                             <div class="line">The far-famed fighter of old:</div>
                             <div class="line">But on wine alone | does the weapon-decked god,</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>, forever live.</div>
+<a href="https://en.wikipedia.org/wiki/Odin">Othin</a>, forever live.</div>
                         </div>
                         
                         <div class="stanza" id="s20">
@@ -319,7 +395,7 @@
                         
                         <div class="stanza" id="s21">
                             <div class="line">
-<a href="#note-s21">21.</a> Loud roars <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Thund</a>, | and Thjothvitnir’s fish</div>
+<a href="#note-s21">21.</a> Loud roars <a href="https://en.wikipedia.org/wiki/Odin">Thund</a>, | and Thjothvitnir’s fish</div>
                             <div class="line">Joyously fares in the flood;</div>
                             <div class="line">Hard does it seem | to the host of the slain</div>
                             <div class="line">To wade the torrent wild.</div>
@@ -327,7 +403,7 @@
                         
                         <div class="stanza" id="s22">
                             <div class="line">
-<a href="#note-s22">22.</a> There <a href="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4" target="_blank">Valgrind</a> stands, | the sacred gate,</div>
+<a href="#note-s22">22.</a> There <a href="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4">Valgrind</a> stands, | the sacred gate,</div>
                             <div class="line">And behind are the holy doors;</div>
                             <div class="line">Old is the gate, | but few there are</div>
                             <div class="line">Who can tell how it tightly is locked.</div>
@@ -336,7 +412,7 @@
                         <div class="stanza" id="s23">
                             <div class="line">
 <a href="#note-s23">23.</a> Five hundred doors | and forty there are,</div>
-                            <div class="line">I ween, in <a href="#VL" target="_blank">Valhall</a>’s walls;</div>
+                            <div class="line">I ween, in <a href="#VL">Valhall</a>’s walls;</div>
                             <div class="line">Eight hundred fighters | through one door fare</div>
                             <div class="line">When to war with the wolf they go.</div>
                         </div>
@@ -351,14 +427,14 @@
                         
                         <div class="stanza" id="s25">
                             <div class="line">
-<a href="#note-s25">25.</a> Heithrun is the goat | who stands by <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Heerfather</a>’s hall,</div>
+<a href="#note-s25">25.</a> Heithrun is the goat | who stands by <a href="https://en.wikipedia.org/wiki/Odin">Heerfather</a>’s hall,</div>
                             <div class="line">And the branches of Lærath she bites;</div>
                             <div class="line">The pitcher she fills | with the fair, clear mead,</div>
                             <div class="line">Ne’er fails the foaming drink.</div>
                         </div>                                                  
                         
                         <div class="stanza" id="s26">
-                            <div class="line">26. Eikthyrnir is the hart | who stands by <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Heerfather</a>’s hall</div>
+                            <div class="line">26. Eikthyrnir is the hart | who stands by <a href="https://en.wikipedia.org/wiki/Odin">Heerfather</a>’s hall</div>
                             <div class="line">And the branches of Lærath he bites;</div>
                             <div class="line">From his horns a stream | into Hvergelmir drops,</div>
                             <div class="line">Thence all the rivers run.</div>
@@ -416,7 +492,7 @@
                             <div class="line">Goin and Moin, | Grafvitnir’s sons,</div>
                             <div class="line">Grabak and Grafvolluth,</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Ofnir</a> and <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Svafnir</a>| shall ever, methinks,</div>
+<a href="https://en.wikipedia.org/wiki/Odin">Ofnir</a> and <a href="https://en.wikipedia.org/wiki/Odin">Svafnir</a>| shall ever, methinks,</div>
                             <div class="line">Gnaw at the twigs of the tree.</div>
                         </div>
                         
@@ -429,15 +505,15 @@
                         
                         <div class="stanza" id="s36">
                             <div class="line">
-<a href="#note-s36">36.</a> <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Hrist</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Mist</a> | bring the horn at my will,</div>
+<a href="#note-s36">36.</a> <a href="https://en.wikipedia.org/wiki/Valkyrie">Hrist</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie">Mist</a> | bring the horn at my will,</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Skeggjold</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Skogul</a>;</div>
+<a href="https://en.wikipedia.org/wiki/Valkyrie">Skeggjold</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie">Skogul</a>;</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Hild</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Thruth</a>, | Hlokk and Herfjotur,</div>
+<a href="https://en.wikipedia.org/wiki/Valkyrie">Hild</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie">Thruth</a>, | Hlokk and Herfjotur,</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Gol</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Geironul</a>,</div>
+<a href="https://en.wikipedia.org/wiki/Valkyrie">Gol</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie">Geironul</a>,</div>
                             <div class="line">
-<a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Randgrith</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Ranthrith</a> | and <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Reginleif</a>
+<a href="https://en.wikipedia.org/wiki/Valkyrie">Randgrith</a> and <a href="https://en.wikipedia.org/wiki/Valkyrie">Ranthrith</a> | and <a href="https://en.wikipedia.org/wiki/Valkyrie">Reginleif</a>
 </div>
                             <div class="line">Beer to the warriors bring.</div>
                         </div>
@@ -494,7 +570,7 @@
                         <div class="stanza" id="s44">
                             <div class="line">44. The best of trees | must Yggdrasil be,</div>
                             <div class="line">Skithblathnir best of boats;</div>
-                            <div class="line">Of all the gods | is <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> the greatest,</div>
+                            <div class="line">Of all the gods | is <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> the greatest,</div>
                             <div class="line">And Sleipnir the best of steeds;</div>
                             <div class="line">Bilrost of bridges, | Bragi of skalds,</div>
                             <div class="line">Hobrok of hawks, | and Garm of hounds.</div>
@@ -572,9 +648,9 @@
                         
                     
                      
-                        <p><a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">King Geirröth</a>  sat and had his sword on his knee, half drawn from its sheath. But when he heard that <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> was come thither, then he rose up and sought to take 
-                            <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> from the fire. The sword slipped from his hand, and fell with the hilt down. The king stumbled and fell forward, and 
-                            the sword pierced him through, and slew him. Then <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> vanished, but <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson" target="_blank">Agnar</a> long ruled there as king.
+                        <p><a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">King Geirröth</a>  sat and had his sword on his knee, half drawn from its sheath. But when he heard that <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> was come thither, then he rose up and sought to take 
+                            <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> from the fire. The sword slipped from his hand, and fell with the hilt down. The king stumbled and fell forward, and 
+                            the sword pierced him through, and slew him. Then <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> vanished, but <a href="https://en.wikipedia.org/wiki/Agnarr_Geirr%C3%B6%C3%B0sson">Agnar</a> long ruled there as king.
                         </p>
                     
                 
@@ -587,19 +663,19 @@
                         The texts of the two manuscripts differ in many minor details.
                     </div>
                     <div class="note">
-                        <i><a href="https://en.wikipedia.org/wiki/Hraudung" target="_blank">Hrauthung</a></i>: this mythical king is not mentioned elsewhere.
+                        <i><a href="https://en.wikipedia.org/wiki/Hraudung">Hrauthung</a></i>: this mythical king is not mentioned elsewhere.
                     </div>
                     <div class="note">
-                        <i><a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r" target="_blank">Geirröth</a></i>: the manuscripts spell his name in various ways.
+                        <i><a href="https://en.wikipedia.org/wiki/Geirr%C3%B6%C3%B0r">Geirröth</a></i>: the manuscripts spell his name in various ways.
                     </div>
                     <div class="note">
-                        <a href="https://en.wikipedia.org/wiki/Frigg" target="_blank">Frigg</a>: <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>'s wife. She and <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a> nearly always disagreed in some such way as the one outlined in this story.
+                        <a href="https://en.wikipedia.org/wiki/Frigg">Frigg</a>: <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>'s wife. She and <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> nearly always disagreed in some such way as the one outlined in this story.
                     </div>
                     <div class="note">
-                        <i>Hlithskjolf</i> (Gate-Shelf): <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>'s watch-tower in heaven, whence he can overlook all the nine worlds; cf. Skirnismol, introductory prose.
+                        <i>Hlithskjolf</i> ("Gate-Shelf"): <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>'s watch-tower in heaven, whence he can overlook all the nine worlds; cf. Skirnismol, introductory prose.
                     </div>
                     <div class="note">
-                        <i><a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Grimnir</a></i>: the Hooded One.
+                        <i><a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a></i>: "the Hooded One."
                     </div>
                 </div>
 
@@ -608,28 +684,28 @@
                         <a href="#s2">s2</a> - In the original lines 2 and 4 are both too long for the meter, and thus the true form of the stanza is doubtful.
                     </div>
                     <div class="note">
-                        For line 4 both manuscripts have the land of the Goths instead of simply the Goths. The word Goths apparently was applied indiscriminately to any South-Germanic people, including the Burgundians as well as the actual Goths, and thus here has no specific application; cf. Gripisspo, 35 and note.
+                        For line 4 both manuscripts have "the land of the Goths" instead of simply "the Goths." The word "Goths" apparently was applied indiscriminately to any South-Germanic people, including the Burgundians as well as the actual Goths, and thus here has no specific application; cf. Gripisspo, 35 and note.
                     </div>
                 </div>
                 
                 <div class="noteGrp">
                     <div class="note" id="note-s3">
                         <a href="#s3">s3</a> - 
-                        <i><a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Veratyr</a></i> (Lord of Men): <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>. The gift which Agnar receives is <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>'s mythological lore.
+                        <i><a href="https://en.wikipedia.org/wiki/Odin">Veratyr</a></i> ("Lord of Men"): <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>. The "gift" which Agnar receives is <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>'s mythological lore.
                     </div> 
                 </div>
                 
                 <div class="noteGrp"> 
                     <div class="note" id="note-s4">
                         <a href="#s4">s4</a> -
-                        <i>Thruthheim</i> (the Place of Might): the place where Thor, the strongest of the gods, has his hall, Bilskirnir, described in stanza 24.
+                        <i>Thruthheim</i> ("the Place of Might"): the place where Thor, the strongest of the gods, has his hall, Bilskirnir, described in stanza 24.
                     </div>
                 </div>
                 
                 <div class="noteGrp">
                     <div class="note" id="note-s5">
                         <a href="#s5">s5</a> - 
-                        <i>Ydalir</i> (Yew-Dales): the home of Ull, the archer among the gods, a son of Thor’s wife, Sif, by another marriage. The wood of the yew-tree was used for bows in the North just as it was long afterwards in England.  
+                        <i>Ydalir</i> ("Yew-Dales"): the home of Ull, the archer among the gods, a son of Thor’s wife, Sif, by another marriage. The wood of the yew-tree was used for bows in the North just as it was long afterwards in England.  
                         <div class="note">
                             <i>Alfheim</i>: the home of the elves.
                         </div>
@@ -643,62 +719,66 @@
                 <div class="noteGrp"> 
                     <div class="note" id="note-s6">
                         <a href="#s6">s6</a> -
-                        <i>Valaskjolf</i> (the Shelf of the Slain): <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>’s home, in which is his watch-tower, <i>Hlithskjolf</i>. Gering identifies this with <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a>, and as that is mentioned in stanza 8, he believes stanza 6 to be an interpolation.
+                        <i>Valaskjolf</i> ("the Shelf of the Slain"): <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>’s home, in which is his watch-tower, <i>Hlithskjolf</i>. Gering identifies this with <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a>, and as that is mentioned in stanza 8, he believes stanza 6 to be an interpolation.
                     </div>
                 </div>
                 
                 <div class="noteGrp"> 
                     <div class="note" id="note-s8">
                         <a href="#s8">s8</a> -
-                        <i>Glathsheim</i> (the Place of Joy): <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>’s home, the greatest and most beautiful hall in the world. 
-                        <i><a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a></i> (Hall of the Slain): cf. Voluspo, 31 and note. <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a> is not only the hall whither the slain heroes are brought by the <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Valkyries</a>, but also a favorite home of <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>.
+                        <i>Glathsheim</i> ("the Place of Joy"): <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>’s home, the greatest and most beautiful hall in the world. 
+                        <i><a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a></i> ("Hall of the Slain"): cf. Voluspo, 31 and note. <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a> is not only the hall whither the slain heroes are brought by the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a>, but also a favorite home of <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>.
                     </div>
                 </div>
                 
                 <div class="noteGrp">
                     <div class="note" id="note-s21">
                         <a href="#s21">s21</a> -
-                        <i>Thund</i> (The Swollen or The Roaring): the river surrounding <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a>.
+                        <i>Thund</i> ("The Swollen" or "The Roaring"): the river surrounding <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a>.
                     </div>
                     <div class="note" id="note-extra-s21">
-                        The last two lines refer to the attack on <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a> by the people of Hel; cf. <i>Voluspo</i>, 51.
+                        The last two lines refer to the attack on <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a> by the people of Hel; cf. <i>Voluspo</i>, 51.
                     </div>
                 </div>
                 
                 <div class="noteGrp"> 
                     <div class="note" id="note-s22">
                         <a href="#s22">s22</a> -
-                        <i><a href="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4" target="_blank">Valgrind</a></i> (The Death-Gate): the outer gate of <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a>; cf. <i>Sigurtharkvitha en skamma</i>, 68 and note.
+                        <i><a href="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4">Valgrind</a></i> ("The Death-Gate"): the outer gate of <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a>; cf. <i>Sigurtharkvitha en skamma</i>, 68 and note.
                     </div>
                 </div>
                 
                 <div class="noteGrp"> 
                     <div class="note" id="note-s23">
                         <a href="#s23">s23</a> -
-                        This and the following stanza stand in reversed order in <i>Regius</i>. Snorri quotes stanza 23 as a proof of the vast size of <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a>.
+                        This and the following stanza stand in reversed order in <i>Regius</i>. Snorri quotes stanza 23 as a proof of the vast size of <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a>.
                     </div>
                 </div>
 
                 <div class="noteGrp"> 
                     <div class="note" id="note-s24">
                         <a href="#s24">s24</a> -
-                        This stanza is almost certainly an interpolation, brought in through a confusion of the first two lines with those of stanza 23. Its description of Thor’s house, Bilskirnir (cf. stanza 4 and note) has nothing to do with that of <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a>. Snorri quotes the stanza in his account of Thor.
+                        This stanza is almost certainly an interpolation, brought in through a confusion of the first two lines with those of stanza 23. Its description of Thor’s house, Bilskirnir (cf. stanza 4 and note) has nothing to do with that of <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a>. Snorri quotes the stanza in his account of Thor.
                     </div>
                 </div>
                 
                 <div class="noteGrp"> 
                     <div class="note" id="note-s25">
                         <a href="#s25">s25</a> -
-                        <i>Heithrun</i>: the she-goat who lives on the twigs of the tree Lærath (presumably the ash Yggdrasil), and daily gives mead which, like the boar’s flesh, suffices for all the heroes in <a href="https://en.wikipedia.org/wiki/Valhalla" target="_blank">Valhall</a>.
+                        <i>Heithrun</i>: the she-goat who lives on the twigs of the tree Lærath (presumably the ash Yggdrasil), and daily gives mead which, like the boar’s flesh, suffices for all the heroes in <a href="https://en.wikipedia.org/wiki/Valhalla">Valhall</a>.
                     </div>
                 </div>
                 
                 <div class="noteGrp"> 
                     <div class="note" id="note-s36">
                         <a href="#s36">s36</a> -
-                        Snorri quotes this list of the <a href="https://en.wikipedia.org/wiki/Valkyrie" target="_blank">Valkyries</a>, concerning whom cf. Voluspo, 31 and note, where a different list of names is given. The Valkyries who ride forth to choose the slain are servants of <a href="https://en.wikipedia.org/wiki/Odin" target="_blank">Othin</a>.
+                        Snorri quotes this list of the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a>, concerning whom cf. Voluspo, 31 and note, where a different list of names is given. The Valkyries who ride forth to choose the slain are servants of <a href="https://en.wikipedia.org/wiki/Odin">Othin</a>.
                     </div>
                 </div>
             
-        </body>
+        <button onclick="scrollToTop()" class="back-to-top">↟</button>
+</body>
+<footer style="background-color: rgba(191, 202, 202, 0.3); color: black; text-align: center; padding: 15px 150px;"><p>Project completed for the course Digital Humanities and Digital Knowledge, University of Bologna, 2025.</p>
+<p>Author: Ilaria De Dominicis</p>
+<p>© 2025 All rights reserved.</p></footer>
 </html>
