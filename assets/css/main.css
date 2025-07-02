@@ -153,6 +153,14 @@ body.reveal #hero .container {
 }
 
 /*--------------------------------------------------------------
+# Introduction Images
+--------------------------------------------------------------*/
+
+.intro-img {
+  max-height: 360px;
+}
+
+/*--------------------------------------------------------------
 # Card Styles
 --------------------------------------------------------------*/
 .card {
@@ -290,7 +298,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
-  font-size: 16px;
+  font-size: 20px;
 }
 
 a {
