@@ -43,6 +43,10 @@
   font-variation-settings:
     "wdth" 100;
 }
+/* forcing bold on <b> */
+b {
+  font-weight: bold !important;
+}
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
