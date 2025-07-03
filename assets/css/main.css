@@ -1013,8 +1013,8 @@ h6 {
   transition: all 0.4s;
 }
 
-.scroll-top i {
-  font-size: 24px;
+.scroll-top p {
+  font-size: 2em;
   color: var(--contrast-color);
   line-height: 0;
 }
