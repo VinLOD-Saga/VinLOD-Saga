@@ -14,32 +14,14 @@
     <title>Documentation- VinLOD</title>
     <link rel="icon" href="assets/img/Vinlod_logo_small.png" type="image/png" />
     <style>
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            padding: 0.6em 1em;
-            font-size: 1.5em;
-            background-color: #641818;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            opacity: 0.7;
-            transition: opacity 0.3s;
-            font-size: 2em;
-        }
-
-        .back-to-top:hover {
-            opacity: 1;
-        }
-
+        /* Body styling: background color, text color and base font size */
         body {
             background-color: #0C222F;
             color: #0e2d40;
             font-size: 1.2em;
         }
-
+    
+        /* Main title (h1): white color, large size, centered, bold, serif font */
         h1 {
             color: #ffffff;
             font-size: 4em;
@@ -47,14 +29,15 @@
             font-weight: bold;
             font-family: "Metamorphous", serif;
         }
-
+    
+        /* Secondary titles (h2): white color, centered, serif font */
         h2 {
             color: #ffffff;
-            ;
             text-align: center;
             font-family: "Metamorphous", serif;
         }
-
+    
+        /* Tertiary titles (h3): dark blue color, serif font, medium size, bold, tight line height */
         h3 {
             color: #0e2d40;
             font-family: "Metamorphous", serif;
@@ -62,7 +45,57 @@
             font-weight: bold;
             line-height: 0.6em;
         }
-
+    
+        /* Paragraphs, index section and unordered lists: serif font with comfortable line height */
+        p,
+        .index,
+        ul {
+            font-family: "Forum", serif;
+            line-height: 1.6;
+        }
+    
+        /* Link styling: dark red color, underlined, pointer cursor, semi-transparent */
+        a {
+            color: #5e0c0c;
+            text-decoration: underline;
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    
+        /* Visited links: darker purple color */
+        a:visited {
+            color: #460467;
+        }
+    
+        /* Hover effect for links: full opacity */
+        a:hover {
+            opacity: 1;
+        }
+    
+        /* Back to top button: fixed position, bottom-right, padded, larger font size,
+           dark red background, white text, rounded corners, semi-transparent, smooth opacity transition */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 0.6em 1em;
+            font-size: 2em;
+            background-color: #641818;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+    
+        /* Back to top button hover: fully opaque */
+        .back-to-top:hover {
+            opacity: 1;
+        }
+    
+        /* Index section: positioned with top, bottom, right offsets, padding, margin,
+           box shadow for subtle depth, max width and responsive width, font size */
         .index {
             top: 150px;
             bottom: 100px;
@@ -75,29 +108,10 @@
             width: 90%;
             font-size: 1.2em;
         }
-
-        p,
-        .index,
-        ul {
-            font-family: "Forum", serif;
-            line-height: 1.6;
-        }
-
-        a {
-            color: #5e0c0c;
-            text-decoration: underline;
-            cursor: pointer;
-            opacity: 0.8;
-        }
-
-        a:visited {
-            color: #460467;
-        }
-
-        a:hover {
-            opacity: 10;
-        }
-
+    
+        /* Main text container: max width, centered margin, padding, justified text,
+           light background, dark red border, rounded corners, subtle shadow,
+           serif font, large font size, line height, wrapping long words */
         .main-text {
             max-width: 1750px;
             width: 90%;
@@ -109,14 +123,13 @@
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             font-family: 'Georgia', serif;
-            font-size: 1.2em;
+            font-size: 2em;
             line-height: 1.6;
             box-sizing: border-box;
-            /* aggiunto */
             overflow-wrap: break-word;
-            /* evita overflow per parole lunghe */
         }
-
+    
+        /* Tables with borders and padding for TF-IDF and common words tables */
         .tfidf-table,
         .tfidf-table th,
         .tfidf-table td,
@@ -127,7 +140,8 @@
             border-collapse: collapse;
             padding: 5px 10px;
         }
-
+    
+        /* Section anchors: offset scrolling to accommodate fixed headers */
         #introduction,
         #mapping,
         #metadata,
@@ -136,10 +150,10 @@
         #fromtordf,
         #conclusions,
         #references {
-            scroll-margin-top: 80px;
-            /* Match this to your header's height */
+            scroll-margin-top: 80px; 
         }
     </style>
+
 
     <script>
         function scrollToTop() {
@@ -378,7 +392,7 @@
                     standard clearly specified or were taken from wikidata.</p>
             </li>
             <li>
-                <b>JVMG/ACLICK</b>: <p>The project aims to build an open, graph-based research database focused on
+                 <p><b>JVMG/ACLICK</b>:The project aims to build an open, graph-based research database focused on
                     Japanese visual media such as anime, manga, games, and visual novels. Targeted at scholars in
                     Japanese studies, it combines rich data harvested from enthusiast communities with advanced search
                     and analysis tools. Initially, the team collaborated closely with these online communities to gain
