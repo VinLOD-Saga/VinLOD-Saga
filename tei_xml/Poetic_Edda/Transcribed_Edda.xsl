@@ -15,7 +15,68 @@
                 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&amp;family=Forum&amp;family=Metamorphous&amp;display=swap" rel="stylesheet"/>
                 <link rel="icon" href="assets/img/Vinlod_logo_small.png" type="image/png"/>
                 <title>Grimnismol- The Poetic Edda</title>
+                
                 <style>
+                    /* ============================
+                    Body and base text styles
+                    ============================ */
+                    body {
+                    margin: 1em 5em 5em 5em;
+                    padding: 0.5em 1em;
+                    background-color: #0C222F;
+                    color: #E7E6E0;
+                    font-family: Forum, serif;
+                    font-size: 1.5em;
+                    line-height: 1.6;
+                    }
+                    
+                    /* ============================
+                    Headings
+                    ============================ */
+                    h1 {
+                    text-align: center;
+                    font-weight: bold;
+                    margin: 0.1em 0 0.2em 0;
+                    font-family: "Metamorphous", serif;
+                    color: #E7E6E0;
+                    font-size: 2.5em
+                    }
+                    
+                    h2 {
+                    text-align: center;
+                    font-style: italic;
+                    margin: 0.1em 0 0.2em 0;
+                    color: #E7E6E0;
+                    font-size: 1em;
+                    }
+                    
+                    h4 {
+                    text-align: center;
+                    margin: 0.1em 0 0.2em 0;
+                    font-size: 0.7em;
+                    }
+                    
+                    /* ============================
+                    Links
+                    ============================ */
+                    a {
+                    color: color-mix(in srgb, rgb(218, 15, 15), transparent 5%);
+                    text-decoration: underline;
+                    cursor: pointer;
+                    }
+                    
+                    a:visited {
+                    color: color-mix(in srgb, rgb(183, 130, 195), transparent 20%);
+                    }
+                    
+                    a:hover,
+                    span:hover {
+                    color: color-mix(in srgb, rgb(148, 23, 23), transparent 20%);
+                    }
+                    
+                    /* ============================
+                    Buttons
+                    ============================ */
                     .back-to-top {
                     position: fixed;
                     bottom: 20px;
@@ -34,86 +95,52 @@
                     .back-to-top:hover {
                     opacity: 1;
                     }
-                    body {
-                    line-height: 1.6;
-                    margin: 1em 5em 5em 5em;
-                    padding: 0.5em 1em;
-                    background-color: #0C222F;
-                    color: #E7E6E0;
-                    font-family: Forum, serif;
-                    font-size: 1.5em;
-                    }
-                    body h1 {
-                    text-align: center;
-                    font-weight: bold;
-                    margin: 0.1em 0 0.2em 0;
-                    font-family: "Metamorphous", serif;
-                    color: #E7E6E0;
-                    }
-                    body h2 {
-                    text-align: center;
-                    font-style: italic;
-                    margin: 0.1em 0 0.2em 0;
-                    color: #E7E6E0;
-                    }
-                    h4 {
-                    text-align: center;
-                    margin: 0.1em 0 0.2em 0;
-                    }
-                    .head {
-                    text-align: center;
-                    font-style: italic;
-                    margin: 0.1em 0 0.2em 0;
-                    color: #0C222F;
-                    }
+                    
+                    /* ============================
+                    Text blocks and notes
+                    ============================ */
                     .stanza {
                     text-align: center;
                     margin: 1em auto;
                     }
+                    
                     .line {
                     display: block;
                     }
+                    
+                    /* ============================
+                    Commentary and personal notes
+                    ============================ */
+                    .commentary,
+                    .personal,
                     .noteGrp {
-                    margin: 1em;
-                    padding: 1em;
+                    background-color: rgba(231, 230, 224);
+                    color: #0C222F;
+                    font-size: 17px;
                     border: 4px solid #5e0c0c;
                     }
-                    .note, .commentary {
-                    font-family: "Encode Sans", sans-serif;
-                    }
-                    a {
-                    color: color-mix(in srgb,rgb(218, 15, 15), transparent 5%);
-                    text-decoration: underline;
-                    cursor: pointer;
-                    }
-                    a:visited {
-                    color:color-mix(in srgb,rgb(183, 130, 195), transparent 20%);
-                    }
-                    a:hover, span:hover {
-                    color: color-mix(in srgb,rgb(148, 23, 23), transparent 20%);
-                    }
-                    h1, h2 {
-                    color: #0C222F;
-                    }
-                    .commentary, .personal {
+                    
+                    .commentary,
+                    .personal {
                     margin: 1.5em auto;
                     padding: 1.2em 1.5em;
                     line-height: 1.6;
                     max-width: 170ch;
-                    border: 4px solid #5e0c0c
-                    }
-                    .commentary, .personal, .noteGrp{
-                    background-color:rgba(231, 230, 224);
-                    color:  #0C222F;
-                    font-size: 17px;
-                    }
-                    .personal {
-                    max-height: 100px; 
-                    overflow-y: auto;
-                    border-left: 4px solid #ccc;
-                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);  
                     font-family: "Encode Sans", sans-serif;
                     }
+                    
+                    .personal {
+                    max-height: 100px;
+                    overflow-y: auto;
+                    border-left: 4px solid #ccc;
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    .noteGrp {
+                    margin: 1em;
+                    padding: 1em;
+                    }
+                    
                 </style>
                 <script>
                     function scrollToTop() {
