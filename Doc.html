@@ -63,19 +63,12 @@
             line-height: 0.6em;
         }
 
-        .image-wrapper {
-            position: relative;
-            display: inline-block;
-        }
-
         .index {
-            position: absolute;
             top: 150px;
             bottom: 100px;
-            left: 5%;
-            background-color: rgba(255, 255, 255, 0.65);
-            padding: 1.5em 2em;
-            border: 5px solid #641818;
+            right: 40%;
+            padding: 1.5em;
+            margin-bottom: 50px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             max-width: 500px;
             box-sizing: border-box;
@@ -88,20 +81,6 @@
         ul {
             font-family: "Forum", serif;
             line-height: 1.6;
-        }
-
-        .top-image {
-            display: block;
-            width: 100%;
-            /* occuperà tutta la larghezza del contenitore */
-            /* max-height: 500px; */
-            /* limita l'altezza per farla più "orizzontale" */
-            object-fit: cover;
-            border-radius: 8px;
-            /* margin-bottom: 15em; */
-            /* spazio sotto all'immagine */
-            margin-top: 4em;
-            opacity: 0.3;
         }
 
         a {
@@ -149,8 +128,16 @@
             padding: 5px 10px;
         }
 
-        #introduction, #mapping, #metadata, #xmltei, #textanalysis, #fromtordf, #conclusions, #references {
-            scroll-margin-top: 80px; /* Match this to your header's height */
+        #introduction,
+        #mapping,
+        #metadata,
+        #xmltei,
+        #textanalysis,
+        #fromtordf,
+        #conclusions,
+        #references {
+            scroll-margin-top: 80px;
+            /* Match this to your header's height */
         }
     </style>
 
@@ -184,26 +171,21 @@
             </ul>
         </div>
     </div> -->
-    <div class="container">
-        <div class="image-wrapper">
-            <img src="assets/img/vinland-saga.jpg" alt="Vinland Saga" class="top-image" />
-            <div class="index">
-                <h3>Table of Contents</h3>
-                <ul>
-                    <li><a href="#introduction">Introduction</a></li>
-                    <li><a href="#mapping">Mapping the Items</a></li>
-                    <li><a href="#metadata">Metadata standards</a></li>
-                    <li><a href="#xmltei">XML/TEI and HTML documents</a></li>
-                    <li><a href="#textanalysis">Text Analysis</a></li>
-                    <li><a href="#fromtordf">From * to RDF</a></li>
-                    <li><a href="#conclusions">Conclusions</a></li>
-                    <li><a href="#references">References and Resources</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
     <div class="main-text"> <!-- h3: titoli dei paragrafi -->
+        <div class="index">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#mapping">Mapping the Items</a></li>
+                <li><a href="#metadata">Metadata standards</a></li>
+                <li><a href="#xmltei">XML/TEI and HTML documents</a></li>
+                <li><a href="#textanalysis">Text Analysis</a></li>
+                <li><a href="#fromtordf">From * to RDF</a></li>
+                <li><a href="#conclusions">Conclusions</a></li>
+                <li><a href="#references">References and Resources</a></li>
+            </ul>
+        </div>
         <h3 id="introduction">Introduction</h3>
         <p> This project was developed for the <i>Information Science and Cultural Heritage</i> exam within the
             University of Bologna's Master's degree program in <i>Digital Humanities and Digital Knowledge</i>. Its core
@@ -394,6 +376,26 @@
                     interoperability. This versatility made it a natural choice for our project to describe diverse
                     object types consistently. We mostly used Schema for the objects that did not have the metadata
                     standard clearly specified or were taken from wikidata.</p>
+            </li>
+            <li>
+                <b>JVMG/ACLICK</b>: <p>The project aims to build an open, graph-based research database focused on
+                    Japanese visual media such as anime, manga, games, and visual novels. Targeted at scholars in
+                    Japanese studies, it combines rich data harvested from enthusiast communities with advanced search
+                    and analysis tools. Initially, the team collaborated closely with these online communities to gain
+                    access to their curated data, ensured its quality, and negotiated licensing agreements compatible
+                    with research and reuse. Technically, the database is open source, inspired by <i>Wikidata</i>’s
+                    architecture, and designed to be extensible, transparent, and researcher-friendly. Now in its second
+                    phase (2023–2026), the project is expanding its data sources, deepening international
+                    collaborations, and refining the technical infrastructure. It also supports researchers and students
+                    through workshops, open documentation, and example studies that demonstrate how the knowledge graph
+                    can be used to advance research in Japanese media. They are collaborating with the <i>AnimeClick</i>
+                    community, an Italian-language fan site dedicated to Japanese anime, manga, and live action drama,
+                    and have access to their data through an individual licensing agreement. We then selected what we
+                    needed from their GitHub repository and from their ontology — partially built using <i>Protégé</i> —
+                    and used targeted, domain-specific properties such as <i>aclick:statusInHomeCountry</i>,
+                    <i>jvmg:genre</i>, <i>jvmg:titleOriginal</i>, and others specifically created for this type of
+                    content.
+                </p>
             </li>
             <li><b>CIDOC Conceptual Reference Model</b> (CIDOC-CRM) is a comprehensive ontology developed to facilitate
                 the integration, mediation, and interchange of heterogeneous cultural heritage information. Originating
@@ -710,6 +712,12 @@
                 href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ifla.org/wp-content/uploads/2019/05/assets/hq/publications/series/44-it.pdf"
                 target="_blank"
                 rel="noopener noreferrer">https://www.ifla.org/wp-content/uploads/2019/05/assets/hq/publications/series/44-it.pdf</a>
+        </p>
+        <p>JVMG (Japanese Visual Media Graph): <a href="https://jvmg.iuk.hdm-stuttgart.de/" target="_blank"
+                rel="noopener noreferrer">https://jvmg.iuk.hdm-stuttgart.de/</a>, GitHub repository:<a
+                href="https://github.com/Japanese-Visual-Media-Graph/ontologies/blob/main/jvmg.ttl" target="_blank"
+                rel="noopener noreferrer">
+                https://github.com/Japanese-Visual-Media-Graph/ontologies/blob/main/jvmg.ttl</a>
         </p>
         <p>LOC (Library of Congress): <a href="https://www.loc.gov/" target="_blank"
                 rel="noopener noreferrer">https://www.loc.gov/</a></p>
