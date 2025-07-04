@@ -41,7 +41,7 @@
         h3 {
             color: #0e2d40;
             font-family: "Metamorphous", serif;
-            font-size: 1.5em;
+            font-size: 1em;
             font-weight: bold;
             line-height: 0.6em;
         }
@@ -112,7 +112,6 @@
            light background, dark red border, rounded corners, subtle shadow,
            serif font, large font size, line height, wrapping long words */
         .main-text {
-            max-width: 1750px;
             width: 90%;
             margin: 4em auto 2em auto;
             padding: 1.5em 2em;
@@ -282,7 +281,7 @@
             <li>
                 <p><b>LIDO/ NMO:</b> For the <i>coin</i> object, we chose to adopt the same metadata standard already
                     used by
-                    the host institution, namely the <i>Münzkabinett</i> of Berlin. LIDO is an XML schema specifically
+                    the host institution, namely the <i>Münzkabinett</i> of Berlin. <b>LIDO</b> is an XML schema specifically
                     designed
                     for
                     describing cultural heritage objects and their metadata in a structured and hierarchical way. Its
@@ -295,9 +294,8 @@
 
                 <p>The LIDO schema emerged from a substantial redesign of CDWA Lite and museumdat, incorporating
                     feedback from
-                    the community and further analysis aligned with the CIDOC CRM model. It primarily builds on CDWA
-                    while
-                    adding concepts to meet SPECTRUM requirements. </p>
+                    the community and further analysis aligned with the CIDOC CRM model. 
+             </p>
                 <p>In practical terms, LIDO is particularly useful for
                     organizing the internal structure of metadata: it facilitates a nested, hierarchical classification
                     that
@@ -305,15 +303,7 @@
                     schema,
                     it does not provide a semantic layer: it does not define the meaning of data in a
                     machine-interpretable way
-                    as an ontology would, nor does it support RDF natively. XML-based schemas like LIDO, TEI, or METS
-                    are
-                    excellent for representing data with a coherent and
-                    deeply
-                    nested structure, using the tree model of XML. By contrast, RDF (Resource Description Framework)
-                    expresses
-                    data as a graph of triples (subject–predicate–object), which enables explicit semantic relationships
-                    and
-                    greater interoperability.</p>
+                    as an ontology would, nor does it support RDF natively.
 
                 <p>For this reason, we complemented LIDO with the <b>Numismatic Ontology (NMO)</b>, which provides the
                     semantic
@@ -337,18 +327,17 @@
                     data well but lacks explicit semantic meaning. Since it was not designed to work natively
                     with <b>RDF</b>, instead of describing our resources directly with MARC21 properties, it was
                     necessary the
-                    use of <b>BIBFRAME</b>. <b>BIBFRAME (Bibliographic Framework)</b> was created <b>specifically by the
+                    use of <b>BIBFRAME</b>. BIBFRAME (Bibliographic Framework) was created <b>specifically by the
                         Library of Congress (LOC)</b> to replace MARC21 and transition bibliographic metadata into the
                     paradigm of <b>Linked Open Data (LOD)</b>.</p>
                 <p> <b>BIBFRAME</b> provides an RDF vocabulary made up of <b>classes and properties</b> that describe
                     resources
-                    and express their connections. For example, it can express that one Work is a “translation of”
-                    another Work, or that an Instance is a particular realization of a Work. This semantic richness
+                    and express their connections. This semantic richness
                     allows us to model bibliographic and cultural heritage data in a way that is interoperable and
                     compatible with other datasets on the web.
                 </p>
                 <p> We also partially used BIBFRAME to describe the <i>Ride of the Valkyries</i>, since
-                    MARC21—and therefore BIBFRAME—is designed to handle not only bibliographic records but also sound
+                    MARC21—and therefore BIBFRAME—is designed to handle not only bibliographic records but also
                     recordings. </p>
             </li>
             <li>
@@ -369,9 +358,7 @@
                     producers, vendors, and users alike. </p>
                 <p> Originally introduced in December 1996, the core set included fifteen
                     fundamental elements, which later evolved to support additional refinements and qualifiers while
-                    retaining its straightforward structure. For Italian users, the official translation of version 1.1
-                    of the “Dublin Core Metadata Element Set” has been overseen by the <b>ICCU (Central Institute for
-                        the Union Catalogue of Italian Libraries and for Bibliographic Information)</b>. </p>
+                    retaining its straightforward structure. </br> </p>
                 <p>For this reason, we applied Dublin Core across multiple object types—such as manuscripts, audio
                     files, and paintings—because its metadata elements are quite broad and flexible, particularly when
                     describing the roles of creators as well as temporal and spatial properties. </p>
@@ -388,16 +375,16 @@
                     annotations that help connect content across the web, facilitating better discoverability and
                     interoperability. This versatility made it a natural choice for our project to describe diverse
                     object types consistently. We mostly used Schema for the objects that did not have the metadata
-                    standard clearly specified or were taken from wikidata.</p>
+                    standards clearly specified or for those that were taken from <i>Wikidata</i>.</p>
             </li>
             <li>
-                 <p><b>JVMG/ACLICK</b>: While designing our data mapping strategy, we wanted to avoid relying on overly generic solutions that might not capture the specific nature of the data we work with. For this reason, we looked for an existing standard that could better suit our needs. After searching online, we came across a standard that is currently under development: the <b>Japanese Visual Media Graph</b>. To better understand its scope and applications, we contacted the institution responsible for it, and eventually decided to adopt it as the core of our mapping process. The project aims to build an open, graph-based research database focused on
+                 <p><b>JVMG/ACLICK</b>: While designing our data mapping strategy, we wanted to avoid relying on overly generic solutions that might not capture the specific nature of the data we worked with. For this reason, we looked for an existing standard that could better suit our needs. After searching online, we came across a standard that is currently under development: the <b>Japanese Visual Media Graph</b>. To better understand its scope and applications, we contacted the institution responsible for it, and eventually decided to adopt it as the core of our mapping process. The project aims to build an open, graph-based research database focused on
                     Japanese visual media such as anime, manga, games, and visual novels. Targeted at scholars in
                     Japanese studies, it combines rich data harvested from enthusiast communities with advanced search
                     and analysis tools. Initially, the team collaborated closely with these online communities to gain
                     access to their curated data, ensured its quality, and negotiated licensing agreements compatible
                     with research and reuse. Technically, the database is open source, inspired by <i>Wikidata</i>’s
-                    architecture, and designed to be extensible, transparent, and researcher-friendly. Now in its second
+                    architecture, and designed to be extensible, transparent, and researcher-friendly. Now, in its second
                     phase (2023–2026), the project is expanding its data sources, deepening international
                     collaborations, and refining the technical infrastructure. It also supports researchers and students
                     through workshops, open documentation, and example studies that demonstrate how the knowledge graph
@@ -412,7 +399,7 @@
             </li>
             <li><b>CIDOC Conceptual Reference Model</b> (CIDOC-CRM) is a comprehensive ontology developed to facilitate
                 the integration, mediation, and interchange of heterogeneous cultural heritage information. Originating
-                from the International Council of Museums (ICOM), CIDOC-CRM provides a formal structure to represent
+                from the <b>International Council of Museums (ICOM)</b>, CIDOC-CRM provides a formal structure to represent
                 cultural artifacts, their provenance, and the events surrounding their lifecycle, enabling museums,
                 archives, and libraries to share data semantically and consistently. Its strength lies in modeling
                 complex relationships between objects, actors, places, and times in a way that preserves the context and
@@ -438,13 +425,11 @@
             digitally preservable but also richly describable and interoperable, so that they can be shared and studied
             across different platforms and research projects.</p>
         <p><b>XML (Extensible Markup Language)</b> is a flexible markup language designed to structure, store, and
-            transport data. Unlike HTML, which focuses on presentation, XML focuses on the logical structure and meaning
-            of the content, making it especially suitable for scholarly work that requires clear definitions of elements
-            such as titles, names, places, and editorial interventions.</p>
+            transport data.</p>
         <p>For this project, we created two <b>XML/TEI files</b>, each dedicated to a different textual object:</p>
         <ul>
-            <li>A ballad taken from the Poetic Edda, translated by Henry Adams Bellows</li>
-            <li>An excerpt from the manuscript Finding of Wineland</li>
+            <li>A ballad taken from the <i>Poetic Edda</i>, translated by Henry Adams Bellows</li>
+            <li>An excerpt from the manuscript <i>Finding of Wineland</i></li>
         </ul>
         <p>Each file includes a <b>teiHeader</b>, which holds the metadata describing the text. Beyond the mandatory
             parts — namely the <b>&lt;fileDesc&gt;</b> element (containing title, publication statement, and source
@@ -479,8 +464,7 @@
             engaging for contemporary readers.</p>
 
         <h3 id="textanalysis">Text Analysis</h3>
-        <p>For the two texts, we first prepared a Python script to extract the text from the HTML files and save it into
-            plain text <b>.txt files</b>, using the <b>etree library</b> for parsing and navigating the HTML structure.
+        <p>For the two XML/TEI files, we first prepared a Python script to extract the plain text from the HTML files and save it into <b>.txt format</b> using the <b>etree library</b> for parsing and navigating the HTML structure.
             Once we had the plain text, we developed the main Python script for text analysis.</p>
         <p>This script defines a class called <b>TextAnalyzer</b>, designed to help explore and analyze text files
             through various natural language processing techniques. It uses popular libraries such as <b>NLTK</b> for
@@ -614,8 +598,7 @@
         <h3 id="fromtordf">From * to RDF</h3>
         <p>As previously said, the main objective and final step of the project was the transformation of heterogeneous
             data sources into <b>RDF format</b>. In the end, every object we worked on—whether stored in <b>CSV</b> or
-            <b>XML</b>—was converted to RDF. This transformation was not just a technical requirement, but a way to
-            semantically enrich and interconnect resources within a coherent <b>Linked Open Data framework</b>.
+            <b>XML</b>—was converted to RDF.
         </p>
         <p>In order to do so, we developed different <b>Python scripts</b> tailored to the specific format and structure
             of each input file.</p>
