@@ -6,6 +6,66 @@
 <link rel="icon" href="assets/img/Vinlod_logo_small.png" type="image/png">
 <title>Grimnismol- The Poetic Edda</title>
 <style>
+                    /* ============================
+                    Body and base text styles
+                    ============================ */
+                    body {
+                    margin: 1em 5em 5em 5em;
+                    padding: 0.5em 1em;
+                    background-color: #0C222F;
+                    color: #E7E6E0;
+                    font-family: Forum, serif;
+                    font-size: 1.5em;
+                    line-height: 1.6;
+                    }
+                    
+                    /* ============================
+                    Headings
+                    ============================ */
+                    h1 {
+                    text-align: center;
+                    font-weight: bold;
+                    margin: 0.1em 0 0.2em 0;
+                    font-family: "Metamorphous", serif;
+                    color: #E7E6E0;
+                    font-size: 2.5em
+                    }
+                    
+                    h2 {
+                    text-align: center;
+                    font-style: italic;
+                    margin: 0.1em 0 0.2em 0;
+                    color: #E7E6E0;
+                    font-size: 1em;
+                    }
+                    
+                    h4 {
+                    text-align: center;
+                    margin: 0.1em 0 0.2em 0;
+                    font-size: 0.7em;
+                    }
+                    
+                    /* ============================
+                    Links
+                    ============================ */
+                    a {
+                    color: color-mix(in srgb, rgb(218, 15, 15), transparent 5%);
+                    text-decoration: underline;
+                    cursor: pointer;
+                    }
+                    
+                    a:visited {
+                    color: color-mix(in srgb, rgb(183, 130, 195), transparent 20%);
+                    }
+                    
+                    a:hover,
+                    span:hover {
+                    color: color-mix(in srgb, rgb(148, 23, 23), transparent 20%);
+                    }
+                    
+                    /* ============================
+                    Buttons
+                    ============================ */
                     .back-to-top {
                     position: fixed;
                     bottom: 20px;
@@ -19,93 +79,57 @@
                     cursor: pointer;
                     opacity: 0.7;
                     transition: opacity 0.3s;
-                    font-size: 2em;
                     }
                     
                     .back-to-top:hover {
                     opacity: 1;
                     }
-                    body {
-                    font-family: "Forum", serif;
-                    font-size: 1.3em;
-                    line-height: 1.6;
-                    margin: 1em 5em 5em 5em;
-                    padding: 0.5em 1em;
-                    background-color: #0C222F;
-                    color: #E7E6E0;
-                    }
-                    body h1 {
-                    font-size: 3em;
-                    text-align: center;
-                    font-weight: bold;
-                    margin: 0.1em 0 0.2em 0;
-                    font-family: "Metamorphous", serif;
-                    color: #E7E6E0;
-                    }
-                    body h2 {
-                    text-align: center;
-                    font-style: italic;
-                    margin: 0.1em 0 0.2em 0;
-                    color: #E7E6E0;
-                    }
-                    h4 {
-                    text-align: center;
-                    font-size: 0.7em;
-                    margin: 0.1em 0 0.2em 0;
-                    }
-                    .head {
-                    text-align: center;
-                    font-style: italic;
-                    margin: 0.1em 0 0.2em 0;
-                    color: #0C222F;
-                    }
+                    
+                    /* ============================
+                    Text blocks and notes
+                    ============================ */
                     .stanza {
                     text-align: center;
                     margin: 1em auto;
                     }
+                    
                     .line {
                     display: block;
                     }
+                    
+                    /* ============================
+                    Commentary and personal notes
+                    ============================ */
+                    .commentary,
+                    .personal,
                     .noteGrp {
-                    margin: 1em;
-                    padding: 1em;
+                    background-color: rgba(231, 230, 224);
+                    color: #0C222F;
+                    font-size: 17px;
                     border: 4px solid #5e0c0c;
                     }
-                    .note, .commentary {
-                    font-family: "Encode Sans", sans-serif;
-                    font-size: 1em; 
-                    }
-                    a {
-                    color: color-mix(in srgb,rgb(218, 15, 15), transparent 5%);
-                    text-decoration: underline;
-                    cursor: pointer;
-                    }
-                    a:visited {
-                    color:color-mix(in srgb,rgb(183, 130, 195), transparent 20%);
-                    }
-                    a:hover, span:hover {
-                    color: color-mix(in srgb,rgb(148, 23, 23), transparent 20%);
-                    }
-                    h1, h2 {
-                    color: #0C222F;
-                    }
-                    .commentary, .personal {
+                    
+                    .commentary,
+                    .personal {
                     margin: 1.5em auto;
-                    font-size: 0.85em;
                     padding: 1.2em 1.5em;
                     line-height: 1.6;
                     max-width: 170ch;
-                    border: 4px solid #5e0c0c
+                    font-family: "Encode Sans", sans-serif;
                     }
-                    .commentary, .personal, .noteGrp{
-                    background-color:rgba(231, 230, 224);
-                    color:  #0C222F;
-                    }
+                    
                     .personal {
-                    max-height: 100px; 
+                    max-height: 100px;
                     overflow-y: auto;
                     border-left: 4px solid #ccc;
-                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);                    }
+                    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+                    }
+                    
+                    .noteGrp {
+                    margin: 1em;
+                    padding: 1em;
+                    }
+                    
                 </style>
 <script>
                     function scrollToTop() {
@@ -122,22 +146,22 @@
             
             <div class="personal">
                 <p>
-                    This document was produced as part of the <a href="#">Text Encoding and Semantic Representation</a> examination, which required creating an XML/TEI-encoded version of a chosen text. To conceptually link ten selected items—more specifically a recording of Wagner’s <i>Ride of the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a></i>—a literary reference to <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> was deliberately sought. The Poetic Edda was identified as the ideal source, being the most significant collection of mythological and heroic poetry in Old Norse tradition.
+                    This document was produced as part of the <a href="#">Text Encoding and Semantic Representation</a> examination, which required creating an XML/TEI-encoded version of a chosen text. To conceptually link ten selected items—more specifically a recording of Wagner’s <i>Ride of the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a></i>—a literary reference to <a href="https://en.wikipedia.org/wiki/Valhalla">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> was deliberately sought. The Poetic Edda was identified as the ideal source, being the most significant collection of mythological and heroic poetry in Old Norse tradition.
                 </p>
                 <p>
                     The Poetic Edda is the modern designation for a collection of anonymous Old Norse narrative poems written in alliterative verse. Separate from the related Prose Edda, it remains a cornerstone for the study of Old Norse literature. Among its various versions, the most significant is the medieval Icelandic manuscript known as the Codex Regius, which preserves 31 poems. These poems mainly adopt the fornyrðislag (“old story metre”), alongside the málaháttr (“speech form”), with about a quarter composed in ljóðaháttr (“song form”). Their language tends to be direct and unembellished, making use of kennings that are generally simpler and less intricate than those in skaldic poetry. Originally transmitted orally by poets and minstrels across generations, the poems lack named authors, though many reveal distinct stylistic traits that hint at individual creative voices. Despite scholarly efforts to identify possible authors, no definitive attribution has ever been established — leaving the Poetic Edda as a powerful testament to the shared and anonymous artistry of medieval Nordic tradition.
                 </p>
-                <p> The chosen text specifically focuses on Grímnismál (“The Sayings of <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a>”), a poem remarkable for its dense catalogue of names—of deities, beings, and places, both real and mythical—and its explicit references to <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> Preserved in the Codex Regius and the fragmentary AM 748 I 4to manuscript, it is spoken in the voice of Grímnir, one of <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>’s many guises—a name itself meaning “hooded” or “masked.” The narrative recounts how King Geirröth, by mistake, tortured <a href="https://en.wikipedia.org/wiki/Odin">Odin</a> in this disguise, ultimately bringing about his own death. Composed mostly in ljóðaháttr, Grímnismál is characteristic of wisdom poetry. 
+                <p> The chosen text specifically focuses on Grímnismál (“The Sayings of <a href="https://en.wikipedia.org/wiki/Odin">Grimnir</a>”), a poem remarkable for its dense catalogue of names—of deities, beings, and places, both real and mythical—and its explicit references to <a href="https://en.wikipedia.org/wiki/Valhalla">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> Preserved in the Codex Regius and the fragmentary AM 748 I 4to manuscript, it is spoken in the voice of Grímnir, one of <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>’s many guises—a name itself meaning “hooded” or “masked.” The narrative recounts how King Geirröth, by mistake, tortured <a href="https://en.wikipedia.org/wiki/Odin">Odin</a> in this disguise, ultimately bringing about his own death. Composed mostly in ljóðaháttr, Grímnismál is characteristic of wisdom poetry. 
                 </p>
                 <p>
                     The text presented here is an excerpt from the English translation by <a href="https://en.wikipedia.org/wiki/Henry_Adams_Bellows_(businessman)">Henry Adam Bellows</a>—a newspaper editor and early commissioner of the U.S. Federal Communications Commission—published as part of the “Scandinavian Classics” series for the American-Scandinavian Foundation, an institution dedicated to cultural exchange between the United States and Northern Europe. This translation was later transcribed and released as an eBook by Project Gutenberg, which served as the primary source for this work.
                 </p>
                 <p>
-                    The XML transcription aimed to be as faithful as possible, retaining special characters, text structure, page layout, and the original use of italics. All words and letters were transcribed verbatim without normalization, since the text had already been modernized from Old Norse to an archaizing form of English by the translator. Spacing was standardized to single spaces. Entities physically present in the narrative were annotated, while others merely mentioned were generally excluded—except for references essential to the project’s RDF graph construction, specifically <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a>.
+                    The XML transcription aimed to be as faithful as possible, retaining special characters, text structure, page layout, and the original use of italics. All words and letters were transcribed verbatim without normalization, since the text had already been modernized from Old Norse to an archaizing form of English by the translator. Spacing was standardized to single spaces. Entities physically present in the narrative were annotated, while others merely mentioned were generally excluded—except for references essential to the project’s RDF graph construction, specifically <a href="https://en.wikipedia.org/wiki/Valhalla">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a>.
                 </p>
                 <p>
                     Within the poem, orthographic segmentation was applied, marking individual lines and stanzas, each sequentially numbered. All punctuation from the source text has been preserved. Hyphenation at line breaks was not altered.
-                    Only annotations directly relevant to <a href="#VL">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> were included, as they aligned with the conceptual aims of the project. Additional editorial notes, largely redundant, were omitted. The translator provided little commentary on manuscript variation; consequently, no witness list was included, as there were no significant variants to document. 
+                    Only annotations directly relevant to <a href="https://en.wikipedia.org/wiki/Valhalla">Valhalla</a> and the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> were included, as they aligned with the conceptual aims of the project. Additional editorial notes, largely redundant, were omitted. The translator provided little commentary on manuscript variation; consequently, no witness list was included, as there were no significant variants to document. 
                 </p>
                 <p>
                     Names and epithets of the characters on stage (except where they referred to the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a>) — especially those connected to <a href="https://en.wikipedia.org/wiki/Odin">Odin</a>, who alone is attributed with around fifty epithets, many of which appear in stanza 48 — were encoded through dedicated attributes. As the <a href="https://en.wikipedia.org/wiki/Valkyrie">Valkyries</a> are mentioned but never directly appear in the narrative, they were encoded collectively to highlight their symbolic role rather than as individual figures. Proper names were retained in HTML to remain clickable and linkable to dedicated pages, while the layout was generated with XSL and the XML-to-HTML transformation carried out in Python.
@@ -298,7 +322,7 @@
                         
                         <div class="stanza" id="s7">
                             <div class="line">
-<a href="#s7">7.</a> Sökkvabekk is the fourth, | where cool waves flow,</div>
+<a href="#note-s7">7.</a> Sökkvabekk is the fourth, | where cool waves flow,</div>
                             <div class="line">And amid their murmur it stands;</div>
                             <div class="line">There daily do <a href="https://en.wikipedia.org/wiki/Odin">Othin</a> | and Saga drink</div>
                             <div class="line">In gladness from cups of gold.</div>
@@ -626,7 +650,7 @@
                         </div>
                         
                         <div class="stanza" id="s52">
-                            <div class="line">52. The mighty hall | of Valhalla shall fall,</div>
+                            <div class="line">52. The mighty hall | of <a href="https://en.wikipedia.org/wiki/Valhalla">Valhalla</a> shall fall,</div>
                             <div class="line">And the slain shall lie low;</div>
                             <div class="line">And the gods shall die | and the world be burnt,</div>
                             <div class="line">And then shall come new worlds.</div>
@@ -778,7 +802,7 @@
             
         <button onclick="scrollToTop()" class="back-to-top">↟</button>
 </body>
-<footer style="background-color: rgba(191, 202, 202, 0.3); color: black; text-align: center; padding: 15px 150px;"><p>Project completed for the course Digital Humanities and Digital Knowledge, University of Bologna, 2025.</p>
+<footer style="background-color: rgba(191, 202, 202, 0.3); color: black; text-align: center; padding: 15px 150px; font-family: Encode Sans, sans-serif; font-size: 17px;"><p>Project completed for the course Digital Humanities and Digital Knowledge, University of Bologna, 2025.</p>
 <p>Author: Ilaria De Dominicis</p>
 <p>© 2025 All rights reserved.</p></footer>
 </html>

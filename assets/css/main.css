@@ -43,6 +43,10 @@
   font-variation-settings:
     "wdth" 100;
 }
+/* forcing bold on <b> */
+b {
+  font-weight: bold !important;
+}
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
@@ -998,21 +1002,23 @@ h6 {
 .scroll-top {
   position: fixed;
   visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 99999;
+  opacity: 0.7;
+  right: 20px;
+  bottom: 20px;
   background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
-  transition: all 0.4s;
+  width: 80px;
+  height:80px;
+  border: none;
+  border-radius: 6px;
+  transition: opacity 0.3s;
+  padding: 0;
 }
 
-.scroll-top i {
-  font-size: 24px;
+.scroll-top p {
+  margin: 0;
+  font-size: 2em;
   color: var(--contrast-color);
-  line-height: 0;
+  line-height: 1; /* importante per evitare spazi sopra/sotto */
 }
 
 .scroll-top:hover {
@@ -1022,7 +1028,6 @@ h6 {
 
 .scroll-top.active {
   visibility: visible;
-  opacity: 1;
 }
 
 /*--------------------------------------------------------------
