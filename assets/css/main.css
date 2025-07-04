@@ -44,8 +44,12 @@
     "wdth" 100;
 }
 /* forcing bold on <b> */
-b {
-  font-weight: bold !important;
+body b {
+  font-weight: bolder !important;
+}
+
+body br {
+  line-height: 200px;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -187,6 +191,7 @@ body.reveal #hero .container {
   margin-bottom: 15px;
   /* background-color: var(--accent-color); */
   background-color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  border-color: color-mix(in srgb, var(--accent-color), transparent 10%);
   font-family: var(--nav-font);
   font-size: 12px;
 }
@@ -201,10 +206,14 @@ body.reveal #hero .container {
 .card-body h6 {
   text-align: center;
   /* color: var(--accent-color); */
-  color: color-mix(in srgb, var(--accent-color), transparent 45%);
+  color: color-mix(in srgb, #AA0000, transparent 10%);
   font-family: var(--default-font);
   text-transform: capitalize;
   font-size: 20px;
+}
+
+.card-text a {
+  color: color-mix(in srgb, #AA0000, transparent 10%);
 }
 
 .card-text {
