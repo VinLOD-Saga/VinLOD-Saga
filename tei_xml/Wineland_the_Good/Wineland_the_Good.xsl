@@ -181,6 +181,16 @@
               .storySegment:target {
                 color: color-mix(in srgb, #AA0000, transparent 0%); 
               }
+          
+              footer {
+                color: #EFF3F0;;
+                background-color: #0C222F;
+                font-size: 14px;
+                position: relative;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                font-family: "Forum", serif;
+              }
           </style>
 
       </head>
@@ -238,6 +248,16 @@
             <xsl:apply-templates select="tei:text//tei:back//tei:noteGrp"/>
           </div>
         </div>
+        <footer id="footer" class="footer">
+          
+          <div class="container copyright text-center mt-4">
+            <p>Project completed for the course Information Science and Cultural Heritage of the Digital Humanities and Digital Knowledge laure magistrale, University of Bologna, 2025.</p>
+            <p>Author: Regina Manyara </p>
+            <p>© 2025 All rights reserved.</p>
+
+          </div>
+          
+        </footer>
         
         <!-- bootstrap script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
