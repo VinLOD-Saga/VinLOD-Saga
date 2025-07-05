@@ -23,11 +23,11 @@
             flex-direction: column;
             justify-content: center;
         }
-    
+
         /* Main title (h1): white color, large size, centered, bold, serif font */
         .title {
             align-items: center;
-            padding: 40px;
+            font-size: 1.5vw;
         }
 
         h1 {
@@ -37,23 +37,23 @@
             font-weight: bold;
             font-family: "Metamorphous", serif;
         }
-    
+
         /* Secondary titles (h2): white color, centered, serif font */
         h2 {
             color: #ffffff;
             text-align: center;
             font-family: "Metamorphous", serif;
         }
-    
+
         /* Tertiary titles (h3): dark blue color, serif font, medium size, bold, tight line height */
         h3 {
             color: #0e2d40;
             font-family: "Metamorphous", serif;
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             line-height: 0.6em;
         }
-    
+
         /* Paragraphs, index section and unordered lists: serif font with comfortable line height */
         p,
         .index,
@@ -61,7 +61,7 @@
             font-family: "Forum", serif;
             line-height: 1.6;
         }
-    
+
         /* Link styling: dark red color, underlined, pointer cursor, semi-transparent */
         a {
             color: #5e0c0c;
@@ -69,17 +69,17 @@
             cursor: pointer;
             opacity: 0.8;
         }
-    
+
         /* Visited links: darker purple color */
         a:visited {
             color: #460467;
         }
-    
+
         /* Hover effect for links: full opacity */
         a:hover {
             opacity: 1;
         }
-    
+
         /* Back to top button: fixed position, bottom-right, padded, larger font size,
            dark red background, white text, rounded corners, semi-transparent, smooth opacity transition */
         .back-to-top {
@@ -96,12 +96,12 @@
             opacity: 0.7;
             transition: opacity 0.3s;
         }
-    
+
         /* Back to top button hover: fully opaque */
         .back-to-top:hover {
             opacity: 1;
         }
-    
+
         /* Index section: positioned with top, bottom, right offsets, padding, margin,
            box shadow for subtle depth, max width and responsive width, font size */
         .index {
@@ -115,7 +115,7 @@
             box-sizing: border-box;
             width: 90%;
         }
-    
+
         /* Main text container: max width, centered margin, padding, justified text,
            light background, dark red border, rounded corners, subtle shadow,
            serif font, large font size, line height, wrapping long words */
@@ -134,7 +134,7 @@
             box-sizing: border-box;
             overflow-wrap: break-word;
         }
-    
+
         /* Tables with borders and padding for TF-IDF and common words tables */
         .tfidf-table,
         .tfidf-table th,
@@ -146,7 +146,7 @@
             border-collapse: collapse;
             padding: 5px 10px;
         }
-    
+
         /* Section anchors: offset scrolling to accommodate fixed headers */
         #introduction,
         #mapping,
@@ -156,7 +156,7 @@
         #fromtordf,
         #conclusions,
         #references {
-            scroll-margin-top: 80px; 
+            scroll-margin-top: 80px;
         }
     </style>
 
@@ -173,26 +173,7 @@
         <h1>DOCUMENTATION</h1>
         <h2>of <i>VinLOD Saga</i></h2>
     </div>
-    <!-- <div class="container">
-        <div>
-            <img src="assets/img/vinland-saga.jpg" alt="Vinland Saga" class="top-image" />
-        </div>
-        <div class="index">
-            <h3>Table of Contents</h3>
-            <ul>
-                <li><a href="#introduction">Introduction</a></li>
-                <li><a href="#mapping">Mapping the Items</a></li>
-                <li><a href="#metadata">Metadata standards</a></li>
-                <li><a href="#xmltei">XML/TEI and HTML documents</a></li>
-                <li><a href="#textanalysis">Text Analysis</a></li>
-                <li><a href="#fromtordf">From * to RDF</a></li>
-                <li><a href="#conclusions">Conclusions</a></li>
-                <li><a href="#references">References and Resources</a></li>
-            </ul>
-        </div>
-    </div> -->
-
-    <div class="main-text"> <!-- h3: titoli dei paragrafi -->
+    <div class="main-text">
         <div class="index">
             <h3>Table of Contents</h3>
             <ul>
@@ -289,7 +270,8 @@
             <li>
                 <p><b>LIDO/ NMO:</b> For the <i>coin</i> object, we chose to adopt the same metadata standard already
                     used by
-                    the host institution, namely the <i>Münzkabinett</i> of Berlin. <b>LIDO</b> is an XML schema specifically
+                    the host institution, namely the <i>Münzkabinett</i> of Berlin. <b>LIDO</b> is an XML schema
+                    specifically
                     designed
                     for
                     describing cultural heritage objects and their metadata in a structured and hierarchical way. Its
@@ -302,8 +284,8 @@
 
                 <p>The LIDO schema emerged from a substantial redesign of CDWA Lite and museumdat, incorporating
                     feedback from
-                    the community and further analysis aligned with the CIDOC CRM model. 
-             </p>
+                    the community and further analysis aligned with the CIDOC CRM model.
+                </p>
                 <p>In practical terms, LIDO is particularly useful for
                     organizing the internal structure of metadata: it facilitates a nested, hierarchical classification
                     that
@@ -386,13 +368,20 @@
                     standards clearly specified or for those that were taken from <i>Wikidata</i>.</p>
             </li>
             <li>
-                 <p><b>JVMG/ACLICK</b>: While designing our data mapping strategy, we wanted to avoid relying on overly generic solutions that might not capture the specific nature of the data we worked with. For this reason, we looked for an existing standard that could better suit our needs. After searching online, we came across a standard that is currently under development: the <b>Japanese Visual Media Graph</b>. To better understand its scope and applications, we contacted the institution responsible for it, and eventually decided to adopt it as the core of our mapping process. The project aims to build an open, graph-based research database focused on
+                <p><b>JVMG/ACLICK</b>: While designing our data mapping strategy, we wanted to avoid relying on overly
+                    generic solutions that might not capture the specific nature of the data we worked with. For this
+                    reason, we looked for an existing standard that could better suit our needs. After searching online,
+                    we came across a standard that is currently under development: the <b>Japanese Visual Media
+                        Graph</b>. To better understand its scope and applications, we contacted the institution
+                    responsible for it, and eventually decided to adopt it as the core of our mapping process. The
+                    project aims to build an open, graph-based research database focused on
                     Japanese visual media such as anime, manga, games, and visual novels. Targeted at scholars in
                     Japanese studies, it combines rich data harvested from enthusiast communities with advanced search
                     and analysis tools. Initially, the team collaborated closely with these online communities to gain
                     access to their curated data, ensured its quality, and negotiated licensing agreements compatible
                     with research and reuse. Technically, the database is open source, inspired by <i>Wikidata</i>’s
-                    architecture, and designed to be extensible, transparent, and researcher-friendly. Now, in its second
+                    architecture, and designed to be extensible, transparent, and researcher-friendly. Now, in its
+                    second
                     phase (2023–2026), the project is expanding its data sources, deepening international
                     collaborations, and refining the technical infrastructure. It also supports researchers and students
                     through workshops, open documentation, and example studies that demonstrate how the knowledge graph
@@ -407,7 +396,8 @@
             </li>
             <li><b>CIDOC Conceptual Reference Model</b> (CIDOC-CRM) is a comprehensive ontology developed to facilitate
                 the integration, mediation, and interchange of heterogeneous cultural heritage information. Originating
-                from the <b>International Council of Museums (ICOM)</b>, CIDOC-CRM provides a formal structure to represent
+                from the <b>International Council of Museums (ICOM)</b>, CIDOC-CRM provides a formal structure to
+                represent
                 cultural artifacts, their provenance, and the events surrounding their lifecycle, enabling museums,
                 archives, and libraries to share data semantically and consistently. Its strength lies in modeling
                 complex relationships between objects, actors, places, and times in a way that preserves the context and
@@ -472,7 +462,9 @@
             engaging for contemporary readers.</p>
 
         <h3 id="textanalysis">Text Analysis</h3>
-        <p>For the two XML/TEI files, we first prepared a Python script to extract the plain text from the HTML files and save it into <b>.txt format</b> using the <b>etree library</b> for parsing and navigating the HTML structure.
+        <p>For the two XML/TEI files, we first prepared a Python script to extract the plain text from the HTML files
+            and save it into <b>.txt format</b> using the <b>etree library</b> for parsing and navigating the HTML
+            structure.
             Once we had the plain text, we developed the main Python script for text analysis.</p>
         <p>This script defines a class called <b>TextAnalyzer</b>, designed to help explore and analyze text files
             through various natural language processing techniques. It uses popular libraries such as <b>NLTK</b> for
@@ -702,8 +694,8 @@
                 href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/" target="_blank"
                 rel="noopener noreferrer">https://www.dublincore.org/specifications/dublin-core/dcmi-terms/</a></p>
         <p>FRBR (Functional Requirements for Bibliographic Records): <a
-                href="https://www.ifla.org/files/assets/cataloguing/frbr/frbr_2008.pdf"
-                target="_blank" rel="noopener noreferrer">https://www.loc.gov/catdir/cpso/frbreng.pdf</a></p>
+                href="https://www.ifla.org/files/assets/cataloguing/frbr/frbr_2008.pdf" target="_blank"
+                rel="noopener noreferrer">https://www.loc.gov/catdir/cpso/frbreng.pdf</a></p>
         <p>FRBRoo (Functional Requirements for Bibliographic Records - object oriented): <a
                 href="https://cidoc-crm.org/frbroo" target="_blank"
                 rel="noopener noreferrer">https://cidoc-crm.org/frbroo/a></p>
@@ -749,8 +741,7 @@
         <p>VADER (Valence Aware Dictionary and sEntiment Reasoner): <a
                 href="https://vadersentiment.readthedocs.io/en/latest/" target="_blank"
                 rel="noopener noreferrer">https://vadersentiment.readthedocs.io/en/latest/</a></p>
-        <p>VinLOD Saga Github repository: <a
-                href="https://github.com/VinLOD-Saga/VinLOD-Saga" target="_blank"
+        <p>VinLOD Saga Github repository: <a href="https://github.com/VinLOD-Saga/VinLOD-Saga" target="_blank"
                 rel="noopener noreferrer">https://github.com/VinLOD-Saga/VinLOD-Saga</a></p>
         <p>W3C RDF: <a href="https://www.w3.org/RDF/" target="_blank"
                 rel="noopener noreferrer">https://www.w3.org/RDF/</a></p>
