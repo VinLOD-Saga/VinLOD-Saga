@@ -163,6 +163,7 @@
                 <listPlace>
                     <place xml:id="VL" sameAs="https://w3id.org/vinLOD-saga/place/Vinland">
                         <placeName>Vinland</placeName>
+                        <note>The part of North America first discovered by the Norse explorers</note>
                     </place>
                     <place xml:id="GL" source="https://sws.geonames.org/3425505/">
                         <placeName>Greenland</placeName>

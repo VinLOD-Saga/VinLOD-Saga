@@ -49,7 +49,7 @@
           
               a:hover, span:hover {
                 <!-- color: #500E0E; -->
-                color: color-mix(in srgb, #500E0E, transparent 30%);
+                color: color-mix(in srgb, #AA0000, transparent 30%);
               }
           
               body {
@@ -62,6 +62,7 @@
                 flex-direction: column;
                 align-items: center; 
                 margin-top: 20px;
+                padding-bottom: 80px;
           
               }
           
@@ -113,8 +114,8 @@
               .header .cta-btn:hover,
               .header .cta-btn:focus:hover {
                 color: #E7E6E0;
-                background: #500E0E;
-                border-color: #500E0E;
+                background: #AA0000
+                border-color: #AA0000;
               }
           
               .heading {
@@ -130,7 +131,7 @@
               }
           
               .separatorOne {
-                background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/leif_painting.jpg") fixed center center;
+                background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/leif_painting.jpg") fixed center center;
                 background-size: cover;
                 padding: 300px 0;
                 min-height: 300px;
@@ -151,14 +152,34 @@
                 filter: brightness(0) saturate(100%) invert(93%) sepia(3%) saturate(285%) hue-rotate(75deg) brightness(106%) contrast(96%);
               }
           
-              .custom-popover {
-                --bs-popover-max-width: 200px;
-                --bs-popover-border-color: #0C222F;
-                --bs-popover-header-bg: #0C222F;
-                --bs-popover-header-color: #EFF3F0;
-                --bs-popover-body-padding-x: 1rem;
-                --bs-popover-body-padding-y: .5rem;
-                --bs-popover-body-color: #E7E6E0;
+              .popover-body {
+                padding: 1rem 1rem;
+                background-color: #EFF3F0;
+                color: #0C222F;
+                font-family: "Forum", serif;
+                font-size: 16px;
+              }
+          
+              .popover-header {
+                padding: .5rem 1rem;
+                margin-bottom: 0;
+                font-size: 1rem;
+                background-color: #0C222F;
+                color: #EFF3F0;
+                border-bottom: 1px solid rgba(0, 0, 0, .2);
+                border-top-left-radius: calc(.3rem - 1px);
+                border-top-right-radius: calc(.3rem - 1px);
+                text-align: center;
+                font-family: "Forum", serif;
+              }
+          
+              .storySegment {
+                scroll-margin-top: 150px;
+                transition: color 0.5s ease;
+              }
+          
+              .storySegment:target {
+                color: color-mix(in srgb, #AA0000, transparent 0%); 
               }
           </style>
 
@@ -170,9 +191,9 @@
         <!-- Header -->
         <header id="header" class="header align-items-center justify-content-start">
           <div class="container-fluid container-xl position-relative d-flex align-items-center m-0">
-            <a href="/index.html" class="logo d-flex align-items-center">
+            <a href="" class="logo d-flex align-items-center">
               <!-- Uncomment the line below if you also wish to use an image logo -->
-              <img src="/assets/img/Vinlod_logo_full.png" alt=""/>
+              <img src="assets/img/Vinlod_logo_full.png" alt=""/>
               <!-- <h1 class="sitename metamorphous-regular">VinLOD Saga</h1> -->
             </a>
           </div>
@@ -198,8 +219,12 @@
               <xsl:variable name="annotator" select="tei:teiHeader//tei:listPerson/tei:person[@xml:id='RM']"/>
               <i>The following extracted text has be taken from two manuscript sources, <xsl:apply-templates select="tei:teiHeader//tei:listWit/tei:witness[@xml:id='EsR']"/> and <xsl:apply-templates select="tei:teiHeader//tei:listWit/tei:witness[@xml:id='THsK']"/>. The orginal text was translated and edited by <a href="{$editor/@source}" target="_blank"><xsl:value-of select="tei:teiHeader//tei:listPerson/tei:person[@xml:id='AMR']"/></a> which was then transcribed and annoted into this digital text by <a href="{$annotator/@source}" target="_blank"><xsl:value-of select="tei:teiHeader//tei:listPerson/tei:person[@xml:id='RM']"/></a>.</i>
             </p>
+          </div> 
+          <div>
+            <p id="segLinks" class="forum-regular text-center">
+              <a>Introduction</a> | <a>Leif and Thorgunna</a> | <a>Leif and King Olaf Tryggvason</a> | <a>Vinland</a> | <a>Christianity in Greenland</a> | <a>Preparing to Leave</a> | <a>Erik Takes a Fall</a> | <a>Couldn't Go Back</a>
+            </p>
           </div>
-          
           <xsl:apply-templates select="tei:text//tei:body/tei:div[@type='translation']"/>
         </main>
 
@@ -216,6 +241,18 @@
         
         <!-- bootstrap script -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+        <!-- script to create table of contents -->
+        <script><![CDATA[
+          const storySegments = document.querySelectorAll(".storySegment");
+          const segLinks = document.querySelectorAll("#segLinks a");
+
+          for (let i = 0; i < Math.min(storySegments.length, segLinks.length); i++) {
+            const segId = storySegments[i].getAttribute("id");
+            segLinks[i].setAttribute("href", "#" + segId);
+          }
+        ]]></script>
+        
         <!-- popover script -->
         <!-- <script>
           const popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
@@ -314,7 +351,8 @@
   
   <!-- Template for story sections -->
   <xsl:template match="tei:seg">
-    <section><p class="forum-regular"><xsl:apply-templates/></p></section>
+    <xsl:variable name="segId" select="@xml:id"/>
+    <section id="{string($segId)}" class="storySegment"><p class="forum-regular"><xsl:apply-templates/></p></section>
   </xsl:template>
   
   <!-- Template for foreign text -->
