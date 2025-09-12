@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="C:\Users\ilari\Desktop\PYTHON\TOMASI\XML_TEI\The_Poetic_Edda.xsl"?>
 <?xml-model
-  href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
-  schematypens="http://relaxng.org/ns/structure/1.0"
-  type="application/xml"?>
+    href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng"
+    schematypens="http://relaxng.org/ns/structure/1.0"
+    type="application/xml"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"> 
     <teiHeader xml:lang="en">
         <fileDesc> <!-- contains a full bibliographic description of an electronic file.-->
@@ -59,29 +59,29 @@
                         </imprint>
                     </monogr>
                     <note>Digitalized version of The Poetic Edda, 1923</note>
-                <relatedItem type="original">
-                    <biblStruct xml:lang="en" type="print"> <!-- the print version-->
-                        <monogr>
-                            <author>
-                                <persName ref="#HAB" sameAs="https://lccn.loc.gov/n88144893" key="Bellows_Henry_Adams_1885-1939"> 
-                                    <forename type="first">Henry</forename>
-                                    <forename type="middle">Adams</forename>
-                                    <surname>Bellows</surname>
-                                </persName> 
-                            </author>
-                            <title type="main">The Poetic Edda</title>
-                            <title type="sub">Translated from the Icelandic with an introduction and notes</title>
-                            <imprint>
-                                <pubPlace>
-                                    <placeName>New York</placeName>
-                                </pubPlace>
-                                <publisher>The American-Scandinavian Foundation</publisher>
-                                <date when="1923">1923</date>
-                            </imprint>               
-                        </monogr>
-                        <series>Scandinavian Classics, volume XXI and XXII</series>              
-                    </biblStruct> 
-                </relatedItem> 
+                    <relatedItem type="original">
+                        <biblStruct xml:lang="en" type="print"> <!-- the print version-->
+                            <monogr>
+                                <author>
+                                    <persName ref="#HAB" sameAs="https://lccn.loc.gov/n88144893" key="Bellows_Henry_Adams_1885-1939"> 
+                                        <forename type="first">Henry</forename>
+                                        <forename type="middle">Adams</forename>
+                                        <surname>Bellows</surname>
+                                    </persName> 
+                                </author>
+                                <title type="main">The Poetic Edda</title>
+                                <title type="sub">Translated from the Icelandic with an introduction and notes</title>
+                                <imprint>
+                                    <pubPlace>
+                                        <placeName>New York</placeName>
+                                    </pubPlace>
+                                    <publisher>The American-Scandinavian Foundation</publisher>
+                                    <date when="1923">1923</date>
+                                </imprint>               
+                            </monogr>
+                            <series>Scandinavian Classics, volume XXI and XXII</series>              
+                        </biblStruct> 
+                    </relatedItem> 
                 </biblStruct>              
             </sourceDesc>
         </fileDesc>
@@ -92,50 +92,50 @@
                     In order to conceptually connect these ten items—including a recording of Wagner’s <hi rend="italic">Ride of the <orgName ref="#VK">Valkyries</orgName></hi>—a literary reference to <placeName ref="#VH">Valhalla</placeName> and the <orgName ref="#VK">Valkyries</orgName> was sought. The <hi rend="italic">Poetic Edda</hi> was identified as the ideal source, being the most significant collection of mythological and heroic Old Norse poetry. More specifically, the <hi rend="italic">Grímnismál</hi> ("Sayings of Grímnir") was selected, a poem that explicitly references both <placeName ref="#VH">Valhalla</placeName> and the <orgName ref="#VK">Valkyries</orgName>, and is remarkable for its dense catalog of names—of beings, deities, and places, both real and imagined.
                     Given that the poem is presented as direct speech, the <gi>sp</gi> element with the <att>who</att> attribute was used to mark speakers. As the text is not transcribed from a facsimile and no images were available, the textual features were described in as much detail as possible. This included the use of <gi>q</gi> for quotations, <gi>hi</gi> with <att>rend</att> for stylistic emphasis, <gi>said</gi> for marking direct and indirect speech, and <gi>emph</gi> for emphasis. Regarding the latter, although the entire poem is inherently emphatic due to its epic nature, <gi>emph</gi> was used selectively to reflect interpretative choices and draw attention to particularly significant passages.
                     In the <gi>profileDesc</gi>, a list of the languages, people, places, and organizations referenced in the text was included. Since two characters share the same name, they were explicitly distinguished, thanks also to the use of <gi>listRelations</gi>. As for the language, the translation used is modern and does not represent authentic Old Norse. Although the archaizing style is deliberately crafted to evoke a sense of antiquity, the entire text has been encoded using the ISO code for Modern English. The <gi>distinct</gi> element was not used, as it would not have been entirely appropriate: the language itself is not truly ancient, and ISO standards do not distinguish between stylistic variants such as archaic versus contemporary English.
-                    Due to the presence of 53 unique proper names (excluding repetitions) and 33 distinct places, only those characters currently on stage were annotated. Among them, <persName ref="#OT">Odin</persName> proved the most complex: he is associated with around fifty epithets, many of which are self-declared during the poem (<ref>cf. stanza 48:</ref> <quote source="#s48-3"><q>A single name | have I never had</q></quote>). These were encoded using the <att>epithet</att> attribute. The <orgName ref="#VK">Valkyries</orgName>, in contrast, are only mentioned and do not actively appear; for this reason, they were referenced as a collective entity within a <gi>listOrg</gi> element, in line with the project’s focus on their symbolic function rather than on individual names. The Valkyrie names were not listed in <gi>particDesc</gi> for the same reason.
+                    Due to the presence of a large amount of unique proper names and distinct places, only those characters currently on stage were annotated. Among them, <persName ref="#OT">Odin</persName> proved the most complex since he is associated with around 50 epithets, many of which are self-declared during the poem (<ref>cf. stanza 48:</ref> <quote source="#s48-3"><q>A single name | have I never had</q></quote>). These were encoded using the <att>epithet</att> attribute. The <orgName ref="#VK">Valkyries</orgName>, in contrast, are only mentioned and do not actively appear; for this reason, they were referenced as a collective entity within a <gi>listOrg</gi> element, in line with the project’s focus on their symbolic function rather than on individual names. The names of the <orgName ref="#VK">Valkyrie</orgName> were not listed in <gi>particDesc</gi> for the same reason.
                     Only notes directly related to <placeName ref="#VH">Valhall</placeName> and the <orgName ref="#VK">Valkyries</orgName> were included, as these were central to the aims of the project. <emph>These references were also annotated for use in RDF, in order to link them to the other entities within our conceptual map.</emph> Additional notes—although potentially informative for a general editorial context—were often redundant or irrelevant for encoding purposes, and mostly repeated content discussed during the course. Moreover, the editor of the source text provided minimal commentary on manuscript variation, mentioning only minor naming differences in the introduction. Consequently, a <gi>listWit</gi> was not included, as there were no significant textual variants to record.
                     This text was subsequently transformed into HTML for presentation purposes (names and people were preserved in HTML to make them clickable and linkable to dedicated web pages for further exploration), using XSL for the layout. The transformation from XML to HTML was performed in Python. Additionally, selected portions of the <gi>teiHeader</gi> were extracted and converted into RDF: among these, as already mentioned, the <orgName ref="#VK">Valkyries</orgName> and <placeName ref="#VH">Valhalla</placeName>, as well as parts of the <gi>fileDesc</gi>, to conceptually connect the XML object to the other items selected for the project.
                 </p>
             </projectDesc>
             <editorialDecl> <!-- 2. provides details of editorial principles and practices applied during the encoding of a text.-->
-                    <correction status="low" method="silent">
-                        <p>Errors in transcription controlled by using the VSCode extension <q>Code Spell Checker</q>.</p>
-                    </correction>
-                    <normalization method="markup"> 
-                        <p>All words and letters are transcribed verbatim from the original, with no normalization applied, since the text was previously normalized by the author from Old Norse to Modern English (in archaic style).</p>
-                    </normalization>
-                    <normalization method="silent">
-                        <p>Spacing between words has been regularized to one space.</p>
-                    </normalization>
-                    <interpretation> 
-                            <p>Only persons physically present in the narrative have been marked, excluding those merely mentioned. The exception concerns entities necessary for the project’s graph construction—specifically, those related to <placeName ref="#VH">Valhalla</placeName> and the <orgName ref="#VK">Valkyries</orgName>—which have also been marked.</p>
-                            <p>Emphasis is recorded with interpretation.</p>
-                            <p>Dates are marked with the ISO 8601 date format, when possible.</p>
-                            <p>Italics are recorded without interpretation.</p>
-                            <p>Indirect speeches are recorded with interpretation, unlike reported speeches.</p>
-                    </interpretation>
-                    <quotation marks="none">
-                        <p>No quotation marks have been retained. Instead, the <att>rend</att> attribute on the <gi>q</gi> element is used to specify what kinds of quotation mark was used, according to the following list: 
+                <correction status="low" method="silent">
+                    <p>Errors in transcription controlled by using the VSCode extension <q>Code Spell Checker</q>.</p>
+                </correction>
+                <normalization method="markup"> 
+                    <p>All words and letters are transcribed verbatim from the original, with no normalization applied, since the text was previously normalized by the author from Old Norse to Modern English (in archaic style).</p>
+                </normalization>
+                <normalization method="silent">
+                    <p>Spacing between words has been regularized to one space.</p>
+                </normalization>
+                <interpretation> 
+                    <p>Only persons physically present in the narrative have been marked, excluding those merely mentioned. The exception concerns entities necessary for the project’s graph construction—specifically, those related to <placeName ref="#VH">Valhalla</placeName> and the <orgName ref="#VK">Valkyries</orgName>—which have also been marked.</p>
+                    <p>Emphasis is recorded with interpretation.</p>
+                    <p>Dates are marked with the ISO 8601 date format, when possible.</p>
+                    <p>Italics are recorded without interpretation.</p>
+                    <p>Indirect speeches are recorded with interpretation, unlike reported speeches.</p>
+                </interpretation>
+                <quotation marks="none">
+                    <p>No quotation marks have been retained. Instead, the <att>rend</att> attribute on the <gi>q</gi> element is used to specify what kinds of quotation mark was used, according to the following list: 
                         <list type="gloss">
-                        <label>dq</label>
-                        <item>double quotes, open and close</item> </list> </p>
-                    </quotation>
-                    <segmentation>
-                        <p>The text has been structured into three main sections: <gi>front</gi>, <gi>body</gi>, and <gi>back</gi>. The <gi>front</gi> contains the title divided into a <gi>title</gi> element indicating the main title, and another indicating the subtitle—along with the author's introductory note, encoded as two paragraphs within <gi>div</gi> elements that are individually numbered with <att>n</att>. The <gi>body</gi> consists of a primary <gi>div</gi> enclosing the entire content, followed by a series of nested <gi>div</gi> elements. These include the two introductory paragraphs to the narrative (numbered as described above), the ballad itself, and a final section marked as the ending with the appropriate attribute. For the ballad, orthographic segmentation has been applied using the <gi>l</gi> element to mark individual lines and the <gi>lg</gi> element to group them into stanzas. Each <gi>l</gi> is numbered sequentially within its parent <gi>lg</gi>. The <gi>back</gi> contains the footnotes. In the source text, these were organized by stanza, so when necessary they have been grouped using the <gi>noteGrp</gi> element. Each <gi>note</gi> is linked to its corresponding <gi>l</gi> element within the relevant stanza to maintain clarity and accurate referencing thourghout the use of <att>target</att>.</p>
-                    </segmentation>
-                    <hyphenation eol="all">
-                        <p>Hyphenated words that appear at the
-                            end of the line in the Foner edition have not been reformed.</p>
-                    </hyphenation>
-                    <stdVals>
-                        <p>The values of <att>when-iso</att> on the <gi>time</gi>
-                            element always end in the format <val>HH:MM</val> or
+                            <label>dq</label>
+                            <item>double quotes, open and close</item> </list> </p>
+                </quotation>
+                <segmentation>
+                    <p>The text has been structured into three main sections: <gi>front</gi>, <gi>body</gi>, and <gi>back</gi>. The <gi>front</gi> contains the title divided into a <gi>title</gi> element indicating the main title, and another indicating the subtitle—along with the author's introductory note, encoded as two paragraphs within <gi>div</gi> elements that are individually numbered with <att>n</att>. The <gi>body</gi> consists of a primary <gi>div</gi> enclosing the entire content, followed by a series of nested <gi>div</gi> elements. These include the two introductory paragraphs to the narrative (numbered as described above), the ballad itself, and a final section marked as the ending with the appropriate attribute. For the ballad, orthographic segmentation has been applied using the <gi>l</gi> element to mark individual lines and the <gi>lg</gi> element to group them into stanzas. Each <gi>l</gi> is numbered sequentially within its parent <gi>lg</gi>. The <gi>back</gi> contains the footnotes. In the source text, these were organized by stanza, so when necessary they have been grouped using the <gi>noteGrp</gi> element. Each <gi>note</gi> is linked to its corresponding <gi>l</gi> element within the relevant stanza to maintain clarity and accurate referencing thourghout the use of <att>target</att>.</p>
+                </segmentation>
+                <hyphenation eol="all">
+                    <p>Hyphenated words that appear at the
+                        end of the line in the Foner edition have not been reformed.</p>
+                </hyphenation>
+                <stdVals>
+                    <p>The values of <att>when-iso</att> on the <gi>time</gi>
+                        element always end in the format <val>HH:MM</val> or
                         <val>HH</val>; i.e., seconds, fractions thereof, and time
-                            zone designators are not present.</p>
-                    </stdVals>
-                    <punctuation marks="all">
-                        <p>All punctuation marks in the source text have been retained.</p>
-                    </punctuation>
+                        zone designators are not present.</p>
+                </stdVals>
+                <punctuation marks="all">
+                    <p>All punctuation marks in the source text have been retained.</p>
+                </punctuation>
             </editorialDecl>	
         </encodingDesc> 
         <profileDesc> <!-- provides a detailed description of non-bibliographic aspects of a text, specifically the languages and sublanguages used, the situation in which it was produced, the participants and their setting.-->
@@ -203,7 +203,7 @@
                         <persName type="epithet" xml:lang="non">Valfather</persName>
                         <persName type="epithet" xml:lang="non">Atrith</persName>
                         <persName type="epithet" xml:lang="non">Farmatyr</persName>
-                        <persName type="epithet" xml:lang="non">Asmund Jalk</persName>
+                        <persName type="epithet" xml:lang="non">Jalk</persName>
                         <persName type="epithet" xml:lang="non">Kjalar</persName>
                         <persName type="epithet" xml:lang="non">Thror</persName>
                         <persName type="epithet" xml:lang="non">Vithur</persName>
@@ -215,14 +215,12 @@
                         <persName type="epithet" xml:lang="non">Harbarth</persName>
                         <persName type="epithet" xml:lang="non">Svithur</persName>
                         <persName type="epithet" xml:lang="non">Svithrir</persName>
-                        <persName type="epithet" xml:lang="non">Mithvitnir’s son</persName>
                         <persName type="epithet" xml:lang="non">Ygg</persName>
                         <persName type="epithet" xml:lang="non">Vak</persName>
                         <persName type="epithet" xml:lang="non">Skilfing</persName>
                         <persName type="epithet" xml:lang="non">Vofuth</persName>
                         <persName type="epithet" xml:lang="non">Hroptatyr</persName>
                         <persName type="epithet" xml:lang="non">Gaut</persName>
-                        <persName type="epithet" xml:lang="non">Jalk</persName>
                         <persName type="epithet" xml:lang="non">Ofnir</persName>
                         <persName type="epithet" xml:lang="non">Svafnir</persName>
                         <persName type="epithet" xml:lang="en">Odin</persName>
@@ -251,7 +249,7 @@
                         <relation name="fatherhood" active="#GR" passive="#AG2"/>
                     </listRelation>                                           
                 </listPerson>
-               <listOrg>
+                <listOrg>
                     <org>
                         <orgName xml:id="VK"  source="https://en.wikipedia.org/wiki/Valkyrie" sameAs="https://w3id.org/vinLOD-saga/group/Valkyries">Valkyries</orgName>
                         <desc source="https://en.wikipedia.org/wiki/Valkyrie">One of a host of female figures who guide souls of the dead to the god Odin's hall <placeName ref="#VH">Valhalla</placeName>.</desc>
@@ -287,7 +285,7 @@
                 <p>
                     The <hi>Poetic Edda</hi> is the modern designation for a collection of anonymous Old Norse narrative poems written in alliterative verse. Separate from the related Prose Edda, it remains a cornerstone for the study of Old Norse literature. Among its various versions, the most significant is the medieval Icelandic manuscript known as the <hi><foreign xml:lang="la">Codex Regius</foreign></hi>, which preserves 31 poems. These poems mainly adopt the fornyrðislag (“old story metre”), alongside the málaháttr (“speech form”), with about a quarter composed in ljóðaháttr (“song form”). Their language tends to be direct and unembellished, making use of kennings that are generally simpler and less intricate than those in skaldic poetry. Originally transmitted orally by poets and minstrels across generations, the poems lack named authors, though many reveal distinct stylistic traits that hint at individual creative voices. Despite scholarly efforts to identify possible authors, no definitive attribution has ever been established — leaving the Poetic Edda as a powerful testament to the shared and anonymous artistry of medieval Nordic tradition.
                 </p>
-                <p> The chosen text specifically focuses on <hi>Grímnismál</hi> (“The Sayings of <persName ref="#OT">Grimnir</persName>”), a poem remarkable for its dense catalogue of names—of deities, beings, and places, both real and mythical—and its explicit references to <placeName ref="#VH">Valhalla</placeName> and the <orgName ref="#VK">Valkyries</orgName> Preserved in the <hi><foreign xml:lang="la">Codex Regius</foreign></hi> and the fragmentary AM 748 I 4to manuscript, it is spoken in the voice of Grímnir, one of <persName ref="#OT">Odin</persName>’s many guises—a name itself meaning “hooded” or “masked.” The narrative recounts how King Geirröth, by mistake, tortured <persName ref="#OT">Odin</persName> in this disguise, ultimately bringing about his own death. Composed mostly in ljóðaháttr, Grímnismál is characteristic of wisdom poetry. 
+                <p> The chosen text specifically focuses on <hi>Grímnismál</hi> (“The Sayings of <persName ref="#OT">Grimnir</persName>”), a poem remarkable for its dense catalogue of names—of deities, beings, and places, both real and mythical—and its explicit references to <placeName ref="#VH">Valhalla</placeName> and the <orgName ref="#VK">Valkyries</orgName> Preserved in the <hi><foreign xml:lang="la">Codex Regius</foreign></hi> and the fragmentary AM 748 I 4to manuscript, it is spoken in the voice of Grímnir, one of <persName ref="#OT">Odin</persName>’s many guises—a name itself meaning “hooded” or “masked.” The narrative recounts how K<persName ref="#GR">King Geirröth</persName>, by mistake, tortured <persName ref="#OT">Odin</persName> in this disguise, ultimately bringing about his own death. Composed mostly in ljóðaháttr, Grímnismál is characteristic of wisdom poetry. 
                 </p>
                 <p>
                     The text presented here is an excerpt from the English translation by <persName ref="#HAB">Henry Adam Bellows</persName>—a newspaper editor and early commissioner of the U.S. Federal Communications Commission—published as part of the “Scandinavian Classics” series for the American-Scandinavian Foundation, an institution dedicated to cultural exchange between the United States and Northern Europe. This translation was later transcribed and released as an eBook by Project Gutenberg, which served as the primary source for this work.
@@ -300,7 +298,7 @@
                     Only annotations directly relevant to <placeName ref="#VH">Valhalla</placeName> and the <orgName ref="#VK">Valkyries</orgName> were included, as they aligned with the conceptual aims of the project. Additional editorial notes, largely redundant, were omitted. The translator provided little commentary on manuscript variation; consequently, no witness list was included, as there were no significant variants to document. 
                 </p>
                 <p>
-                    Names and epithets of the characters on stage (except where they referred to the <orgName ref="#VK">Valkyries</orgName>) — especially those connected to <persName ref="#OT">Odin</persName>, who alone is attributed with around fifty epithets, many of which appear in stanza 48 — were encoded through dedicated attributes. As the <orgName ref="#VK">Valkyries</orgName> are mentioned but never directly appear in the narrative, they were encoded collectively to highlight their symbolic role rather than as individual figures. Proper names were retained in HTML to remain clickable and linkable to dedicated pages, while the layout was generated with XSL and the XML-to-HTML transformation carried out in Python.
+                    Names and epithets of the characters on stage (except where they referred to the <orgName ref="#VK">Valkyries</orgName>) — especially those connected to <persName ref="#OT">Odin</persName>. As the <orgName ref="#VK">Valkyries</orgName> are mentioned but never directly appear in the narrative, they were encoded collectively to highlight their symbolic role rather than as individual figures. Proper names were retained in HTML to remain clickable and linkable to dedicated pages, while the layout was generated with XSL and the XML-to-HTML transformation carried out in Python.
                 </p>
                 <p>
                     What is especially compelling about <persName ref="#HAB">Bellows</persName>’ translation is his deliberate choice of archaic English: an attempt to echo the cadence and distant resonance of Old Norse, reviving its solemnity for modern readers. Through careful encoding and thoughtful interpretation, this edition seeks to preserve not only the text itself, but the spirit that still breathes through its ancient lines.
@@ -322,11 +320,11 @@
                             of these. It is not, however, in dialogue form. As Müllenhoff pointed out, there is underneath the 
                             catalogue of mythological names a consecutive and thoroughly dramatic story. <persName ref="#OT">Othin</persName>, concealed 
                             under the name of <persName ref="#OT">Grimnir</persName>, is through an error tortured by <persName ref="#GR">King Geirröth</persName>. Bound between two 
-                            blazing fires, he begins to display his wisdom for the benefit of the king’s little son, Agnar, who 
+                            blazing fires, he begins to display his wisdom for the benefit of the king’s little son, <persName ref="#AG2">Agnar</persName>, who 
                             has been kind to him. Gradually he works up to the great final moment, when he declares his true 
                             name, or rather names, to the terrified <persName ref="#GR">Geirröth</persName>, and the latter falls on his sword and is killed. 
                         </p>
-                        </div>
+                    </div>
                     <div type="paragraph" n="3"> 
                         <p>For much of this story we do not have to depend on guesswork, for in both manuscripts the poem 
                             itself is preceded by a prose narrative of considerable length, and concluded by a brief prose 
@@ -372,42 +370,42 @@
         <body>
             <div type= "main-text"  xml:lang="en"> <!-- language is modern, the style is archaic-->
                 <div type= "intro" xml:id="p"> 
-                        <div type= "paragraph" n="1" xml:id="p1"> 
-                            <p><persName ref="#HT">Hrauthung</persName> had two sons: one was called Agnar, and the other <persName ref="#GR">Geirröth</persName>. 
-                                Agnar was ten winters old, and <persName ref="#GR">Geirröth</persName> eight. Once they both rowed in a boat 
-                                with their fishing-gear to catch little fish; and the wind drove them out into the 
-                                sea. In the darkness of the night they were wrecked on the shore; and going up, 
-                                they found a poor peasant, with whom they stayed through the winter. The 
-                                housewife took care of Agnar, and the peasant cared for <persName ref="#GR">Geirröth</persName>, and taught 
-                                him wisdom. In the spring the peasant gave him a boat; and when the couple 
-                                led them to the shore, the peasant spoke secretly with <persName ref="#GR">Geirröth</persName>. They had a fair 
-                                wind, and came to their father’s landing-place. <persName ref="#GR">Geirröth</persName> was forward in the 
-                                boat; he leaped up on land, but pushed out the boat and said, <said aloud="true"> <q rend="dq">Go thou now 
-                                where evil may have thee!</q></said> The boat drifted out to sea. <persName ref="#GR">Geirröth</persName>, however, 
-                                went up to the house, and was well received, but his father was dead. Then 
-                                <persName ref="#GR">Geirröth</persName> was made king, and became a renowned man.
-                            </p>
-                        </div>
-                        <div type="paragraph" n="2" xml:id="p2"> 
-                            <p><persName ref="#OT">Othin</persName> and <persName ref="#FR">Frigg</persName> sat in Hlithskjolf and looked over all the worlds. <persName ref="#OT">Othin</persName> said: 
-                                <said aloud="true"> <q rend="dq"> Seest thou Agnar, thy fosterling, how he begets children with a giantess in the 
-                                cave? But <persName ref="#GR">Geirröth</persName>, my fosterling, is a king, and now rules over his land.</q></said> 
-                                <persName ref="#FR">Frigg</persName> said: <said aloud="true"><q rend="dq"> He is so miserly that he tortures his guests if he thinks that too 
-                                many of them come to him.</q></said> <persName ref="#OT">Othin</persName> replied that <said aloud="false">this was the greatest of lies</said>; and
-                                they made a wager about this matter. <persName ref="#FR">Frigg</persName> sent her maid-servant, <persName ref="#FU">Fulla</persName>, to 
-                                <persName ref="#GR">Geirröth</persName>. She bade the king beware lest a magician who was come thither to his
-                                land should bewitch him, and told this sign concerning him, that no dog was so 
-                                fierce as to leap at him. Now it was a very great slander that <persName ref="#GR">King Geirröth</persName> was 
-                                not hospitable; but nevertheless he had them take the man whom the dogs would not attack. He wore a dark-blue mantle and <said aloud="false">called himself 
+                    <div type= "paragraph" n="1" xml:id="p1"> 
+                        <p><persName ref="#HT">Hrauthung</persName> had two sons: one was called <persName ref="#AG1">Agnar</persName>, and the other <persName ref="#GR">Geirröth</persName>. 
+                            <persName ref="#AG1">Agnar</persName> was ten winters old, and <persName ref="#GR">Geirröth</persName> eight. Once they both rowed in a boat 
+                            with their fishing-gear to catch little fish; and the wind drove them out into the 
+                            sea. In the darkness of the night they were wrecked on the shore; and going up, 
+                            they found a poor peasant, with whom they stayed through the winter. The 
+                            housewife took care of <persName ref="#AG1">Agnar</persName>, and the peasant cared for <persName ref="#GR">Geirröth</persName>, and taught 
+                            him wisdom. In the spring the peasant gave him a boat; and when the couple 
+                            led them to the shore, the peasant spoke secretly with <persName ref="#GR">Geirröth</persName>. They had a fair 
+                            wind, and came to their father’s landing-place. <persName ref="#GR">Geirröth</persName> was forward in the 
+                            boat; he leaped up on land, but pushed out the boat and said, <said aloud="true"> <q rend="dq">Go thou now 
+                                    where evil may have thee!</q></said> The boat drifted out to sea. <persName ref="#GR">Geirröth</persName>, however, 
+                            went up to the house, and was well received, but his father was dead. Then 
+                            <persName ref="#GR">Geirröth</persName> was made king, and became a renowned man.
+                        </p>
+                    </div>
+                    <div type="paragraph" n="2" xml:id="p2"> 
+                        <p><persName ref="#OT">Othin</persName> and <persName ref="#FR">Frigg</persName> sat in Hlithskjolf and looked over all the worlds. <persName ref="#OT">Othin</persName> said: 
+                            <said aloud="true"> <q rend="dq"> Seest thou <persName ref="#AG1">Agnar</persName>, thy fosterling, how he begets children with a giantess in the 
+                                    cave? But <persName ref="#GR">Geirröth</persName>, my fosterling, is a king, and now rules over his land.</q></said> 
+                            <persName ref="#FR">Frigg</persName> said: <said aloud="true"><q rend="dq"> He is so miserly that he tortures his guests if he thinks that too 
+                                    many of them come to him.</q></said> <persName ref="#OT">Othin</persName> replied that <said aloud="false">this was the greatest of lies</said>; and
+                            they made a wager about this matter. <persName ref="#FR">Frigg</persName> sent her maid-servant, <persName ref="#FU">Fulla</persName>, to 
+                            <persName ref="#GR">Geirröth</persName>. She bade the king beware lest a magician who was come thither to his
+                            land should bewitch him, and told this sign concerning him, that no dog was so 
+                            fierce as to leap at him. Now it was a very great slander that <persName ref="#GR">King Geirröth</persName> was 
+                            not hospitable; but nevertheless he had them take the man whom the dogs would not attack. He wore a dark-blue mantle and <said aloud="false">called himself 
                                 <persName ref="#OT">Grimnir</persName></said>, but said no more about himself, though he was questioned. The king had him 
-                                tortured to make him speak, and set him between two fires, and he sat there 
-                                eight nights.<persName ref="#GR">King Geirröth</persName> had a son ten winters old, and called <persName ref="#AG2">Agnar</persName> after his 
-                                father’s brother. <persName ref="#AG2">Agnar</persName> went to <persName ref="#OT">Grimnir</persName>, and gave him a full horn to drink from, 
-                                and said that <said aloud="false">the king did ill in letting him be tormented without cause.</said> <persName ref="#OT">Grimnir</persName> 
-                                drank from the horn; the fire had come so near that the mantle burned on 
-                                <persName ref="#OT">Grimnir</persName>’s back. He spake:
-                            </p>
-                        </div>                                   
+                            tortured to make him speak, and set him between two fires, and he sat there 
+                            eight nights.<persName ref="#GR">King Geirröth</persName> had a son ten winters old, and called <persName ref="#AG2">Agnar</persName> after his 
+                            father’s brother. <persName ref="#AG2">Agnar</persName> went to <persName ref="#OT">Grimnir</persName>, and gave him a full horn to drink from, 
+                            and said that <said aloud="false">the king did ill in letting him be tormented without cause.</said> <persName ref="#OT">Grimnir</persName> 
+                            drank from the horn; the fire had come so near that the mantle burned on 
+                            <persName ref="#OT">Grimnir</persName>’s back. He spake:
+                        </p>
+                    </div>                                   
                 </div>
                 <div type="ballad" style="white-space:pre-wrap;"> 
                     <sp who="#OT">
@@ -505,6 +503,13 @@
                             <l xml:id="s14-3">The half of the dead | each day does she choose,</l>
                             <l xml:id="s14-4">And half does <persName ref="#OT">Othin</persName> have.</l>
                         </lg>
+                        
+                        <lg type="stanza" xml:id="s15">
+                            <l xml:id="s15-1">15. The eleventh is Noatun; |  there has Njorth</l>
+                            <l xml:id="s15-2">For himself a dwelling set;</l>
+                            <l xml:id="s15-3">The sinless ruler  |  of men there sits</l>
+                            <l xml:id="s15-4">In his temple timbered high.</l>
+                        </lg> 
                         
                         <lg type="stanza" xml:id="s16">
                             <l xml:id="s16-1">16. The eleventh is Noatun; | there has Njorth</l>
@@ -608,6 +613,16 @@
                             <l xml:id="s29-5">For heaven’s bridge | burns all in flame,</l>
                             <l xml:id="s29-6">And the sacred waters seethe.</l>
                         </lg>
+                        
+                        <lg type="stanza" xml:id="s30">
+                            <l xml:id="s30-1">Glath and Gyllir, | Gler and Skeithbrimir,</l>
+                            <l xml:id="s30-2">Silfrintopp and Sinir,</l>
+                            <l xml:id="s30-3">Gisl and Falhofnir, | Golltopp and Lettfeti,</l>
+                            <l xml:id="s30-4">On these steeds the gods shall go</l>
+                            <l xml:id="s30-5">When dooms to give | each day they ride</l>
+                            <l xml:id="s30-6">To the ash-tree Yggdrasil.</l>
+                        </lg>             
+
                         <lg type="stanza" xml:id="s31">
                             <l xml:id="s31-1">31. Three roots there are | that three ways run</l>
                             <l xml:id="s31-2">’Neath the ash-tree Yggdrasil;</l>
@@ -648,7 +663,7 @@
                         <lg type="stanza" xml:id="s36">
                             <l xml:id="s36-1"><ref target="#note-s36">36.</ref> <persName ref="#VK">Hrist</persName> and <persName ref="#VK">Mist</persName> | bring the horn at my will,</l>
                             <l xml:id="s36-2"><persName ref="#VK">Skeggjold</persName> and <persName ref="#VK">Skogul</persName>;</l>
-                            <l xml:id="s36-3"><persName ref="#VK">Hild</persName> and <persName ref="#VK">Thruth</persName>, | Hlokk and Herfjotur,</l>
+                            <l xml:id="s36-3"><persName ref="#VK">Hild</persName> and <persName ref="#VK">Thruth</persName>, | <persName ref="#VK">Hlokk</persName> and <persName ref="#VK">Herfjotur</persName>,</l>
                             <l xml:id="s36-4"><persName ref="#VK">Gol</persName> and <persName ref="#VK">Geironul</persName>,</l>
                             <l xml:id="s36-5"><persName ref="#VK">Randgrith</persName> and <persName ref="#VK">Ranthrith</persName> | and <persName ref="#VK">Reginleif</persName></l>
                             <l xml:id="s36-6">Beer to the warriors bring.</l>
@@ -713,82 +728,89 @@
                         </lg>
                         
                         <lg type="stanza" xml:id="s45">
-                            <l xml:id="s45-1">45. The gods I counted | all to me,</l>
-                            <l xml:id="s45-2">And men, and all the mighty powers,</l>
-                            <l xml:id="s45-3">To the best of the worlds, | the wide tree’s root,</l>
-                            <l xml:id="s45-4">That spreads up above the sky.</l>
+                            <l xml:id="s45-1">45. To the race of the gods | my face have I raised,</l>
+                            <l xml:id="s45-2">And the wished-for aid have I waked;</l>
+                            <l xml:id="s45-3">For to all the gods | has the message gone</l>
+                            <l xml:id="s45-4">That sit in Ægir’s seats,</l>
+                            <l xml:id="s45-5">That drink within Ægir’s doors.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s46">
-                            <l xml:id="s46-1">46. The deities’ judgement | and doom is law</l>
-                            <l xml:id="s46-2">For every creature on earth;</l>
-                            <l xml:id="s46-3">In the halls of the gods | is the rule of law,</l>
-                            <l xml:id="s46-4">And the word of the gods is truth.</l>
+                            <l xml:id="s46-1">46. <persName ref="#OT">Grim</persName> is my name, | <persName ref="#OT">Gangleri</persName> am I,</l>
+                            <l xml:id="s46-2"><persName ref="#OT">Herjan</persName> and <persName ref="#OT">Hjalmberi</persName>,</l>
+                            <l xml:id="s46-3"><persName ref="#OT">Thekk</persName> and <persName ref="#OT">Thrithi</persName>, | <persName ref="#OT">Thuth</persName> and <persName ref="#OT">Uth</persName>,</l>
+                            <l xml:id="s46-4"><persName ref="#OT">Helblindi</persName> and <persName ref="#OT">Hor</persName>;</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s47">
-                            <l xml:id="s47-1">47. But Othin himself | alone shall know</l>
-                            <l xml:id="s47-2">The end of the earth and the sky;</l>
-                            <l xml:id="s47-3">He knows where the world | shall be swept away</l>
-                            <l xml:id="s47-4">In fire in the end of days.</l>
+                            <l xml:id="s47-1">47. <persName ref="#OT">Sath</persName> and <persName ref="#OT">Svipal</persName> | and <persName ref="#OT">Sanngetal</persName>,</l>
+                            <l xml:id="s47-2"><persName ref="#OT">Herteit</persName> and <persName ref="#OT">Hnikar</persName>,</l>
+                            <l xml:id="s47-3"><persName ref="#OT">Bileyg</persName>, <persName ref="#OT">Baleyg</persName>, | <persName ref="#OT">Bolverk</persName>, <persName ref="#OT">Fjolnir</persName>,</l>
+                            <l xml:id="s47-4"><persName ref="#OT">Grim</persName> and <persName ref="#OT">Grimnir</persName>, | <persName ref="#OT">Glapsvith</persName>, <persName ref="#OT">Fjolsvith</persName></l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s48">
-                            <l xml:id="s48-1">48. The mighty god | with spear in hand</l>
-                            <l xml:id="s48-2">Shall slay the serpent with his spear;</l>
-                            <l xml:id="s48-3">But in turn himself | shall fall with the beast,</l>
-                            <l xml:id="s48-4">And the earth shall tremble sore.</l>
+                            <l xml:id="s48-1">48. <persName ref="#OT">Sithhott</persName>, <persName ref="#OT">Sithskegg</persName>, | <persName ref="#OT">Sigfather</persName>, <persName ref="#OT">Hnikuth</persName>,</l>
+                            <l xml:id="s48-2"><persName ref="#OT">Allfather</persName>, <persName ref="#OT">Valfather</persName>, | <persName ref="#OT">Atrith</persName>, <persName ref="#OT">Farmatyr</persName>:</l>
+                            <l xml:id="s48-3">A single name | have I never had</l>
+                            <l xml:id="s48-4">Since first among men I fared.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s49">
-                            <l xml:id="s49-1">49. The sun shall darken | and the stars shall fall,</l>
-                            <l xml:id="s49-2">And the earth sink into the sea;</l>
-                            <l xml:id="s49-3">The heavens shall quake | and all things perish,</l>
-                            <l xml:id="s49-4">And the world shall end in fire.</l>
+                            <l xml:id="s49-1">49. <persName ref="#OT">Grimnir</persName> they call me | in <persName ref="#GR">Geirröth</persName>’s hall,</l>
+                            <l xml:id="s49-2">With Asmund <persName ref="#OT">Jalk</persName> am I;</l>
+                            <l xml:id="s49-3"><persName ref="#OT">Kjalar</persName> I was | when I went in a sledge,</l>
+                            <l xml:id="s49-4">At the council <persName ref="#OT">Thror</persName> am I called,</l>
+                            <l xml:id="s49-5">As <persName ref="#OT">Vithur</persName> I fare to the fight;</l>
+                            <l xml:id="s49-6"><persName ref="#OT">Oski</persName>, <persName ref="#OT">Biflindi</persName>, | <persName ref="#OT">Jafnhor</persName> and <persName ref="#OT">Omi</persName>,</l>
+                            <l xml:id="s49-7"><persName ref="#OT">Gondlir</persName> and <persName ref="#OT">Harbarth</persName> midst gods.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s50">
-                            <l xml:id="s50-1">50. But after the fire | shall the earth rise again,</l>
-                            <l xml:id="s50-2">Green and fair shall it be;</l>
-                            <l xml:id="s50-3">And the sons of the gods | shall dwell therein,</l>
-                            <l xml:id="s50-4">And all good things shall live.</l>
+                            <l xml:id="s50-1">50. I deceived the giant | Sokkmimir old</l>
+                            <l xml:id="s50-2">As <persName ref="#OT">Svithur</persName> and <persName ref="#OT">Svithrir</persName> of yore;</l>
+                            <l xml:id="s50-3">Of Mithvitnir’s son | the slayer I was</l>
+                            <l xml:id="s50-4">When the famed one found his doom.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s51">
-                            <l xml:id="s51-1">51. The gods shall meet | at the world’s ending,</l>
-                            <l xml:id="s51-2">And all the powers shall gather then;</l>
-                            <l xml:id="s51-3">And Othin shall ride | to the final fight,</l>
-                            <l xml:id="s51-4">And the world shall be no more.</l>
+                            <l xml:id="s51-1">51. Drunk art thou, <persName ref="#GR">Geirröth</persName>, | too much didst thou drink,</l>
+                            <l xml:id="s51-2"><gap reason="lost" quantity="1" unit="line"/></l>
+                            <l xml:id="s51-3">Much hast thou lost, | for help no more</l>
+                            <l xml:id="s51-4">From me or my heroes thou hast.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s52">
-                            <l xml:id="s52-1">52. The mighty hall | of <placeName ref="#VH">Valhalla</placeName> shall fall,</l>
-                            <l xml:id="s52-2">And the slain shall lie low;</l>
-                            <l xml:id="s52-3">And the gods shall die | and the world be burnt,</l>
-                            <l xml:id="s52-4">And then shall come new worlds.</l>
+                            <l xml:id="s52-1">52. Small heed didst thou take | to all that I told,</l>
+                            <l xml:id="s52-2">And false were the words of thy friends;</l>
+                            <l xml:id="s52-3">For now the sword | of my friend I see,</l>
+                            <l xml:id="s52-4">That waits all wet with blood.</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s53">
-                            <l xml:id="s53-1">53. The end of days | shall come full soon,</l>
-                            <l xml:id="s53-2">And the gods shall meet their fate;</l>
-                            <l xml:id="s53-3">But the new earth | shall rise with life anew,</l>
-                            <l xml:id="s53-4">And joy shall come again.</l>
+                            <l xml:id="s53-1">53. Thy sword-pierced body | shall <persName ref="#OT">Ygg</persName> have soon,</l>
+                            <l xml:id="s53-2">For thy life is ended at last;</l>
+                            <l xml:id="s53-3">The maids are hostile; | now <persName ref="#OT">Othin</persName> behold!</l>
+                            <l xml:id="s53-4">Now come to me if thou canst!</l>
                         </lg>
                         
                         <lg type="stanza" xml:id="s54">
-                            <l xml:id="s54-1">54. So shall the tale | of the worlds be told,</l>
-                            <l xml:id="s54-2">From beginning to end of days;</l>
-                            <l xml:id="s54-3">The song of the gods | and the fate of men,</l>
-                            <l xml:id="s54-4">In the ancient Edda’s voice.</l>
-                        </lg>                           
-                        </sp>
-                    </div>
-                    <div type="end"> 
-                        <p><persName ref="#GR">King Geirröth</persName>  sat and had his sword on his knee, half drawn from its sheath. But when he heard that <persName ref="#OT">Othin</persName> was come thither, then he rose up and sought to take 
-                            <persName ref="#OT">Othin</persName> from the fire. The sword slipped from his hand, and fell with the hilt down. The king stumbled and fell forward, and 
-                            the sword pierced him through, and slew him. Then <persName ref="#OT">Othin</persName> vanished, but <persName ref="#AG2">Agnar</persName> long ruled there as king.
-                        </p>
-                    </div>
+                            <l xml:id="s54-1">54. Now am I <persName ref="#OT">Othin</persName>, | <persName ref="#OT">Ygg</persName> was I once,</l>
+                            <l xml:id="s54-2">Ere that did they call me <persName ref="#OT">Thund</persName>;</l>
+                            <l xml:id="s54-3"><persName ref="#OT">Vak</persName> and <persName ref="#OT">Skilfing</persName>, | <persName ref="#OT">Vofuth</persName> and <persName ref="#OT">Hroptatyr</persName>,</l>
+                            <l xml:id="s54-4"><persName ref="#OT">Gaut</persName> and <persName ref="#OT">Jalk</persName> midst the gods;</l>
+                            <l xml:id="s54-5"><persName ref="#OT">Ofnir</persName> and <persName ref="#OT">Svafnir</persName>, | and all, methinks,</l>
+                            <l xml:id="s54-6">Are names for none but <persName ref="#OT">me</persName></l>
+                        </lg>
+
+                    </sp>
+                </div>
+                <div type="end"> 
+                    <p><persName ref="#GR">King Geirröth</persName>  sat and had his sword on his knee, half drawn from its sheath. But when he heard that <persName ref="#OT">Othin</persName> was come thither, then he rose up and sought to take 
+                        <persName ref="#OT">Othin</persName> from the fire. The sword slipped from his hand, and fell with the hilt down. The king stumbled and fell forward, and 
+                        the sword pierced him through, and slew him. Then <persName ref="#OT">Othin</persName> vanished, but <persName ref="#AG2">Agnar</persName> long ruled there as king.
+                    </p>
+                </div>
                 
             </div>
         </body>
@@ -815,7 +837,7 @@
                         <hi rend="italic"><persName ref="#OT">Grimnir</persName></hi>: <q rend="dq">the Hooded One.</q>
                     </note>
                 </noteGrp>
-
+                
                 <noteGrp>
                     <note xml:id="note-s2">
                         <ref target="#s2">s2</ref> - In the original lines 2 and 4 are both too long for the meter, and thus the true form of the stanza is doubtful.
@@ -828,7 +850,7 @@
                 <noteGrp>
                     <note xml:id="note-s3">
                         <ref target="#s3">s3</ref> - 
-                        <hi rend="italic"><persName ref="#OT">Veratyr</persName></hi> (<q rend="dq">Lord of Men</q>): <persName ref="#OT">Othin</persName>. The <q rend="dq">gift</q> which Agnar receives is <persName ref="#OT">Othin</persName>'s mythological lore.
+                        <hi rend="italic"><persName ref="#OT">Veratyr</persName></hi> (<q rend="dq">Lord of Men</q>): <persName ref="#OT">Othin</persName>. The <q rend="dq">gift</q> which <persName ref="#AG2">Agnar</persName> receives is <persName ref="#OT">Othin</persName>'s mythological lore.
                     </note> 
                 </noteGrp>
                 
@@ -871,7 +893,7 @@
                 <noteGrp>
                     <note xml:id="note-s21">
                         <ref target="#s21">s21</ref> -
-                        <hi rend="italic">Thund</hi> (<q rend="dq">The Swollen</q> or <q rend="dq">The Roaring</q>): the river surrounding <placeName ref="#VH">Valhall</placeName>.
+                        <hi rend="italic"><persName ref="#OT">Thund</persName></hi> (<q rend="dq">The Swollen</q> or <q rend="dq">The Roaring</q>): the river surrounding <placeName ref="#VH">Valhall</placeName>.
                     </note>
                     <note xml:id="note-extra-s21">
                         The last two lines refer to the attack on <placeName ref="#VH">Valhall</placeName> by the people of Hel; cf. <hi rend="italic">Voluspo</hi>, 51.
@@ -891,7 +913,7 @@
                         This and the following stanza stand in reversed order in <hi rend="italic"><foreign xml:lang="la">Regius</foreign></hi>. Snorri quotes stanza 23 as a proof of the vast size of <placeName ref="#VH">Valhall</placeName>.
                     </note>
                 </noteGrp>
-
+                
                 <noteGrp> 
                     <note xml:id="note-s24">
                         <ref target="#s24">s24</ref> -
