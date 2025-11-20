@@ -1,6 +1,7 @@
 @prefix schema: <https://schema.org/> .
 
 <https://w3id.org/vinLOD-saga/item/VinlandS1_Opening> a schema:VideoObject ;
+    a <https://w3id.org/vinLOD-saga/class/AnimeOpening> ;
     schema:audio <https://w3id.org/vinLOD-saga/musicEntity/Mukanjyo> ;
     schema:contentUrl <https://www.youtube.com/watch?v=l5wAdQ-UkWY> ;
     schema:musicBy <https://w3id.org/vinLOD-saga/agent/Survive_Said_the_Prophet> ;

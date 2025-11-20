@@ -23,13 +23,39 @@
     rdfs:label "VinLOD Saga"@en .
 
 #Classes
+<class/CreativeWork> a owl:Class;
+    owl:equivalentClass frbroo:F1 ;
+    rdfs:label "Creative Work" ;
+    rdfs:comment "A conceptual creative work from which anime and/or manga series are born" .
+
 <class/Anime> a owl:Class;
+    owl:equivalentClass frbroo:F22 ;
     rdfs:label "Anime" ;
-    rdfs:comment "The class of Anime individuals" .
+    rdfs:comment "An expression of a creative work in an anime" .
 
 <class/Manga> a owl:Class;
+    owl:equivalentClass frbroo:F22 ;
     rdfs:label "Manga" ;
-    rdfs:comment "The class of Manga individuals" .
+    rdfs:comment "An expression of a creative work in a manga" .
+
+<class/AnimeOpening> a owl:Class;
+    rdfs:label "Anime Opening" ;
+    rdfs:comment "An opening sequence of an anime" .
+
+<class/Character> a owl:Class;
+    owl:equivalentClass frbroo:F38 ;
+    rdfs:label "Character" ;
+    rdfs:comment "A character which may appear in a creative work" .
+
+<class/HistoricalPerson> a owl:Class ;
+    owl:equivalentClass crm:E21_Person ;
+    rdfs:label "Historical Person" ;
+    rdfs:comment "A historical person on which a fictional character may be based on or related to" .
+
+<class/HistoricalEvent> a owl:Class ;
+    owl:equivalentClass crm:E5_Event ;
+    rdfs:label "Historical Event" ;
+    rdfs:comment "A historical event that may appear in a creative work" .
 
 #ObjectProperties
 <property/hasBelief> a owl:ObjectProperty;
@@ -47,7 +73,8 @@
 <property/hasOpening> a owl:ObjectProperty;
     rdfs:label "has opening theme" ;
     rdfs:comment "Connects an anime to its opening";
-    rdfs:domain <class/Anime> .
+    rdfs:domain <class/Anime> ;
+    rdfs:range <class/AnimeOpening> .
 
 <property/hasAnimationStudio> a owl:ObjectProperty;
     rdfs:label "has animation studio";
@@ -61,11 +88,12 @@
     rdfs:domain <class/Manga> ;
     rdfs:range crm:E21_Person .
 
-<property/serialisedIn> a owl:ObjectProperty;
-    rdfs:label "serialised in";
+<property/hasSerialisation> a owl:ObjectProperty;
+    rdfs:label "has serialisation";
     rdfs:comment "describes the magazine a manga is serialised in";
-    rdfs:domain <class/Manga> ;
+    rdfs:domain frbroo:F3 ;
     rdfs:range schema:Organization .
+
 
 #Central work
 <work/Vinland_Saga> a frbroo:F1;
@@ -91,40 +119,44 @@
     rdfs:comment "Translating roughly to 'vine land' this was the name given the part of north america discovered by the norse explorers" .
 
 #Characters 
-<character/Leif_Erikson> a frbroo:F38; #Character
+<character/Leif_Erikson> a <class/Character>; #Character
     a jvmg:Character ;
     jvmg:mainNameJapanese "レイフ・エリクソン" ;
     jvmg:mainNamenTranslated "Leif Erikson" ;
     rdfs:label "Leif Erikson";
     frbroo:R57 <person/Leiv_Eiriksson>; #R57-is based on
+    owl:sameAs <http://mediagraph.link/acdb/character/22915> ;
     rdfs:seeAlso <https://anidb.net/character/103128> .
 
-<character/Canute> a frbroo:F38; #Character
+<character/Canute> a <class/Character>; #Character
     a jvmg:Character ;
     jvmg:mainNameJapanese "クヌート" ;
     jvmg:mainNamenTranslated "Canute" ;
     rdfs:label "Canute";
     frbroo:R57 <person/Cnut_the_Great> ; #R57-is based on
+    owl:sameAs <http://mediagraph.link/acdb/character/97943> ;
     rdfs:seeAlso <https://anidb.net/character/102477> .
 
-<character/Sweyn> a frbroo:F38; #Character
+<character/Sweyn> a <class/Character>; #Character
     a jvmg:Character ;
     jvmg:mainNameJapanese "スヴェン王" ;
     jvmg:mainNamenTranslated "Sweyn-ou" ;
     rdfs:label "Sweyn";
     frbroo:R57 <person/Sweyn_Forkbeard> ; #R57-is based on
+    owl:sameAs <http://mediagraph.link/acdb/character/130047> ;
     rdfs:seeAlso <https://anidb.net/character/103121> .
 
-<character/Thorkell> a frbroo:F38; #Character
+<character/Thorkell> a <class/Character>; #Character
     a jvmg:Character ;
     jvmg:mainNameJapanese "トルケル" ;
     jvmg:mainNamenTranslated "Thorkel" ;
     rdfs:label "Thorkell";
     frbroo:R57 <person/Thorkell_the_Tall> ; #R57-is based on
+    owl:sameAs <http://mediagraph.link/acdb/character/97944> ;
     rdfs:seeAlso <https://anidb.net/character/102478> ;
     <property/hasBelief> <concept/Valhalla> .
 
-<character/organisation/Jomsvikings> a frbroo:F38; #Character
+<character/organisation/Jomsvikings> a <class/Character>; #Character
     a jvmg:Character ;
     jvmg:mainNameJapanese "ヨムスヴァイキング" ;
     jvmg:mainNamenTranslated "Jomsvikings" ;
@@ -134,7 +166,7 @@
 
 
 #Historical People
-<person/Leiv_Eiriksson> a crm:E21_Person;
+<person/Leiv_Eiriksson> a <class/HistoricalPerson>;
     rdfs:label "Leiv Eiriksson";
     owl:sameAs <http://viaf.org/viaf/198152140015411100005>;
     crm:P11i_participated_in <event/Norse_Colonisation>;
@@ -143,7 +175,7 @@
     crm:P62i_is_depicted_by <item/Eiriksson_Painting> .
 
 
-<person/Cnut_the_Great> a crm:E21_Person;
+<person/Cnut_the_Great> a <class/HistoricalPerson>;
     rdfs:label "Cnut the Great";
     owl:sameAs <http://viaf.org/viaf/268401625>;
     crm:P152_has_parent <person/Sweyn_Forkbeard>;
@@ -151,12 +183,12 @@
     crm:P11i_participated_in <event/Assandun_Battle>;
     crm:P11i_participated_in <event/Cnut_Becomes_English_King>  .
 
-<person/Sweyn_Forkbeard> a crm:E21_Person;
+<person/Sweyn_Forkbeard> a <class/HistoricalPerson>;
     rdfs:label "Sweyn Forkbeard";
     owl:sameAs <http://viaf.org/viaf/223321118>;
     crm:P11i_participated_in <event/2nd_Viking_Invasion> .
 
-<person/Thorkell_the_Tall> a crm:E21_Person;
+<person/Thorkell_the_Tall> a <class/HistoricalPerson>;
     rdfs:label "Thorkell the Tall";
     owl:sameAs dbr:Thorkell_the_Tall;
     crm:P107i_is_current_or_former_member_of <group/Jomsvikings>;
@@ -183,42 +215,42 @@
 
 
 #Events
-<event/Hjorungavagr_Battle> a crm:E5_Event;
+<event/Hjorungavagr_Battle> a <class/HistoricalEvent>;
     rdfs:label "Battle of Hjörungavágr";
     schema:name "Battle of Hjörungavágr"; 
     owl:sameAs dbr:Battle_of_Hjörungavágr;
     crm:P67i_is_referred_to_by <narrative/Jomsvikings_Saga>;
     crm:P62i_is_depicted_by <item/Hailstorm_Illustration> .
 
-<event/St_Brice_Massacre> a crm:E5_Event;
+<event/St_Brice_Massacre> a <class/HistoricalEvent>;
     rdfs:label "St Brice's Day Massacre";
     schema:name "St Brice's Day Massacre"; 
     crm:P17i_motivated <event/2nd_Viking_Invasion>;
     owl:sameAs dbr:Battle_of_Hjörungavágr .
 
-<event/2nd_Viking_Invasion> a crm:E5_Event;
+<event/2nd_Viking_Invasion> a <class/HistoricalEvent>;
     rdfs:label "2nd Viking Invasion of England";
     schema:name "2nd Viking Invasion of England"; 
     owl:sameAs dbr:Viking_activity_in_the_British_Isles.
 
-<event/Cnut_Invasion> a crm:E5_Event;
+<event/Cnut_Invasion> a <class/HistoricalEvent>;
     rdfs:label "Cnut's Invasion of England";
     schema:name "Cnut's Invasion of England"; 
     crm:P9i_forms_part_of <event/2nd_Viking_Invasion> .
 
-<event/Assandun_Battle> a crm:E5_Event;
+<event/Assandun_Battle> a <class/HistoricalEvent>;
     rdfs:label "Battle of Assandun";
     schema:name "Battle of Assandun"; 
     owl:sameAs dbr:Battle_of_Assandun;
     crm:P9i_forms_part_of <event/Cnut_Invasion>;
     crm:P16_used_specific_object <concept/Olney_Treaty> .
 
-<event/Cnut_Becomes_English_King> a crm:E5_Event;
+<event/Cnut_Becomes_English_King> a <class/HistoricalEvent>;
     rdfs:label "Cnut becomes king of England after the death of Edmund Ironside" ;
     schema:name "The Crowning of Cnut"; 
     crm:P92_brought_into_existence <item/Cnut_Coin> .
 
-<event/Norse_Exploration> a crm:E5_Event;
+<event/Norse_Exploration> a <class/HistoricalEvent>;
     rdfs:label "Norse Exploration of America";
     schema:name "Norse Exploration of America"; 
     owl:sameAs dbr:Norse_colonization_of_North_America;
@@ -277,6 +309,7 @@
 <musicEntity/Mukanjyo> a schema:MusicRecording;
     schema:name "Mukanjyo" ;
     rdfs:label "Mukanjyo" ;
+    owl:sameAs <http://mediagraph.link/aclick/staff/23943-59107> ;
     schema:byArtist <agent/Survive_Said_the_Prophet> .
 
 #Agents and organisations and publication
@@ -286,12 +319,14 @@
     jvmg:role "Mangaka" ;
     rdfs:label "Makoto Yukimura";
     rdfs:comment "The mangaka of the Vinland Saga manga" ;
+    owl:sameAs <http://mediagraph.link/jvmg/contributor/I3337> ;
     rdfs:seeAlso <https://myanimelist.net/people/2034/Makoto_Yukimura> .
 
 <agent/Survive_Said_the_Prophet> a schema:MusicGroup;
     schema:name "Survive Said the Prophet" ;
     rdfs:label "Survive Said the Prophet";
     rdfs:comment "Japanese rock band" ;
+    owl:sameAs <http://mediagraph.link/aclick/author/59107> ;
     rdfs:seeAlso <https://myanimelist.net/people/48121/Survive_Said_The_Prophet> .
 
 <publication/Afternoon_Magazine> a schema:Periodical;
@@ -308,6 +343,7 @@
     jvmg:alternativeName "Wit Studio" ;
     rdfs:label "Wit Studio" ;
     rdfs:comment "A Japanese animation studio" ;
+    owl:sameAs <http://mediagraph.link/aclick/staff/23943-19491> ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/858/Wit_Studio> .
 
 <organisation/MAPPA_Studio> a schema:Organization;
@@ -315,6 +351,7 @@
     jvmg:currentName "MAPPA" ;
     rdfs:label "MAPPA Studio" ;
     rdfs:comment "A Japanese animation studio" ;
+    owl:sameAs <http://mediagraph.link/aclick/staff/23943-12847> ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/569/MAPPA> .
 
 <organisation/Crunchyroll> a schema:Organization;
@@ -322,6 +359,7 @@
     jvmg:currentName "Crunchyroll" ;
     rdfs:label "Crunchyroll" ;
     rdfs:comment "Anime licencing and production company" ;
+    owl:sameAs <http://mediagraph.link/aclick/staff/38024-33011> ;
     rdfs:seeAlso <https://myanimelist.net/anime/producer/1468/Crunchyroll> .
 
 <museum/Norway_Museum> a schema:Museum ;

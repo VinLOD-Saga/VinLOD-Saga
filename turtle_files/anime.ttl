@@ -3,6 +3,7 @@
 @prefix jvmg: <http://mediagraph.link/jvmg/ont#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix vinLOD: <https://w3id.org/vinLOD-saga/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 <https://w3id.org/vinLOD-saga/item/Vinland_Anime> a frbroo:F22,
         aclick:Anime,
@@ -15,5 +16,9 @@
     rdfs:seeAlso <https://anidb.net/anime/13945> ;
     vinLOD:hasAnimationStudio <https://w3id.org/vinLOD-saga/organisation/MAPPA_Studio>,
         <https://w3id.org/vinLOD-saga/organisation/Wit_Studio> ;
+    frbroo:R4 <https://w3id.org/vinLOD-saga/program/Vinland_TelevisionSeries> ;
     vinLOD:hasOpening <https://w3id.org/vinLOD-saga/item/VinlandS1_Opening> .
 
+<https://w3id.org/vinLOD-saga/program/Vinland_TelevisionSeries> a frbroo:F3 ;
+    rdfs:label "Vinland Saga Television Series" ;
+    owl:sameAs <http://mediagraph.link/madb/id/C441040> .

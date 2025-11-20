@@ -3,7 +3,7 @@ from rdflib import Graph
 
 # Directory where your TTL files are stored
 ttl_directory = "turtle_files"  # ← Change this to your folder path
-output_file = "vinLOD_fullDataset.ttl"
+output_file = "vinLOD_fullDataset_v2.ttl"
 
 # Create an empty graph
 merged_graph = Graph()

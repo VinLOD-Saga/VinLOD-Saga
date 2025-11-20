@@ -2,6 +2,8 @@
 @prefix frbroo: <http://iflastandards.info/ns/fr/frbr/frbroo/> .
 @prefix jvmg: <http://mediagraph.link/jvmg/ont#> .
 @prefix vinLOD: <https://w3id.org/vinLOD-saga/property/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <https://w3id.org/vinLOD-saga/item/Vinland_Manga> a frbroo:F22,
         aclick:Manga,
@@ -15,5 +17,15 @@
     jvmg:titleTranslated "Vinland Saga" ;
     vinLOD:hasAdaptation <https://w3id.org/vinLOD-saga/item/Vinland_Anime> ;
     vinLOD:hasMangaka <https://w3id.org/vinLOD-saga/agent/Makoto_Yukimura> ;
-    vinLOD:serialisedIn <https://w3id.org/vinLOD-saga/publication/Afternoon_Magazine> .
+    frbroo:R4 <https://w3id.org/vinLOD-saga/publication/Vinland_BookSeries> ;
+    frbroo:R4 <https://w3id.org/vinLOD-saga/publication/Vinland_MagazineSeries> .
+
+<https://w3id.org/vinLOD-saga/publication/Vinland_BookSeries> a frbroo:F3 ;
+    rdfs:label "Vinland Saga Book Series" ;
+    owl:sameAs <http://mediagraph.link/madb/id/C312277> .
+
+<https://w3id.org/vinLOD-saga/publication/Vinland_MagazineSeries> a frbroo:F3 ;
+    rdfs:label "Vinland Saga Magazine Series" ;
+    vinLOD:hasSerialisation <https://w3id.org/vinLOD-saga/publication/Afternoon_Magazine> ;
+    owl:sameAs <http://mediagraph.link/madb/id/C90253> .
 

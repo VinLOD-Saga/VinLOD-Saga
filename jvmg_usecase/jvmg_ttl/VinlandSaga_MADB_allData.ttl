@@ -1,0 +1,4461 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix madb: <http://mediagraph.link/madb/ont/> .
+@prefix ns2: <https://mediaarts-db.artmuseums.go.jp/data/property#> .
+@prefix ns3: <https://mediaarts-db.artmuseums.go.jp/data/property-data/> .
+@prefix ns4: <https://mediaarts-db.bunka.go.jp/data/property#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+<http://mediagraph.link/madb/id/C90253> a madb:MangaMagazinePublication ;
+    rdfs:label "VINLAND SAGA  ヴィンランド・サガ" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:note "『アフタヌーン』に移籍" ;
+    ns3:dateModified "2024-11-25 12:35:59" ;
+    ns4:note "『アフタヌーン』に移籍" ;
+    schema:additionalType madb:CM ;
+    schema:creator "幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2005-04-27" ;
+    schema:genre "マンガ雑誌掲載履歴" ;
+    schema:identifier "C90253" ;
+    schema:name "VINLAND SAGA  ヴィンランド・サガ",
+        "ＶＩＮＬＡＮＤＳＡＧＡヴィンランドサガ"@ja-Hrkt .
+
+<http://mediagraph.link/madb/id/M210630> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 8" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21653443" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:40:19" ;
+    ns4:jpno "21653443" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2009-09-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210630" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063145816" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "207p　／　210p" ;
+    schema:position "8.0" ;
+    schema:productID "581" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341340>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1400878>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634654>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634655> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "8" .
+
+<http://mediagraph.link/madb/id/M210631> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 7" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21553044" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:46:10" ;
+    ns4:jpno "21553044" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2009-02-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210631" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063145441" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "201p　／　206p" ;
+    schema:position "7.0" ;
+    schema:productID "544" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341339>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1441338>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634652>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634653> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "7" .
+
+<http://mediagraph.link/madb/id/M210632> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 6" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21445583" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:46:10" ;
+    ns4:jpno "21445583" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2008-06-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210632" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063145106" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "224p　／　225p" ;
+    schema:position "6.0" ;
+    schema:productID "510" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341338>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1523213>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634650>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634651> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "6" .
+
+<http://mediagraph.link/madb/id/M210633> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 5" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21319237" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:46:10" ;
+    ns4:jpno "21319237" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2007-10-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210633" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063144734" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "204p　／　207p" ;
+    schema:position "5.0" ;
+    schema:productID "473" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1001015>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341337>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634648>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634649> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "5" .
+
+<http://mediagraph.link/madb/id/M210634> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 9" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21783503" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:42:23" ;
+    ns4:jpno "21783503" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2010-06-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210634" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063106725" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "203p　／　207p" ;
+    schema:position "9.0" ;
+    schema:productID "672" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1001014>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341341>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634656>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634657> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "9" .
+
+<http://mediagraph.link/madb/id/M210635> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 4" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21480978" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:41:20" ;
+    ns4:jpno "21480978" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2007-02-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210635" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063144406" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "197p　／　203p" ;
+    schema:position "4.0" ;
+    schema:productID "440" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341336>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1482344>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634646>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634647> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "4" .
+
+<http://mediagraph.link/madb/id/M210641> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 2" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "20926576" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "大阪府立中央図書館国際児童文学館" ;
+    ns3:dateModified "2024-11-25 11:42:21" ;
+    ns4:jpno "20926576" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "SHONEN MAGAZINE COMICS",
+        "講談社コミックス",
+        "講談社コミックス,SHONEN MAGAZINE COMICS",
+        "コウダンシャ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2005-11-17" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210641" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312278> ;
+    schema:isbn "4063635805" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "247p" ;
+    schema:position "2.0" ;
+    schema:productID "3580" ;
+    schema:provider [ ],
+        [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1441335>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1441336>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2133901> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "18cm　×　12cm" ;
+    schema:volumeNumber "2" .
+
+<http://mediagraph.link/madb/id/M210643> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 1" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "20815258" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "大阪府立中央図書館国際児童文学館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:45:26" ;
+    ns4:jpno "20815258" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "SHONEN MAGAZINE COMICS　",
+        "講談社コミックス",
+        "講談社コミックス,SHONEN MAGAZINE COMICS　",
+        "コウダンシャ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2005-07-15" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210643" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312278> ;
+    schema:isbn "4063635597",
+        "4063635597,9784063635591",
+        "9784063635591" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "195p" ;
+    schema:position "1.0" ;
+    schema:productID "3559" ;
+    schema:provider [ ],
+        [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1441333>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1441334>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2133902>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2545307> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "18cm　×　12cm" ;
+    schema:volumeNumber "1" .
+
+<http://mediagraph.link/madb/id/M210647> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 3" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21126857" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:45:26" ;
+    ns4:jpno "21126857" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2006-10-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210647" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "406314433X" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "215p　／　218p" ;
+    schema:position "3.0" ;
+    schema:productID "433" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341335>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1523210>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634645>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2656215> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "3" .
+
+<http://mediagraph.link/madb/id/M210648> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 2" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21108973" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:45:26" ;
+    ns4:jpno "21108973" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2006-09-22" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210648" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "4063144283" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "229p　／　230p" ;
+    schema:position "2.0" ;
+    schema:productID "428" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1001012>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341334>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634643>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634644> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "2" .
+
+<http://mediagraph.link/madb/id/M210650> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 1" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21086953" ;
+    ns2:ndc "726.1",
+        "Y84" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:41:29" ;
+    ns4:jpno "21086953" ;
+    ns4:ndc "Y84,726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2006-08-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M210650" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "4063144232" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "213p　／　218p" ;
+    schema:position "1.0" ;
+    schema:productID "423" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341333>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1482340>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634641>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634642> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "1" .
+
+<http://mediagraph.link/madb/id/M387471> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 11" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22023167" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:47:53" ;
+    ns4:jpno "22023167" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2012-01-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M387471" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063878011" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "185p　／　190p" ;
+    schema:position "11.0" ;
+    schema:productID "801" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341343>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1754496>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634660>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634661> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "11" .
+
+<http://mediagraph.link/madb/id/M387472> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 12" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22165246" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:47:53" ;
+    ns4:jpno "22165246" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2012-11-22" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M387472" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063878509" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "191p　／　198p" ;
+    schema:position "12.0" ;
+    schema:productID "850" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1754497>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634662>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634663> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "12" .
+
+<http://mediagraph.link/madb/id/M387473> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 13" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22279289" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:47:53" ;
+    ns4:jpno "22279289" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2013-07-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M387473" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063879094" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "187p　／　191p" ;
+    schema:position "13.0" ;
+    schema:productID "909" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1754498>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2576449>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634664>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634665> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "13" .
+
+<http://mediagraph.link/madb/id/M401559> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 10" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "21923405" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "京都国際マンガミュージアム",
+        "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:55:33" ;
+    ns4:jpno "21923405" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2011-04-22" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M401559" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063107364" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "219p　／　223p" ;
+    schema:position "10.0" ;
+    schema:productID "736" ;
+    schema:provider [ ],
+        [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1341342>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1768584>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634658>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634659> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "10" .
+
+<http://mediagraph.link/madb/id/M418566> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 14" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22364166" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:55:39" ;
+    ns4:jpno "22364166" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2014-02-21" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M418566" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063879568" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "194p　／　199p" ;
+    schema:position "14.0" ;
+    schema:price "590円+税" ;
+    schema:productID "956" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1951816>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2576450>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634666> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "17.8cm x 12.8cm" ;
+    schema:volumeNumber "14" .
+
+<http://mediagraph.link/madb/id/M437837> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 15" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22481768" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:55:41" ;
+    ns4:jpno "22481768" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠",
+        "ユキムラマコト"@ja-Hrkt ;
+    schema:datePublished "2014-10-23" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M437837" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063879995" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "187p　／　190p" ;
+    schema:position "15.0" ;
+    schema:price "590円+税" ;
+    schema:productID "999" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1980091>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2576451>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2634667> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "15" .
+
+<http://mediagraph.link/madb/id/M448742> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 16" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22597048" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館",
+        "明治大学米沢嘉博記念図書館・現代マンガ図書館" ;
+    ns3:dateModified "2024-11-25 11:54:40" ;
+    ns4:jpno "22597048" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2015-06" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M448742" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063880625" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "191p" ;
+    schema:position "16.0" ;
+    schema:productID "1362" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2104139>,
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2576501> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "16" .
+
+<http://mediagraph.link/madb/id/M460191> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 17" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22680463" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:54:11" ;
+    ns4:jpno "22680463" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー ; 1409"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2016-01" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M460191" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063881097" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "188p" ;
+    schema:position "17.0" ;
+    schema:productID "1409" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2138058> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "17" .
+
+<http://mediagraph.link/madb/id/M471800> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 18" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22778327" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:54:00" ;
+    ns4:jpno "22778327" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "VINLAND SAGA" ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー ; 1470"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2016-08" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M471800" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063881707" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "187p" ;
+    schema:position "18.0" ;
+    schema:productID "1470" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2174450> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "18" .
+
+<http://mediagraph.link/madb/id/M480430> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22875993" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:00" ;
+    ns4:jpno "22875993" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "旅立ち編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-03" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M480430" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063861488" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "443p" ;
+    schema:position "1.0" ;
+    schema:productID "3148" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2197867> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M481109> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22879393" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:26" ;
+    ns4:jpno "22879393" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "イングランドの戦争編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-04" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M481109" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063861495" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "413p" ;
+    schema:position "1.0" ;
+    schema:productID "3149" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2198263> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M481499> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 19" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22884945" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:53:11" ;
+    ns4:jpno "22884945" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "VINLAND SAGA" ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-04" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M481499" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784063882513" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "189p" ;
+    schema:position "19.0" ;
+    schema:productID "1551" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2198653> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "19" .
+
+<http://mediagraph.link/madb/id/M481679> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22887205" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:12" ;
+    ns4:jpno "22887205" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "トルケル激突編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-04" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M481679" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063861501" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "426p" ;
+    schema:position "1.0" ;
+    schema:productID "3150" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2198823> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M482176> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22893560" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:10" ;
+    ns4:jpno "22893560" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "親子対決編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-05" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M482176" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063861778" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "407p" ;
+    schema:position "1.0" ;
+    schema:productID "3177" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2199330> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M482541> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22900025" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:53:11" ;
+    ns4:jpno "22900025" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "奴隷編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-05" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M482541" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063861785" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "421p" ;
+    schema:position "1.0" ;
+    schema:productID "3178" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2199711> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M483063> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22904449" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:19" ;
+    ns4:jpno "22904449" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "奴隷解放編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-06" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M483063" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063861792" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "375p" ;
+    schema:position "1.0" ;
+    schema:productID "3179" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2200195> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M483772> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22913584" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:21" ;
+    ns4:jpno "22913584" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "ケティル農場戦役編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-06" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M483772" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063862119" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド ・ サガ"@ja-Hrkt ;
+    schema:numberOfPages "382p" ;
+    schema:position "1.0" ;
+    schema:productID "3211" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2201310> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M484456> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22926620" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:53:13" ;
+    ns4:jpno "22926620" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "繋がれた花嫁編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-07" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M484456" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063862140" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "377p" ;
+    schema:position "1.0" ;
+    schema:productID "3214" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2202032> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M484729> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22924463" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:00" ;
+    ns4:jpno "22924463" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "復讐の狩人編" ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-07" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M484729" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C367735> ;
+    schema:isbn "9784063862157" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "373p" ;
+    schema:position "1.0" ;
+    schema:productID "3215" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2202305> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" .
+
+<http://mediagraph.link/madb/id/M498649> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 20" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "22981782" ;
+    ns2:ndc "726.1" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:55:05" ;
+    ns4:jpno "22981782" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "VINLAND SAGA" ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2017-11" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M498649" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784065103623" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "183p" ;
+    schema:position "20.0" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2235293> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "20" .
+
+<http://mediagraph.link/madb/id/M528698> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ = VINLAND SAGA 21" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23102939" ;
+    ns2:ndc "726.1" ;
+    ns2:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:58:59" ;
+    ns4:jpno "23102939" ;
+    ns4:ndc "726.1" ;
+    ns4:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2018-08" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M528698" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784065124338" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ = VINLAND SAGA",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "187p" ;
+    schema:position "21",
+        "21.0" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S1381928> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "21" .
+
+<http://mediagraph.link/madb/id/M790265> a madb:MediaArtExhibitionOrPerformance ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C406085> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:note "ストーリーマンガ" ;
+    ns2:seriesName "文化庁メディア芸術祭 第13回",
+        "Japan Media Arts Festival"@en ;
+    ns3:dateModified "2024-11-25 14:15:49" ;
+    ns4:note "ストーリーマンガ" ;
+    ns4:seriesName "文化庁メディア芸術祭 第13回",
+        "Japan Media Arts Festival"@en ;
+    schema:additionalType madb:MA ;
+    schema:creator "幸村誠" ;
+    schema:datePublished "2010-02-03" ;
+    schema:description "[展示・実演]:マンガ部門/Manga Division",
+        "マンガ部門/Manga Division" ;
+    schema:endDate "2010-02-14",
+        "2010-02-14,2010-02-14" ;
+    schema:genre "メディアアート展示・実演" ;
+    schema:identifier "M790265" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C383487> ;
+    schema:location "国立新美術館" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@en ;
+    schema:startDate "2010-02-03",
+        "2010-02-03,2010-02-03" .
+
+<http://mediagraph.link/madb/id/M808988> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ = VINLAND SAGA 22" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23248596" ;
+    ns2:ndc "726.1" ;
+    ns2:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 12:00:11" ;
+    ns4:jpno "23248596" ;
+    ns4:ndc "726.1" ;
+    ns4:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2019-06" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M808988" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784065151808" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ = VINLAND SAGA",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "187p" ;
+    schema:position "22",
+        "22.0" ;
+    schema:price "630円" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2243161> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "22" .
+
+<http://mediagraph.link/madb/id/M814073> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ = VINLAND SAGA 23" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23310590" ;
+    ns2:ndc "726.1" ;
+    ns2:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 11:59:39" ;
+    ns4:jpno "23310590" ;
+    ns4:ndc "726.1" ;
+    ns4:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2019-11" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M814073" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784065175071" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ = VINLAND SAGA",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "187p" ;
+    schema:position "23",
+        "23.0" ;
+    schema:price "630円" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2248731> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "23" .
+
+<http://mediagraph.link/madb/id/M825933> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ = VINLAND SAGA 24" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23446865" ;
+    ns2:ndc "726.1" ;
+    ns2:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 12:01:49" ;
+    ns4:jpno "23446865" ;
+    ns4:ndc "726.1" ;
+    ns4:note "NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2020-10" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M825933" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784065210048" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ = VINLAND SAGA",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "186p" ;
+    schema:position "24",
+        "24.0" ;
+    schema:price "660円" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2260394> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "24" .
+
+<http://mediagraph.link/madb/id/M841135> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃０１＃０２＃０３" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31136390" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "75" ;
+    ns3:dateModified "2024-11-25 11:11:19" ;
+    ns4:externalIdentifier "31136390" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "75" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】石上静香、松田健一郎、大塚明夫、上田燿司、高梁碧、生天目仁美、市来光弘、下山吉光、佐藤はな、長谷川芳明、河瀬茉希、最上嗣生、後藤ヒロキ、中島卓也、太田悠介、高橋伸也【声の出演】内田直哉、安元洋貴、斧アツシ、丹羽正人、坂泰斗、塙真奈美、宮下早紀、中務貴幸【声の出演】竹内絢子、三瓶雄樹、大西弘祐" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ここではないどこか剣戦鬼" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-07-07" ;
+    schema:episodeNumber "＃０１＃０２＃０３" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M841135" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M841424> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃０４" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31154488" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31154488" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】石上静香、松田健一郎、内田直哉、安元洋貴、上田燿司、市来光弘、最上嗣生、丹羽正人、長谷川芳明、坂泰斗、中務貴幸、後藤ヒロキ、高橋伸也、中島卓也、太田悠介、武蔵真之介、鷲見昂大、古川慎" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "本当の戦士" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-07-28" ;
+    schema:episodeNumber "＃０４" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M841424" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M841522> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃０５" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31163157" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:10:38" ;
+    ns4:externalIdentifier "31163157" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】石上静香、内田直哉、安元洋貴、高梁碧、生天目仁美、上田燿司、市来光弘、最上嗣生、丹羽正人、長谷川芳明、坂泰斗、後藤ヒロキ、高橋伸也、古川慎、河瀬茉希、佐藤はな、中島卓也、中務貴幸、太田悠介" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "戦鬼の子" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-08-04" ;
+    schema:episodeNumber "＃０５" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M841522" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M841621> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃０６" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31171246" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31171246" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】石上静香、内田直哉、安元洋貴、後藤ヒロキ、高橋伸也、古川慎、上田ゆう子、杉山里穂、大西弘祐、高橋良輔、武蔵真之介、奥田寛章、上田燿司、丹羽正人、坂泰斗、長谷川芳明、中務貴幸、最上嗣生、松田健一郎" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "旅の始まり" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-08-11" ;
+    schema:episodeNumber "＃０６" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M841621" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M841718> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃０７" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31182676" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31182676" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、内田直哉、安元洋貴、後藤ヒロキ、高橋伸也、菅生隆之、斧アツシ、山口勝平、乃村健次、最上嗣生、大西弘祐、長谷川芳明、武蔵真之介、坂泰斗、太田悠介、丹羽正人、中務貴幸、古川慎、高橋良輔、松田健一郎" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "北人" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-08-18" ;
+    schema:episodeNumber "＃０７" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M841718" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M841818> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃０８" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31188191" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31188191" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、石上静香、内田直哉、安元洋貴、後藤ヒロキ、高橋伸也、菅生隆之、斧アツシ、浦山迅、松田健一郎、大塚明夫、宮澤正、近藤玲奈、坂泰斗、最上嗣生、中務貴幸、武蔵真之介、長谷川芳明、丹羽正人、高橋良輔、河瀬茉希、塙真奈美、中島卓也、太田悠介" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "海の果ての果て" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-08-25" ;
+    schema:episodeNumber "＃０８" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M841818" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M841918> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃０９" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31197271" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31197271" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、内田直哉、安元洋貴、大塚明夫、菅生隆之、斧アツシ、浦山迅、後藤ヒロキ、高橋伸也、最上嗣生、丹羽正人、長谷川芳明、中島卓也、坂泰斗、中務貴幸、市来光弘、太田悠介、大西弘祐、石狩勇気、綿貫竜之介" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ロンドン橋の死闘" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-09-01" ;
+    schema:episodeNumber "＃０９" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M841918" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M842117> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１０" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31213944" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31213944" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、石上静香、松田健一郎、内田直哉、安元洋貴、大塚明夫、竹内良太、浦山迅、日野聡、後藤ヒロキ、高橋伸也、古川慎、最上嗣生、市来光弘、坂泰斗、長谷川芳明、中務貴幸、丹羽正人、上田燿司、太田悠介、中島卓也" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ラグナロク" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-09-15" ;
+    schema:episodeNumber "＃１０" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842117" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M842212> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１１" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31222542" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "23" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31222542" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "23" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、内田直哉、安元洋貴、大塚明夫、竹内良太、浦山迅、日野聡、後藤ヒロキ、高橋伸也、古川慎、大西弘祐、中務貴幸、中島卓也、丹羽正人、太田悠介、坂泰斗、武蔵真之介、松川裕輝、最上嗣生、長谷川芳明" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "賭け" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-09-22" ;
+    schema:episodeNumber "＃１１" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842212" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M842307> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１２" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31230852" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31230852" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】Ａｉｍｅｒ「Ｔｏｒｃｈｅｓ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、安元洋貴、大塚明夫、浦山迅、日野聡、後藤ヒロキ、高橋伸也、古川慎、斎藤志郎、最上嗣生、上田燿司、大西弘祐、中島卓也、丹羽正人、太田悠介、坂泰斗、長谷川芳明、塙真奈美、大南悠、本山かおり、松田健一郎" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "対岸の国" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-09-29" ;
+    schema:episodeNumber "＃１２" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842307" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M842404> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１３" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31239098" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31239098" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、小林千晃、安元洋貴、菅生隆之、斧アツシ、浦山迅、後藤ヒロキ、高橋伸也、斎藤志郎、最上嗣生、松川裕輝、長谷川芳明、中島卓也、丹羽正人、大西弘祐、太田悠介、坂泰斗、佐々木祐介、松田健一郎" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "英雄の子" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-10-06" ;
+    schema:episodeNumber "＃１３" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842404" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M842499> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１４" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31247546" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31247546" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】内田直哉、安元洋貴、浦山迅、日野聡、後藤ヒロキ、高橋伸也、古川慎、原由実、白熊寛嗣、津田匠子、佐藤はな、市川太一、長谷川育美、原口洋子、長谷川芳明、中島卓也" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "暁光" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-10-13" ;
+    schema:episodeNumber "＃１４" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842499" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:15:00" .
+
+<http://mediagraph.link/madb/id/M842599> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１５" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31256088" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:10:53" ;
+    ns4:externalIdentifier "31256088" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、安元洋貴、大塚明夫、竹内良太、浦山迅、日野聡、菅生隆之、斧アツシ、後藤ヒロキ、高橋伸也、古川慎、佐藤健輔、佐藤はな、坂泰斗、丹羽正人、最上嗣生、太田悠介、中島卓也" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "冬至祭のあと" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-10-20" ;
+    schema:episodeNumber "＃１５" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842599" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M842705> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１６" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31265091" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:11:23" ;
+    ns4:externalIdentifier "31265091" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、安元洋貴、大塚明夫、竹内良太、日野聡、後藤ヒロキ、高橋伸也、古川慎、上田燿司、最上嗣生、大西弘祐、長谷川芳明、坂泰斗、丹羽正人、浜添伸也、中島卓也、太田悠介、松川裕輝、村井雄治" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ケダモノの歴史" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-10-27" ;
+    schema:episodeNumber "＃１６" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842705" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M842809> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１７" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31273684" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31273684" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、河瀬茉希、安元洋貴、大塚明夫、竹内良太、後藤ヒロキ、高橋伸也、大原さやか、佐々木祐介、最上嗣生、古川慎、長谷川芳明、丹羽正人、松川裕輝、中島卓也、太田悠介、坂泰斗、大西弘祐" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "仕えし者" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-11-03" ;
+    schema:episodeNumber "＃１７" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M842809" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M843020> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１８" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31290908" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31290908" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、安元洋貴、大塚明夫、浦山迅、日野聡、高橋伸也、長谷川芳明、最上嗣生、丹羽正人、太田悠介、大西弘祐、松川裕輝、坂泰斗、中島卓也、古川慎" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ゆりかごの外" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-11-17" ;
+    schema:episodeNumber "＃１８" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M843020" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M843120> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１９" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31299472" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31299472" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、大塚明夫、竹内良太、後藤ヒロキ、高橋伸也、松田健一郎、高梁碧、生天目仁美、坂泰斗、長谷川芳明、中務貴幸、丹羽正人、太田悠介" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "共闘" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-11-24" ;
+    schema:episodeNumber "＃１９" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M843120" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M843222> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２０" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31308026" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31308026" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、大塚明夫、竹内良太、菅生隆之、斧アツシ、日野聡、後藤ヒロキ、高橋伸也、最上嗣生、高橋良輔、長谷川芳明、太田悠介、松川裕輝、坂泰斗、中務貴幸" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "王冠" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-12-01" ;
+    schema:episodeNumber "＃２０" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M843222" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M843329> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２１" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31316697" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31316697" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、安元洋貴、大塚明夫、菅生隆之、斧アツシ、竹内良太、上田燿司、最上嗣生、後藤ヒロキ、中務貴幸、村井雄治、坂泰斗、高橋良輔、中島卓也、丹羽正人、長谷川芳明、高橋伸也、佐藤健輔、太田悠介、大南悠、藤田曜子、佐藤はな、松田健一郎" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "再会" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-12-08" ;
+    schema:episodeNumber "＃２１" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M843329" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M843427> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２２" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31325310" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31325310" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、河瀬茉希、大原さやか、大塚明夫、斉藤次郎、佐藤はな、丹羽正人、長谷川芳明、松川裕輝、中務貴幸" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "孤狼" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-12-15" ;
+    schema:episodeNumber "＃２２" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M843427" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M843521> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２３" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31333710" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:11:05" ;
+    ns4:externalIdentifier "31333710" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、大塚明夫、菅生隆之、斧アツシ、上田燿司、後藤ヒロキ、松川裕輝、最上嗣生、坂泰斗、中務貴幸、長谷川芳明、高橋伸也、中谷一博、浜添伸也、幸村誠" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "誤算" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-12-22" ;
+    schema:episodeNumber "＃２３" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M843521" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M843617> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２４" ;
+    ns2:dataPublisher "MDATA" ;
+    ns2:externalIdentifier "31342225" ;
+    ns2:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns2:programDuration "25" ;
+    ns3:dateModified "2024-11-25 11:08:44" ;
+    ns4:externalIdentifier "31342225" ;
+    ns4:note "【音楽】やまだ豊【エンディング曲】ｍｉｌｅｔ「Ｄｒｏｗｎ」／／【制作著作】ヴィンランド・サガ製作委員会／／【資料・協力】幸村誠・講談社／ヴィンランド・サガ製作委員会" ;
+    ns4:programDuration "25" ;
+    ns4:source "MDATA" ;
+    schema:actor "【声の出演】上村祐翔、小野賢章、内田直哉、大塚明夫、菅生隆之、斧アツシ、上田燿司、最上嗣生、太田悠介、坂泰斗、高橋伸也、松川裕輝、中務貴幸、長谷川芳明" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ＥＮＤＯＦＴＨＥＰＲＯＬＯＧＵＥ" ;
+    schema:creator "【原作】幸村誠" ;
+    schema:datePublished "2019-12-29" ;
+    schema:episodeNumber "＃２４" ;
+    schema:genre "アニメテレビ番組",
+        "テレビレギュラー" ;
+    schema:identifier "M843617" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C441040> ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "NHK" ;
+    schema:startTime "24:10:00" .
+
+<http://mediagraph.link/madb/id/M850822> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ = VINLAND SAGA 25" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23564699" ;
+    ns2:ndc "726.1" ;
+    ns2:note "機器種別 : 機器不用 ／ キャリア種別 : 冊子 ／ 表現種別 : テキスト ／ 表現種別 : 静止画 ／ NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 12:02:28" ;
+    ns4:jpno "23564699" ;
+    ns4:ndc "726.1" ;
+    ns4:note "機器種別 : 機器不用 ／ キャリア種別 : 冊子 ／ 表現種別 : テキスト ／ 表現種別 : 静止画 ／ NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2021-07" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M850822" ;
+    schema:inLanguage "日本語" ;
+    schema:isPartOf <http://mediagraph.link/madb/id/C312277> ;
+    schema:isbn "9784065236055" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ = VINLAND SAGA",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfPages "187p" ;
+    schema:position "25",
+        "25.0" ;
+    schema:price "660円" ;
+    schema:provider [ ],
+        <https://mediaarts-db.artmuseums.go.jp/ref/S2270895> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "25" .
+
+<http://mediagraph.link/madb/id/M870109> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ = VINLAND SAGA 26" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23690657" ;
+    ns2:ndc "726.1" ;
+    ns2:note "機器種別 : 機器不用 ／ キャリア種別 : 冊子 ／ 表現種別 : テキスト ／ 表現種別 : 静止画 ／ NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 12:00:59" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2022-05" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M870109" ;
+    schema:inLanguage "日本語" ;
+    schema:isbn "9784065279281" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ = VINLAND SAGA",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "181p" ;
+    schema:position "26.0" ;
+    schema:price "680円" ;
+    schema:provider <https://mediaarts-db.artmuseums.go.jp/ref/S2446276> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "26" .
+
+<http://mediagraph.link/madb/id/M897098> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ここではないどこか" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-07-11" ;
+    schema:episodeNumber "＃１" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897098" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897099> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１０" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ラグナロク" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-09-12" ;
+    schema:episodeNumber "＃１０" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897099" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897100> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１１" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "賭け" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-09-19" ;
+    schema:episodeNumber "＃１１" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897100" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897101> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１２" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "対岸の国" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-09-26" ;
+    schema:episodeNumber "＃１２" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897101" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897102> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１３" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "英雄の子" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-10-03" ;
+    schema:episodeNumber "＃１３" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897102" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897103> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１４" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "暁光" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-10-10" ;
+    schema:episodeNumber "＃１４" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897103" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897104> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１５" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "冬至祭（ユル）のあと" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-10-17" ;
+    schema:episodeNumber "＃１５" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897104" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897105> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１６" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:11:43" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ケダモノの歴史" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-10-24" ;
+    schema:episodeNumber "＃１６" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897105" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897106> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１７" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "仕えし者" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-10-31" ;
+    schema:episodeNumber "＃１７" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897106" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897107> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１８" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ゆりかごの外" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-11-07" ;
+    schema:episodeNumber "＃１８" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897107" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897108> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃１９" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "共闘" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-11-14" ;
+    schema:episodeNumber "＃１９" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897108" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897109> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "剣" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-07-18" ;
+    schema:episodeNumber "＃２" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897109" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897110> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２０" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "王冠" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-11-21" ;
+    schema:episodeNumber "＃２０" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897110" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897111> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２１" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "再会" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-11-28" ;
+    schema:episodeNumber "＃２１" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897111" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897112> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２２" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "孤狼" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-12-05" ;
+    schema:episodeNumber "＃２２" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897112" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897113> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２３" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "誤算" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-12-12" ;
+    schema:episodeNumber "＃２３" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897113" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897114> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃２４" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ＥＮＤ　ＯＦ　ＴＨＥ　ＰＲＯＬＯＵＧＥ" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-12-19" ;
+    schema:episodeNumber "＃２４" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897114" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897115> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃３" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:11:43" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "戦鬼（トロル）" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-07-25" ;
+    schema:episodeNumber "＃３" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897115" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897116> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃４" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "本当の戦士" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-08-01" ;
+    schema:episodeNumber "＃４" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897116" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897117> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃５" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "戦鬼の子" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-08-08" ;
+    schema:episodeNumber "＃５" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897117" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897118> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃６" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "旅の始まり" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-08-15" ;
+    schema:episodeNumber "＃６" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897118" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897119> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃７" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "北人（ノルマンニ）" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-08-22" ;
+    schema:episodeNumber "＃７" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897119" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897120> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃８" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "海の果ての果て" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-08-29" ;
+    schema:episodeNumber "＃８" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897120" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M897121> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ ＃９" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:08:02" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ロンドン橋の死闘" ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2022-09-05" ;
+    schema:episodeNumber "＃９" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M897121" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M930199> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ = VINLAND SAGA 27" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23854954" ;
+    ns2:ndc "726.1" ;
+    ns2:note "機器種別 : 機器不用 ／ キャリア種別 : 冊子 ／ 表現種別 : テキスト ／ 表現種別 : 静止画 ／ NDC（9版）はNDC（10版）を自動変換した値である。" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 12:04:44" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2023-06" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M930199" ;
+    schema:inLanguage "日本語" ;
+    schema:isbn "9784065319109" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ = VINLAND SAGA",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "193p" ;
+    schema:position "27.0" ;
+    schema:price "680円" ;
+    schema:provider <https://mediaarts-db.artmuseums.go.jp/ref/S2523993> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "27" .
+
+<http://mediagraph.link/madb/id/M938394> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #01" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-01-10" ;
+    schema:episodeNumber "#01" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938394" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938395> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #02" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-01-19" ;
+    schema:episodeNumber "#02" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938395" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938396> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #03" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-01-30" ;
+    schema:episodeNumber "#03" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938396" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "14:00:00" .
+
+<http://mediagraph.link/madb/id/M938397> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #04" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-06" ;
+    schema:episodeNumber "#04" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938397" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "14:00:00" .
+
+<http://mediagraph.link/madb/id/M938398> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #05" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-09" ;
+    schema:episodeNumber "#05" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938398" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938399> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #06" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-20" ;
+    schema:episodeNumber "#06" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938399" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "14:00:00" .
+
+<http://mediagraph.link/madb/id/M938400> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #07" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-21" ;
+    schema:episodeNumber "#07" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938400" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938401> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #08" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-02" ;
+    schema:episodeNumber "#08" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938401" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938402> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #09" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-09" ;
+    schema:episodeNumber "#09" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938402" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938403> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #10" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-16" ;
+    schema:episodeNumber "#10" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938403" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938404> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #11" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-23" ;
+    schema:episodeNumber "#11" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938404" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938405> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #12" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-30" ;
+    schema:episodeNumber "#12" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938405" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938406> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #13" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-04-06" ;
+    schema:episodeNumber "#13" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938406" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938407> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #14" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-04-11" ;
+    schema:episodeNumber "#14" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938407" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938408> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #15" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-04-18" ;
+    schema:episodeNumber "#15" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938408" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938409> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #16" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-01" ;
+    schema:episodeNumber "#16" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938409" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "14:00:00" .
+
+<http://mediagraph.link/madb/id/M938410> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #17" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-02" ;
+    schema:episodeNumber "#17" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938410" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938411> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #18" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-11" ;
+    schema:episodeNumber "#18" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938411" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938412> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #19" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-18" ;
+    schema:episodeNumber "#19" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938412" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938413> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #20" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-25" ;
+    schema:episodeNumber "#20" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938413" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "08:00:00" .
+
+<http://mediagraph.link/madb/id/M938414> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #21" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-06-05" ;
+    schema:episodeNumber "#21" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938414" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "14:00:00" .
+
+<http://mediagraph.link/madb/id/M938415> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #22" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-06-06" ;
+    schema:episodeNumber "#22" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938415" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938416> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #23" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-06-13" ;
+    schema:episodeNumber "#23" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938416" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938417> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 #24" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-06-20" ;
+    schema:episodeNumber "#24" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938417" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "20:00:00" .
+
+<http://mediagraph.link/madb/id/M938418> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃01" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "奴隷" ;
+    schema:datePublished "2023-01-09" ;
+    schema:episodeNumber "＃01" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938418" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938419> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃02" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-01-16" ;
+    schema:episodeNumber "＃02" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938419" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938420> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃03" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "蛇" ;
+    schema:datePublished "2023-01-23" ;
+    schema:episodeNumber "＃03" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938420" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938421> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃04" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "目覚め" ;
+    schema:datePublished "2023-01-30" ;
+    schema:episodeNumber "＃04" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938421" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938422> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃05" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "血の道" ;
+    schema:datePublished "2023-02-06" ;
+    schema:episodeNumber "＃05" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938422" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938423> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃06" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "馬がほしい" ;
+    schema:datePublished "2023-02-13" ;
+    schema:episodeNumber "＃06" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938423" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938424> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃07" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "鉄拳ケティル" ;
+    schema:datePublished "2023-02-20" ;
+    schema:episodeNumber "＃07" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938424" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938425> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃08" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "カラッポな男" ;
+    schema:datePublished "2023-02-27" ;
+    schema:episodeNumber "＃08" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938425" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938426> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃09" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "誓い" ;
+    schema:datePublished "2023-03-06" ;
+    schema:episodeNumber "＃09" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938426" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938427> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃10" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "呪いの首" ;
+    schema:datePublished "2023-03-13" ;
+    schema:episodeNumber "＃10" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938427" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938428> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃11" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "王の剣" ;
+    schema:datePublished "2023-03-20" ;
+    schema:episodeNumber "＃11" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938428" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938429> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃12" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "失われた愛のために" ;
+    schema:datePublished "2023-03-27" ;
+    schema:episodeNumber "＃12" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938429" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938430> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃13" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "暗雲" ;
+    schema:datePublished "2023-04-03" ;
+    schema:episodeNumber "＃13" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938430" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938431> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃14" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "自由" ;
+    schema:datePublished "2023-04-10" ;
+    schema:episodeNumber "＃14" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938431" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938432> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃15" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "嵐" ;
+    schema:datePublished "2023-04-17" ;
+    schema:episodeNumber "＃15" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938432" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938433> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃16" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "大義" ;
+    schema:datePublished "2023-04-24" ;
+    schema:episodeNumber "＃16" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938433" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938434> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃17" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "家路" ;
+    schema:datePublished "2023-05-01" ;
+    schema:episodeNumber "＃17" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938434" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938435> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃18" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "最初の手段" ;
+    schema:datePublished "2023-05-08" ;
+    schema:episodeNumber "＃18" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938435" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938436> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃19" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ケティル農場の戦い" ;
+    schema:datePublished "2023-05-15" ;
+    schema:episodeNumber "＃19" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938436" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938437> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃20" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "痛み" ;
+    schema:datePublished "2023-05-22" ;
+    schema:episodeNumber "＃20" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938437" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938438> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃21" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "勇気" ;
+    schema:datePublished "2023-05-29" ;
+    schema:episodeNumber "＃21" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938438" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938439> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃22" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "叛逆の帝王" ;
+    schema:datePublished "2023-06-05" ;
+    schema:episodeNumber "＃22" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938439" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938440> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃23" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ふたつの道" ;
+    schema:datePublished "2023-06-12" ;
+    schema:episodeNumber "＃23" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938440" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938441> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃24" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz無料放送" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "故郷" ;
+    schema:datePublished "2023-06-19" ;
+    schema:episodeNumber "＃24" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938441" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＢＳ１１イレブン" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938442> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "奴隷" ;
+    schema:datePublished "2023-01-09" ;
+    schema:episodeNumber "＃１" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938442" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938443> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１０" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-13" ;
+    schema:episodeNumber "＃１０" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938443" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938444> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１１" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-20" ;
+    schema:episodeNumber "＃１１" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938444" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938445> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１２" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-27" ;
+    schema:episodeNumber "＃１２" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938445" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938446> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１３" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-04-03" ;
+    schema:episodeNumber "＃１３" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938446" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938447> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１４" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-04-10" ;
+    schema:episodeNumber "＃１４" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938447" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938448> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１５" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "嵐／Ｓｔｏｒｍ" ;
+    schema:datePublished "2023-04-17" ;
+    schema:episodeNumber "＃１５" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938448" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938449> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１６" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "大義／Ｃａｕｓｅ" ;
+    schema:datePublished "2023-04-24" ;
+    schema:episodeNumber "＃１６" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938449" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938450> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１７" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "帰路／Ｗａｙ　Ｈｏｍｅ" ;
+    schema:datePublished "2023-05-01" ;
+    schema:episodeNumber "＃１７" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938450" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938451> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１８" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-08" ;
+    schema:episodeNumber "＃１８" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938451" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938452> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃１９" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-15" ;
+    schema:episodeNumber "＃１９" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938452" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938453> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃２" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-01-16" ;
+    schema:episodeNumber "＃２" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938453" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938454> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃２０" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "痛み／Ｐａｉｎ" ;
+    schema:datePublished "2023-05-22" ;
+    schema:episodeNumber "＃２０" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938454" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938455> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃２１" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-05-29" ;
+    schema:episodeNumber "＃２１" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938455" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938456> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃２２" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-06-05" ;
+    schema:episodeNumber "＃２２" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938456" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938457> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃２３" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "ふたつの道／Ｔｗｏ　Ｐａｔｈｓ" ;
+    schema:datePublished "2023-06-12" ;
+    schema:episodeNumber "＃２３" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938457" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938458> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃２４" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:alternativeHeadline "故郷／Ｈｏｍｅｔｏｗｎ" ;
+    schema:datePublished "2023-06-19" ;
+    schema:episodeNumber "＃２４" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938458" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938459> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃３" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-01-23" ;
+    schema:episodeNumber "＃３" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938459" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938460> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃４" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-01-30" ;
+    schema:episodeNumber "＃４" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938460" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938461> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃５" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-06" ;
+    schema:episodeNumber "＃５" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938461" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938462> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃６" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-13" ;
+    schema:episodeNumber "＃６" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938462" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938463> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃７" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-20" ;
+    schema:episodeNumber "＃７" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938463" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938464> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃８" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-02-27" ;
+    schema:episodeNumber "＃８" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938464" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M938465> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON2 ＃９" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz" ;
+    ns3:dateModified "2024-11-25 11:12:09" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2023-03-06" ;
+    schema:episodeNumber "＃９" ;
+    schema:genre "アニメテレビ番組" ;
+    schema:identifier "M938465" ;
+    schema:name "ヴィンランド・サガ SEASON2" ;
+    schema:publisher "ＴＯＫＹＯ　ＭＸ１" ;
+    schema:startTime "24:30:00" .
+
+<http://mediagraph.link/madb/id/M952113> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #01" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-05" ;
+    schema:episodeNumber "#01" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952113" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952114> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #03" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-09" ;
+    schema:episodeNumber "#03" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952114" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952115> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #02" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-13" ;
+    schema:episodeNumber "#02" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952115" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952116> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #07" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-13" ;
+    schema:episodeNumber "#07" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952116" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952117> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #08" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-16" ;
+    schema:episodeNumber "#08" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952117" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952118> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #04" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:13" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-17" ;
+    schema:episodeNumber "#04" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952118" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952119> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #05" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-18" ;
+    schema:episodeNumber "#05" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952119" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952120> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #10" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-18" ;
+    schema:episodeNumber "#10" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952120" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952121> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #06" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-19" ;
+    schema:episodeNumber "#06" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952121" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952122> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #12" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-20" ;
+    schema:episodeNumber "#12" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952122" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952123> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #09" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-24" ;
+    schema:episodeNumber "#09" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952123" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952124> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #11" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-26" ;
+    schema:episodeNumber "#11" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952124" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952125> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #15" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-26" ;
+    schema:episodeNumber "#15" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952125" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952126> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #13" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-30" ;
+    schema:episodeNumber "#13" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952126" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952127> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #14" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-10-31" ;
+    schema:episodeNumber "#14" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952127" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952128> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #18" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:13" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-01" ;
+    schema:episodeNumber "#18" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952128" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952129> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #16" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-03" ;
+    schema:episodeNumber "#16" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952129" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952130> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #21" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-06" ;
+    schema:episodeNumber "#21" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952130" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952131> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #17" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-07" ;
+    schema:episodeNumber "#17" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952131" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952132> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #22" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-07" ;
+    schema:episodeNumber "#22" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952132" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952133> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #23" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-08" ;
+    schema:episodeNumber "#23" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952133" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952134> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #19" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-09" ;
+    schema:episodeNumber "#19" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952134" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952135> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #20" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-10" ;
+    schema:episodeNumber "#20" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952135" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952136> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ #24" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-16" ;
+    schema:episodeNumber "#24" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952136" ;
+    schema:name "ヴィンランド・サガ" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952137> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #03" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-14" ;
+    schema:episodeNumber "#03" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952137" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952138> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #05" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:13" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-16" ;
+    schema:episodeNumber "#05" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952138" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952139> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #01" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-17" ;
+    schema:episodeNumber "#01" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952139" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952140> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #02" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-20" ;
+    schema:episodeNumber "#02" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952140" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952141> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #04" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-22" ;
+    schema:episodeNumber "#04" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952141" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952142> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #06" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-24" ;
+    schema:episodeNumber "#06" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952142" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952143> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #07" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-27" ;
+    schema:episodeNumber "#07" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952143" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952144> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #08" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-28" ;
+    schema:episodeNumber "#08" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952144" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952145> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #09" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-29" ;
+    schema:episodeNumber "#09" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952145" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952146> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #14" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-29" ;
+    schema:episodeNumber "#14" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952146" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952147> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #10" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-11-30" ;
+    schema:episodeNumber "#10" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952147" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952148> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #11" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:13" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-01" ;
+    schema:episodeNumber "#11" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952148" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952149> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #12" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-04" ;
+    schema:episodeNumber "#12" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952149" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952150> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #13" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-05" ;
+    schema:episodeNumber "#13" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952150" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952151> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #15" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-07" ;
+    schema:episodeNumber "#15" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952151" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952152> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #16" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-08" ;
+    schema:episodeNumber "#16" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952152" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952153> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #21" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-08" ;
+    schema:episodeNumber "#21" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952153" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952154> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #17" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-11" ;
+    schema:episodeNumber "#17" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952154" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952155> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #18" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-12" ;
+    schema:episodeNumber "#18" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952155" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952156> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #23" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-12" ;
+    schema:episodeNumber "#23" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952156" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "24:00" .
+
+<http://mediagraph.link/madb/id/M952157> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #19" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-13" ;
+    schema:episodeNumber "#19" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952157" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952158> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #20" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:12:13" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-14" ;
+    schema:episodeNumber "#20" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952158" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952159> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #22" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-18" ;
+    schema:episodeNumber "#22" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952159" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M952160> a madb:AnimationTVProgram ;
+    rdfs:label "ヴィンランド・サガ SEASON 2 #24" ;
+    ns2:dataPublisher "ATAC" ;
+    ns2:note "【音響関連情報】2/0モード（ステレオ） ／ 48kHz有料放送" ;
+    ns3:dateModified "2024-11-25 11:06:26" ;
+    schema:additionalType madb:AN ;
+    schema:color "カラー" ;
+    schema:contentRating "G" ;
+    schema:datePublished "2023-12-20" ;
+    schema:episodeNumber "#24" ;
+    schema:genre "アニメテレビレギュラー" ;
+    schema:identifier "M952160" ;
+    schema:name "ヴィンランド・サガ SEASON 2" ;
+    schema:publisher "ＡＴ－Ｘ" ;
+    schema:startTime "12:00" .
+
+<http://mediagraph.link/madb/id/M970652> a madb:MangaBook ;
+    rdfs:label "ヴィンランド・サガ 28" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:jpno "23998991" ;
+    ns2:ndc "726.1" ;
+    ns2:note "表現種別 : テキスト ／ 表現種別 : 静止画 ／ 機器種別 : 機器不用 ／ キャリア種別 : 冊子" ;
+    ns2:providerName "国立国会図書館" ;
+    ns3:dateModified "2024-11-25 12:05:20" ;
+    schema:additionalType madb:CM ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン ケーシー"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2024-06" ;
+    schema:genre "マンガ単行本" ;
+    schema:identifier "M970652" ;
+    schema:inLanguage "日本語" ;
+    schema:isbn "9784065355190" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfPages "181p" ;
+    schema:position "28.0" ;
+    schema:price "690円" ;
+    schema:provider <https://mediaarts-db.artmuseums.go.jp/ref/S2674335> ;
+    schema:publisher "講談社　∥　コウダンシャ" ;
+    schema:size "19cm" ;
+    schema:volumeNumber "28" .
+
+dcterms:creator rdfs:label "Creator"@en .
+
+dcterms:publisher rdfs:label "Publisher"@en .
+
+rdf:type rdfs:label "type" .
+
+rdfs:label rdfs:label "label" .
+
+schema:actor rdfs:label "actor" .
+
+schema:additionalType rdfs:label "additionalType" .
+
+schema:alternateName rdfs:label "alternateName" .
+
+schema:alternativeHeadline rdfs:label "alternativeHeadline" .
+
+schema:brand rdfs:label "brand" .
+
+schema:color rdfs:label "color" .
+
+schema:contentRating rdfs:label "contentRating" .
+
+schema:creator rdfs:label "creator" .
+
+schema:datePublished rdfs:label "datePublished" .
+
+schema:description rdfs:label "description" .
+
+schema:endDate rdfs:label "endDate" .
+
+schema:episodeNumber rdfs:label "episodeNumber" .
+
+schema:genre rdfs:label "genre" .
+
+schema:hasPart rdfs:label "hasPart" .
+
+schema:identifier rdfs:label "identifier" .
+
+schema:inLanguage rdfs:label "inLanguage" .
+
+schema:isPartOf rdfs:label "isPartOf" .
+
+schema:isbn rdfs:label "isbn" .
+
+schema:location rdfs:label "location" .
+
+schema:name rdfs:label "name" .
+
+schema:numberOfItems rdfs:label "numberOfItems" .
+
+schema:numberOfPages rdfs:label "numberOfPages" .
+
+schema:position rdfs:label "position" .
+
+schema:price rdfs:label "price" .
+
+schema:productID rdfs:label "productID" .
+
+schema:provider rdfs:label "provider" .
+
+schema:publisher rdfs:label "publisher" .
+
+schema:size rdfs:label "size" .
+
+schema:startDate rdfs:label "startDate" .
+
+schema:startTime rdfs:label "startTime" .
+
+schema:volumeNumber rdfs:label "volumeNumber" .
+
+<http://mediagraph.link/madb/id/C406085> rdfs:label "幸村誠" .
+
+madb:AnimationTVRegularSeries rdfs:label "Animation TV regular series"@en,
+        "アニメテレビレギュラーシリーズ"@ja .
+
+madb:MA rdfs:label "MA" .
+
+madb:MangaMagazinePublication rdfs:label "Manga magazine publication"@en,
+        "マンガ雑誌掲載履歴"@ja .
+
+madb:MediaArtExhibitionOrPerformance rdfs:label "Media Art exhibition or performance"@en,
+        "メディアアート展示・実演"@ja .
+
+<http://mediagraph.link/madb/id/C312278> a madb:MangaBookSeries ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:ndc "Y84　／　726.1" ;
+    ns3:dateModified "2024-11-25 12:27:05" ;
+    ns4:datePublishedFinal "20051117" ;
+    ns4:ndc "Y84　／　726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "講談社コミックス　／　SHONEN MAGAZINE COMICS　",
+        "コウダンシャ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2005-07-15" ;
+    schema:genre "マンガ単行本シリーズ" ;
+    schema:identifier "C312278" ;
+    schema:inLanguage "日本語" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "VINLAND SAGA"@ja-Hrkt,
+        "ヴィンランド サガ"@ja-Hrkt,
+        "ヴィンランド サガ,VINLAND SAGA"@ja-Hrkt ;
+    schema:numberOfItems "2" ;
+    schema:publisher "講談社　∥　コウダンシャ" .
+
+madb:MangaBookSeries rdfs:label "Manga book series"@en,
+        "マンガ単行本シリーズ"@ja .
+
+<http://mediagraph.link/madb/id/C367735> a madb:MangaBookSeries ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:ndc "726.1" ;
+    ns3:dateModified "2024-11-25 12:32:07" ;
+    ns4:ndc "726.1" ;
+    schema:additionalType madb:CM ;
+    schema:brand "講談社プラチナコミックス",
+        "コウダンシャ プラチナ コミックス"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:genre "マンガ単行本シリーズ" ;
+    schema:identifier "C367735" ;
+    schema:inLanguage "日本語" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfItems "1" ;
+    schema:publisher "講談社　∥　コウダンシャ" .
+
+<http://mediagraph.link/madb/id/C441040> a madb:AnimationTVRegularSeries ;
+    rdfs:label "ヴィンランド・サガ" ;
+    ns2:seriesName "ヴィンランド・サガ" ;
+    ns3:dateModified "2024-11-25 11:17:22" ;
+    ns4:seriesName "ヴィンランド・サガ" ;
+    schema:additionalType madb:AN ;
+    schema:datePublished "2019-07-07" ;
+    schema:genre "アニメテレビレギュラーシリーズ" ;
+    schema:hasPart [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ],
+        [ ] ;
+    schema:identifier "C441040" ;
+    schema:name "ヴィンランド・サガ" .
+
+<http://mediagraph.link/madb/id/C312277> a madb:MangaBookSeries ;
+    rdfs:label "ヴィンランド・サガ" ;
+    dcterms:creator <http://mediagraph.link/madb/id/C61629> ;
+    dcterms:publisher "P4060000000" ;
+    ns2:dataPublisher "メディア芸術データベースベータ版データセット" ;
+    ns2:ndc "Y84　／　726.1" ;
+    ns3:dateModified "2024-11-25 12:27:05" ;
+    ns4:datePublishedFinal "20100600" ;
+    ns4:ndc "Y84　／　726.1" ;
+    schema:additionalType madb:CM ;
+    schema:alternateName "VINLAND SAGA" ;
+    schema:brand "アフタヌーンKC",
+        "アフタヌーン KC"@ja-Hrkt ;
+    schema:creator "[著]幸村誠" ;
+    schema:datePublished "2006-08-23" ;
+    schema:genre "マンガ単行本シリーズ" ;
+    schema:identifier "C312277" ;
+    schema:inLanguage "日本語" ;
+    schema:location "東京" ;
+    schema:name "ヴィンランド・サガ",
+        "ヴィンランド サガ"@ja-Hrkt ;
+    schema:numberOfItems "21" ;
+    schema:publisher "講談社　∥　コウダンシャ" .
+
+madb:MangaBook rdfs:label "Manga book"@en,
+        "マンガ単行本"@ja .
+
+<http://mediagraph.link/madb/id/C61629> rdfs:label "幸村誠" .
+
+madb:CM rdfs:label "CM" .
+
+madb:AnimationTVProgram rdfs:label "Animation TV program"@en,
+        "アニメテレビ番組"@ja .
+
+madb:AN rdfs:label "AN" .
+
