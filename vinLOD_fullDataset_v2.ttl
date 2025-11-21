@@ -389,14 +389,6 @@ vinLOD:serialisedIn a owl:ObjectProperty ;
     rdfs:label "Anime Opening" ;
     rdfs:comment "An opening sequence of an anime" .
 
-<https://w3id.org/vinLOD-saga/event/Assandun_Battle> a crm:E5_Event,
-        <https://w3id.org/vinLOD-saga/class/HistoricalEvent> ;
-    rdfs:label "Battle of Assandun" ;
-    schema1:name "Battle of Assandun" ;
-    crm:P16_used_specific_object <https://w3id.org/vinLOD-saga/concept/Olney_Treaty> ;
-    crm:P9i_forms_part_of <https://w3id.org/vinLOD-saga/event/Cnut_Invasion> ;
-    owl:sameAs dbr:Battle_of_Assandun .
-
 <https://w3id.org/vinLOD-saga/event/Cnut_Becomes_English_King> a crm:E5_Event,
         <https://w3id.org/vinLOD-saga/class/HistoricalEvent> ;
     rdfs:label "Cnut becomes king of England after the death of Edmund Ironside" ;
@@ -496,10 +488,19 @@ vinLOD:serialisedIn a owl:ObjectProperty ;
     crm:P67i_is_referred_to_by <https://w3id.org/vinLOD-saga/narrative/Poetic_Edda> ;
     owl:sameAs dbr:Valhalla .
 
+<https://w3id.org/vinLOD-saga/event/Assandun_Battle> a crm:E5_Event,
+        <https://w3id.org/vinLOD-saga/class/HistoricalEvent> ;
+    rdfs:label "Battle of Assandun" ;
+    schema1:name "Battle of Assandun" ;
+    crm:P16_used_specific_object <https://w3id.org/vinLOD-saga/concept/Olney_Treaty> ;
+    crm:P9i_forms_part_of <https://w3id.org/vinLOD-saga/event/Cnut_Invasion> ;
+    owl:sameAs dbr:Battle_of_Assandun .
+
 <https://w3id.org/vinLOD-saga/event/Cnut_Invasion> a crm:E5_Event,
         <https://w3id.org/vinLOD-saga/class/HistoricalEvent> ;
     rdfs:label "Cnut's Invasion of England" ;
     schema1:name "Cnut's Invasion of England" ;
+    crm:P9_consists_of <https://w3id.org/vinLOD-saga/event/Assandun_Battle> ;
     crm:P9i_forms_part_of <https://w3id.org/vinLOD-saga/event/2nd_Viking_Invasion> .
 
 <https://w3id.org/vinLOD-saga/event/Hjorungavagr_Battle> a crm:E5_Event,

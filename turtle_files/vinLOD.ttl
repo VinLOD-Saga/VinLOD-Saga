@@ -235,7 +235,8 @@
 
 <event/Cnut_Invasion> a <class/HistoricalEvent>;
     rdfs:label "Cnut's Invasion of England";
-    schema:name "Cnut's Invasion of England"; 
+    schema:name "Cnut's Invasion of England";
+    crm:P9_consists_of  <event/Assandun_Battle> ;
     crm:P9i_forms_part_of <event/2nd_Viking_Invasion> .
 
 <event/Assandun_Battle> a <class/HistoricalEvent>;
